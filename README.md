@@ -8,3 +8,4 @@
 * triples-assemble25-event
 * txt-7th-year-event
 * akmu-blooming-event
+* ioi-ioi-loop-event
