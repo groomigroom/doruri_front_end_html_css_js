@@ -1,1 +1,71 @@
-dd
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10CM 일말의 가능성 이벤트</title>
+    <link rel="stylesheet" href="../css/triples/TriplesEvent.css">
+</head>
+
+<body>
+    <div className="TenCMEvent_full">
+        <header class="tri_m_header">
+            <Menu />
+            <section class="home_translate">
+                <a href='/TenCMEvent' class="on">한국어</a>
+                <a href='/TenCMEventEng'>English</a>
+            </section>
+        </header>
+        <section class="tri_e_logo">
+            <img src="" alt="10CM 이벤트 로고" />
+        </section>
+        <section class="tri_m_h2">
+            <h2><img src="" alt="10CM" />숫자 입력 이벤트<img src="" alt="10CM" /></h2>
+        </section>
+        <section class='tri_m_intropp'>
+            <p>
+                1부터 5까지의<br />
+                숫자를 1번씩 사용해서<br />
+                10을 만들어 주세요!
+            </p>
+        </section>
+        <section class="TenCM_e_last_input_part">
+            <!-- 5 -->
+            <input class="TenCM_e_last_input" type="text" name="Tencm_e_number_input1" value="값">
+            <p>x</p>
+            <!-- 2 -->
+            <input class="TenCM_e_last_input" type="text" name="Tencm_e_number_input2">
+            <p>+</p>
+            <!-- 4 -->
+            <input class="TenCM_e_last_input" type="text" name="Tencm_e_number_input3">
+            <p>-</p>
+            <!-- 1 -->
+            <input class="TenCM_e_last_input" type="text" name="Tencm_e_number_input4">
+            <p>-</p>
+            <!-- 3 -->
+            <input class="TenCM_e_last_input" type="text" name="Tencm_e_number_input5">
+            <p>= 10</p>
+            <p>최종 결과 : {Tencm_e_number_last_result}</p>
+        </section>
+        <FooterPart100vh FooterPartText='ⓒ 씨에이엠위더스' />
+        {Tencm_e_number_last_result === 10 && Tencm_number_all_correct_case && (
+        <section class="tri_e_last_win_part">
+            <section class="tri_e_p_win_intropp">
+                <p>
+                    당첨을 축하드려요!<br />
+                    상품은 연필 세트입니다.<br />
+                    이벤트에 관심가져 주셔서 감사합니다.<br />
+                    이 이벤트는 가상의 이벤트입니다.<br />
+                    참고해 주시길 부탁드리겠습니다.<br />
+                </p>
+            </section>
+            <section class="tri_e_p_win_present_150">
+                <img src="" alt="연필 세트" class="TenCM_e_p_win_present_img" />
+            </section>
+        </section>
+        )}
+    </div>
+</body>
+
+</html>
