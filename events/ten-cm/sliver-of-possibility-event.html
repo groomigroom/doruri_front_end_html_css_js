@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>10CM 일말의 가능성 이벤트</title>
+    <link rel="stylesheet" href="../css/TriplesEvent.css">
 </head>
 
 <body>
@@ -29,32 +30,28 @@
                 10을 만들어 주세요!
             </p>
         </section>
-        <section className="TenCM_e_last_input_part">
-            {/* 5 */}
-            <input className="TenCM_e_last_input" type="text" name="Tencm_e_number_input1" value="값">
+        <section class="TenCM_e_last_input_part">
+            <!-- 5 -->
+            <input class="TenCM_e_last_input" type="text" name="Tencm_e_number_input1" value="값">
             <p>x</p>
-            {/* 2 */}
-            <input className="TenCM_e_last_input" type="text" name="Tencm_e_number_input2" value={Tencm_e_number_input2}
-                onChange={Tencm_e_number_input2_change} />
+            <!-- 2 -->
+            <input class="TenCM_e_last_input" type="text" name="Tencm_e_number_input2">
             <p>+</p>
-            {/* 4 */}
-            <input className="TenCM_e_last_input" type="text" name="Tencm_e_number_input3" value={Tencm_e_number_input3}
-                onChange={Tencm_e_number_input3_change} />
+            <!-- 4 -->
+            <input class="TenCM_e_last_input" type="text" name="Tencm_e_number_input3">
             <p>-</p>
-            {/* 1 */}
-            <input className="TenCM_e_last_input" type="text" name="Tencm_e_number_input4" value={Tencm_e_number_input4}
-                onChange={Tencm_e_number_input4_change} />
+            <!-- 1 -->
+            <input class="TenCM_e_last_input" type="text" name="Tencm_e_number_input4">
             <p>-</p>
-            {/* 3 */}
-            <input className="TenCM_e_last_input" type="text" name="Tencm_e_number_input5" value={Tencm_e_number_input5}
-                onChange={Tencm_e_number_input5_change} />
+            <!-- 3 -->
+            <input class="TenCM_e_last_input" type="text" name="Tencm_e_number_input5">
             <p>= 10</p>
             <p>최종 결과 : {Tencm_e_number_last_result}</p>
         </section>
         <FooterPart100vh FooterPartText='ⓒ 씨에이엠위더스' />
         {Tencm_e_number_last_result === 10 && Tencm_number_all_correct_case && (
-        <section className="tri_e_last_win_part">
-            <section className="tri_e_p_win_intropp">
+        <section class="tri_e_last_win_part">
+            <section class="tri_e_p_win_intropp">
                 <p>
                     당첨을 축하드려요!<br />
                     상품은 연필 세트입니다.<br />
@@ -63,8 +60,8 @@
                     참고해 주시길 부탁드리겠습니다.<br />
                 </p>
             </section>
-            <section className="tri_e_p_win_present_150">
-                <img src={TenCM_e_pencil_set_img} alt="" className="TenCM_e_p_win_present_img" />
+            <section class="tri_e_p_win_present_150">
+                <img src="" alt="연필 세트" class="TenCM_e_p_win_present_img" />
             </section>
         </section>
         )}
