@@ -1,1 +1,208 @@
-TriplesEvent.css
+.triplesevent_full {
+    width: 100vw;
+    background-color: #fcfcfc;
+}
+
+
+.tri_e_logo {
+    width: 100vw;
+    height: 98px;
+    position: relative;
+}
+
+.tri_e_logo>img {
+    height: 58px;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.tri_e_intropp>p {
+    text-align: center;
+    font-size: 15px;
+    line-height: 140%;
+    font-weight: 500;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* 위에꺼 height 63px */
+
+.tri_e_img {
+    width: 720px;
+    height: 1340px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.triplesevent_imgt {
+    width: 720px;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    left: 0px;
+}
+
+.triplesevent_imgt>img {
+    width: 150px;
+    height: 150px;
+    border: 5px solid #191919;
+    border-radius: 25px;
+}
+
+.tri_e_i_1 {
+    top: 0px;
+}
+
+.tri_e_i_2 {
+    top: 220px;
+}
+
+.tri_e_i_3 {
+    top: 440px;
+}
+
+.tri_e_i_4 {
+    top: 660px;
+}
+
+.tri_e_i_5 {
+    top: 880px;
+}
+
+.tri_e_i_6 {
+    top: 1100px;
+}
+
+
+/* 인풋들 */
+
+.tri_e_form_indivtr {
+    width: 720px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    left: 0px;
+}
+
+.tri_e_form_indiv {
+    width: 150px;
+    height: 30px;
+    border: 5px solid #191919;
+    border-radius: 10px;
+    position: relative;
+}
+
+.tri_e_form_indiv>input {
+    width: 130px;
+    background-color: #fcfcfc;
+    border: none;
+    outline: none;
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+}
+
+.tri_e_form_indivtr1 {
+    top: 170px;
+}
+
+.tri_e_form_indivtr2 {
+    top: 390px;
+}
+
+.tri_e_form_indivtr3 {
+    top: 610px;
+}
+
+.tri_e_form_indivtr4 {
+    top: 830px;
+}
+
+.tri_e_form_indivtr5 {
+    top: 1050px;
+}
+
+.tri_e_form_indivtr6 {
+    top: 1270px;
+}
+
+.tri_e_btn {
+    width: 100vw;
+    height: 80px;
+    position: relative;
+}
+
+.tri_e_btn>button {
+    width: 150px;
+    height: 40px;
+    border: 5px solid #191919;
+    border-radius: 10px;
+    background-color: #fcfcfc;
+    font-weight: 700;
+    font-size: 16px;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.tri_e_btn>button:hover {
+    background-color: #191919;
+    color: #fcfcfc;
+}
+
+.tri_e_last_win_part {
+    width: 100vw;
+    height: 700px;
+    position: absolute;
+    z-index: 100;
+    top: 401px;
+    left: 0px;
+    background-color: #fcfcfc;
+}
+
+.tri_e_p_win_intropp {
+    width: 100vw;
+    height: 145px;
+}
+
+.tri_e_p_win_intropp>p {
+    text-align: center;
+    font-size: 15px;
+    line-height: 140%;
+    font-weight: 500;
+}
+
+.tri_e_p_win_present_150 {
+    width: 100vw;
+    height: 190px;
+    position: relative;
+}
+
+.tri_e_p_win_present_150>img {
+    width: 150px;
+    height: 150px;
+    border-radius: 25px;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* border: 5px solid #191919; */
+
+.tri_e_ghost_40px {
+    width: 100vw;
+    height: 40px;
+}
+
+.triples_e_p_win_present_img {
+    border: 5px solid #191919;
+}
