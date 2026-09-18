@@ -6,4 +6,4 @@
 
 * triples-love-and-pop-pt1-event
 * triples-assemble25-event
-* 
+* txt-7th-year-event
