@@ -43,7 +43,7 @@
             <section className="txt_e_form">
                 <form action="">
                     <div className="txt_e_form_indiv">
-                        <input className="txt_e_fo" type="text" name="txt_e_in" onChange={Txt_e_handle_input_change} />
+                        <input class="txt_e_fo" type="text" name="txt_e_in" onChange={Txt_e_handle_input_change} />
                     </div>
                 </form>
             </section>
@@ -90,6 +90,31 @@
             }
             <FooterPart100vh FooterPartText='ⓒ 빅히트 뮤직' />
         </div >
+        <script>
+            const [txt_e_str, setTxt_e_str] = useState<string>("");
+
+    const Txt_e_handle_input_change = (e: React.ChangeEvent<HTMLInputElement>) => {
+        setTxt_e_str(e.target.value);
+    }
+
+    const txt_e_target = ['낯', '설', '기', '만'];
+    const txt_e_count = txt_e_target.filter((txt_e_char, txt_e_index) => txt_e_str[txt_e_index] === txt_e_char).length;
+
+    let txt_e_last_str: string = "";
+
+    if (txt_e_str.length === 4) {
+        txt_e_last_str = '맞춘 개수: ' + txt_e_count + "개";
+    }
+    else {
+        txt_e_last_str = '글자 수가 4글자가 아닙니다.';
+    }
+
+    console.log(txt_e_last_str);
+
+    const [txt_e_PopopO, txt_e_SetPopupO] = useState<boolean>(false);
+    const txt_e_OpPopup = () => txt_e_SetPopupO(true);
+    const txt_e_ClPopup = () => txt_e_SetPopupO(false);
+        </script>
 </body>
 
 </html>
