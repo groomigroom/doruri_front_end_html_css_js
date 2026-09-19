@@ -7,63 +7,52 @@
     <title>10CM 일말의 가능성 이벤트</title>
     <link rel="stylesheet" href="../css/triples/TriplesEvent.css">
     <style>
-        .tri_e_last_win_part,
-        input[name="straykids_e_value2"],
-        input[name="straykids_e_value3"] {
+        .tri_e_last_win_part {
             display: none;
-        }
-
-        .tri_e_last_win_part.on,
-        input[name="straykids_e_value2"].on,
-        input[name="straykids_e_value3"].on {
-            display: block;
         }
     </style>
 </head>
 
 <body>
-    <div className="ResceneEvent_full">
-        <header className="tri_m_header">
+    <div class="ResceneEvent_full">
+        <header class="tri_m_header">
             <Menu />
-            <section className="home_translate">
-                <Link to='/ResceneEvent' className="on">한국어</Link>
+            <section class="home_translate">
+                <Link to='/ResceneEvent' class="on">한국어</Link>
                 <Link to='/ResceneEventEng'>English</Link>
             </section>
         </header>
-        <section className="tri_e_logo">
+        <section class="tri_e_logo">
             <img src={Rescene_e_m_logo} alt="RESCENE 이벤트 로고" />
         </section>
-        <section className="tri_m_h2">
+        <section class="tri_m_h2">
             <h2><img src={MainH2Deco} alt="RESCENE" />자동차 클릭 이벤트<img src={MainH2Deco} alt="RESCENE" /></h2>
         </section>
-        <section className='tri_m_intropp'>
+        <section class='tri_m_intropp'>
             <p>
                 어디서나 당당하게<br />
                 나아가는 자동차를<br />
                 3번 클릭해 주세요!
             </p>
         </section>
-        <section className='rescene_e_moving_car_section'>
+        <section class='rescene_e_moving_car_section'>
             <section>
-                <img className="rescene_e_moving_car" src={Rescene_e_car} alt='리센느 자동차'
-                    onClick={rescene_e_moving_clickChange} />
-                <img src={Rescene_e_aspalt} alt="아스팔트" className='rescene_e_aspalt' />
+                <img class="rescene_e_moving_car" src="" alt='리센느 자동차' onclick="rescene_e_moving_clickChange()">
+                <img src={Rescene_e_aspalt} alt="아스팔트" class='rescene_e_aspalt'>
             </section>
         </section>
-        <section className="tri_m_h2">
-            <h2>클릭 횟수: {rescene_e_moving_count}회</h2>
+        <section class="tri_m_h2">
+            <h2 class="rescene_e_moving_count_h2"></h2>
         </section>
         <FooterPart100vh FooterPartText='ⓒ 더뮤즈엔터테인먼트' />
-        {rescene_e_moving_count === 3 &&
-        (
-        <section className="tri_e_last_win_part">
-            <div className="tri_e_ghost_40px"></div>
-            <section className="tri_m_h2">
+        <section class="tri_e_last_win_part">
+            <div class="tri_e_ghost_40px"></div>
+            <section class="tri_m_h2">
                 <h2>
                     <img src={MainH2Deco} alt="RESCENE" />당첨입니다.<img src={MainH2Deco} alt="RESCENE" />
                 </h2>
             </section>
-            <section className="tri_e_p_win_intropp">
+            <section class="tri_e_p_win_intropp">
                 <p>
                     당첨을 축하드려요!<br />
                     상품은 방석입니다.<br />
@@ -76,10 +65,21 @@
                 <img src={Rescene_e_present} alt="" className="triples_e_p_win_present_img" />
             </section>
         </section>
-        )
-        }
     </div>
     <script>
+        const tri_e_last_win_part = document.querySelector(".tri_e_last_win_part");
+        const rescene_e_moving_count_h2 = document.querySelector(".rescene_e_moving_count_h2");
+        let rescene_e_moving_count_number = 0;
+
+        const rescene_e_moving_clickChange = () => {
+            rescene_e_moving_count_number += 1;
+            console.log(rescene_e_moving_count_number);
+            rescene_e_moving_count_h2.textContent = "클릭 횟수: " + rescene_e_moving_count_number + "회";
+            if (rescene_e_moving_count_number === 3) {
+                tri_e_last_win_part.style.display = "block";
+            }
+        };
+
 
     </script>
 </body>
