@@ -29,24 +29,24 @@
 </head>
 
 <body>
-    <div className="txt_e_full">
-            <header className="tri_m_header">
+    <div class="txt_e_full">
+            <header class="tri_m_header">
                 <Menu />
-                <section className="home_translate">
-                    <Link to='/TxtEvent' className="on">한국어</Link>
+                <section class="home_translate">
+                    <Link to='/TxtEvent' class="on">한국어</Link>
                     <Link to='/TxtEventEng'>English</Link>
                 </section>
             </header>
-            <section className="tri_e_logo">
+            <section class="tri_e_logo">
                 <img src={TxtELogo} alt="TxtELogo" />
             </section>
-            <section className="tri_m_h2">
+            <section class="tri_m_h2">
                 <h2>
                     <img src={MainH2Deco} alt="투모루우바이투게더" />&apos;하루에 하루만 더&apos; 가사 맟주기 이벤트<img src={MainH2Deco} alt="투모루우바이투게더" />
                 </h2>
             </section>
-            <section className='txt_e_intropp'>
-                <p className="txt_e_mp">
+            <section class='txt_e_intropp'>
+                <p class="txt_e_mp">
                     머물러 줘<br />
                     하루에 하루만 더<br />
                     헤어질 수 없어<br />
@@ -60,26 +60,26 @@
                     {/* 낯설기만 */}
                 </p>
             </section>
-            <section className="txt_e_form">
+            <section class="txt_e_form">
                 <form action="#">
-                    <div className="txt_e_form_indiv">
+                    <div class="txt_e_form_indiv">
                         <input class="txt_e_fo" type="text" name="txt_e_in" />
                     </div>
                 </form>
             </section>
-            <section className="txt_e_btn">
+            <section class="txt_e_btn">
                 <button type="submit" onclick="tri_e_last_win_part_open()">제출하기</button>
             </section>
 
             <section class="tri_e_last_win_part">
-                <div className="tri_e_ghost_40px"></div>
-                <section className="tri_m_h2">
+                <div class="tri_e_ghost_40px"></div>
+                <section class="tri_m_h2">
                     <h2>
                         <img src={MainH2Deco} alt="투모루우바이투게더" />{txt_e_last_str}<img src={MainH2Deco} alt="투모루우바이투게더" />
                     </h2>
                 </section>
                     <section class="tri_e_last_win_part_win">
-                        <section className="tri_e_p_win_intropp">
+                        <section class="tri_e_p_win_intropp">
                             <p>
                                 당첨을 축하드려요!<br />
                                 상품은 키링입니다.<br />
@@ -88,20 +88,20 @@
                                 참고해 주시길 부탁드리겠습니다.<br />
                             </p>
                         </section>
-                        <section className="tri_e_p_win_present_150">
-                            <img src={Txt_e_keyring_set_img} alt="" className="txt_e_p_win_present_img" />
+                        <section class="tri_e_p_win_present_150">
+                            <img src={Txt_e_keyring_set_img} alt="" class="txt_e_p_win_present_img" />
                         </section>
                     </section>
                     <section class="tri_e_last_win_part_lose">
                         <section>
-                            <section className="tri_m_h2">
+                            <section class="tri_m_h2">
                                 <h2>
                                     당첨이 아닙니다.
                                 </h2>
                             </section>
                         </section>
                     </section>
-                        <section className="txt_e_btn">
+                        <section class="txt_e_btn">
                             <button onClick="tri_e_last_win_part_close()">닫기</button>
                         </section>
                     </section>
