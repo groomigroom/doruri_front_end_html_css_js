@@ -13,6 +13,18 @@
         .tri_e_last_win_part.on {
             display: block;
         }
+        .tri_e_last_win_part_win {
+            display: none;
+        }
+        .tri_e_last_win_part_win.on {
+            display: block;
+        }
+        .tri_e_last_win_part_lose {
+            display: none;
+        }
+        .tri_e_last_win_part_lose.on {
+            display: block;
+        }
     </style>
 </head>
 
@@ -56,7 +68,7 @@
                 </form>
             </section>
             <section className="txt_e_btn">
-                <button type="submit">제출하기</button>
+                <button type="submit" onclick="tri_e_last_win_part_open()">제출하기</button>
             </section>
 
             <section class="tri_e_last_win_part">
@@ -66,40 +78,42 @@
                         <img src={MainH2Deco} alt="투모루우바이투게더" />{txt_e_last_str}<img src={MainH2Deco} alt="투모루우바이투게더" />
                     </h2>
                 </section>
-                        {txt_e_last_str === "맞춘 개수: 4개" ?
-                                <section className="tri_e_p_win_intropp">
-                                    <p>
-                                        당첨을 축하드려요!<br />
-                                        상품은 키링입니다.<br />
-                                        이벤트에 관심가져 주셔서 감사합니다.<br />
-                                        이 이벤트는 가상의 이벤트입니다.<br />
-                                        참고해 주시길 부탁드리겠습니다.<br />
-                                    </p>
-                                </section>
-                                <section className="tri_e_p_win_present_150">
-                                    <img src={Txt_e_keyring_set_img} alt="" className="txt_e_p_win_present_img" />
-                                </section>
-
-                            (<section>
-                                <section className="tri_m_h2">
-                                    <h2>
-                                        당첨이 아닙니다.
-                                    </h2>
-                                </section>
-                            </section>)
-                        }
-                        <section className="txt_e_btn">
-                            <button onClick={txt_e_ClPopup}>닫기</button>
+                    <section class="tri_e_last_win_part_win">
+                        <section className="tri_e_p_win_intropp">
+                            <p>
+                                당첨을 축하드려요!<br />
+                                상품은 키링입니다.<br />
+                                이벤트에 관심가져 주셔서 감사합니다.<br />
+                                이 이벤트는 가상의 이벤트입니다.<br />
+                                참고해 주시길 부탁드리겠습니다.<br />
+                            </p>
+                        </section>
+                        <section className="tri_e_p_win_present_150">
+                            <img src={Txt_e_keyring_set_img} alt="" className="txt_e_p_win_present_img" />
                         </section>
                     </section>
-                )
-            }
+                    <section class="tri_e_last_win_part_lose">
+                        <section>
+                            <section className="tri_m_h2">
+                                <h2>
+                                    당첨이 아닙니다.
+                                </h2>
+                            </section>
+                        </section>
+                    </section>
+                        <section className="txt_e_btn">
+                            <button onClick="tri_e_last_win_part_close()">닫기</button>
+                        </section>
+                    </section>
             <FooterPart100vh FooterPartText='ⓒ 빅히트 뮤직' />
         </div >
         <script>
             const txt_e_fo = document.querySelector(".txt_e_fo");
             const tri_e_last_win_part = document.querySelector(".tri_e_last_win_part");
+            const tri_e_last_win_part_win = document.querySelector(".tri_e_last_win_part_win");
+            const tri_e_last_win_part_lose = document.querySelector(".tri_e_last_win_part_lose");
             const txt_e_target = ['낯', '설', '기', '만'];
+            let txt_e_last_str = "";
 
             txt_e_fo.addEventListener("input", function () {
                 const value = txt_e_fo.value;
@@ -107,8 +121,6 @@
                 const txt_e_count = [...value].filter((char, index) => {
                     return index < txt_e_target.length && char === txt_e_target[index];
                 }).length;
-
-                let txt_e_last_str = "";
 
                 if (value.length === 4) {
                     txt_e_last_str = '맞춘 개수: ' + txt_e_count + "개";
@@ -121,6 +133,15 @@
 
             function tri_e_last_win_part_open () {
                 tri_e_last_win_part.classList.add("on");
+                if(txt_e_last_str === '맞춘 개수: 4개') {
+                    tri_e_last_win_part_win.classList.add("on");
+                } else {
+                    tri_e_last_win_part_lose.classList.add("on");
+                }
+            }
+
+            function tri_e_last_win_part_close() {
+                tri_e_last_win_part.classList.remove("on");
             }
 
     
