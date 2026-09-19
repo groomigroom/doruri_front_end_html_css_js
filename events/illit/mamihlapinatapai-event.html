@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10CM 일말의 가능성 이벤트</title>
+    <link rel="stylesheet" href="../css/triples/TriplesEvent.css">
+    <style>
+        .tri_e_last_win_part,
+        input[name="straykids_e_value2"],
+        input[name="straykids_e_value3"] {
+            display: none;
+        }
+
+        .tri_e_last_win_part.on,
+        input[name="straykids_e_value2"].on,
+        input[name="straykids_e_value3"].on {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="IllitEvent_full">
+        <header class="tri_m_header">
+            <Menu />
+            <section class="home_translate">
+                <Link to='/IllitEvent' class="on">한국어</Link>
+                <Link to='/IllitEventEng'>English</Link>
+            </section>
+        </header>
+        <section class="tri_e_logo">
+            <img src={Illit_e_m_logo} alt="ILLIT 이벤트 로고" />
+        </section>
+        <section class="tri_m_h2">
+            <h2><img src={MainH2Deco} alt="ILLIT" />노래 제목 맞히기 이벤트<img src={MainH2Deco} alt="ILLIT" /></h2>
+        </section>
+        <section class='tri_m_intropp'>
+            <p>
+                &apos;MAMIHLAPINATAPAI&apos; 앨범의<br />
+                타이틀 곡 제목에<br />
+                들어 가는 알파벳을 골라 주세요!
+            </p>
+        </section>
+        <section class='ill_e_button_train_full_wrap'>
+            <section class='ill_e_button_train_full'>
+                <section class='ill_e_button_train'>
+                    <button>a</button>
+                    <button>b</button>
+                    <button>c</button>
+                    <button>d</button>
+                    <button onClick={OpenIllit_e_letter_i_result}>i</button>
+                </section>
+                <section class='ill_e_button_train'>
+                    <button>g</button>
+                    <button>h</button>
+                    <button onClick={OpenIllit_e_letter_t_result}>t</button>
+                    <button>j</button>
+                    <button>k</button>
+                </section>
+                <section class='ill_e_button_train'>
+                    <button>l</button>
+                    <button>w</button>
+                    <button>n</button>
+                    <button onClick={OpenIllit_e_letter_s_result}>s</button>
+                    <button>o</button>
+                </section>
+                <section class='ill_e_button_train'>
+                    <button>x</button>
+                    <button onClick={OpenIllit_e_letter_m_result}>m</button>
+                    <button>y</button>
+                    <button onClick={OpenIllit_e_letter_e_result}>e</button>
+                    <button>z</button>
+                </section>
+            </section>
+        </section>
+        <section class='ill_e_last_answer'>
+            <p>
+                {Illit_e_letter_i_result && (
+                <span>i</span>
+                )
+                }
+                {Illit_e_letter_t_result && (
+                <span>t</span>
+                )
+                }
+                {Illit_e_letter_s_result && (
+                <span>&apos;s </span>
+                )
+                }
+                {Illit_e_letter_m_result && (
+                <span>m</span>
+                )
+                }
+                {Illit_e_letter_e_result && (
+                <span>e</span>
+                )
+                }
+            </p>
+        </section>
+        <FooterPart100vh FooterPartText='ⓒ 빌리프랩' />
+        {Illit_e_letter_all_checked && (
+        <section class="tri_e_last_win_part">
+            <div class="tri_e_ghost_40px"></div>
+            <section class="tri_m_h2">
+                <h2>
+                    <img src={MainH2Deco} alt="stray kids" />당첨입니다.<img src={MainH2Deco} alt="stray kids" />
+                </h2>
+            </section>
+            <section class="tri_e_p_win_intropp">
+                <p>
+                    당첨을 축하드려요!<br />
+                    상품은 리듬악기세트입니다.<br />
+                    이벤트에 관심가져 주셔서 감사합니다.<br />
+                    이 이벤트는 가상의 이벤트입니다.<br />
+                    참고해 주시길 부탁드리겠습니다.<br />
+                </p>
+            </section>
+            <section class="tri_e_p_win_present_150">
+                <img src={Illit_e_p_win_present} alt="" class="triples_e_p_win_present_img" />
+            </section>
+        </section>
+        )
+        }
+
+    </div>
+    <script>
+        // [선언부] (질문자님의 변수 선언 유지)
+        let Illit_e_letter_i_result = [false, false, false, false, false];
+
+        // 1. 함수 이름(예: activateFirstResult)을 올바르게 지정하여 선언합니다.
+        const activateFirstResult = () => {
+            span_i.classList.add("on");
+            Illit_e_letter_i_result[0] = true;
+
+            // 2. 값의 변화가 일어나는 '함수 내부'에서 조건을 검사해야 실시간으로 반영됩니다.
+            checkFinalCondition();
+        };
+
+        // 3. 조건을 검사하는 로직을 별도 함수로 분리하거나 이벤트에 묶어줍니다.
+        const checkFinalCondition = () => {
+            if (Illit_e_letter_i_result[0] === true && Illit_e_letter_i_result[1] === true) {
+                tri_last.classList.add("on");
+            }
+        };
+    </script>
+</body>
+
+</html>
