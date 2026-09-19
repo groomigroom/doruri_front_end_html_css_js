@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>10CM 일말의 가능성 이벤트</title>
     <link rel="stylesheet" href="../css/triples/TriplesEvent.css">
+    <style>
+        .tri_e_last_win_part {
+            display: none;
+        }
+        .tri_e_last_win_part.on {
+            display: block;
+        }
+    </style>
 </head>
 
 <body>
@@ -50,15 +58,14 @@
             <section className="txt_e_btn">
                 <button type="submit">제출하기</button>
             </section>
-            {
-                txt_e_PopopO && (
-                    <section className="tri_e_last_win_part">
-                        <div className="tri_e_ghost_40px"></div>
-                        <section className="tri_m_h2">
-                            <h2>
-                                <img src={MainH2Deco} alt="투모루우바이투게더" />{txt_e_last_str}<img src={MainH2Deco} alt="투모루우바이투게더" />
-                            </h2>
-                        </section>
+
+            <section class="tri_e_last_win_part">
+                <div className="tri_e_ghost_40px"></div>
+                <section className="tri_m_h2">
+                    <h2>
+                        <img src={MainH2Deco} alt="투모루우바이투게더" />{txt_e_last_str}<img src={MainH2Deco} alt="투모루우바이투게더" />
+                    </h2>
+                </section>
                         {txt_e_last_str === "맞춘 개수: 4개" ?
                                 <section className="tri_e_p_win_intropp">
                                     <p>
@@ -91,29 +98,30 @@
         </div >
         <script>
             const txt_e_fo = document.querySelector(".txt_e_fo");
+            const tri_e_last_win_part = document.querySelector(".tri_e_last_win_part");
             const txt_e_target = ['낯', '설', '기', '만'];
 
-            let txt_e_count = 0;
+            txt_e_fo.addEventListener("input", function () {
+                const value = txt_e_fo.value;
 
-            if (txt_e_fo) {
-            // 사용자가 입력한 텍스트를 배열로 변환하여 순회
-            txt_e_count = [...txt_e_fo.value].filter((char, index) => {
-                // 입력된 글자가 타겟 배열의 범위를 벗어나지 않고, 글자가 일치하는지 확인
-                return index < txt_e_target.length && char === txt_e_target[index];
-            }).length;
+                const txt_e_count = [...value].filter((char, index) => {
+                    return index < txt_e_target.length && char === txt_e_target[index];
+                }).length;
+
+                let txt_e_last_str = "";
+
+                if (value.length === 4) {
+                    txt_e_last_str = '맞춘 개수: ' + txt_e_count + "개";
+                } else {
+                    txt_e_last_str = '글자 수가 4글자가 아닙니다.';
+                }
+
+                console.log(txt_e_last_str);
+            });
+
+            function tri_e_last_win_part_open () {
+                tri_e_last_win_part.classList.add("on");
             }
-
-
-            let txt_e_last_str = "";
-
-            if (txt_e_fo.value.length === 4) {
-                txt_e_last_str = '맞춘 개수: ' + txt_e_count + "개";
-            }
-            else {
-                txt_e_last_str = '글자 수가 4글자가 아닙니다.';
-            }
-
-            console.log(txt_e_last_str);
 
     
         </script>
