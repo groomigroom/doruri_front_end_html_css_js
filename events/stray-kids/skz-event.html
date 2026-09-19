@@ -1,0 +1,28 @@
+// 1. 올바른 상수 선언 (cont -> const 변경 및 DOM 요소 선택 예시)
+const straykids_e_value1 = document.querySelector("#input1");
+const straykids_e_value2 = document.querySelector("#input2");
+const straykids_e_value3 = document.querySelector("#input3");
+const tri_e_last_win_part = document.querySelector("#win-part");
+
+// 2. 각 입력창의 상태를 체크하는 하나의 함수 만들기
+function checkValues() {
+  // 첫 번째 조건 확인
+  if (straykids_e_value1.value === "Battle Ground") {
+    straykids_e_value2.classList.add("on");
+    
+    // 두 번째 조건 확인
+    if (straykids_e_value2.value === "Roman Empire") {
+      straykids_e_value3.classList.add("on");
+      
+      // 세 번째 조건 확인
+      if (straykids_e_value3.value === "LOVER") {
+        tri_e_last_win_part.classList.add("on");
+      }
+    }
+  }
+}
+
+// 3. 각각의 입력창에 독립적으로 이벤트 리스너 연결
+straykids_e_value1.addEventListener("input", checkValues);
+straykids_e_value2.addEventListener("input", checkValues);
+straykids_e_value3.addEventListener("input", checkValues);
