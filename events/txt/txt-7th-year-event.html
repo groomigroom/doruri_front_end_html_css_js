@@ -60,7 +60,6 @@
                             </h2>
                         </section>
                         {txt_e_last_str === "맞춘 개수: 4개" ?
-                            (<>
                                 <section className="tri_e_p_win_intropp">
                                     <p>
                                         당첨을 축하드려요!<br />
@@ -73,7 +72,7 @@
                                 <section className="tri_e_p_win_present_150">
                                     <img src={Txt_e_keyring_set_img} alt="" className="txt_e_p_win_present_img" />
                                 </section>
-                            </>) :
+                                
                             (<section>
                                 <section className="tri_m_h2">
                                     <h2>
@@ -91,18 +90,15 @@
             <FooterPart100vh FooterPartText='ⓒ 빅히트 뮤직' />
         </div >
         <script>
-            const [txt_e_str, setTxt_e_str] = useState<string>("");
+            let txt_e_fo = document.querySelector(".txt_e_fo");
 
-    const Txt_e_handle_input_change = (e: React.ChangeEvent<HTMLInputElement>) => {
-        setTxt_e_str(e.target.value);
-    }
 
     const txt_e_target = ['낯', '설', '기', '만'];
     const txt_e_count = txt_e_target.filter((txt_e_char, txt_e_index) => txt_e_str[txt_e_index] === txt_e_char).length;
 
     let txt_e_last_str: string = "";
 
-    if (txt_e_str.length === 4) {
+    if (txt_e_fo.value.length === 4) {
         txt_e_last_str = '맞춘 개수: ' + txt_e_count + "개";
     }
     else {
