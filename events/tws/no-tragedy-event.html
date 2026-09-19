@@ -7,58 +7,50 @@
     <title>10CM 일말의 가능성 이벤트</title>
     <link rel="stylesheet" href="../css/triples/TriplesEvent.css">
     <style>
-        .tri_e_last_win_part,
-        input[name="straykids_e_value2"],
-        input[name="straykids_e_value3"] {
+        .tri_e_last_win_part {
             display: none;
-        }
-
-        .tri_e_last_win_part.on,
-        input[name="straykids_e_value2"].on,
-        input[name="straykids_e_value3"].on {
-            display: block;
         }
     </style>
 </head>
 
 <body>
-    <div className="twsEvent_full">
-        <header className="tri_m_header">
+    <div class="twsEvent_full">
+        <header class="tri_m_header">
             <Menu />
-            <section className="home_translate">
-                <Link to='/TwsEvent' className="on">한국어</Link>
+            <section class="home_translate">
+                <Link to='/TwsEvent' class="on">한국어</Link>
                 <Link to='/TwsEventEng'>English</Link>
             </section>
         </header>
-        <section className="tri_e_logo">
+        <section class="tri_e_logo">
             <img src={Tws_e_m_logo} alt="TWS 이벤트 로고" />
         </section>
-        <section className="tri_m_h2">
+        <section class="tri_m_h2">
             <h2><img src={MainH2Deco} alt="TWS" />별 클릭 이벤트<img src={MainH2Deco} alt="TWS" /></h2>
         </section>
-        <section className='tri_m_intropp'>
+        <section class='tri_m_intropp'>
             <p>
                 빠르게 나타났다가<br />
                 사라지는 별을<br />
                 클릭해 주세요!
             </p>
         </section>
-        <section className='tws_e_star_part_full'>
-            <section className='tws_e_star_part'>
-                <div className="tws_e_moving_object" onClick={OpenTws_e_result}><img src={Tws_e_star_img} alt="별 모양" />
+        <section class='tws_e_star_part_full'>
+            <section class='tws_e_star_part'>
+                <div class="tws_e_moving_object" onclick="OpenTws_e_result()"><img src={Tws_e_star_img} alt="별 모양" />
                 </div>
             </section>
         </section>
         <FooterPart100vh FooterPartText='ⓒ 플레디스 엔터테인먼트' />
-        {tws_e_result && (
-        <section className="tri_e_last_win_part">
-            <div className="tri_e_ghost_40px"></div>
-            <section className="tri_m_h2">
+        <!--popup-->
+        <section class="tri_e_last_win_part">
+            <div class="tri_e_ghost_40px"></div>
+            <section class="tri_m_h2">
                 <h2>
                     <img src={MainH2Deco} alt="tws" />당첨입니다.<img src={MainH2Deco} alt="tws" />
                 </h2>
             </section>
-            <section className="tri_e_p_win_intropp">
+            <section class="tri_e_p_win_intropp">
                 <p>
                     당첨을 축하드려요!<br />
                     상품은 팔찌입니다.<br />
@@ -67,14 +59,17 @@
                     참고해 주시길 부탁드리겠습니다.<br />
                 </p>
             </section>
-            <section className="tri_e_p_win_present_150">
-                <img src={Tws_e_p_win_present} alt="" className="triples_e_p_win_present_img" />
+            <section class="tri_e_p_win_present_150">
+                <img src={Tws_e_p_win_present} alt="" class="triples_e_p_win_present_img" />
             </section>
         </section>
-        )}
     </div>
     <script>
+        const tri_e_last_win_part = document.querySelector(".tri_e_last_win_part");
 
+        const OpenTws_e_result = () => {
+            tri_e_last_win_part.style.display = "block";
+        };
     </script>
 </body>
 
