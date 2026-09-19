@@ -72,52 +72,29 @@
         </section>
     </div>
     <script>
-        const aespa_e_intropp2_pp = document.querySelector(".aespa_e_intropp2>p");
-        aespa_e_intropp2_pp.textContent = "현재: 1번째 글자";
-        const aespa_e_value1 = document.querySelector("input[name=\"aespa_e_value1\"]");
-        const aespa_e_value2 = document.querySelector("input[name=\"aespa_e_value2\"]");
-        const aespa_e_value3 = document.querySelector("input[name=\"aespa_e_value3\"]");
-        const aespa_e_value4 = document.querySelector("input[name=\"aespa_e_value4\"]");
-        const aespa_e_value5 = document.querySelector("input[name=\"aespa_e_value5\"]");
-        const aespa_e_value6 = document.querySelector("input[name=\"aespa_e_value6\"]");
-        const aespa_e_value7 = document.querySelector("input[name=\"aespa_e_value7\"]");
-        const aespa_e_value8 = document.querySelector("input[name=\"aespa_e_value8\"]");
-        const tri_e_last_win_part = document.querySelector(".tri_e_last_win_part");
+        const intro = document.querySelector(".aespa_e_intropp2 > p");
+        const inputs = document.querySelectorAll(".aespa_e_value");
+        const win = document.querySelector(".tri_e_last_win_part");
 
-        function aespa_e_check_values() {
-            if (aespa_e_value1.value === "l") {
-                aespa_e_intropp2_pp.textContent = "현재: 2번째 글자";
-                if (aespa_e_value2.value === "e") {
-                    aespa_e_intropp2_pp.textContent = "현재: 3번째 글자";
-                    if (aespa_e_value3.value === "m") {
-                        aespa_e_intropp2_pp.textContent = "현재: 4번째 글자";
-                        if (aespa_e_value4.value === "o") {
-                            aespa_e_intropp2_pp.textContent = "현재: 5번째 글자";
-                            if (aespa_e_value5.value === "n") {
-                                aespa_e_intropp2_pp.textContent = "현재: 6번째 글자";
-                                if (aespa_e_value6.value === "a") {
-                                    aespa_e_intropp2_pp.textContent = "현재: 7번째 글자";
-                                    if (aespa_e_value7.value === "d") {
-                                        aespa_e_intropp2_pp.textContent = "현재: 8번째 글자";
-                                        if (aespa_e_value8.value === "e") {
-                                            tri_e_last_win_part.style.display = "block";
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
+        const answer = "lemonade";
+
+        intro.textContent = "현재: 1번째 글자";
+
+        function check() {
+            for (let i = 0; i < inputs.length; i++) {
+                if (inputs[i].value !== answer[i]) {
+                    intro.textContent = `현재: ${i + 1}번째 글자`;
+                    return;
                 }
             }
+
+            intro.textContent = "정답입니다!";
+            win.style.display = "block";
         }
-        aespa_e_value1.addEventListener("input", aespa_e_check_values);
-        aespa_e_value2.addEventListener("input", aespa_e_check_values);
-        aespa_e_value3.addEventListener("input", aespa_e_check_values);
-        aespa_e_value4.addEventListener("input", aespa_e_check_values);
-        aespa_e_value5.addEventListener("input", aespa_e_check_values);
-        aespa_e_value6.addEventListener("input", aespa_e_check_values);
-        aespa_e_value7.addEventListener("input", aespa_e_check_values);
-        aespa_e_value8.addEventListener("input", aespa_e_check_values);
+
+        inputs.forEach(input => {
+            input.addEventListener("input", check);
+        });
     </script>
 </body>
 
