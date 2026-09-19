@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10CM 일말의 가능성 이벤트</title>
+    <link rel="stylesheet" href="../css/triples/TriplesEvent.css">
+    <style>
+        .tri_e_last_win_part,
+        input[name="straykids_e_value2"],
+        input[name="straykids_e_value3"] {
+            display: none;
+        }
+
+        .tri_e_last_win_part.on,
+        input[name="straykids_e_value2"].on,
+        input[name="straykids_e_value3"].on {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div className="ResceneEvent_full">
+        <header className="tri_m_header">
+            <Menu />
+            <section className="home_translate">
+                <Link to='/ResceneEvent' className="on">한국어</Link>
+                <Link to='/ResceneEventEng'>English</Link>
+            </section>
+        </header>
+        <section className="tri_e_logo">
+            <img src={Rescene_e_m_logo} alt="RESCENE 이벤트 로고" />
+        </section>
+        <section className="tri_m_h2">
+            <h2><img src={MainH2Deco} alt="RESCENE" />자동차 클릭 이벤트<img src={MainH2Deco} alt="RESCENE" /></h2>
+        </section>
+        <section className='tri_m_intropp'>
+            <p>
+                어디서나 당당하게<br />
+                나아가는 자동차를<br />
+                3번 클릭해 주세요!
+            </p>
+        </section>
+        <section className='rescene_e_moving_car_section'>
+            <section>
+                <img className="rescene_e_moving_car" src={Rescene_e_car} alt='리센느 자동차'
+                    onClick={rescene_e_moving_clickChange} />
+                <img src={Rescene_e_aspalt} alt="아스팔트" className='rescene_e_aspalt' />
+            </section>
+        </section>
+        <section className="tri_m_h2">
+            <h2>클릭 횟수: {rescene_e_moving_count}회</h2>
+        </section>
+        <FooterPart100vh FooterPartText='ⓒ 더뮤즈엔터테인먼트' />
+        {rescene_e_moving_count === 3 &&
+        (
+        <section className="tri_e_last_win_part">
+            <div className="tri_e_ghost_40px"></div>
+            <section className="tri_m_h2">
+                <h2>
+                    <img src={MainH2Deco} alt="RESCENE" />당첨입니다.<img src={MainH2Deco} alt="RESCENE" />
+                </h2>
+            </section>
+            <section className="tri_e_p_win_intropp">
+                <p>
+                    당첨을 축하드려요!<br />
+                    상품은 방석입니다.<br />
+                    이벤트에 관심가져 주셔서 감사합니다.<br />
+                    이 이벤트는 가상의 이벤트입니다.<br />
+                    참고해 주시길 부탁드리겠습니다.<br />
+                </p>
+            </section>
+            <section className="tri_e_p_win_present_150">
+                <img src={Rescene_e_present} alt="" className="triples_e_p_win_present_img" />
+            </section>
+        </section>
+        )
+        }
+    </div>
+    <script>
+
+    </script>
+</body>
+
+</html>
