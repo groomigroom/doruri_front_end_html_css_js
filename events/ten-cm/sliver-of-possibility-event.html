@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>10CM 일말의 가능성 이벤트</title>
     <link rel="stylesheet" href="../css/triples/TriplesEvent.css">
+    <style>
+        .tri_e_last_win_part {
+            display: none;
+        }
+    </style>
 </head>
 
 <body>
@@ -32,7 +37,7 @@
         </section>
         <section class="TenCM_e_last_input_part">
             <!-- 5 -->
-            <input class="TenCM_e_last_input" type="text" name="Tencm_e_number_input1" value="값">
+            <input class="TenCM_e_last_input" type="text" name="Tencm_e_number_input1">
             <p>x</p>
             <!-- 2 -->
             <input class="TenCM_e_last_input" type="text" name="Tencm_e_number_input2">
@@ -46,10 +51,10 @@
             <!-- 3 -->
             <input class="TenCM_e_last_input" type="text" name="Tencm_e_number_input5">
             <p>= 10</p>
-            <p>최종 결과 : {Tencm_e_number_last_result}</p>
+            <p class="tencm_e_last_result">최종 결과 : </p>
         </section>
         <FooterPart100vh FooterPartText='ⓒ 씨에이엠위더스' />
-        {Tencm_e_number_last_result === 10 && Tencm_number_all_correct_case && (
+        <!--popup-->
         <section class="tri_e_last_win_part">
             <section class="tri_e_p_win_intropp">
                 <p>
@@ -64,8 +69,56 @@
                 <img src="" alt="연필 세트" class="TenCM_e_p_win_present_img" />
             </section>
         </section>
-        )}
     </div>
+    <script>
+        const Tencm_e_number_input1 = document.querySelector("input[name = \"Tencm_e_number_input1\"]");
+        const Tencm_e_number_input2 = document.querySelector("input[name = \"Tencm_e_number_input2\"]");
+        const Tencm_e_number_input3 = document.querySelector("input[name = \"Tencm_e_number_input3\"]");
+        const Tencm_e_number_input4 = document.querySelector("input[name = \"Tencm_e_number_input4\"]");
+        const Tencm_e_number_input5 = document.querySelector("input[name = \"Tencm_e_number_input5\"]");
+        const tri_e_last_win_part = document.querySelector(".tri_e_last_win_part");
+        const tencm_e_last_result = document.querySelector(".tencm_e_last_result");
+
+        function tencm_e_checkvalues() {
+            const values = [
+                Tencm_e_number_input1.value,
+                Tencm_e_number_input2.value,
+                Tencm_e_number_input3.value,
+                Tencm_e_number_input4.value,
+                Tencm_e_number_input5.value
+            ];
+
+            // 하나라도 비어 있으면 계산하지 않음
+            if (values.some(value => value === "")) {
+                tencm_e_last_result.textContent = "최종 결과: ";
+                return;
+            }
+
+            const n1 = Number(Tencm_e_number_input1.value);
+            const n2 = Number(Tencm_e_number_input2.value);
+            const n3 = Number(Tencm_e_number_input3.value);
+            const n4 = Number(Tencm_e_number_input4.value);
+            const n5 = Number(Tencm_e_number_input5.value);
+
+            const acting_number_of_all = n1 * n2 + n3 - n4 - n5;
+
+            console.log(acting_number_of_all);
+
+            tencm_e_last_result.textContent =
+                "최종 결과: " + acting_number_of_all;
+
+            if (acting_number_of_all === 10) {
+                console.log(10);
+                tri_e_last_win_part.style.display = "block";
+            }
+        }
+
+        Tencm_e_number_input1.addEventListener("input", tencm_e_checkvalues);
+        Tencm_e_number_input2.addEventListener("input", tencm_e_checkvalues);
+        Tencm_e_number_input3.addEventListener("input", tencm_e_checkvalues);
+        Tencm_e_number_input4.addEventListener("input", tencm_e_checkvalues);
+        Tencm_e_number_input5.addEventListener("input", tencm_e_checkvalues);
+    </script>
 </body>
 
 </html>
