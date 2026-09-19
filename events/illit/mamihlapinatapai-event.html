@@ -7,16 +7,9 @@
     <title>10CM 일말의 가능성 이벤트</title>
     <link rel="stylesheet" href="../css/triples/TriplesEvent.css">
     <style>
-        .tri_e_last_win_part,
-        input[name="straykids_e_value2"],
-        input[name="straykids_e_value3"] {
+        .illit_e_last_answer>p>span,
+        .tri_e_last_win_part {
             display: none;
-        }
-
-        .tri_e_last_win_part.on,
-        input[name="straykids_e_value2"].on,
-        input[name="straykids_e_value3"].on {
-            display: block;
         }
     </style>
 </head>
@@ -75,32 +68,16 @@
                 </section>
             </section>
         </section>
-        <section class='ill_e_last_answer'>
+        <section class='illit_e_last_answer'>
             <p>
-                {Illit_e_letter_i_result && (
-                <span>i</span>
-                )
-                }
-                {Illit_e_letter_t_result && (
-                <span>t</span>
-                )
-                }
-                {Illit_e_letter_s_result && (
-                <span>'s </span>
-                )
-                }
-                {Illit_e_letter_m_result && (
-                <span>m</span>
-                )
-                }
-                {Illit_e_letter_e_result && (
-                <span>e</span>
-                )
-                }
+                <span class="illit_e_last_answer_span1">i</span>
+                <span class="illit_e_last_answer_span2">t</span>
+                <span class="illit_e_last_answer_span3">&apos;s </span>
+                <span class="illit_e_last_answer_span4">m</span>
+                <span class="illit_e_last_answer_span5">e</span>
             </p>
         </section>
         <FooterPart100vh FooterPartText='ⓒ 빌리프랩' />
-        {Illit_e_letter_all_checked && (
         <section class="tri_e_last_win_part">
             <div class="tri_e_ghost_40px"></div>
             <section class="tri_m_h2">
@@ -121,53 +98,58 @@
                 <img src={Illit_e_p_win_present} alt="" class="triples_e_p_win_present_img" />
             </section>
         </section>
-        )
-        }
-
     </div>
     <script>
         let Illit_e_letter_i_result = [false, false, false, false, false];
+        const illit_e_last_answer_span1 = document.querySelector(".illit_e_last_answer_span1");
+        const illit_e_last_answer_span2 = document.querySelector(".illit_e_last_answer_span2");
+        const illit_e_last_answer_span3 = document.querySelector(".illit_e_last_answer_span3");
+        const illit_e_last_answer_span4 = document.querySelector(".illit_e_last_answer_span4");
+        const illit_e_last_answer_span5 = document.querySelector(".illit_e_last_answer_span5");
+        const tri_e_last_win_part = document.querySelector(".tri_e_last_win_part");
 
         // 1. 함수 이름(예: activateFirstResult)을 올바르게 지정하여 선언합니다.
         const activate1Result = () => {
-            span_i.classList.add("on");
+            illit_e_last_answer_span1.style.display = "block";
             Illit_e_letter_i_result[0] = true;
             // 2. 값의 변화가 일어나는 '함수 내부'에서 조건을 검사해야 실시간으로 반영됩니다.
             checkFinalCondition();
         };
 
         const activate2Result = () => {
-            span_i.classList.add("on");
-            Illit_e_letter_i_result[0] = true;
+            illit_e_last_answer_span2.style.display = "block";
+            Illit_e_letter_i_result[1] = true;
             // 2. 값의 변화가 일어나는 '함수 내부'에서 조건을 검사해야 실시간으로 반영됩니다.
             checkFinalCondition();
         };
 
         const activate3Result = () => {
-            span_i.classList.add("on");
-            Illit_e_letter_i_result[0] = true;
+            illit_e_last_answer_span3.style.display = "block";
+            Illit_e_letter_i_result[2] = true;
             // 2. 값의 변화가 일어나는 '함수 내부'에서 조건을 검사해야 실시간으로 반영됩니다.
             checkFinalCondition();
         };
 
         const activate4Result = () => {
-            span_i.classList.add("on");
-            Illit_e_letter_i_result[0] = true;
+            illit_e_last_answer_span4.style.display = "block";
+            Illit_e_letter_i_result[3] = true;
             // 2. 값의 변화가 일어나는 '함수 내부'에서 조건을 검사해야 실시간으로 반영됩니다.
             checkFinalCondition();
         };
 
         const activate5Result = () => {
-            span_i.classList.add("on");
-            Illit_e_letter_i_result[0] = true;
+            illit_e_last_answer_span5.style.display = "block";
+            Illit_e_letter_i_result[4] = true;
             // 2. 값의 변화가 일어나는 '함수 내부'에서 조건을 검사해야 실시간으로 반영됩니다.
             checkFinalCondition();
         };
 
         // 3. 조건을 검사하는 로직을 별도 함수로 분리하거나 이벤트에 묶어줍니다.
         const checkFinalCondition = () => {
-            if (Illit_e_letter_i_result[0] === true && Illit_e_letter_i_result[1] === true) {
-                tri_last.classList.add("on");
+            if (Illit_e_letter_i_result[0] === true && Illit_e_letter_i_result[1] === true && Illit_e_letter_i_result[2] === true
+                && Illit_e_letter_i_result[3] === true && Illit_e_letter_i_result[4] === true
+            ) {
+                tri_e_last_win_part.style.display = "block";
             }
         };
     </script>
