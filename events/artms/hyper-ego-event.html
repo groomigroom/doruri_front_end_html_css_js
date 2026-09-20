@@ -1,1 +1,67 @@
-d
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10CM 일말의 가능성 이벤트</title>
+    <link rel="stylesheet" href="../css/triples/TriplesEvent.css">
+
+</head>
+
+<body>
+    <div class="ArtmsEvent_full">
+        <header class="tri_m_header">
+            <Menu />
+            <section class="home_translate">
+                <Link to='/ArtmsEvent' class="on">한국어</Link>
+                <Link to='/ArtmsEventEng'>English</Link>
+            </section>
+        </header>
+        <section class="tri_e_logo">
+            <img src={""} alt="ARTMSELogo" />
+        </section>
+        <section class="tri_m_h2">
+            <h2>
+                <img src={MainH2Deco} alt="ARTMS" />멤버 이름 가나다 순서로 정렬하기 이벤트<img src={MainH2Deco} alt="ARTMS" />
+            </h2>
+        </section>
+        <section class='tri_m_intropp'>
+            <p>
+                &apos;ARTMS&apos; 멤버들의<br />
+                이름을 가나다 순서대로<br />
+                정렬해 주세요!
+            </p>
+        </section>
+        <section class="tri_m_h2">
+            <h2>▪ 정답 정렬칸 ▪</h2>
+        </section>
+        <section class="artms_e_array artms_e_correct_array">
+            <div>{artms_e_correct_arr[0]}</div>
+            <div>{artms_e_correct_arr[1]}</div>
+            <div>{artms_e_correct_arr[2]}</div>
+            <div>{artms_e_correct_arr[3]}</div>
+            <div>{artms_e_correct_arr[4]}</div>
+        </section>
+        <button class='artms_e_correct_arr_append' onClick={artms_e_correct_append}>뒤에 추가하기</button>
+        <input class='artms_e_correct_arr_ins_num' type="text" name="artms_e_correct_arr_ins_num"
+            value={artms_e_correct_arr_ins_num} onChange={artms_e_correct_arr_ins_num_change} />
+        <button class='artms_e_correct_arr_insert' onClick={artms_e_correct_insert}>사이에 삽입하기</button>
+        <button class='artms_e_correct_arr_pop' onClick={artms_e_correct_pop}>사이에서 삭제하기</button>
+        <h2 class="tri_e_h2 artms_e_h2_3">▪ 기존 배열칸?? ▪</h2>
+        <section class="artms_e_array artms_e_before_array">
+            <div>{artms_e_before_arr[0]}</div>
+            <div>{artms_e_before_arr[1]}</div>
+            <div>{artms_e_before_arr[2]}</div>
+            <div>{artms_e_before_arr[3]}</div>
+            <div>{artms_e_before_arr[4]}</div>
+        </section>
+        {artms_e_correct_all && (
+        <section class='artms_e_real_result'>
+            <p>당첨</p>
+        </section>
+        )}
+    </div>
+</body>
+
+</html>
