@@ -91,9 +91,14 @@
         const artms_e_correct_array_div5 = document.querySelector(".artms_e_correct_array>div:nth-child(5)");
         const artms_e_correct_array_div_arr = [artms_e_correct_array_div1, artms_e_correct_array_div2, artms_e_correct_array_div3,
             artms_e_correct_array_div4, artms_e_correct_array_div5];
-        for (let i = 0; i < 5; i++) {
-            artms_e_before_array_div_arr[i].textContent = member_before[i];
-        }
+        //이전 배열 렌더링 함수
+        const before_array_rendering = () => {
+            for (let i = 0; i < 5; i++) {
+                artms_e_before_array_div_arr[i].textContent = member_before[i];
+            }
+        };
+
+        before_array_rendering();
 
         //정답 배열칸 만들기 및 함수
         let number_after = [];
@@ -121,6 +126,7 @@
             const value = parseInt(artms_e_correct_arr_ins_num.value);
             console.log(value);
             if (value >= 1 && value <= 5) {
+                member_before.push[number_after[value - 1]];
                 number_after[value - 1] = null;
                 artms_e_correct_array_div_arr[value - 1].textContent = number_after[value - 1];
                 console.log(number_after);
