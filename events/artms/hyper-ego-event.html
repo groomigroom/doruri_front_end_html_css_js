@@ -21,7 +21,7 @@
         <section class="tri_e_logo">
             <img src={""} alt="ARTMSELogo" />
         </section>
-        <section class="tri_m_h2">
+        <!-- <section class="tri_m_h2">
             <h2>
                 <img src={MainH2Deco} alt="ARTMS" />멤버 이름 가나다 순서로 정렬하기 이벤트<img src={MainH2Deco} alt="ARTMS" />
             </h2>
@@ -32,18 +32,18 @@
                 이름을 가나다 순서대로<br />
                 정렬해 주세요!
             </p>
-        </section>
+        </section> -->
         <section class="tri_m_h2">
             <h2>▪ 정답 정렬칸 ▪</h2>
         </section>
         <section class="artms_e_array artms_e_correct_array">
-            <div>{artms_e_correct_arr[0]}</div>
+            <div></div>
             <div>{artms_e_correct_arr[1]}</div>
             <div>{artms_e_correct_arr[2]}</div>
             <div>{artms_e_correct_arr[3]}</div>
             <div>{artms_e_correct_arr[4]}</div>
         </section>
-        <button class='artms_e_correct_arr_append' onclick="">뒤에 추가하기</button>
+        <button class='artms_e_correct_arr_append' onclick="append_to_after()">뒤에 추가하기</button>
         <input class='artms_e_correct_arr_ins_num' type="text" name="artms_e_correct_arr_ins_num">
         <button class='artms_e_correct_arr_insert' onclick="">사이에 삽입하기</button>
         <button class='artms_e_correct_arr_pop' onclick="">사이에서 삭제하기</button>
@@ -82,11 +82,25 @@
         const artms_e_before_array_div3 = document.querySelector(".artms_e_before_array>div:nth-child(3)");
         const artms_e_before_array_div4 = document.querySelector(".artms_e_before_array>div:nth-child(4)");
         const artms_e_before_array_div5 = document.querySelector(".artms_e_before_array>div:nth-child(5)");
+        const artms_e_correct_array_div1 = document.querySelector(".artms_e_correct_array>div:nth-child(1)");
+        const artms_e_correct_array_div2 = document.querySelector(".artms_e_correct_array>div:nth-child(2)");
+        const artms_e_correct_array_div3 = document.querySelector(".artms_e_correct_array>div:nth-child(3)");
+        const artms_e_correct_array_div4 = document.querySelector(".artms_e_correct_array>div:nth-child(4)");
+        const artms_e_correct_array_div5 = document.querySelector(".artms_e_correct_array>div:nth-child(5)");
         artms_e_before_array_div1.textContent = member_before[0];
         artms_e_before_array_div2.textContent = member_before[1];
         artms_e_before_array_div3.textContent = member_before[2];
         artms_e_before_array_div4.textContent = member_before[3];
         artms_e_before_array_div5.textContent = member_before[4];
+
+        //정답 배열칸 만들기 및 함수
+        let number_after = [];
+        const append_to_after = () => {
+            number_after.push(member_before[0]);
+            console.log(number_after);
+            artms_e_correct_array_div1.textContent = number_after[0];
+        };
+
     </script>
 </body>
 
