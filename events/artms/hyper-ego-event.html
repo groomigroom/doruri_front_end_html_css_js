@@ -64,10 +64,23 @@
         const number_random = new Set();
 
         while (number_random.size < 5) {
-            const num = Math.floor(Math.random() * 5) + 1;
+            const num = Math.floor(Math.random() * 5);
             number_random.add(num);
         }
-        console.log(number_random);
+        const number_random_arr = [...number_random];
+
+        console.log(number_random_arr);
+
+        let member_before = [];
+        member_before[number_random_arr[0]] = "1번";
+        member_before[number_random_arr[1]] = "2번";
+        member_before[number_random_arr[2]] = "3번";
+        member_before[number_random_arr[3]] = "4번";
+        member_before[number_random_arr[4]] = "5번";
+
+        console.log(member_before);
+
+        const artms_e_before_array_div1 = document.querySelector(".artms_e_before_array>div:nth-child(1)");
     </script>
 </body>
 
