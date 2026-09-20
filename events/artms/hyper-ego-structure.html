@@ -15,6 +15,26 @@
     <button>after에서 원하는 위치에서 삭제하기</button>
     <button>after에서 원하는 위치에 삽입하기</button>
     <script>
+        const number_random = new Set();
+
+        while (number_random.size < 5) {
+            const num = Math.floor(Math.random() * 5);
+            number_random.add(num);
+        }
+        const number_random_arr = [...number_random];
+
+        let member_before = [];
+        member_before[number_random_arr[0]] = "1번";
+        member_before[number_random_arr[1]] = "2번";
+        member_before[number_random_arr[2]] = "3번";
+        member_before[number_random_arr[3]] = "4번";
+        member_before[number_random_arr[4]] = "5번";
+
+        console.log("이전");
+        console.log(member_before);
+
+        let member_after = [];
+
 
     </script>
 </body>
