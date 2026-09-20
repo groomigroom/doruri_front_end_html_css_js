@@ -1,16 +1,29 @@
-const A자 = docu;
-let A자top = 200
-let A자left = 120
+const alldayproject_e_maze_running_box = document.querySelector(".alldayproject_e_maze_running_box");
+let all_e_maze_running_box_top = 200;
+let all_e_maze_running_box_left = 120;
 
-const 위로 = () => {
-    A자top += 40;
-    A자.style.top = `${A자top}px`;
+//위쪽으로 이동
+const all_e_maze_running_box_go_up = () => {
+    all_e_maze_running_box_top += 40;
+    alldayproject_e_maze_running_box.style.top = `${all_e_maze_running_box_top}px`;
 };
 
-const 아래로
+//아래쪽으로 이동
+const all_e_maze_running_box_go_down = () => {
+    all_e_maze_running_box_top -= 40;
+    alldayproject_e_maze_running_box.style.top = `${all_e_maze_running_box_top}px`;
+};
 
-const 왼쪽으로
+//왼쪽으로 이동
+const all_e_maze_running_box_go_left = () => {
+    all_e_maze_running_box_left -= 40;
+    alldayproject_e_maze_running_box.style.left = `${all_e_maze_running_box_left}px`;
+};
 
-const 오른쪽으로
+//오른쪽으로 이동
+const all_e_maze_running_box_go_right = () => {
+    all_e_maze_running_box_left += 40;
+    alldayproject_e_maze_running_box.style.left = `${all_e_maze_running_box_left}px`;
+};
 
 if (A자top === 값 && A자left === 값)
