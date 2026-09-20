@@ -82,6 +82,8 @@
         const artms_e_before_array_div3 = document.querySelector(".artms_e_before_array>div:nth-child(3)");
         const artms_e_before_array_div4 = document.querySelector(".artms_e_before_array>div:nth-child(4)");
         const artms_e_before_array_div5 = document.querySelector(".artms_e_before_array>div:nth-child(5)");
+        const artms_e_before_array_div_arr = [artms_e_before_array_div1, artms_e_before_array_div2, artms_e_before_array_div3,
+            artms_e_before_array_div4, artms_e_before_array_div5];
         const artms_e_correct_array_div1 = document.querySelector(".artms_e_correct_array>div:nth-child(1)");
         const artms_e_correct_array_div2 = document.querySelector(".artms_e_correct_array>div:nth-child(2)");
         const artms_e_correct_array_div3 = document.querySelector(".artms_e_correct_array>div:nth-child(3)");
@@ -89,11 +91,9 @@
         const artms_e_correct_array_div5 = document.querySelector(".artms_e_correct_array>div:nth-child(5)");
         const artms_e_correct_array_div_arr = [artms_e_correct_array_div1, artms_e_correct_array_div2, artms_e_correct_array_div3,
             artms_e_correct_array_div4, artms_e_correct_array_div5];
-        artms_e_before_array_div1.textContent = member_before[0];
-        artms_e_before_array_div2.textContent = member_before[1];
-        artms_e_before_array_div3.textContent = member_before[2];
-        artms_e_before_array_div4.textContent = member_before[3];
-        artms_e_before_array_div5.textContent = member_before[4];
+        for (let i = 0; i < 5; i++) {
+            artms_e_before_array_div_arr[i].textContent = member_before[i];
+        }
 
         //정답 배열칸 만들기 및 함수
         let number_after = [];
