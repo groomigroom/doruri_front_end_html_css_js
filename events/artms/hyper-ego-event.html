@@ -61,7 +61,13 @@
         </section>
     </div>
     <script>
+        const number_random = new Set();
 
+        while (number_random.size < 5) {
+            const num = Math.floor(Math.random() * 5) + 1;
+            number_random.add(num);
+        }
+        console.log(number_random);
     </script>
 </body>
 
