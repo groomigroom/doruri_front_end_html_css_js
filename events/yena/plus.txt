@@ -1,0 +1,72 @@
+let yena_e_module = "";
+for(let i = 0; i < 20; i++) {
+yena_e_module += `<div class="YenaEventYouModule_e_full">
+<div class="yena_e_you_div1">
+<p>
+너<br />
+너<br />
+너<br />
+너<br />
+너<br />
+너<br />
+너<br />
+너<br />
+너<br />
+너<br />
+너<br />
+너<br />
+너<br />
+너<br />
+너<br />
+너<br />
+너<br />
+너<br />
+너<br />
+너<br />
+너<br />
+너<br />
+너<br />
+너<br />
+너<br />
+너<br />
+너<br />
+너
+</p>
+</div>
+<div class="yena_e_you_div2">
+<p>
+너<br />
+너<br />
+너<br />
+너<br />
+너<br />
+너<br />
+너<br />
+너<br />
+너<br />
+너<br />
+너<br />
+너<br />
+너<br />
+너<br />
+너<br />
+너<br />
+너<br />
+너<br />
+너<br />
+너<br />
+너<br />
+너<br />
+너<br />
+너<br />
+너<br />
+너<br />
+너<br />
+너
+</p>
+</div>
+</div>`;
+}
+
+innerHTML = yena_e_module
+addEventListener("click")
