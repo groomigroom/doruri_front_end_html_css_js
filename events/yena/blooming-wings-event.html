@@ -1,1 +1,124 @@
-d
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10CM 일말의 가능성 이벤트</title>
+    <link rel="stylesheet" href="../css/triples/TriplesEvent.css">
+    <style>
+        .tri_e_last_win_part {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="yenaevent_full">
+        <header class="tri_m_header">
+            <Menu />
+            <section class="home_translate">
+                <Link to='/Day6Event' class="on">한국어</Link>
+                <Link to='/Day6EventEng'>English</Link>
+            </section>
+        </header>
+        <section class="tri_e_logo">
+            <img src={""} alt="최예나 이벤트 로고" />
+        </section>
+        <section class="tri_m_h2">
+            <h2><img src={MainH2Deco} alt="최예나" />&apos;나&apos; 클릭하기 이벤트<img src={MainH2Deco} alt="최예나" /></h2>
+        </section>
+        <section class='tri_m_intropp'>
+            <p>
+                자세히 보면 보이는<br />
+                &apos;나&apos;를 찾아서<br />
+                찾아서 클릭해 주세요!
+            </p>
+        </section>
+        <section class="yena_e_moving_part">
+            <p onClick={Yena_e_true_cl_change} class="yena_e_me_part">나</p>
+            <section onClick={Yena_e_false_cl_change} class="yena_e_you_part">
+                <YenaEventYouModule />
+                <YenaEventYouModule />
+                <YenaEventYouModule />
+                <YenaEventYouModule />
+                <YenaEventYouModule />
+                <YenaEventYouModule />
+                <YenaEventYouModule />
+                <YenaEventYouModule />
+                <YenaEventYouModule />
+                <YenaEventYouModule />
+                <YenaEventYouModule />
+                <YenaEventYouModule />
+                <YenaEventYouModule />
+                <YenaEventYouModule />
+                <YenaEventYouModule />
+                <YenaEventYouModule />
+                <YenaEventYouModule />
+                <YenaEventYouModule />
+                <YenaEventYouModule />
+                <YenaEventYouModule />
+                <YenaEventYouModule />
+                <YenaEventYouModule />
+                <YenaEventYouModule />
+                <YenaEventYouModule />
+                <YenaEventYouModule />
+                <YenaEventYouModule />
+                <YenaEventYouModule />
+                <YenaEventYouModule />
+                <YenaEventYouModule />
+                <YenaEventYouModule />
+                <YenaEventYouModule />
+                <YenaEventYouModule />
+                <YenaEventYouModule />
+                <YenaEventYouModule />
+                <YenaEventYouModule />
+                <YenaEventYouModule />
+                <YenaEventYouModule />
+                <YenaEventYouModule />
+                <YenaEventYouModule />
+                <YenaEventYouModule />
+                <YenaEventYouModule />
+                <YenaEventYouModule />
+                <YenaEventYouModule />
+                <YenaEventYouModule />
+                <YenaEventYouModule />
+                <YenaEventYouModule />
+                <YenaEventYouModule />
+                <YenaEventYouModule />
+                <YenaEventYouModule />
+                <YenaEventYouModule />
+                <YenaEventYouModule />
+                <YenaEventYouModule />
+                <YenaEventYouModule />
+                <YenaEventYouModule />
+                <YenaEventYouModule />
+                <YenaEventYouModule />
+                <YenaEventYouModule />
+                <YenaEventYouModule />
+                <YenaEventYouModule />
+                <YenaEventYouModule />
+                <YenaEventYouModule />
+                <YenaEventYouModule />
+                <YenaEventYouModule />
+                <YenaEventYouModule />
+                <YenaEventYouModule />
+                <YenaEventYouModule />
+                <YenaEventYouModule />
+
+            </section>
+        </section>
+        {Yena_e_false_click && (
+        <section>
+            <p>당첨 아님</p>
+        </section>
+        )}
+        {Yena_e_true_click && (
+        <section>
+            <p>당첨!!!!!</p>
+        </section>
+        )}
+    </div>
+</body>
+
+</html>
