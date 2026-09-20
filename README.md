@@ -4,8 +4,6 @@
 * css
 * js 로 프레임워크 없이 작업한 "도루리" 웹사이트 파일입니다.
 
-* triples-love-and-pop-pt1-event
-* triples-assemble25-event
-* txt-7th-year-event
-* akmu-blooming-event
-* ioi-ioi-loop-event
+* pump-collections-edition-event.html
+
+
