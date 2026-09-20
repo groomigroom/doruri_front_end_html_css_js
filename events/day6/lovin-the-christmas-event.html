@@ -1,1 +1,170 @@
-d
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10CM 일말의 가능성 이벤트</title>
+    <link rel="stylesheet" href="../css/triples/TriplesEvent.css">
+    <style>
+        .tri_e_last_win_part {
+            display: none;
+        }
+
+        .tri_e_last_lose_part {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="day6event_full">
+        <header class="tri_m_header">
+            <Menu />
+            <section class="home_translate">
+                <Link to='/Day6Event' class="on">한국어</Link>
+                <Link to='/Day6EventEng'>English</Link>
+            </section>
+        </header>
+        <section class="tri_e_logo">
+            <img src={day6_e_logo} alt="DAY6 이벤트 로고" />
+        </section>
+        <section class="tri_m_h2">
+            <h2><img src={MainH2Deco} alt="DAY6" />이름 맞히기 이벤트<img src={MainH2Deco} alt="DAY6" /></h2>
+        </section>
+        <section class='tri_m_intropp'>
+            <p>
+                데이식스에서 드럼을 치는<br />
+                멤버 이름을<br />
+                찾아서 클릭해 주세요!
+            </p>
+        </section>
+        <section class="day6_e_event_real_part_full">
+            <section class="day6_e_event_real_part">
+                <ul class="day6_e_event_real_part_menu">
+                    <li>
+                        <p>드럼</p>
+                        <ul>
+                            <li>
+                                <p onClick={day6_lose_count_up}>독음</p>
+                            </li>
+                            <li>
+                                <p onClick={day6_lose_count_up}>도음</p>
+                            </li>
+                            <li>
+                                <p onClick={day6_lose_count_up}>도은</p>
+                            </li>
+                            <li>
+                                <p onClick={day6_lose_count_up}>도웆</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>기타</p>
+                        <ul>
+                            <li>
+                                <p onClick={day6_lose_count_up}>도오운</p>
+                            </li>
+                            {/* 정답 클릭 */}
+                            <li>
+                                <p onClick={day6_e_win_result}>도운</p>
+                            </li>
+                            <li>
+                                <p onClick={day6_lose_count_up}>도훈</p>
+                            </li>
+                            <li>
+                                <p onClick={day6_lose_count_up}>돌훈</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>베이스</p>
+                        <ul>
+                            <li>
+                                <p onClick={day6_lose_count_up}>도욱</p>
+                            </li>
+                            <li>
+                                <p onClick={day6_lose_count_up}>두운</p>
+                            </li>
+                            <li>
+                                <p onClick={day6_lose_count_up}>고운</p>
+                            </li>
+                            <li>
+                                <p onClick={day6_lose_count_up}>도군</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>보컬</p>
+                        <ul>
+                            <li>
+                                <p onClick={day6_lose_count_up}>도욱</p>
+                            </li>
+                            <li>
+                                <p onClick={day6_lose_count_up}>두움</p>
+                            </li>
+                            <li>
+                                <p onClick={day6_lose_count_up}>도음</p>
+                            </li>
+                            <li>
+                                <p onClick={day6_lose_count_up}>도오움</p>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+        </section>
+        <section class="tri_m_h2">
+            <h2 class="day6_lose_count_h2">현재 실패 횟수: 0회 / 3회</h2>
+        </section>
+        <FooterPart FooterPartText='ⓒ JYP엔터테인먼트' />
+        <!-- win popup -->
+        <section class="tri_e_last_win_part">
+            <div class="tri_e_ghost_40px"></div>
+            <section class="tri_m_h2">
+                <h2>
+                    <img src={MainH2Deco} alt="DAY6" />당첨입니다.<img src={MainH2Deco} alt="DAY6" />
+                </h2>
+            </section>
+            <section class="tri_e_p_win_intropp">
+                <p>
+                    당첨을 축하드려요!<br />
+                    상품은 클립입니다.<br />
+                    이벤트에 관심가져 주셔서 감사합니다.<br />
+                    이 이벤트는 가상의 이벤트입니다.<br />
+                    참고해 주시길 부탁드리겠습니다.<br />
+                </p>
+            </section>
+            <section class="tri_e_p_win_present_150">
+                <img src={day6_e_clip} alt="" class="triples_e_p_win_present_img" />
+            </section>
+        </section>
+        <!-- lose popup -->
+        <section class="tri_e_last_lose_part">
+            <div class="tri_e_ghost_40px"></div>
+            <section class="tri_m_h2">
+                <h2>
+                    <img src={MainH2Deco} alt="DAY6" />당첨이 아닙니다.<img src={MainH2Deco} alt="DAY6" />
+                </h2>
+            </section>
+        </section>
+    </div>
+    <script>
+        const day6_lose_count_h2 = document.querySelector(".day6_lose_count_h2");
+        let day6_lose_count = 0;
+        const day6_lose_count_check = () => {
+            if (day6_lose_count === 3) {
+                day6_lose_count_h2.textContent = "3번 실패입니다.";
+            }
+        };
+
+        const day6_lose_count_up = () => {
+            day6_lose_count += 1;
+            day6_lose_count_h2.textContent = `현재 실패 횟수: ${day6_lose_count}회 / 3회`;
+        }
+
+
+    </script>
+</body>
+
+</html>
