@@ -46,7 +46,7 @@
         <button class='artms_e_correct_arr_append' onclick="append_to_after()">뒤에 추가하기</button>
         <input class='artms_e_correct_arr_ins_num' type="text" name="artms_e_correct_arr_ins_num">
         <button class='artms_e_correct_arr_insert' onclick="">사이에 삽입하기</button>
-        <button class='artms_e_correct_arr_pop' onclick="">사이에서 삭제하기</button>
+        <button class='artms_e_correct_arr_pop' onclick="delete_to_after()">사이에서 삭제하기</button>
         <h2 class="tri_e_h2 artms_e_h2_3">▪ 기존 배열칸?? ▪</h2>
         <section class="artms_e_array artms_e_before_array">
             <div></div>
@@ -114,7 +114,16 @@
             }
         };
 
-        const delete_to_after = () => { };
+        const artms_e_correct_arr_ins_num = document.querySelector(".artms_e_correct_arr_ins_num");
+
+        //꼬여버림......
+        const delete_to_after = () => {
+            artms_e_correct_arr_ins_num.addEventListener("input", () => {
+                const value = artms_e_correct_arr_ins_num.value;
+                number_after[value - 1] = null;
+                // for (let i = value; )
+            });
+        };
 
     </script>
 </body>
