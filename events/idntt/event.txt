@@ -1,21 +1,24 @@
-
-
 class IdnttMemberConnectList {
 	constructor(name, next_name_class) {
-		name = this.name;
-		next_name_class = this.next_name_class;
+		// 올바른 필드 초기화 (this 사용)
+		this.name = name;
+		this.next_name_class = next_name_class;
 	}
 
 	setNextNameClass(to_set_next_name_class) {
-		next_name_class = to_set_next_name_class;
+		// 인스턴스 변수에 올바르게 할당
+		this.next_name_class = to_set_next_name_class;
 	}
 }
 
-const idntt_id1 = new IdnttMemberConnectList(“1번”, null);
-
-const idntt_id2 = new IdnttMemberConnectList(“2번”, null);
-
+// 일반 따옴표("") 사용
+const idntt_id1 = new IdnttMemberConnectList("1번", null);
+const idntt_id2 = new IdnttMemberConnectList("2번", null);
 
 const idntt_id1_link = () => {
 	idntt_id1.setNextNameClass(idntt_id2);
 };
+
+// 함수 실행 시 idntt_id1 뒤에 idntt_id2가 연결됩니다.
+idntt_id1_link(); 
+console.log(idntt_id1); 
