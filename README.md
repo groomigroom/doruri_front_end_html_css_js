@@ -6,5 +6,6 @@
 
 * pump-collections-edition-event.html
 * blooming-wings-event.html
+* istnotover-event
 
 
