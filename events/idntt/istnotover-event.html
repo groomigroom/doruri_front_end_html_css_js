@@ -7,7 +7,27 @@
     <title>10CM 일말의 가능성 이벤트</title>
     <link rel="stylesheet" href="../css/triples/TriplesEvent.css">
     <style>
-        .tri_e_last_win_part {
+        .tri_e_last_win_part,
+        .idntt_e_mem_node2,
+        .idntt_e_mem_node3,
+        .idntt_e_mem_node4,
+        .idntt_e_mem_node5,
+        .idntt_e_mem_node6,
+        .idntt_e_mem_node7,
+        .idntt_e_mem_node8,
+        .idntt_e_mem_node9,
+        .idntt_e_mem_node10,
+        .idntt_e_mem_node11,
+        .idntt_e_mem_node12,
+        .idntt_e_mem_node13,
+        .idntt_e_mem_node14,
+        .idntt_e_mem_node15,
+        .idntt_e_mem_node16,
+        .idntt_e_mem_node17,
+        .idntt_e_mem_node18,
+        .idntt_e_mem_node19,
+        .idntt_e_mem_node20,
+        .idntt_e_mem_node21 {
             display: none;
         }
     </style>
@@ -36,7 +56,7 @@
             </p>
         </section>
         <section class="idntt_e_real_part">
-            <p onclick={Idntt_e_node1Link} class="idntt_e_mem_node1">{Idntt_e_node1.Idntt_e_mem_name}</p>
+            <p onclick="idntt_id1_link()" class="idntt_e_mem_node1">{Idntt_e_node1.Idntt_e_mem_name}</p>
             {Idntt_e_node1.Idntt_e_link !== null && (
             <p onClick={Idntt_e_node2Link} class="idntt_e_mem_node2">{Idntt_e_node2.Idntt_e_mem_name}</p>
             )}
@@ -160,8 +180,12 @@
         const idntt_id20 = new IdnttMemberConnectList("20번", null);
         const idntt_id21 = new IdnttMemberConnectList("21번", null);
 
+        const idntt_e_mem_node1 = document.querySelector(".idntt_e_mem_node1");
+        idntt_e_mem_node1.textContent = idntt_id1.name;
+
         const idntt_id1_link = () => {
             idntt_id1.setNextNameClass(idntt_id2);
+
         };
 
         const idntt_id2_link = () => {
