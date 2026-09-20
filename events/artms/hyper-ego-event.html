@@ -101,11 +101,20 @@
             if (number_after.length < 5) {
                 number_after.push(member_before[0]);
                 console.log(number_after);
-                for (let i = 0; i < 5; i++) {
+                for (let i = 0; i < number_after.length; i++) {
                     artms_e_correct_array_div_arr[i].textContent = number_after[i];
+                }
+                for (let i = 1; i < member_before.length; i++) {
+                    member_before[i - 1] = member_before[i];
+                }
+                member_before[member_before.length - 1] = null;
+                for (let i = 0; i < member_before.length; i++) {
+                    artms_e_before_array_div_arr[i].textContent = member_before[i];
                 }
             }
         };
+
+        const delete_to_after = () => { };
 
     </script>
 </body>
