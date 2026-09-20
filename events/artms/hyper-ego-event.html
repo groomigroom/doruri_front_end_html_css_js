@@ -49,9 +49,9 @@
         <button class='artms_e_correct_arr_pop' onclick="">사이에서 삭제하기</button>
         <h2 class="tri_e_h2 artms_e_h2_3">▪ 기존 배열칸?? ▪</h2>
         <section class="artms_e_array artms_e_before_array">
-            <div>{artms_e_before_arr[0]}</div>
-            <div>{artms_e_before_arr[1]}</div>
-            <div>{artms_e_before_arr[2]}</div>
+            <div></div>
+            <div></div>
+            <div></div>
             <div>{artms_e_before_arr[3]}</div>
             <div>{artms_e_before_arr[4]}</div>
         </section>
@@ -69,8 +69,6 @@
         }
         const number_random_arr = [...number_random];
 
-        console.log(number_random_arr);
-
         let member_before = [];
         member_before[number_random_arr[0]] = "1번";
         member_before[number_random_arr[1]] = "2번";
@@ -78,9 +76,17 @@
         member_before[number_random_arr[3]] = "4번";
         member_before[number_random_arr[4]] = "5번";
 
-        console.log(member_before);
-
+        //기존 배열 칸에 집어넣기
         const artms_e_before_array_div1 = document.querySelector(".artms_e_before_array>div:nth-child(1)");
+        const artms_e_before_array_div2 = document.querySelector(".artms_e_before_array>div:nth-child(2)");
+        const artms_e_before_array_div3 = document.querySelector(".artms_e_before_array>div:nth-child(3)");
+        const artms_e_before_array_div4 = document.querySelector(".artms_e_before_array>div:nth-child(4)");
+        const artms_e_before_array_div5 = document.querySelector(".artms_e_before_array>div:nth-child(5)");
+        artms_e_before_array_div1.textContent = member_before[0];
+        artms_e_before_array_div2.textContent = member_before[1];
+        artms_e_before_array_div3.textContent = member_before[2];
+        artms_e_before_array_div4.textContent = member_before[3];
+        artms_e_before_array_div5.textContent = member_before[4];
     </script>
 </body>
 
