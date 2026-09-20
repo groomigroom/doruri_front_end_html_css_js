@@ -1,0 +1,21 @@
+
+
+class IdnttMemberConnectList {
+	constructor(name, next_name_class) {
+		name = this.name;
+		next_name_class = this.next_name_class;
+	}
+
+	setNextNameClass(to_set_next_name_class) {
+		next_name_class = to_set_next_name_class;
+	}
+}
+
+const idntt_id1 = new IdnttMemberConnectList(“1번”, null);
+
+const idntt_id2 = new IdnttMemberConnectList(“2번”, null);
+
+
+const idntt_id1_link = () => {
+	idntt_id1.setNextNameClass(idntt_id2);
+};
