@@ -1,1 +1,128 @@
-d
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10CM 일말의 가능성 이벤트</title>
+    <link rel="stylesheet" href="../css/triples/TriplesEvent.css">
+    <style>
+        .tri_e_last_win_part {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="idntt_e_full">
+        <header class="tri_m_header">
+            <Menu />
+            <section class="home_translate">
+                <Link to='/IdnttEvent' class="on">한국어</Link>
+                <Link to='/IdnttEventEng'>English</Link>
+            </section>
+        </header>
+        <section class="tri_e_logo">
+            <img src={''} alt="idntt 이벤트 로고" />
+        </section>
+        <section class="tri_m_h2">
+            <h2><img src={MainH2Deco} alt="idntt" />멤버 id 순서 클릭 이벤트<img src={MainH2Deco} alt="idntt" /></h2>
+        </section>
+        <section class='tri_m_intropp'>
+            <p>
+                &apos;idntt&apos; 멤버들의<br />
+                id를 순서대로<br />
+                클릭해 주세요!
+            </p>
+        </section>
+        <section class="idntt_e_real_part">
+            <p onClick={Idntt_e_node1Link} class="idntt_e_mem_node1">{Idntt_e_node1.Idntt_e_mem_name}</p>
+            {Idntt_e_node1.Idntt_e_link !== null && (
+            <p onClick={Idntt_e_node2Link} class="idntt_e_mem_node2">{Idntt_e_node2.Idntt_e_mem_name}</p>
+            )}
+            {Idntt_e_node2.Idntt_e_link !== null && (
+            <p onClick={Idntt_e_node3Link} class="idntt_e_mem_node3">{Idntt_e_node3.Idntt_e_mem_name}</p>
+            )}
+            {Idntt_e_node3.Idntt_e_link !== null && (
+            <p onClick={Idntt_e_node4Link} class="idntt_e_mem_node4">{Idntt_e_node4.Idntt_e_mem_name}</p>
+            )}
+            {Idntt_e_node4.Idntt_e_link !== null && (
+            <p onClick={Idntt_e_node5Link} class="idntt_e_mem_node5">{Idntt_e_node5.Idntt_e_mem_name}</p>
+            )}
+            {Idntt_e_node5.Idntt_e_link !== null && (
+            <p onClick={Idntt_e_node6Link} class="idntt_e_mem_node6">{Idntt_e_node6.Idntt_e_mem_name}</p>
+            )}
+            {Idntt_e_node6.Idntt_e_link !== null && (
+            <p onClick={Idntt_e_node7Link} class="idntt_e_mem_node7">{Idntt_e_node7.Idntt_e_mem_name}</p>
+            )}
+            {Idntt_e_node7.Idntt_e_link !== null && (
+            <p onClick={Idntt_e_node8Link} class="idntt_e_mem_node8">{Idntt_e_node8.Idntt_e_mem_name}</p>
+            )}
+            {Idntt_e_node8.Idntt_e_link !== null && (
+            <p onClick={Idntt_e_node9Link} class="idntt_e_mem_node9">{Idntt_e_node9.Idntt_e_mem_name}</p>
+            )}
+            {Idntt_e_node9.Idntt_e_link !== null && (
+            <p onClick={Idntt_e_node10Link} class="idntt_e_mem_node10">{Idntt_e_node10.Idntt_e_mem_name}</p>
+            )}
+            {Idntt_e_node10.Idntt_e_link !== null && (
+            <p onClick={Idntt_e_node11Link} class="idntt_e_mem_node11">{Idntt_e_node11.Idntt_e_mem_name}</p>
+            )}
+            {Idntt_e_node11.Idntt_e_link !== null && (
+            <p onClick={Idntt_e_node12Link} class="idntt_e_mem_node12">{Idntt_e_node12.Idntt_e_mem_name}</p>
+            )}
+            {Idntt_e_node12.Idntt_e_link !== null && (
+            <p onClick={Idntt_e_node13Link} class="idntt_e_mem_node13">{Idntt_e_node13.Idntt_e_mem_name}</p>
+            )}
+            {Idntt_e_node13.Idntt_e_link !== null && (
+            <p onClick={Idntt_e_node14Link} class="idntt_e_mem_node14">{Idntt_e_node14.Idntt_e_mem_name}</p>
+            )}
+            {Idntt_e_node14.Idntt_e_link !== null && (
+            <p onClick={Idntt_e_node15Link} class="idntt_e_mem_node15">{Idntt_e_node15.Idntt_e_mem_name}</p>
+            )}
+            {Idntt_e_node15.Idntt_e_link !== null && (
+            <p onClick={Idntt_e_node16Link} class="idntt_e_mem_node16">{Idntt_e_node16.Idntt_e_mem_name}</p>
+            )}
+            {Idntt_e_node16.Idntt_e_link !== null && (
+            <p onClick={Idntt_e_node17Link} class="idntt_e_mem_node17">{Idntt_e_node17.Idntt_e_mem_name}</p>
+            )}
+            {Idntt_e_node17.Idntt_e_link !== null && (
+            <p onClick={Idntt_e_node18Link} class="idntt_e_mem_node18">{Idntt_e_node18.Idntt_e_mem_name}</p>
+            )}
+            {Idntt_e_node18.Idntt_e_link !== null && (
+            <p onClick={Idntt_e_node19Link} class="idntt_e_mem_node19">{Idntt_e_node19.Idntt_e_mem_name}</p>
+            )}
+            {Idntt_e_node19.Idntt_e_link !== null && (
+            <p onClick={Idntt_e_node20Link} class="idntt_e_mem_node20">{Idntt_e_node20.Idntt_e_mem_name}</p>
+            )}
+            {Idntt_e_node20.Idntt_e_link !== null && (
+            <p class="idntt_e_mem_node21" onClick={changeIdntt_e_last_win}>{Idntt_e_node21.Idntt_e_mem_name}</p>
+            )}
+            {Idntt_e_last_win && (
+            <section class="tri_e_last_win_part">
+                <div class="tri_e_ghost_40px"></div>
+                <section class="tri_m_h2">
+                    <h2>
+                        <img src={MainH2Deco} alt="idntt" />당첨입니다.<img src={MainH2Deco} alt="idntt" />
+                    </h2>
+                </section>
+                <section class="tri_e_p_win_intropp">
+                    <p>
+                        당첨을 축하드려요!<br />
+                        상품은 --입니다.<br />
+                        이벤트에 관심가져 주셔서 감사합니다.<br />
+                        이 이벤트는 가상의 이벤트입니다.<br />
+                        참고해 주시길 부탁드리겠습니다.<br />
+                    </p>
+                </section>
+                <section class="tri_e_p_win_present_150">
+                    <img src={''} alt="" class="triples_e_p_win_present_img" />
+                </section>
+            </section>
+            )}
+
+        </section>
+        <FooterPart FooterPartText='ⓒ 켄버스' />
+    </div>
+</body>
+
+</html>
