@@ -1,1 +1,107 @@
-sdfsdfd
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10CM 일말의 가능성 이벤트</title>
+    <link rel="stylesheet" href="../css/triples/TriplesEvent.css">
+    <style>
+        .tri_e_last_win_part {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="epikhighEvent_full">
+        <header class="tri_m_header">
+            <Menu />
+            <section class="home_translate">
+                <Link to='/EpikHighEvent' class="on">한국어</Link>
+                <Link to='/EpikHighEventEng'>English</Link>
+            </section>
+        </header>
+        <section class="tri_e_logo">
+            <img src={epikhigh_e_logo} alt="에픽하이 이벤트 로고" />
+        </section>
+        <section class="tri_m_h2">
+            <h2><img src={MainH2Deco} alt="에픽하이" />빨간색 LP판 피하기 이벤트<img src={MainH2Deco} alt="에픽하이" /></h2>
+        </section>
+        <section class='tri_m_intropp'>
+            <p>
+                빨간색 LP판을<br />
+                5번 피하면<br />
+                당첨이에요!
+            </p>
+        </section>
+        <section class="epikhigh_e_lp_move_part_full">
+            <section class="epikhigh_e_lp_move_part">
+                <div class="epikhigh_e_real_lp" style={{ top: `${epikhigh_e_real_lp_top}px`, left:
+                    `${epikhigh_e_real_lp_left}px` }}>
+                    <img src={epikhigh_e_real_lp_img} alt='real_lp' />
+                </div>
+                <div class="epikhigh_e_fake_lp" style={{ top: `${epikhigh_e_fake_lp_top}px`, left:
+                    `${epikhigh_e_fake_lp_left}px` }}>
+                    <img src={epikhigh_e_fake_lp_img} alt='real_lp' />
+                </div>
+                <div class="epikhigh_e_lp_m_divide_y epikhigh_e_lp_m_divide1"></div>
+                <div class="epikhigh_e_lp_m_divide_y epikhigh_e_lp_m_divide2"></div>
+                <div class="epikhigh_e_lp_m_divide_x epikhigh_e_lp_m_divide3"></div>
+                <div class="epikhigh_e_lp_m_divide_x epikhigh_e_lp_m_divide4"></div>
+            </section>
+        </section>
+        <section class='alldayproject_e_maze_RB_buttons_full'>
+            <section class='alldayproject_e_maze_RB_buttons'>
+                <button class='alldayproject_e_maze_RB_button alldayproject_e_maze_RB_to_top'
+                    onClick={epikhigh_e_real_lp_go_up}>위로 이동</button>
+                <button class='alldayproject_e_maze_RB_button alldayproject_e_maze_RB_to_down'
+                    onClick={epikhigh_e_real_lp_go_down}>아래로 이동</button>
+                <button class='alldayproject_e_maze_RB_button alldayproject_e_maze_RB_to_left'
+                    onClick={epikhigh_e_real_lp_go_left}>왼쪽으로 이동</button>
+                <button class='alldayproject_e_maze_RB_button alldayproject_e_maze_RB_to_right'
+                    onClick={epikhigh_e_real_lp_go_right}>오른쪽으로 이동</button>
+            </section>
+        </section>
+        <FooterPart FooterPartText='ⓒ 아워즈' />
+        {
+        epikhigh_e_lp_move_count === 5 && (epikhigh_e_real_lp_top != epikhigh_e_fake_lp_top || epikhigh_e_real_lp_left
+        != epikhigh_e_fake_lp_left) && (
+        <section class="tri_e_last_win_part">
+            <div class="tri_e_ghost_40px"></div>
+            <section class="tri_m_h2">
+                <h2>
+                    <img src={MainH2Deco} alt="에픽하이" />당첨입니다.<img src={MainH2Deco} alt="에픽하이" />
+                </h2>
+            </section>
+            <section class="tri_e_p_win_intropp">
+                <p>
+                    당첨을 축하드려요!<br />
+                    상품은 기타 피크입니다.<br />
+                    이벤트에 관심가져 주셔서 감사합니다.<br />
+                    이 이벤트는 가상의 이벤트입니다.<br />
+                    참고해 주시길 부탁드리겠습니다.<br />
+                </p>
+            </section>
+            <section class="tri_e_p_win_present_150">
+                <img src={epikhigh_e_pick} alt="" class="epikhigh_e_p_win_present_img" />
+            </section>
+        </section>
+        )
+        }
+        {
+        epikhigh_e_real_lp_top === epikhigh_e_fake_lp_top && epikhigh_e_real_lp_left === epikhigh_e_fake_lp_left && (
+        <section class="tri_e_last_win_part">
+            <div class="tri_e_ghost_40px"></div>
+            <section class="tri_m_h2">
+                <h2>
+                    <img src={MainH2Deco} alt="에픽하이" />당첨이 아닙니다.<img src={MainH2Deco} alt="에픽하이" />
+                </h2>
+            </section>
+        </section>
+        )
+        }
+    </div>
+</body>
+
+</html>
