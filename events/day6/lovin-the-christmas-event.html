@@ -46,16 +46,16 @@
                         <p>드럼</p>
                         <ul>
                             <li>
-                                <p onclick={day6_lose_count_up}>독음</p>
+                                <p onclick="day6_lose_count_up()">독음</p>
                             </li>
                             <li>
-                                <p onclick={day6_lose_count_up}>도음</p>
+                                <p onclick="day6_lose_count_up()">도음</p>
                             </li>
                             <li>
-                                <p onclick={day6_lose_count_up}>도은</p>
+                                <p onclick="day6_lose_count_up()">도은</p>
                             </li>
                             <li>
-                                <p onclick={day6_lose_count_up}>도웆</p>
+                                <p onclick="day6_lose_count_up()">도웆</p>
                             </li>
                         </ul>
                     </li>
@@ -63,17 +63,17 @@
                         <p>기타</p>
                         <ul>
                             <li>
-                                <p onclick={day6_lose_count_up}>도오운</p>
+                                <p onclick="day6_lose_count_up()">도오운</p>
                             </li>
                             {/* 정답 클릭 */}
                             <li>
-                                <p onclick={day6_e_win_result}>도운</p>
+                                <p onclick="day6_e_win_result()">도운</p>
                             </li>
                             <li>
-                                <p onclick={day6_lose_count_up}>도훈</p>
+                                <p onclick="day6_lose_count_up()">도훈</p>
                             </li>
                             <li>
-                                <p onclick={day6_lose_count_up}>돌훈</p>
+                                <p onclick="day6_lose_count_up()">돌훈</p>
                             </li>
                         </ul>
                     </li>
@@ -81,16 +81,16 @@
                         <p>베이스</p>
                         <ul>
                             <li>
-                                <p onclick={day6_lose_count_up}>도욱</p>
+                                <p onclick="day6_lose_count_up()">도욱</p>
                             </li>
                             <li>
-                                <p onclick={day6_lose_count_up}>두운</p>
+                                <p onclick="day6_lose_count_up()">두운</p>
                             </li>
                             <li>
-                                <p onclick={day6_lose_count_up}>고운</p>
+                                <p onclick="day6_lose_count_up()">고운</p>
                             </li>
                             <li>
-                                <p onclick={day6_lose_count_up}>도군</p>
+                                <p onclick="day6_lose_count_up()">도군</p>
                             </li>
                         </ul>
                     </li>
@@ -98,16 +98,16 @@
                         <p>보컬</p>
                         <ul>
                             <li>
-                                <p onclick={day6_lose_count_up}>도욱</p>
+                                <p onclick="day6_lose_count_up()">도욱</p>
                             </li>
                             <li>
-                                <p onclick={day6_lose_count_up}>두움</p>
+                                <p onclick="day6_lose_count_up()">두움</p>
                             </li>
                             <li>
-                                <p onclick={day6_lose_count_up}>도음</p>
+                                <p onclick="day6_lose_count_up()">도음</p>
                             </li>
                             <li>
-                                <p onclick={day6_lose_count_up}>도오움</p>
+                                <p onclick="day6_lose_count_up()">도오움</p>
                             </li>
                         </ul>
                     </li>
@@ -150,19 +150,26 @@
         </section>
     </div>
     <script>
+        const tri_e_last_win_part = document.querySelector(".tri_e_last_win_part");
+        const tri_e_last_lose_part = document.querySelector(".tri_e_last_lose_part");
         const day6_lose_count_h2 = document.querySelector(".day6_lose_count_h2");
         let day6_lose_count = 0;
         const day6_lose_count_check = () => {
             if (day6_lose_count === 3) {
                 day6_lose_count_h2.textContent = "3번 실패입니다.";
+                tri_e_last_lose_part.style.display = "block";
             }
         };
 
         const day6_lose_count_up = () => {
             day6_lose_count += 1;
             day6_lose_count_h2.textContent = `현재 실패 횟수: ${day6_lose_count}회 / 3회`;
-        }
+            day6_lose_count_check();
+        };
 
+        const day6_e_win_result = () => {
+            tri_e_last_win_part.style.display = "block";
+        };
 
     </script>
 </body>
