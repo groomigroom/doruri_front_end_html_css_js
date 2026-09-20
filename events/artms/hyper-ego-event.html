@@ -38,10 +38,10 @@
         </section>
         <section class="artms_e_array artms_e_correct_array">
             <div></div>
-            <div>{artms_e_correct_arr[1]}</div>
-            <div>{artms_e_correct_arr[2]}</div>
-            <div>{artms_e_correct_arr[3]}</div>
-            <div>{artms_e_correct_arr[4]}</div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
         </section>
         <button class='artms_e_correct_arr_append' onclick="append_to_after()">뒤에 추가하기</button>
         <input class='artms_e_correct_arr_ins_num' type="text" name="artms_e_correct_arr_ins_num">
@@ -52,8 +52,8 @@
             <div></div>
             <div></div>
             <div></div>
-            <div>{artms_e_before_arr[3]}</div>
-            <div>{artms_e_before_arr[4]}</div>
+            <div></div>
+            <div></div>
         </section>
         <!-- win popup -->
         <section class='artms_e_real_result'>
@@ -87,6 +87,8 @@
         const artms_e_correct_array_div3 = document.querySelector(".artms_e_correct_array>div:nth-child(3)");
         const artms_e_correct_array_div4 = document.querySelector(".artms_e_correct_array>div:nth-child(4)");
         const artms_e_correct_array_div5 = document.querySelector(".artms_e_correct_array>div:nth-child(5)");
+        const artms_e_correct_array_div_arr = [artms_e_correct_array_div1, artms_e_correct_array_div2, artms_e_correct_array_div3,
+            artms_e_correct_array_div4, artms_e_correct_array_div5];
         artms_e_before_array_div1.textContent = member_before[0];
         artms_e_before_array_div2.textContent = member_before[1];
         artms_e_before_array_div3.textContent = member_before[2];
@@ -96,9 +98,13 @@
         //정답 배열칸 만들기 및 함수
         let number_after = [];
         const append_to_after = () => {
-            number_after.push(member_before[0]);
-            console.log(number_after);
-            artms_e_correct_array_div1.textContent = number_after[0];
+            if (number_after.length < 5) {
+                number_after.push(member_before[0]);
+                console.log(number_after);
+                for (let i = 0; i < 5; i++) {
+                    artms_e_correct_array_div_arr[i].textContent = number_after[i];
+                }
+            }
         };
 
     </script>
