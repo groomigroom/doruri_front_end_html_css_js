@@ -1,0 +1,16 @@
+const A자 = docu;
+let A자top = 200
+let A자left = 120
+
+const 위로 = () => {
+    A자top += 40;
+    A자.style.top = `${A자top}px`;
+};
+
+const 아래로
+
+const 왼쪽으로
+
+const 오른쪽으로
+
+if (A자top === 값 && A자left === 값)
