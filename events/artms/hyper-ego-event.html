@@ -43,11 +43,10 @@
             <div>{artms_e_correct_arr[3]}</div>
             <div>{artms_e_correct_arr[4]}</div>
         </section>
-        <button class='artms_e_correct_arr_append' onClick={artms_e_correct_append}>뒤에 추가하기</button>
-        <input class='artms_e_correct_arr_ins_num' type="text" name="artms_e_correct_arr_ins_num"
-            value={artms_e_correct_arr_ins_num} onChange={artms_e_correct_arr_ins_num_change} />
-        <button class='artms_e_correct_arr_insert' onClick={artms_e_correct_insert}>사이에 삽입하기</button>
-        <button class='artms_e_correct_arr_pop' onClick={artms_e_correct_pop}>사이에서 삭제하기</button>
+        <button class='artms_e_correct_arr_append' onclick="">뒤에 추가하기</button>
+        <input class='artms_e_correct_arr_ins_num' type="text" name="artms_e_correct_arr_ins_num">
+        <button class='artms_e_correct_arr_insert' onclick="">사이에 삽입하기</button>
+        <button class='artms_e_correct_arr_pop' onclick="">사이에서 삭제하기</button>
         <h2 class="tri_e_h2 artms_e_h2_3">▪ 기존 배열칸?? ▪</h2>
         <section class="artms_e_array artms_e_before_array">
             <div>{artms_e_before_arr[0]}</div>
@@ -56,12 +55,14 @@
             <div>{artms_e_before_arr[3]}</div>
             <div>{artms_e_before_arr[4]}</div>
         </section>
-        {artms_e_correct_all && (
+        <!-- win popup -->
         <section class='artms_e_real_result'>
             <p>당첨</p>
         </section>
-        )}
     </div>
+    <script>
+
+    </script>
 </body>
 
 </html>
