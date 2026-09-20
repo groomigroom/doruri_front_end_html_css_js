@@ -45,7 +45,7 @@
                 <div class="bol4_e_event_r_p_mbox bol4_e_event_r_p_mbox6"></div>
                 <div class="bol4_e_event_r_p_mbox bol4_e_event_r_p_mbox7"></div>
                 <div class="bol4_e_event_r_p_mbox bol4_e_event_r_p_mbox8"></div>
-                <p class="bol4_e_event_r_p_m_pp" onClick={OpBol4_e_last_result}>여름아 부탁해</p>
+                <p class="bol4_e_event_r_p_m_pp" onclick="OpBol4_e_last_result()">여름아 부탁해</p>
             </section>
         </section>
         <FooterPart FooterPartText='ⓒ 켄버스' />
@@ -72,8 +72,9 @@
         </section>
     </div>
     <script>
+        const tri_e_last_win_part = document.querySelector(".tri_e_last_win_part");
         const OpBol4_e_last_result = () => {
-            
+            tri_e_last_win_part.style.display = "block";
         };
     </script>
 </body>
