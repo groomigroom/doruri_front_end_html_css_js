@@ -12,7 +12,7 @@
 <body>
     <button onclick="append_to_member_after()">after에삽입하기</button>
     <input type="text" name="want_position">
-    <button>after에서 원하는 위치에서 삭제하기</button>
+    <button onclick="delete_to_number_after()">after에서 원하는 위치에서 삭제하기</button>
     <button onclick="insert_to_number_after()">after에서 원하는 위치에 삽입하기</button>
     <script>
         const number_random = new Set();
@@ -63,6 +63,13 @@
                 console.log("이후");
                 console.log(member_after);
             }
+        };
+
+        const delete_to_number_after = () => {
+            let want_position_num = parseInt(want_position.value);
+            if(want_position_num >= 1 && want_position_num <= 5 && member_after.length > 0) {
+                console.log("good");
+            } 
         };
 
     </script>
