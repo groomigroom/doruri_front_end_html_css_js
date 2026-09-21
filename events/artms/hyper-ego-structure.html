@@ -53,8 +53,11 @@
 
         const want_position = document.querySelector("input[name = \"want_position\"]");
 
-        const insert_to_number_after = () => {
-            console.log(want_position.value);
+        const insert_to_number_after = () => {           
+            let want_position_num = parseInt(want_position.value);
+            if(want_position_num >= 1 && want_position_num <= 5) {
+                console.log("is nndo");
+            }
         };
 
     </script>
