@@ -1,1 +1,88 @@
-TxtEvent.css
+.txt_e_full {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-color: #fcfcfc;
+}
+
+.txt_e_intropp {
+    width: 100vw;
+    height: 250px;
+    position: relative;
+}
+
+.txt_e_mp {
+    text-align: center;
+    font-size: 15px;
+    line-height: 140%;
+    font-weight: 500;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* 위에꺼 height 210px  */
+
+.txt_e_form {
+    width: 100vw;
+    height: 70px;
+    position: relative;
+}
+
+.txt_e_form>form {
+    width: 150px;
+    height: 30px;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.txt_e_form_indiv {
+    width: 150px;
+    height: 30px;
+    border: 5px solid #FF1E91;
+    border-radius: 10px;
+    position: relative;
+}
+
+.txt_e_fo {
+    width: 130px;
+    background-color: #fcfcfc;
+    border: none;
+    outline: none;
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+}
+
+.txt_e_btn {
+    width: 100vw;
+    height: 80px;
+    position: relative;
+}
+
+.txt_e_btn>button {
+    width: 150px;
+    height: 40px;
+    border: 5px solid #FF1E91;
+    border-radius: 10px;
+    background-color: #fcfcfc;
+    font-weight: 700;
+    font-size: 16px;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.txt_e_btn>button:hover {
+    background-color: #FF1E91;
+    color: #fcfcfc;
+}
+
+.txt_e_p_win_present_img {
+    border: 5px solid #FF1E91;
+}
