@@ -202,7 +202,16 @@
 
         let triples_e_result_count = 0;
 
+        const triples_e_result_count_check = () => {
+            let triples_e_result_count = 0;
 
+            for (let i = 0; i < triples_e_result.length; i++) {
+                if (triples_e_result[i] === true) {
+                    triples_e_result_count++;
+                }
+            }
+            console.log(triples_e_result_count);
+        };
 
         tri_e_fo_ss.forEach((current_value, index) => {
             current_value.addEventListener("input", () => {
@@ -213,6 +222,7 @@
                     triples_e_result[index] = false;
                     console.log(triples_e_result);
                 }
+                triples_e_result_count_check();
             });
         });
 
