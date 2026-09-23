@@ -9,7 +9,154 @@
 </head>
 
 <body>
+    <div class='txt_m_full'>
+        <header class='tri_m_header'>
+            <Menu />
+            <section class="home_translate">
+                <Link to='/TxtMain' class="on">한국어</Link>
+                <Link to='/TxtMainEng'>English</Link>
+            </section>
+        </header>
+        <section class='tri_m_logo_section'>
+            <img src={Txt_m_logo} alt="투바투 로고" />
+        </section>
+        <section class='tri_m_h2'>
+            <h2><img src={MainH2Deco} alt="투바투 로고 꾸미기" />투모로우바이투게더<img src={MainH2Deco} alt="투바투 로고 꾸미기" /></h2>
+        </section>
+        <section class='tri_m_intropp'>
+            <p>
+                one! dream!<br />
+                하루에 하루만 더<br />
+                &apos;투모로우바이투게더&apos;와 함께 힘내 보아요.
+            </p>
+        </section>
+        <section class='tri_m_img'>
+            <img src={txt_m_img} alt='투모로우바이투게더' class='txt_e_mem_imgborder' />
+            {/* border color 넣기 */}
+        </section>
+        <section class='tri_m_h2'>
+            <h2>▪ 멤버 ▪</h2>
+        </section>
+        <section class='tri_m_mem_tr_full'>
+            <section class='tri_m_mem_tr3'>
+                <a href='http://localhost:8080/members/TxtMemSubin' class='tri_m_mem_a'>
+                    <article class='tri_m_mem'>
+                        <img src={Txt_m_memSubin} alt="수빈 이미지" class='txt_e_mem_imgborder' />
+                        <div class='txt_e_mem_imgborder'>
+                            <h4>수빈</h4>
+                        </div>
+                    </article>
+                </a>
 
+                <a href='http://localhost:8080/members/TxtMemYeonjun' class='tri_m_mem_a'>
+                    <article class='tri_m_mem'>
+                        <img src={Txt_m_memYeonjun} alt="연준 이미지" class='txt_e_mem_imgborder' />
+                        <div class='txt_e_mem_imgborder'>
+                            <h4>연준</h4>
+                        </div>
+                    </article>
+                </a>
+                <a href='http://localhost:8080/members/TxtMemBeomgyu' class='tri_m_mem_a'>
+                    <article class='tri_m_mem'>
+                        <img src={Txt_m_memBeomgyu} alt="범규 이미지" class='txt_e_mem_imgborder' />
+                        <div class='txt_e_mem_imgborder'>
+                            <h4>범규</h4>
+                        </div>
+                    </article>
+                </a>
+            </section>
+
+            <section class='tri_m_mem_tr2'>
+                <a href='http://localhost:8080/members/TxtMemTaehyun' class='tri_m_mem_a'>
+                    <article class='tri_m_mem'>
+                        <img src={Txt_m_memTaehyun} alt="태현 이미지" class='txt_e_mem_imgborder' />
+                        <div class='txt_e_mem_imgborder'>
+                            <h4>태현</h4>
+                        </div>
+                    </article>
+                </a>
+                <a href='http://localhost:8080/members/TxtMemHueningkai' class='tri_m_mem_a'>
+                    <article class='tri_m_mem'>
+                        <img src={Txt_m_memHueningkai} alt="휴닝카이 이미지" class='txt_e_mem_imgborder' />
+                        <div class='txt_e_mem_imgborder'>
+                            <h4>휴닝카이</h4>
+                        </div>
+                    </article>
+                </a>
+
+            </section>
+        </section>
+
+        <section class='tri_m_h2'>
+            <h2>▪ 이벤트 ▪</h2>
+        </section>
+        <section class='tri_m_mem_tr_full'>
+            <section class='tri_m_mem_tr1'>
+                <Link to='/TxtEvent' class='tri_m_mem_a'>
+                <article class='tri_m_mem'>
+                    <img src={txt_m_img} alt="txt event" class='txt_e_mem_imgborder' />
+                    <div class='txt_e_mem_imgborder'>
+                        <h4>7TH<br />
+                            YEAR<br />
+                            이벤트</h4>
+                    </div>
+                </article>
+                </Link>
+            </section>
+        </section>
+
+        <section class='tri_m_h2'>
+            <h2>▪ 최신 앨범 ▪</h2>
+        </section>
+        <section class='tri_m_mem_tr_full'>
+            <section class='tri_m_mem_tr1'>
+                <a href='http://localhost:8080/members/TxtMemHueningkai' class='tri_m_mem_a'>
+                    <article class='tri_m_mem'>
+                        <img src={Txt7thYearAlbum_img} alt="7TH YEAR: 가시덤불에 잠시 바람이 멈췄을 때" class='txt_e_mem_imgborder' />
+                        <div class='txt_e_mem_imgborder'>
+                            <h4>
+                                7TH<br />
+                                YEAR<br />
+                                ...<br />
+                            </h4>
+                        </div>
+                    </article>
+                </a>
+            </section>
+        </section>
+
+        <section class='tri_m_h2'>
+            <h2>▪ sns ▪</h2>
+        </section>
+        <section class='tri_m_mem_tr_full'>
+            <section class='tri_m_mem_tr2'>
+                <a href="https://www.instagram.com/txt_bighit" target='_blank' rel='noopener noreferrer'
+                    class='tri_m_mem_a'>
+                    <article class='tri_m_mem'>
+                        <img src={TxtInstagram_icon_img} alt="투모로우바이투게더 인스타그램" class='txt_e_mem_imgborder' />
+                        <div class='txt_e_mem_imgborder'>
+                            <h4>
+                                인스타그램
+                            </h4>
+                        </div>
+                    </article>
+                </a>
+                <a href="https://www.youtube.com/TXT_bighit" target='_blank' rel='noopener noreferrer'
+                    class='tri_m_mem_a'>
+                    <article class='tri_m_mem'>
+                        <img src={TxtYoutube_icon_img} alt="투모로우바이투게더 유튜브" class='txt_e_mem_imgborder' />
+                        <div class='txt_e_mem_imgborder'>
+                            <h4>
+                                유튜브
+                            </h4>
+                        </div>
+                    </article>
+                </a>
+            </section>
+        </section>
+
+        <FooterPart FooterPartText='ⓒ 빅히트 뮤직' />
+    </div>
 </body>
 
 </html>
