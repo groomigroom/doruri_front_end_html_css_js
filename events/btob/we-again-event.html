@@ -33,6 +33,19 @@
         </section>
         )}
     </div>
+
+    <script>
+        const number_random = new Set();
+
+        while (number_random.size < 6) {
+            const num = Math.floor(Math.random() * 6);
+            number_random.add(num);
+        };
+
+        const number_random_arr = [...number_random];
+
+        console.log(number_random_arr);
+    </script>
 </body>
 
 </html>
