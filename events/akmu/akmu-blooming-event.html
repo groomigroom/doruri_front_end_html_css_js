@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>10CM 일말의 가능성 이벤트</title>
-    <link rel="stylesheet" href="../css/triples/TriplesEvent.css">
+    <link rel="stylesheet" href="../../group-main/triples/css/TriplesMain.css">
+    <link rel="stylesheet" href="../triples/css/TriplesEvent.css">
     <style>
         .tri_e_last_win_part_win {
             display: none;
@@ -28,11 +29,58 @@
 <body>
     <div class="akmuevent_full">
         <header class="tri_m_header">
-            <Menu />
+            <a to='/' class='menu_logo'>
+                <img src="" alt="">
+            </a>
             <section class="home_translate">
-                <Link to='/AkmuEvent' class="on">한국어</Link>
-                <Link to='/AkmuEventEng'>English</Link>
+                <Link to='/TxtEvent' class="on">한국어</Link>
+                <Link to='/TxtEventEng'>English</Link>
             </section>
+            <!-- <div className="menu_mobile_button" onClick={MenuOnToggle}>보기</div> -->
+            <nav class="menu_nav">
+                <!-- <div className="menu_mobile_off" onClick={MenuOffToggle}>닫기</div> -->
+                <ul>
+                    <li><a href="#">도루리는?</a><!--<button className='menu_nav_li_btn1'>메뉴 버튼1</button>-->
+                        <ul>
+                            <li><a href="#">소개</a></li>
+                            <li>
+                                <a href="/DoruriMap">도루리 사이트 구조</a>
+                            </li>
+                            <li>
+                                <a href='/DoruriUpdate'>업데이트 내역</a>
+                            </li>
+                            <li><a href="#">세부4</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href='#'>아이돌 탐색</a>
+                        <ul>
+                            <li>
+                                <a href='/IdolList'>목록</a>
+                            </li>
+                            <li><a href="#">세부2</a></li>
+                            <li><a href="#">세부3</a></li>
+                            <li><a href="#">세부4</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">메뉴1</a>
+                        <ul>
+                            <li><a href="#">세부1</a></li>
+                            <li><a href="#">세부2</a></li>
+                            <li><a href="#">세부3</a></li>
+                            <li><a href="#">세부4</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">메뉴1</a>
+                        <ul>
+                            <li><a href="#">세부1</a></li>
+                            <li><a href="#">세부2</a></li>
+                            <li><a href="#">세부3</a></li>
+                            <li><a href="#">세부4</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>    
         </header>
         <section class="tri_e_logo">
             <img src={Akmu_e_m_logo} alt="악뮤 이벤트 로고" />
