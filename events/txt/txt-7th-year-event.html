@@ -10,18 +10,23 @@
         .tri_e_last_win_part {
             display: none;
         }
+
         .tri_e_last_win_part.on {
             display: block;
         }
+
         .tri_e_last_win_part_win {
             display: none;
         }
+
         .tri_e_last_win_part_win.on {
             display: block;
         }
+
         .tri_e_last_win_part_lose {
             display: none;
         }
+
         .tri_e_last_win_part_lose.on {
             display: block;
         }
@@ -30,122 +35,170 @@
 
 <body>
     <div class="txt_e_full">
-            <header class="tri_m_header">
-                <Menu />
-                <section class="home_translate">
-                    <Link to='/TxtEvent' class="on">한국어</Link>
-                    <Link to='/TxtEventEng'>English</Link>
-                </section>
-            </header>
-            <section class="tri_e_logo">
-                <img src={TxtELogo} alt="TxtELogo" />
+        <header class="tri_m_header">
+            <a to='/' class='menu_logo'>
+                <img src="" alt="">
+            </a>
+            <section class="home_translate">
+                <Link to='/TxtEvent' class="on">한국어</Link>
+                <Link to='/TxtEventEng'>English</Link>
             </section>
+            <!-- <div className="menu_mobile_button" onClick={MenuOnToggle}>보기</div> -->
+            <nav class="menu_nav">
+                <!-- <div className="menu_mobile_off" onClick={MenuOffToggle}>닫기</div> -->
+                <ul>
+                    <li><a href="#">도루리는?</a><!--<button className='menu_nav_li_btn1'>메뉴 버튼1</button>-->
+                        <ul>
+                            <li><a href="#">소개</a></li>
+                            <li>
+                                <a href="/DoruriMap">도루리 사이트 구조</a>
+                            </li>
+                            <li>
+                                <a href='/DoruriUpdate'>업데이트 내역</a>
+                            </li>
+                            <li><a href="#">세부4</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href='#'>아이돌 탐색</a>
+                        <ul>
+                            <li>
+                                <a href='/IdolList'>목록</a>
+                            </li>
+                            <li><a href="#">세부2</a></li>
+                            <li><a href="#">세부3</a></li>
+                            <li><a href="#">세부4</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">메뉴1</a>
+                        <ul>
+                            <li><a href="#">세부1</a></li>
+                            <li><a href="#">세부2</a></li>
+                            <li><a href="#">세부3</a></li>
+                            <li><a href="#">세부4</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">메뉴1</a>
+                        <ul>
+                            <li><a href="#">세부1</a></li>
+                            <li><a href="#">세부2</a></li>
+                            <li><a href="#">세부3</a></li>
+                            <li><a href="#">세부4</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>    
+        </header>
+        <section class="tri_e_logo">
+            <img src={TxtELogo} alt="TxtELogo" />
+        </section>
+        <section class="tri_m_h2">
+            <h2>
+                <img src="../../imgs/main_h2_deco.png" alt="투모루우바이투게더" />&apos;하루에 하루만 더&apos; 가사 맟주기 이벤트<img src="../../imgs/main_h2_deco.png"
+                    alt="투모루우바이투게더" />
+            </h2>
+        </section>
+        <section class='txt_e_intropp'>
+            <p class="txt_e_mp">
+                머물러 줘<br />
+                하루에 하루만 더<br />
+                헤어질 수 없어<br />
+                I&apos;ll just stick with you<br />
+                <br />
+                언제부턴지 몰라도<br />
+                미지근한 너의 태도<br />
+                ㅁㅁㅁㅁ 한 표정, 말투도<br />
+                <br />
+                ㅁㅁㅁㅁ에 들어갈 말을 아래에 입력해 주세요.
+                {/* 낯설기만 */}
+            </p>
+        </section>
+        <section class="txt_e_form">
+            <form action="#">
+                <div class="txt_e_form_indiv">
+                    <input class="txt_e_fo" type="text" name="txt_e_in" />
+                </div>
+            </form>
+        </section>
+        <section class="txt_e_btn">
+            <button type="submit" onclick="tri_e_last_win_part_open()">제출하기</button>
+        </section>
+
+        <section class="tri_e_last_win_part">
+            <div class="tri_e_ghost_40px"></div>
             <section class="tri_m_h2">
                 <h2>
-                    <img src={MainH2Deco} alt="투모루우바이투게더" />&apos;하루에 하루만 더&apos; 가사 맟주기 이벤트<img src={MainH2Deco} alt="투모루우바이투게더" />
+                    <img src={MainH2Deco} alt="투모루우바이투게더" />{txt_e_last_str}<img src={MainH2Deco} alt="투모루우바이투게더" />
                 </h2>
             </section>
-            <section class='txt_e_intropp'>
-                <p class="txt_e_mp">
-                    머물러 줘<br />
-                    하루에 하루만 더<br />
-                    헤어질 수 없어<br />
-                    I&apos;ll just stick with you<br />
-                    <br />
-                    언제부턴지 몰라도<br />
-                    미지근한 너의 태도<br />
-                    ㅁㅁㅁㅁ 한 표정, 말투도<br />
-                    <br />
-                    ㅁㅁㅁㅁ에 들어갈 말을 아래에 입력해 주세요.
-                    {/* 낯설기만 */}
-                </p>
+            <section class="tri_e_last_win_part_win">
+                <section class="tri_e_p_win_intropp">
+                    <p>
+                        당첨을 축하드려요!<br />
+                        상품은 키링입니다.<br />
+                        이벤트에 관심가져 주셔서 감사합니다.<br />
+                        이 이벤트는 가상의 이벤트입니다.<br />
+                        참고해 주시길 부탁드리겠습니다.<br />
+                    </p>
+                </section>
+                <section class="tri_e_p_win_present_150">
+                    <img src={Txt_e_keyring_set_img} alt="" class="txt_e_p_win_present_img" />
+                </section>
             </section>
-            <section class="txt_e_form">
-                <form action="#">
-                    <div class="txt_e_form_indiv">
-                        <input class="txt_e_fo" type="text" name="txt_e_in" />
-                    </div>
-                </form>
+            <section class="tri_e_last_win_part_lose">
+                <section>
+                    <section class="tri_m_h2">
+                        <h2>
+                            당첨이 아닙니다.
+                        </h2>
+                    </section>
+                </section>
             </section>
             <section class="txt_e_btn">
-                <button type="submit" onclick="tri_e_last_win_part_open()">제출하기</button>
+                <button onClick="tri_e_last_win_part_close()">닫기</button>
             </section>
+        </section>
+        <FooterPart100vh FooterPartText='ⓒ 빅히트 뮤직' />
+    </div>
+    <script>
+        const txt_e_fo = document.querySelector(".txt_e_fo");
+        const tri_e_last_win_part = document.querySelector(".tri_e_last_win_part");
+        const tri_e_last_win_part_win = document.querySelector(".tri_e_last_win_part_win");
+        const tri_e_last_win_part_lose = document.querySelector(".tri_e_last_win_part_lose");
+        const txt_e_target = ['낯', '설', '기', '만'];
+        let txt_e_last_str = "";
 
-            <section class="tri_e_last_win_part">
-                <div class="tri_e_ghost_40px"></div>
-                <section class="tri_m_h2">
-                    <h2>
-                        <img src={MainH2Deco} alt="투모루우바이투게더" />{txt_e_last_str}<img src={MainH2Deco} alt="투모루우바이투게더" />
-                    </h2>
-                </section>
-                    <section class="tri_e_last_win_part_win">
-                        <section class="tri_e_p_win_intropp">
-                            <p>
-                                당첨을 축하드려요!<br />
-                                상품은 키링입니다.<br />
-                                이벤트에 관심가져 주셔서 감사합니다.<br />
-                                이 이벤트는 가상의 이벤트입니다.<br />
-                                참고해 주시길 부탁드리겠습니다.<br />
-                            </p>
-                        </section>
-                        <section class="tri_e_p_win_present_150">
-                            <img src={Txt_e_keyring_set_img} alt="" class="txt_e_p_win_present_img" />
-                        </section>
-                    </section>
-                    <section class="tri_e_last_win_part_lose">
-                        <section>
-                            <section class="tri_m_h2">
-                                <h2>
-                                    당첨이 아닙니다.
-                                </h2>
-                            </section>
-                        </section>
-                    </section>
-                        <section class="txt_e_btn">
-                            <button onClick="tri_e_last_win_part_close()">닫기</button>
-                        </section>
-                    </section>
-            <FooterPart100vh FooterPartText='ⓒ 빅히트 뮤직' />
-        </div >
-        <script>
-            const txt_e_fo = document.querySelector(".txt_e_fo");
-            const tri_e_last_win_part = document.querySelector(".tri_e_last_win_part");
-            const tri_e_last_win_part_win = document.querySelector(".tri_e_last_win_part_win");
-            const tri_e_last_win_part_lose = document.querySelector(".tri_e_last_win_part_lose");
-            const txt_e_target = ['낯', '설', '기', '만'];
-            let txt_e_last_str = "";
+        txt_e_fo.addEventListener("input", function () {
+            const value = txt_e_fo.value;
 
-            txt_e_fo.addEventListener("input", function () {
-                const value = txt_e_fo.value;
+            const txt_e_count = [...value].filter((char, index) => {
+                return index < txt_e_target.length && char === txt_e_target[index];
+            }).length;
 
-                const txt_e_count = [...value].filter((char, index) => {
-                    return index < txt_e_target.length && char === txt_e_target[index];
-                }).length;
-
-                if (value.length === 4) {
-                    txt_e_last_str = '맞춘 개수: ' + txt_e_count + "개";
-                } else {
-                    txt_e_last_str = '글자 수가 4글자가 아닙니다.';
-                }
-
-                console.log(txt_e_last_str);
-            });
-
-            function tri_e_last_win_part_open () {
-                tri_e_last_win_part.classList.add("on");
-                if(txt_e_last_str === '맞춘 개수: 4개') {
-                    tri_e_last_win_part_win.classList.add("on");
-                } else {
-                    tri_e_last_win_part_lose.classList.add("on");
-                }
+            if (value.length === 4) {
+                txt_e_last_str = '맞춘 개수: ' + txt_e_count + "개";
+            } else {
+                txt_e_last_str = '글자 수가 4글자가 아닙니다.';
             }
 
-            function tri_e_last_win_part_close() {
-                tri_e_last_win_part.classList.remove("on");
-            }
+            console.log(txt_e_last_str);
+        });
 
-    
-        </script>
+        function tri_e_last_win_part_open() {
+            tri_e_last_win_part.classList.add("on");
+            if (txt_e_last_str === '맞춘 개수: 4개') {
+                tri_e_last_win_part_win.classList.add("on");
+            } else {
+                tri_e_last_win_part_lose.classList.add("on");
+            }
+        }
+
+        function tri_e_last_win_part_close() {
+            tri_e_last_win_part.classList.remove("on");
+        }
+
+
+    </script>
 </body>
 
 </html>
