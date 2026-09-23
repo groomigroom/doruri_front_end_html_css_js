@@ -191,24 +191,22 @@
         ];
 
         const triples_member_names = ["윤서연", "정혜린", "이지우", "김채연",
-            "김유연", "김수민"
+            "김유연", "김수민", "김나경", "공유빈",
+            "카에데", "서다현", "코토네", "곽연지",
+            "니엔", "박소현", "신위", "마유",
+            "린", "주빈", "정하연", "박시온",
+            "김채원", "설린", "서아", "지연"
         ];
 
         let triples_e_result = [];
 
         tri_e_fo_ss.forEach((current_value, index) => {
             current_value.addEventListener("input", () => {
-
+                if (current_value.value === triples_member_names[index]) {
+                    triples_e_result[index] = true;
+                    console.log(triples_e_result);
+                }
             });
-        });
-        tri_e_fo1.addEventListener("input", () => {
-            if (tri_e_fo1.value === "윤서연") {
-                triples_e_result[0] = true;
-                console.log(triples_e_result);
-            } else {
-                triples_e_result[0] = false;
-                console.log(triples_e_result);
-            }
         });
 
 
@@ -217,21 +215,6 @@
 
         /*
 
-        if (tri_e_form.tri_e_s6 === "김수민") tri_e_result++;
-        if (tri_e_form.tri_e_s7 === "김나경") tri_e_result++;
-        if (tri_e_form.tri_e_s8 === "공유빈") tri_e_result++;
-        if (tri_e_form.tri_e_s9 === "카에데") tri_e_result++;
-        if (tri_e_form.tri_e_s10 === "서다현") tri_e_result++;
-        if (tri_e_form.tri_e_s11 === "코토네") tri_e_result++;
-        if (tri_e_form.tri_e_s12 === "곽연지") tri_e_result++;
-        if (tri_e_form.tri_e_s13 === "니엔") tri_e_result++;
-        if (tri_e_form.tri_e_s14 === "박소현") tri_e_result++;
-        if (tri_e_form.tri_e_s15 === "신위") tri_e_result++;
-        if (tri_e_form.tri_e_s16 === "마유") tri_e_result++;
-        if (tri_e_form.tri_e_s17 === "린") tri_e_result++;
-        if (tri_e_form.tri_e_s18 === "주빈") tri_e_result++;
-        if (tri_e_form.tri_e_s19 === "정하연") tri_e_result++;
-        if (tri_e_form.tri_e_s20 === "박시온") tri_e_result++;
         if (tri_e_form.tri_e_s21 === "김채원") tri_e_result++;
         if (tri_e_form.tri_e_s22 === "설린") tri_e_result++;
         if (tri_e_form.tri_e_s23 === "서아") tri_e_result++;
