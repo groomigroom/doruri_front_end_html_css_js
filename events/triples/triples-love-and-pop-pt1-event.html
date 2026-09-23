@@ -190,8 +190,17 @@
             document.querySelector(".tri_e_fo24")
         ];
 
+        const triples_member_names = ["윤서연", "정혜린", "이지우", "김채연",
+            "김유연", "김수민"
+        ];
+
         let triples_e_result = [];
 
+        tri_e_fo_ss.forEach((current_value, index) => {
+            current_value.addEventListener("input", () => {
+
+            });
+        });
         tri_e_fo1.addEventListener("input", () => {
             if (tri_e_fo1.value === "윤서연") {
                 triples_e_result[0] = true;
@@ -207,12 +216,7 @@
 
 
         /*
-        let tri_e_result = 0;
-        if (tri_e_form.tri_e_s1 === "윤서연") tri_e_result++;
-        if (tri_e_form.tri_e_s2 === "정혜린") tri_e_result++;
-        if (tri_e_form.tri_e_s3 === "이지우") tri_e_result++;
-        if (tri_e_form.tri_e_s4 === "김채연") tri_e_result++;
-        if (tri_e_form.tri_e_s5 === "김유연") tri_e_result++;
+
         if (tri_e_form.tri_e_s6 === "김수민") tri_e_result++;
         if (tri_e_form.tri_e_s7 === "김나경") tri_e_result++;
         if (tri_e_form.tri_e_s8 === "공유빈") tri_e_result++;
