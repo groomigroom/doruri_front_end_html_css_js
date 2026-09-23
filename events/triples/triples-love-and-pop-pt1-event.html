@@ -200,10 +200,17 @@
 
         let triples_e_result = [];
 
+        let triples_e_result_count = 0;
+
+
+
         tri_e_fo_ss.forEach((current_value, index) => {
             current_value.addEventListener("input", () => {
                 if (current_value.value === triples_member_names[index]) {
                     triples_e_result[index] = true;
+                    console.log(triples_e_result);
+                } else {
+                    triples_e_result[index] = false;
                     console.log(triples_e_result);
                 }
             });
