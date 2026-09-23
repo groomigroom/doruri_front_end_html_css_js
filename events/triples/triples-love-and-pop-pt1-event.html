@@ -163,7 +163,8 @@
         <FooterPart FooterPartText='ⓒ ㈜모드하우스' />
     </div>
     <script>
-        const tri_e_fo1 = document.querySelector(".tri_e_fo1");
+        const tri_e_fo_ss = [
+            const tri_e_fo1 = document.querySelector(".tri_e_fo1");
         const tri_e_fo2 = document.querySelector(".tri_e_fo2");
         const tri_e_fo3 = document.querySelector(".tri_e_fo3");
         const tri_e_fo4 = document.querySelector(".tri_e_fo4");
@@ -187,10 +188,22 @@
         const tri_e_fo22 = document.querySelector(".tri_e_fo22");
         const tri_e_fo23 = document.querySelector(".tri_e_fo23");
         const tri_e_fo24 = document.querySelector(".tri_e_fo24");
+        ];
 
-        tri_e_fo2.addEventListener("input", () => {
-            console.log(tri_e_fo2.value);
+        let triples_e_result = [];
+
+        tri_e_fo1.addEventListener("input", () => {
+            if (tri_e_fo1.value === "윤서연") {
+                triples_e_result[0] = true;
+                console.log(triples_e_result);
+            } else {
+                triples_e_result[0] = false;
+                console.log(triples_e_result);
+            }
         });
+
+
+
 
 
         /*
