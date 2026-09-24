@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10CM 일말의 가능성 이벤트</title>
+    <link rel="stylesheet" href="../css/triples/TriplesEvent.css">
+    <style>
+        .last_win {
+            display: none;
+        }
+
+        .last_lose {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <button onclick="zico_up()">zico</button>
+        <button onclick="lilas_up()">lilas</button>
+        
+        <section class="last_win">
+            <p>당첨</p>
+        </section>
+        <section class="last_lose">
+            <p>당첨이 아닙니다.</p>
+        </section>
+    </div>
+
+    <script>
+        let zico_volume = 14;
+        let lilas_volume = 12;
+
+        setInterval(()=> {
+            zico_volume -= 2;
+            lilas_volume -= 2;
+            console.log(`zico: ${zico_volume}`);
+            console.log(`lilas: ${lilas_volume}`);
+        }, 2000);
+
+        //zico_up
+        const zico_up = () => {
+            zico_volume += 2;
+        };
+
+        //lilas_up
+        const lilas_up = () => {
+            lilas_volume += 2;
+        };
+    </script>
+</body>
+
+</html>
