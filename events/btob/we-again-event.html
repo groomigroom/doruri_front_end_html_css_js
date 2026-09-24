@@ -6,7 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>10CM 일말의 가능성 이벤트</title>
     <link rel="stylesheet" href="../css/triples/TriplesEvent.css">
-
+    <style>
+        .last_lose {
+            display: none;
+        }
+    </style>
 </head>
 
 <body>
@@ -24,7 +28,7 @@
         <p>{Btob_e_wait_arr[4]}</p>
         <p>{Btob_e_wait_arr[5]}</p>
         <p>점수는 {Btob_e_last_count}</p> -->
-        <button onClick={Btob_e_concert_end}>공연 끝내기</button>
+        <button onclick="btob_e_mem_end()">공연 끝내기</button>
         <button onclick="btob_e_mem_start()">공연 시작하기</button>
         <button onclick="btob_e_1mem_wait()">1번 멤버 대기</button>
         <button onclick="btob_e_2mem_wait()">2번 멤버 대기</button>
@@ -37,6 +41,9 @@
             <p>당첨</p>
         </section>
         )}
+        <section class="last_lose">
+            <p>당첨이 아닙니다.</p>
+        </section>
     </div>
 
     <script>
@@ -98,13 +105,22 @@
 
         let user_start_member = "";
 
+        const last_lose = document.querySelector(".last_lose");
+
         //공연 시작하기
         const btob_e_mem_start = () => {
-            if (user_wait_member === "") {
-                
+            if (user_wait_member === "" || user_start_member !== "") {
+                last_lose.style.display = "block"
+            } else {
+                user_start_member = user_wait_member;
+                user_wait_member = "";
+                console.log(user_wait_member)
+                console.log(user_start_member)
             }
-            user_start_member = user_wait_member;
-            user_wait_member = "";
+        };
+
+        //공연 끝내기
+        const btob_e_mem_end = () => {
             
         };
     </script>
