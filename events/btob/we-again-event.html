@@ -112,7 +112,7 @@
         //공연 시작하기
         const btob_e_mem_start = () => {
             if (user_wait_member === "" || user_start_member !== "") {
-                last_lose.style.display = "block"
+                last_lose.style.display = "block";
             } else {
                 user_start_member = user_wait_member;
                 user_wait_member = "";
@@ -126,6 +126,9 @@
             if (user_start_member !== "") {
                 user_member_array.push(user_start_member);
                 console.log(user_member_array);
+                user_start_member = "";
+            } else {
+                last_lose.style.display = "block";
             }
         };
     </script>
