@@ -1,1 +1,56 @@
-d
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10CM 일말의 가능성 이벤트</title>
+    <link rel="stylesheet" href="../css/triples/TriplesEvent.css">
+    <style>
+        .last_win {
+            display: none;
+        }
+
+        .last_lose {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="fromis_1_img">1</div>
+        <div class="fromis_2_img">2</div>
+        <div class="fromis_3_img">3</div>
+        <div class="fromis_4_img">4</div>
+
+        <section class="last_win">
+            <p>당첨</p>
+        </section>
+
+    </div>
+
+    <script>
+        const fromis_imgs = [
+            document.querySelector(".fromis_1_img"),
+            document.querySelector(".fromis_2_img"),
+            document.querySelector(".fromis_3_img"),
+            document.querySelector(".fromis_4_img")
+        ];
+
+        let fromis_last_check_str = "";
+        const last_win = document.querySelector(".last_win");
+
+        fromis_imgs.forEach((fromis_img, index) => {
+            fromis_img.addEventListener("click", () => {
+                fromis_last_check_str += index;
+                console.log(fromis_last_check_str);
+                if (fromis_last_check_str === "0123") {
+                    last_win.style.display = "block";
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
