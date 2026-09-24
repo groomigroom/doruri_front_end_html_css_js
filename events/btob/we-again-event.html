@@ -65,6 +65,8 @@
         member_wait_arr[number_random_arr[5]] = "6번";
         console.log(member_wait_arr);
 
+        let user_member_array = [];
+
         let user_wait_member = "";
 
         //1번 멤버 대기
@@ -121,7 +123,9 @@
 
         //공연 끝내기
         const btob_e_mem_end = () => {
-            
+            if (user_start_member !== "") {
+                user_member_array.push(user_start_member);
+            }
         };
     </script>
 </body>
