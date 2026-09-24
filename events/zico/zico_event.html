@@ -21,34 +21,46 @@
     <div>
         <button onclick="zico_up()">zico</button>
         <button onclick="lilas_up()">lilas</button>
-        
+
         <section class="last_win">
             <p>당첨</p>
         </section>
-        <section class="last_lose">
-            <p>당첨이 아닙니다.</p>
-        </section>
+
     </div>
 
     <script>
         let zico_volume = 14;
         let lilas_volume = 12;
 
-        setInterval(()=> {
+        setInterval(() => {
             zico_volume -= 2;
             lilas_volume -= 2;
             console.log(`zico: ${zico_volume}`);
             console.log(`lilas: ${lilas_volume}`);
         }, 2000);
 
+        const last_win = document.querySelector(".last_win");
+
+        const last_volume_check = () => {
+            if (zico_volume === 10 && lilas_volume === 10) {
+                last_win.style.display = "block";
+            }
+        }
+
         //zico_up
         const zico_up = () => {
             zico_volume += 2;
+            console.log(`zico: ${zico_volume}`);
+            console.log(`lilas: ${lilas_volume}`);
+            last_volume_check();
         };
 
         //lilas_up
         const lilas_up = () => {
             lilas_volume += 2;
+            console.log(`zico: ${zico_volume}`);
+            console.log(`lilas: ${lilas_volume}`);
+            last_volume_check();
         };
     </script>
 </body>
