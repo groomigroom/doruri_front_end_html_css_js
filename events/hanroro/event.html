@@ -6,7 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>han</title>
     <link rel="stylesheet" href="../css/triples/TriplesEvent.css">
-
+    <style>
+        .win_popup {
+            display: none;
+        }
+    </style>
 </head>
 
 <body>
@@ -18,9 +22,10 @@
     <input type="button" value="6">
     <input type="button" value="7">
     <input type="button" value="8">
+    <div class="win_popup">당첨</div>
     <script>
         let last_str = "";
-        let buttons_array = [
+        const buttons_array = [
             document.querySelector("input[value=\"1\"]"),
             document.querySelector("input[value=\"2\"]"),
             document.querySelector("input[value=\"3\"]"),
@@ -30,10 +35,21 @@
             document.querySelector("input[value=\"7\"]"),
             document.querySelector("input[value=\"8\"]")
         ];
+        let win_popup = document.querySelector(".win_popup");
+
+        const last_str_correct_check = () => {
+            if (last_str === "12345678") {
+                win_popup.style.display = "block";
+                // console.log("당첨");
+            }
+        };
+
         buttons_array.forEach((butt) => {
             butt.addEventListener("click", () => {
-                console.log(butt.value);
+                last_str += butt.value;
                 butt.style.display = "none";
+                console.log(last_str);
+                last_str_correct_check();
             });
         });
     </script>
