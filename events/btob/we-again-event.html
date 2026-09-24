@@ -25,8 +25,7 @@
         <p>{Btob_e_wait_arr[5]}</p>
         <p>점수는 {Btob_e_last_count}</p> -->
         <button onClick={Btob_e_concert_end}>공연 끝내기</button>
-        <button onClick={Btob_e_concert_start}>공연 시작하기</button>
-        <button onClick={Btob_e_concert_real_wait}>대기 시키기</button>
+        <button onclick="btob_e_mem_start()">공연 시작하기</button>
         <button onclick="btob_e_1mem_wait()">1번 멤버 대기</button>
         <button onclick="btob_e_2mem_wait()">2번 멤버 대기</button>
         <button onclick="btob_e_3mem_wait()">3번 멤버 대기</button>
@@ -95,6 +94,18 @@
         const btob_e_6mem_wait = () => {
             user_wait_member = "6번";
             console.log(user_wait_member);
+        };
+
+        let user_start_member = "";
+
+        //공연 시작하기
+        const btob_e_mem_start = () => {
+            if (user_wait_member === "") {
+                
+            }
+            user_start_member = user_wait_member;
+            user_wait_member = "";
+            
         };
     </script>
 </body>
