@@ -7,6 +7,10 @@
     <title>10CM 일말의 가능성 이벤트</title>
     <link rel="stylesheet" href="../css/triples/TriplesEvent.css">
     <style>
+        .last_win {
+            display: none;
+        }
+
         .last_lose {
             display: none;
         }
@@ -37,7 +41,7 @@
         <button onclick="btob_e_5mem_wait()">5번 멤버 대기</button>
         <button onclick="btob_e_6mem_wait()">6번 멤버 대기</button>
         {Btob_e_last_count === 6 && (
-        <section>
+        <section class="last_win">
             <p>당첨</p>
         </section>
         )}
@@ -108,6 +112,7 @@
         let user_start_member = "";
 
         const last_lose = document.querySelector(".last_lose");
+        const last_win = document.querySelector(".last_win");
 
         //공연 시작하기
         const btob_e_mem_start = () => {
@@ -121,8 +126,22 @@
             }
         };
 
+        let btob_e_last_check_count = 0;
+
         const btob_e_last_check = () => {
-            for(let i = 0; i < member_wait_arr.length;)
+            btob_e_last_check_count = 0;
+            for(let i = 0; i < member_wait_arr.length; i++) {
+                if(user_member_array[i] === member_wait_arr[i]) {
+                    btob_e_last_check_count++;
+                }
+            }
+            if(user_member_array.length === 6) {
+                if (btob_e_last_check_count === 6) {
+                    last_win.style.display = "block";
+                } else {
+                    last_lose.style.display = "block";
+                }
+            }
         };
 
         //공연 끝내기
@@ -134,6 +153,7 @@
             } else {
                 last_lose.style.display = "block";
             }
+            btob_e_last_check();
         };
     </script>
 </body>
