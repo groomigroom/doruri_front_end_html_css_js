@@ -10,11 +10,14 @@
 </head>
 
 <body>
+<input type="button" value="1">
 <script>
 let last_str = "";
 let buttons_array = [];
-last_str += "김구름";
-console.log(last_str);
+let button_1 = document.querySelector("input[value=\"1\"]");
+button_1.addEventListener("click", ()=>{
+console.log(button_1.value);
+});
 </script>
 </body>
 </html>
