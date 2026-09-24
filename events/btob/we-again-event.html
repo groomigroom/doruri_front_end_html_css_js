@@ -27,8 +27,12 @@
         <button onClick={Btob_e_concert_end}>공연 끝내기</button>
         <button onClick={Btob_e_concert_start}>공연 시작하기</button>
         <button onClick={Btob_e_concert_real_wait}>대기 시키기</button>
-        <button onclick="btob_e_1mem_start()">1번 멤버 대기</button>
-        26번 대기버튼 #####
+        <button onclick="btob_e_1mem_wait()">1번 멤버 대기</button>
+        <button onclick="btob_e_2mem_wait()">2번 멤버 대기</button>
+        <button onclick="btob_e_3mem_wait()">3번 멤버 대기</button>
+        <button onclick="btob_e_4mem_wait()">4번 멤버 대기</button>
+        <button onclick="btob_e_5mem_wait()">5번 멤버 대기</button>
+        <button onclick="btob_e_6mem_wait()">6번 멤버 대기</button>
         {Btob_e_last_count === 6 && (
         <section>
             <p>당첨</p>
@@ -54,7 +58,6 @@
         member_wait_arr[number_random_arr[4]] = "5번";
         member_wait_arr[number_random_arr[5]] = "6번";
         console.log(member_wait_arr);
-        16번 배열에 넣고 이벤트리스너로 배열에 추라하은거#####
     </script>
 </body>
 
