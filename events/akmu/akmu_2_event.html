@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>akmu 2 이벤트</title>
+    <link rel="stylesheet" href="../css/triples/TriplesEvent.css">
+    <style>
+        .last_win {
+            display: none;
+        }
+
+        .last_lose {
+            display: none;
+        }
+
+        .akmu_2_1div {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            animation: akmu_2_1_div 2s linear 0s infinite;
+            background-color: bisque;
+        }
+
+        @keyframes akmu_2_1_div {
+            0% {
+                top: 100px;
+                left: 100px;
+            }
+
+            50% {
+                top: 200px;
+                left: 200px;
+            }
+
+            100% {
+                top: 100px;
+                left: 100px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="akmu_2_1div">1</div>
+
+
+        <section class="last_win">
+            <p>당첨</p>
+        </section>
+
+    </div>
+
+    <script>
+        const akmu_2_1div = document.querySelector(".akmu_2_1div");
+
+
+
+        setInterval(() => {
+            // 💡 브라우저가 실제로 '계산한(Computed)' 스타일을 가져옵니다.
+            const currentStyle = window.getComputedStyle(akmu_2_1div);
+
+            // 이제 실시간으로 변하는 top 값이 정상적으로 출력됩니다.
+            console.log(currentStyle.top);
+        }, 500);
+
+        const last_win = document.querySelector(".last_win");
+
+        akmu_2_1div.addEventListener("click", () => {
+            const currentStyle = window.getComputedStyle(akmu_2_1div);
+            const top = parseFloat(currentStyle.top);
+            if (currentStyle.top >= "130px" && currentStyle.top <= "180px") {
+                last_win.style.display = "block";
+            }
+        });
+
+    </script>
+</body>
+
+</html>
