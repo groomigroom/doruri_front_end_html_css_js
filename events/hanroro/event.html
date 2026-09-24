@@ -2,22 +2,38 @@
 <html lang="ko">
 
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>10CM 일말의 가능성 이벤트</title>
-<link rel="stylesheet" href="../css/triples/TriplesEvent.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>han</title>
+    <link rel="stylesheet" href="../css/triples/TriplesEvent.css">
 
 </head>
 
 <body>
-<input type="button" value="1">
-<script>
-let last_str = "";
-let buttons_array = [];
-let button_1 = document.querySelector("input[value=\"1\"]");
-button_1.addEventListener("click", ()=>{
-console.log(button_1.value);
-});
-</script>
+    <input type="button" value="1">
+    <input type="button" value="2">
+    <input type="button" value="3">
+    <input type="button" value="4">
+    <input type="button" value="5">
+    <input type="button" value="6">
+    <input type="button" value="7">
+    <input type="button" value="8">
+    <script>
+        let last_str = "";
+        let buttons_array = [
+            document.querySelector("input[value=\"1\"]"),
+            document.querySelector("input[value=\"2\"]"),
+            document.querySelector("input[value=\"3\"]"),
+            document.querySelector("input[value=\"4\"]"),
+            document.querySelector("input[value=\"5\"]"),
+            document.querySelector("input[value=\"6\"]"),
+            document.querySelector("input[value=\"7\"]"),
+            document.querySelector("input[value=\"8\"]")
+        ];
+        button_1.addEventListener("click", () => {
+            console.log(button_1.value);
+        });
+    </script>
 </body>
+
 </html>
