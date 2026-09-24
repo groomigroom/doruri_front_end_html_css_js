@@ -30,8 +30,11 @@
             document.querySelector("input[value=\"7\"]"),
             document.querySelector("input[value=\"8\"]")
         ];
-        button_1.addEventListener("click", () => {
-            console.log(button_1.value);
+        buttons_array.forEach((butt) => {
+            butt.addEventListener("click", () => {
+                console.log(butt.value);
+                butt.style.display = "none";
+            });
         });
     </script>
 </body>
