@@ -15,10 +15,17 @@
             display: none;
         }
 
+        .ioi_e_full {
+            width: 400px;
+            height: 400px;
+            position: relative;
+        }
+
         .ioi_e_move_div {
             width: 50px;
             height: 50px;
             background-color: bisque;
+            position: absolute;
         }
     </style>
 </head>
@@ -53,8 +60,19 @@
                 case "ArrowLeft":
                     left_position -= position_value;
                     break;
+                case "ArrowRight":
+                    left_position += position_value;
+                    break;
+                default:
+                    return;
             }
-        })
+
+            //화살표 키로 화면이 내려가는 현상 방지하기
+            event.preventDefault();
+
+            ioi_e_move_div.style.top = `${top_position + "px"}`;
+            ioi_e_move_div.style.left = `${left_position + "px"}`;
+        });
     </script>
 </body>
 
