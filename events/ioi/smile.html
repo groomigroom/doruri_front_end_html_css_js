@@ -45,6 +45,9 @@
         window.addEventListener("keydown", (event) => {
             switch (event.code) {
                 case "ArrowUp":
+                    top_position -= position_value;
+                    break;
+                case "ArrowDown":
                     top_position += position_value;
                     break;
             }
