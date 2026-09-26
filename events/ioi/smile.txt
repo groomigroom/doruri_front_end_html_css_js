@@ -1,0 +1,93 @@
+HTML과 JavaScript에서 키보드 십자키(방향키)로 div를 움직이려면 keydown 이벤트를 감지하여 div의 CSS 좌표(top, left) 값을 변경하면 됩니다. [1, 2] 
+이때 핵심은 움직이려는 div에 position: absolute 또는 position: relative 스타일이 반드시 적용되어 있어야 좌표 이동이 가능하다는 점입니다. [3, 4] 
+## 💡 전체 구현 코드
+아래 코드를 하나의 .html 파일로 저장하고 브라우저에서 실행한 뒤, 십자키를 눌러보세요.
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>십자키로 div 움직이기</title>
+    <style>
+        /* 배경 역할을 할 컨테이너 */
+        #box-container {
+            position: relative;
+            width: 100%;
+            height: 500px;
+            background-color: #f0f0f0;
+            border: 2px solid #ccc;
+            overflow: hidden;
+        }
+
+        /* 움직일 대상 div */
+        #character {
+            position: absolute; /* 좌표 지정을 위해 필수로 설정 */
+            top: 200px;         /* 초기 Y 좌표 */
+            left: 200px;        /* 초기 X 좌표 */
+            width: 50px;
+            height: 50px;
+            background-color: #007bff;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <h3>키보드 방향키(십자키)를 눌러 파란 상자를 움직여보세요!</h3>
+    <div id="box-container">
+        <div id="character"></div>
+    </div>
+
+    <script>
+        // 1. 움직일 대상 div 요소를 선택합니다.
+        const character = document.getElementById('character');
+
+        // 2. 초기 위치 값과 한 번에 이동할 거리(속도)를 설정합니다.
+        let topPosition = 200;
+        let leftPosition = 200;
+        const speed = 10; // 1회 이동시 10px씩 이동
+
+        // 3. 키보드 이벤트 리스너를 등록합니다.
+        window.addEventListener('keydown', (event) => {
+            // 눌린 키의 식별값(code)에 따라 조건문 분기
+            switch (event.code) {
+                case 'ArrowUp': // 위쪽 화살표
+                    topPosition -= speed;
+                    break;
+                case 'ArrowDown': // 아래쪽 화살표
+                    topPosition += speed;
+                    break;
+                case 'ArrowLeft': // 왼쪽 화살표
+                    leftPosition -= speed;
+                    break;
+                case 'ArrowRight': // 오른쪽 화살표
+                    leftPosition += speed;
+                    break;
+                default:
+                    return; // 방향키가 아닌 다른 키가 눌렸을 때는 아무것도 하지 않음
+            }
+
+            // 브라우저의 기본 스크롤 동작(화살표 키로 화면이 내려가는 현상)을 방지합니다.
+            event.preventDefault();
+
+            // 4. 계산된 좌표 값을 div의 CSS 스타일에 적용합니다.
+            character.style.top = topPosition + 'px';
+            character.style.left = leftPosition + 'px';
+        });
+    </script>
+</body>
+</html>
+
+## 🛠️ 핵심 포인트 설명
+
+   1. position: absolute: 브라우저의 기본 정렬 규칙을 벗어나 top과 left 좌표 값을 통해 자유롭게 위치를 지정할 수 있게 만듭니다.
+   2. event.code: 눌린 키의 고유 값을 식별합니다. 십자키는 각각 'ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight'라는 문자열 값을 가집니다.
+   3. event.preventDefault(): 화살표 키를 누를 때 브라우저 창 전체가 위아래로 스크롤되는 기본 동작을 막아줍니다. [1, 3, 5] 
+
+혹시 십자키를 꾹 누르고 있을 때 끊김 현상 없이 부드럽게 움직이는 게임 캐릭터 같은 연출을 원하시나요? 필요하시다면 requestAnimationFrame을 활용한 부드러운 이동 방식 코드도 함께 알려드릴 수 있습니다. 편하게 말씀해 주세요!
+
+[1] [https://www.youtube.com](https://www.youtube.com/watch?v=amWypW_SYaw)
+[2] [https://www.reddit.com](https://www.reddit.com/r/javascript/comments/3hsntr/how_do_you_make_a_div_move/?tl=ko)
+[3] [https://newline.tistory.com](https://newline.tistory.com/150)
+[4] [https://okky.kr](https://okky.kr/questions/1132870)
+[5] [https://stackoverflow.com](https://stackoverflow.com/questions/4950575/how-to-move-a-div-with-arrow-keys)
