@@ -30,7 +30,9 @@
             for (let i = 0; i < n - 1; i++) {
                 let minIdx = i;
                 for (let k = i + 1; k < n; k++) {
-                    if (member_things[minIdx] > member_things[i]) {
+                    if (member_things[minIdx] > member_things[k]) {
+                            minIdx = k;
+                        }
                         let tmp2 = member_things[i];
                         member_things[i] = member_things[minIdx];
                         member_things[minIdx] = tmp2;
@@ -38,7 +40,7 @@
                         let tmp1 = members[i];
                         members[i] = members[minIdx];
                         members[minIdx] = tmp1;
-                    }
+                
                 }
             }
             console.log(members);
