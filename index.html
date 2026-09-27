@@ -4,11 +4,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>도루리</title>
+    <title>Document</title>
 </head>
 
 <body>
+    <p class="login_user_name"></p>
+    <script>
+        const login_user_name = document.querySelector(".login_user_name");
 
+        async function getUserInfo() {
+            try {
+                const response = await fetch('/login/login-data');
+
+                if (!response.ok) {
+                    throw new Error('데이터를 가져오는데 실패했습니다.');
+                }
+
+                const data = await response.json(); // JSON으로 읽기
+
+                if (data.isLoggedIn) {
+                    console.log("로그인된 사용자 ID:", data.userId);
+                    login_user_name.textContent = data.userId;
+                }
+            } catch (error) {
+                console.error('에러 발생:', error);
+            }
+        }
+
+        getUserInfo();
+
+    </script>
 </body>
 
 </html>
