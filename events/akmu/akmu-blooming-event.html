@@ -24,6 +24,14 @@
         .tri_e_last_win_part_lose.on {
             display: block;
         }
+
+        .tri_e_last_win_part {
+            display: none;
+        }
+
+        .tri_e_last_win_part.on {
+            display: block;
+        }
     </style>
 </head>
 
@@ -122,35 +130,39 @@
         </form>
         <FooterPart100vh FooterPartText='ⓒ 영감의 샘터' />
         <!--1번 일 때-->
-        <section class="tri_e_last_win_part_win">
-            <div class="tri_e_ghost_40px"></div>
-            <section class="tri_m_h2">
-                <h2>
-                    <img src={MainH2Deco} alt="악뮤" />당첨입니다.<img src={MainH2Deco} alt="악뮤" />
-                </h2>
+        <section class="tri_e_last_win_part">
+            <section class="tri_e_last_win_part_win">
+                <div class="tri_e_ghost_40px"></div>
+                <section class="tri_m_h2">
+                    <h2>
+                        <img src="../../imgs/main_h2_deco.png" alt="악뮤" />당첨입니다.<img src="../../imgs/main_h2_deco.png"
+                            alt="악뮤" />
+                    </h2>
+                </section>
+                <section class="tri_e_p_win_intropp">
+                    <p>
+                        당첨을 축하드려요!<br />
+                        상품은 에코백입니다.<br />
+                        이벤트에 관심가져 주셔서 감사합니다.<br />
+                        이 이벤트는 가상의 이벤트입니다.<br />
+                        참고해 주시길 부탁드리겠습니다.<br />
+                    </p>
+                </section>
+                <section class="tri_e_p_win_present_150">
+                    <img src="./img/akmu_event_eco_bag_img.jpg" alt="" class="akmu_e_p_win_present_img" />
+                </section>
             </section>
-            <section class="tri_e_p_win_intropp">
-                <p>
-                    당첨을 축하드려요!<br />
-                    상품은 에코백입니다.<br />
-                    이벤트에 관심가져 주셔서 감사합니다.<br />
-                    이 이벤트는 가상의 이벤트입니다.<br />
-                    참고해 주시길 부탁드리겠습니다.<br />
-                </p>
-            </section>
-            <section class="tri_e_p_win_present_150">
-                <img src={Akmu_e_p_win_present} alt="" class="akmu_e_p_win_present_img" />
-            </section>
-        </section>
-        <!--2번 또는 3번일 때-->
-        <section class="tri_e_last_win_part_lose">
-            <div class="tri_e_ghost_40px"></div>
-            <section class="tri_m_h2">
-                <h2>
-                    <img src={MainH2Deco} alt="악뮤" />당첨이 아닙니다...<img src={MainH2Deco} alt="악뮤" />
-                </h2>
-            </section>
+            <!--2번 또는 3번일 때-->
+            <section class="tri_e_last_win_part_lose">
+                <div class="tri_e_ghost_40px"></div>
+                <section class="tri_m_h2">
+                    <h2>
+                        <img src="../../imgs/main_h2_deco.png" alt="악뮤" />당첨이 아닙니다...<img
+                            src="../../imgs/main_h2_deco.png" alt="악뮤" />
+                    </h2>
+                </section>
 
+            </section>
         </section>
     </div>
     <script>
@@ -158,6 +170,7 @@
         const radioButtons = document.querySelectorAll('input[name="akmu_event"]');
         const winSection = document.querySelector(".tri_e_last_win_part_win");
         const loseSection = document.querySelector(".tri_e_last_win_part_lose");
+        const tri_e_last_win_part = document.querySelector(".tri_e_last_win_part");
 
         // 2. 모든 라디오 버튼에 '변경(change)' 이벤트 리스너를 등록합니다.
         radioButtons.forEach((radio) => {
@@ -166,11 +179,15 @@
                 // 먼저 기존에 켜져 있던 결과 클래스(.on)를 모두 지워 초기화합니다.
                 winSection.classList.remove("on");
                 loseSection.classList.remove("on");
+                tri_e_last_win_part.classList.remove("on");
 
                 // 현재 선택된 라디오 버튼의 value 값을 확인하여 분기 처리합니다.
                 if (event.target.value === "1") {
+                    tri_e_last_win_part.classList.add("on");
                     winSection.classList.add("on");
+
                 } else {
+                    tri_e_last_win_part.classList.add("on");
                     loseSection.classList.add("on");
                 }
             });
