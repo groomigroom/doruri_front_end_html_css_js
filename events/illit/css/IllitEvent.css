@@ -45,20 +45,19 @@
     color: #fcfcfc;
 }
 
-.ill_e_last_answer {
+.illit_e_last_answer {
     width: 100vw;
     height: 60px;
     position: relative;
 }
 
-.ill_e_last_answer>p {
+.illit_e_last_answer>p {
     font-weight: 700;
     font-size: 20px;
     line-height: 20px;
-    position: absolute;
-    top: 0px;
-    left: 50%;
-    transform: translateX(-50%);
+    width: 100vw;
+    text-align: center;
+
 }
 
 .ill_e_last_result {
