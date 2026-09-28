@@ -130,8 +130,8 @@
             <div class="tri_e_ghost_40px"></div>
             <section class="tri_m_h2">
                 <h2>
-                    <img src="../../imgs/main_h2_deco.png" alt="투모루우바이투게더" />{txt_e_last_str}<img
-                        src="../../imgs/main_h2_deco.png" alt="투모루우바이투게더" />
+                    <img src="../../imgs/main_h2_deco.png" alt="투모루우바이투게더" /><span
+                        class="txt_e_last_str_part"></span><img src="../../imgs/main_h2_deco.png" alt="투모루우바이투게더" />
                 </h2>
             </section>
             <section class="tri_e_last_win_part_win">
@@ -168,6 +168,7 @@
         const tri_e_last_win_part = document.querySelector(".tri_e_last_win_part");
         const tri_e_last_win_part_win = document.querySelector(".tri_e_last_win_part_win");
         const tri_e_last_win_part_lose = document.querySelector(".tri_e_last_win_part_lose");
+        const txt_e_last_str_part = document.querySelector(".txt_e_last_str_part");
         const txt_e_target = ['낯', '설', '기', '만'];
         let txt_e_last_str = "";
 
@@ -189,6 +190,7 @@
 
         function tri_e_last_win_part_open() {
             tri_e_last_win_part.classList.add("on");
+            txt_e_last_str_part.textContent = txt_e_last_str;
             if (txt_e_last_str === '맞춘 개수: 4개') {
                 tri_e_last_win_part_win.classList.add("on");
             } else {
