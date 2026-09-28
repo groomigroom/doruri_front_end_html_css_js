@@ -10,14 +10,14 @@
     <link rel="stylesheet" href="./css/StrayKidsEvent.css">
     <style>
         .tri_e_last_win_part,
-        input[name="straykids_e_value2"],
-        input[name="straykids_e_value3"] {
+        .staykids_e_value2,
+        .staykids_e_value3 {
             display: none;
         }
 
         .tri_e_last_win_part.on,
-        input[name="straykids_e_value2"].on,
-        input[name="straykids_e_value3"].on {
+        .staykids_e_value2.on,
+        .staykids_e_value3.on {
             display: block;
         }
     </style>
@@ -52,7 +52,7 @@
             </section>
             <div class="str_e_form_indiv_wrap">
                 <div class="str_e_form_indiv">
-                    <input type="text" name="straykids_e_value1">
+                    <input type="text" name="straykids_e_value1" autocomplete="off">
                 </div>
             </div>
             <!--1 is correct-->
@@ -60,8 +60,8 @@
                 <h2>2번답 입력</h2>
             </section>
             <div class="str_e_form_indiv_wrap">
-                <div class="str_e_form_indiv">
-                    <input type="text" name="straykids_e_value2">
+                <div class="str_e_form_indiv staykids_e_value2">
+                    <input type="text" name="straykids_e_value2" autocomplete="off">
                 </div>
             </div>
             <!--2 is coreect-->
@@ -69,8 +69,8 @@
                 <h2>3번답 입력</h2>
             </section>
             <div class="str_e_form_indiv_wrap">
-                <div class="str_e_form_indiv">
-                    <input type="text" name="straykids_e_value3">
+                <div class="str_e_form_indiv staykids_e_value3">
+                    <input type="text" name="straykids_e_value3" autocomplete="off">
                 </div>
             </div>
             <FooterPart100vh FooterPartText='ⓒ JYP엔터테인먼트' />
@@ -79,7 +79,8 @@
                 <div class="tri_e_ghost_40px"></div>
                 <section class="tri_m_h2">
                     <h2>
-                        <img src={MainH2Deco} alt="stray kids" />당첨입니다.<img src={MainH2Deco} alt="stray kids" />
+                        <img src="../../imgs/main_h2_deco.png" alt="stray kids">당첨입니다.<img
+                            src="../../imgs/main_h2_deco.png" alt="stray kids">
                     </h2>
                 </section>
                 <section class="tri_e_p_win_intropp">
@@ -108,7 +109,9 @@
         // 1. 올바른 상수 선언 (cont -> const 변경 및 DOM 요소 선택 예시)
         const straykids_e_value1 = document.querySelector("input[name=\"straykids_e_value1\"]");
         const straykids_e_value2 = document.querySelector("input[name=\"straykids_e_value2\"]");
+        const straykids_e_value2_box = document.querySelector(".staykids_e_value2");
         const straykids_e_value3 = document.querySelector("input[name=\"straykids_e_value3\"]");
+        const straykids_e_value3_box = document.querySelector(".staykids_e_value3");
         const tri_e_last_win_part = document.querySelector(".tri_e_last_win_part");
 
         // 2. 각 입력창의 상태를 체크하는 하나의 함수 만들기
@@ -116,9 +119,11 @@
             // 첫 번째 조건 확인
             if (straykids_e_value1.value === "Battle Ground") {
                 straykids_e_value2.classList.add("on");
+                straykids_e_value2_box.classList.add("on");
 
                 // 두 번째 조건 확인
                 if (straykids_e_value2.value === "Roman Empire") {
+                    straykids_e_value3_box.classList.add("on");
                     straykids_e_value3.classList.add("on");
 
                     // 세 번째 조건 확인
