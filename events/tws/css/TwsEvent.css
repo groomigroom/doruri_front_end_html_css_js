@@ -1,0 +1,66 @@
+.twsEvent_full {
+    width: 100vw;
+    height: 100vh;
+    background-color: #fcfcfc;
+    position: relative;
+}
+
+.tws_e_star_part_full {
+    width: 100vw;
+    height: 340px;
+    position: relative;
+}
+
+.tws_e_star_part {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 5px solid #191919;
+    border-radius: 25px;
+}
+
+.tws_e_moving_object {
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: tws_e_moving_object 5s linear 0s infinite;
+}
+
+.tws_e_moving_object>img {
+    width: 40px;
+    height: 40px;
+}
+
+@keyframes tws_e_moving_object {
+    0% {
+        width: 0px;
+        height: 0px;
+    }
+
+    80% {
+        width: 0px;
+        height: 0px;
+    }
+
+    90% {
+        width: 40px;
+        height: 40px;
+    }
+
+    100% {
+        width: 0px;
+        height: 0px;
+    }
+}
+
+.tws_e_last_result {
+    position: absolute;
+    top: 741px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
