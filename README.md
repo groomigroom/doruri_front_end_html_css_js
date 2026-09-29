@@ -4,8 +4,6 @@
 * css
 * js 로 프레임워크 없이 작업한 "도루리" 웹사이트 파일입니다.
 
-* pump-collections-edition-event.html
-* blooming-wings-event.html
-* istnotover-event
+* ioi_event -> 구상다시하기
 
 
