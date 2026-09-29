@@ -19,6 +19,8 @@
 
 <body>
     <div>
+        <p class="zico_count_pp">음량</p>
+        <p class="lilas_count_pp">음량</p>
         <button onclick="zico_up()">zico</button>
         <button onclick="lilas_up()">lilas</button>
 
@@ -31,15 +33,8 @@
     <script>
         let zico_volume = 14;
         let lilas_volume = 12;
-
-        setInterval(() => {
-            zico_volume -= 2;
-            lilas_volume -= 2;
-            console.log(`zico: ${zico_volume}`);
-            console.log(`lilas: ${lilas_volume}`);
-        }, 2000);
-
-        const last_win = document.querySelector(".last_win");
+        const zico_count_pp = document.querySelector(".zico_count_pp");
+        const lilas_count_pp = document.querySelector(".lilas_count_pp");
 
         const last_volume_check = () => {
             if (zico_volume === 10 && lilas_volume === 10) {
@@ -47,12 +42,26 @@
             }
         }
 
+        setInterval(() => {
+            zico_volume -= 2;
+            lilas_volume -= 2;
+            console.log(`zico: ${zico_volume}`);
+            console.log(`lilas: ${lilas_volume}`);
+            last_volume_check();
+            zico_count_pp.textContent = zico_volume;
+            lilas_count_pp.textContent = lilas_volume;
+        }, 2000);
+
+        const last_win = document.querySelector(".last_win");
+
+        
+
         //zico_up
         const zico_up = () => {
             zico_volume += 2;
             console.log(`zico: ${zico_volume}`);
             console.log(`lilas: ${lilas_volume}`);
-            last_volume_check();
+            zico_count_pp.textContent = zico_volume;  
         };
 
         //lilas_up
@@ -60,7 +69,7 @@
             lilas_volume += 2;
             console.log(`zico: ${zico_volume}`);
             console.log(`lilas: ${lilas_volume}`);
-            last_volume_check();
+            lilas_count_pp.textContent = lilas_volume;
         };
     </script>
 </body>
