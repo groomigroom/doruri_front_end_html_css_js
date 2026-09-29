@@ -7,6 +7,12 @@
     <title>10CM 일말의 가능성 이벤트</title>
     <link rel="stylesheet" href="../css/triples/TriplesEvent.css">
     <style>
+        .zico_e_event_section {
+            width: 340px;
+            height: 340px;
+            background-color: aqua;
+        }
+
         .last_win {
             display: none;
         }
@@ -19,10 +25,14 @@
 
 <body>
     <div>
-        <p class="zico_count_pp">음량</p>
-        <p class="lilas_count_pp">음량</p>
-        <button onclick="zico_up()">zico</button>
-        <button onclick="lilas_up()">lilas</button>
+        <section class="zico_e_event_section">
+            <section>
+                <p class="zico_count_pp">음량</p>
+            </section>
+            <p class="lilas_count_pp">음량</p>
+            <button onclick="zico_up()">zico</button>
+            <button onclick="lilas_up()">lilas</button>
+        </section>
 
         <section class="last_win">
             <p>당첨</p>
@@ -54,14 +64,14 @@
 
         const last_win = document.querySelector(".last_win");
 
-        
+
 
         //zico_up
         const zico_up = () => {
             zico_volume += 2;
             console.log(`zico: ${zico_volume}`);
             console.log(`lilas: ${lilas_volume}`);
-            zico_count_pp.textContent = zico_volume;  
+            zico_count_pp.textContent = zico_volume;
         };
 
         //lilas_up
