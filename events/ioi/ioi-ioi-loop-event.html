@@ -12,7 +12,40 @@
 </head>
 
 <body>
+    <div class="ioi_box_1">
+        <p></p>
+    </div>
+    <div class="ioi_box_2">
+        <p></p>
+    </div>
+    <div class="ioi_box_3">
+        <p></p>
+    </div>
+    <div class="ioi_box_4">
+        <p></p>
+    </div>
+    <div class="ioi_box_5">
+        <p></p>
+    </div>
+    <div class="ioi_box_6">
+        <p></p>
+    </div>
+    <div class="ioi_box_7">
+        <p></p>
+    </div>
+    <div class="ioi_box_8">
+        <p></p>
+    </div>
+    <div class="ioi_box_9">
+        <p></p>
+    </div>
     <script>
+        const ioi_boxs = [];
+        for (let i = 0; i < 9; i++) {
+            ioi_boxs.push(`document.querySelector("ioi_box_${i + 1}")`);
+        }
+
+        console.log(ioi_boxs);
         const members_name_list = ["1번", "2번", "3번", "4번", "5번", "6번", "7번", "8번", "9번",];
         const members = members_name_list.map((name) => ({
             member_name: name,
