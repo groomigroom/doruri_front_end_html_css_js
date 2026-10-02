@@ -184,12 +184,12 @@
                         일시 : 0000년 00월 00일<br />
                         장소 : 0000</p>
                 </section>
-                <button onClick={tri_e_OnCl} class="tri_e_p_close tri_e_p_close_win">닫기</button>
+                <button onclick="triples_e_last_popup_close()" class="tri_e_p_close tri_e_p_close_win">닫기</button>
             </section>
             <!--당첨 안되었을 때-->
             <section class="tri_e_p_lose">
                 <p class="tri_e_p_pp_lose">아쉽지만 모두 정답이 아니에요.</p>
-                <button onClick={tri_e_OnCl} class="tri_e_p_close tri_e_p_close_lose">닫기</button>
+                <button onclick="triples_e_last_popup_close()" class="tri_e_p_close tri_e_p_close_lose">닫기</button>
             </section>
         </div>
         <FooterPart FooterPartText='ⓒ ㈜모드하우스' />
@@ -272,7 +272,7 @@
         };
 
         const triples_e_last_popup_close = () => {
-
+            tri_e_p_full.style.display = "none";
         };
 
 
