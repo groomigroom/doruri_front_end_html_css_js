@@ -158,7 +158,7 @@
             </section>
         </section>
         <section class="tri_e_btn">
-            <button onClick={tri_e_OpPopup}>제출하기</button>
+            <button onclick="triples_e_last_popup()">제출하기</button>
         </section>
         <!--popup-->
         <div class="tri_e_p_full">
@@ -260,9 +260,10 @@
 
         const tri_e_p_full = document.querySelector(".tri_e_p_full");
         const tri_e_p_win = document.querySelector(".tri_e_p_win");
+        const tri_e_p_lose = document.querySelector(".tri_e_p_lose");
 
         const triples_e_last_popup = () => {
-
+            tri_e_p_full.style.display = "block"
         };
 
 
