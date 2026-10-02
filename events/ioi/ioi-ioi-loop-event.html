@@ -13,42 +13,22 @@
 
 <body>
     <script>
-        const members = ["1번", "2번", "3번", "4번", "5번", "6번", "7번", "8번", "9번",];
-        let member_things = [];
-        for (let i = 0; i < 9; i++) {
-            let n = Math.floor(Math.random() * 9) + 1;
-            member_things.push(n);
-        }
+        const members_name_list = ["1번", "2번", "3번", "4번", "5번", "6번", "7번", "8번", "9번",];
+        const members = members_name_list.map((name) => ({
+            member_name: name,
+            member_thing: Math.floor(Math.random() * 9) + 1
+        }));
+
+        // 💡 member_thing 기준 내림차순 정렬
+        members.sort((a, b) => {
+            if (a.member_thing === b.member_thing) {
+                return 0; // 동점자 자리 유지
+            }
+            return b.member_thing - a.member_thing; // b에서 a를 빼면 내림차순이 됩니다.
+        });
+
 
         console.log(members);
-        console.log(member_things);
-
-
-        //정렬
-        const member_things_sort = () => {
-            const n = member_things.length;
-            for (let i = 0; i < n - 1; i++) {
-                let minIdx = i;
-                for (let k = i + 1; k < n; k++) {
-                    if (member_things[minIdx] > member_things[k]) {
-                            minIdx = k;
-                        }
-                        let tmp2 = member_things[i];
-                        member_things[i] = member_things[minIdx];
-                        member_things[minIdx] = tmp2;
-
-                        let tmp1 = members[i];
-                        members[i] = members[minIdx];
-                        members[minIdx] = tmp1;
-                
-                }
-            }
-            console.log(members);
-            console.log(member_things);
-        };
-
-        member_things_sort();
-
     </script>
 </body>
 
