@@ -215,6 +215,7 @@
     top: 401px;
     left: 0px;
     background-color: #fcfcfc;
+    display: none;
 }
 
 .tri_e_p_h2 {
@@ -242,6 +243,7 @@
     top: 60px;
     left: 50%;
     transform: translateX(-50%);
+    display: none;
 }
 
 .tri_e_p_ticket {
