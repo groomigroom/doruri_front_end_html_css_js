@@ -163,7 +163,8 @@
         <!--popup-->
         <div class="tri_e_p_full">
             <section class="tri_m_h2">
-                <h2><img src={MainH2Deco} alt="트리플에스" />정답 : {tri_e_result}개<img src={MainH2Deco} alt="트리플에스" /></h2>
+                <h2><img src={MainH2Deco} alt="트리플에스"><span class="triples_e_last_result_span"></span><img
+                        src={MainH2Deco} alt="트리플에스"></h2>
             </section>
             <!--당첨 되었을 때-->
             <section class="tri_e_p_win">
@@ -245,16 +246,19 @@
             console.log(triples_e_result_count);
         };
 
+        const triples_e_last_result_span = document.querySelector(".triples_e_last_result_span");
+
         tri_e_fo_ss.forEach((current_value, index) => {
             current_value.addEventListener("input", () => {
                 if (current_value.value === triples_member_names[index]) {
                     triples_e_result[index] = true;
-                    console.log(triples_e_result);
+
                 } else {
                     triples_e_result[index] = false;
                     console.log(triples_e_result);
                 }
                 triples_e_result_count_check();
+                triples_e_last_result_span.textContent = `정답 : ${triples_e_result_count} 개`;
             });
         });
 
