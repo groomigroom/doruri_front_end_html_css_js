@@ -263,7 +263,12 @@
         const tri_e_p_lose = document.querySelector(".tri_e_p_lose");
 
         const triples_e_last_popup = () => {
-            tri_e_p_full.style.display = "block"
+            tri_e_p_full.style.display = "block";
+            if (triples_e_result_count === 24) {
+                tri_e_p_win.style.display = "block";
+            } else {
+                tri_e_p_lose.style.display = "block";
+            }
         };
 
 
