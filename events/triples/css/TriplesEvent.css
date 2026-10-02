@@ -310,6 +310,10 @@
     color: #fcfcfc;
 }
 
+.tri_e_p_lose {
+    display: none;
+}
+
 .tri_e_p_pp_lose {
     font-size: 14px;
     text-align: right;
