@@ -47,12 +47,14 @@
     transform: translateX(-50%);
     border: 5px solid #333;
     border-radius: 25px;
+    overflow: hidden;
 }
 
 .home_img_slide_full_img_train {
-    width: 300%;
+    width: 2370px;
     height: 400px;
     display: flex;
+    transition: all 0.6s ease 0s;
 }
 
 .home_img_slide_full_img {
