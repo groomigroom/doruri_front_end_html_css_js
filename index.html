@@ -89,10 +89,10 @@
         let count = 0;
         setInterval(() => {
             count++;
-            if (count == 3) {
+            if (count > 2) {
                 count = 0;
             }
-            home_img_slide_full_img_train.style.transform = `trnaslateX(-${800 * count}px)`;
+            home_img_slide_full_img_train.style.transform = `translateX(-${790 * count}px)`;
         }, 3000);
 
         const login_user_name = document.querySelector(".login_user_name");
