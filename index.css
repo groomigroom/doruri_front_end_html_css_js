@@ -49,6 +49,12 @@
     border-radius: 25px;
 }
 
+.home_img_slide_full_img_train {
+    width: 300%;
+    height: 400px;
+    display: flex;
+}
+
 .home_img_slide_full_img {
     width: 790px;
     height: 390px;
