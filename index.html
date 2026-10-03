@@ -85,6 +85,16 @@
     </div>
     <p class="login_user_name">로그인 해주세요</p>
     <script>
+        const home_img_slide_full_img_train = document.querySelector(".home_img_slide_full_img_train");
+        let count = 0;
+        setInterval(() => {
+            count++;
+            if (count == 3) {
+                count = 0;
+            }
+            home_img_slide_full_img_train.style.transform = `trnaslateX(-${800 * count}px)`;
+        }, 3000);
+
         const login_user_name = document.querySelector(".login_user_name");
 
         async function getUserInfo() {
