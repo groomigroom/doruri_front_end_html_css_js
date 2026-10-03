@@ -50,7 +50,21 @@
 }
 
 .home_img_slide_full_img {
-    width
+    width: 790px;
+    height: 390px;
+
+}
+
+.home_img_slide_full_img:nth-child(1) {
+    background-color: blue;
+}
+
+.home_img_slide_full_img:nth-child(2) {
+    background-color: rgb(64, 160, 104);
+}
+
+.home_img_slide_full_img:nth-child(3) {
+    background-color: rgb(255, 0, 0);
 }
 
 .home_h2_1 {
