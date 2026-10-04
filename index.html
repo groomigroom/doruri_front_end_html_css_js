@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="/index.css">
 </head>
 
 <body>
@@ -100,6 +100,14 @@
         async function getUserInfo() {
             try {
                 const response = await fetch('/login/login-data');
+
+                // 💡 401 권한 없음(로그아웃 상태)일 때는 에러를 터뜨리지 않고
+                // "로그인 해주세요" 상태를 부드럽게 유지하도록 턴을 넘겨줍니다.
+                if (response.status === 401) {
+                    console.log("현재 비로그인 상태입니다.");
+                    login_user_name.textContent = "로그인 해주세요";
+                    return;
+                }
 
                 if (!response.ok) {
                     throw new Error('데이터를 가져오는데 실패했습니다.');
