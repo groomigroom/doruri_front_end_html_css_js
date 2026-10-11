@@ -6,30 +6,28 @@
     <title>아이돌 목록</title>
     <link rel="stylesheet" href="../index.css">
     <style>
-        .idolList_full {
-            width: 100vw;
-            height: 200vh;
-            position: relative;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
 
-        .idolList_part {
-            width: 100vw;
-            height: calc(100vh - 50px);
-            background-color: #e6e6e6;
-            position: absolute;
-            top: 50px;
-            left: 0px;
+
+        .idolList_full {
+            width: 100%;
+            height: 100%;
+            position: relative;
         }
 
         .idolList_trainf {
             width: 920px;
             height: 680px;
-            display: block;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
             background-color: bisque;
             position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+
         }
 
         .idolList_train {
@@ -37,22 +35,7 @@
             height: 200px;
             display: flex;
             justify-content: space-between;
-            position: absolute;
-        }
-
-        .idolList_train:first-child {
-            top: 0px;
-            left: 0px;
-        }
-
-        .idolList_train:nth-child(2) {
-            top: 240px;
-            left: 0px;
-        }
-
-        .idolList_train:last-child {
-            bottom: 0px;
-            left: 0px;
+            background-color: cadetblue;
         }
 
         .idolList_link {
@@ -60,7 +43,7 @@
             width: 200px;
             height: 200px;
             position: relative;
-            border: 1px solid red;
+            background-color: coral;
         }
 
         .idolList_link_a {
@@ -69,6 +52,7 @@
             position: absolute;
             top: 20px;
             left: 20px;
+            background-color: crimson;
         }
 
         .idolList_link_a>img {
@@ -249,8 +233,8 @@
                         </a>
                     </div>
 
-                    <div className="idolList_link">
-                        <a href="/group-main/akmu/akmu-main-2026-04-07.html" className="idolList_link_a idolList_link_akmu">
+                    <div class="idolList_link">
+                        <a href="/group-main/akmu/akmu-main-2026-04-07.html" class="idolList_link_a idolList_link_akmu">
                             <img src={""} alt="이름" />
                             <div>
                                 <h4>AKMU</h4>
@@ -258,8 +242,8 @@
                         </a>
                     </div>
 
-                    <div className="idolList_link">
-                        <a href="/group-main/ioi/ioi-main-2026-05-19.html" className="idolList_link_a idolList_link_ioi">
+                    <div class="idolList_link">
+                        <a href="/group-main/ioi/ioi-main-2026-05-19.html" class="idolList_link_a idolList_link_ioi">
                             <img src={""} alt="이름" />
                             <div>
                                 <h4>아이오아이</h4>
@@ -277,8 +261,8 @@
                         </a>
                     </div>
 
-                    <div className="idolList_link">
-                        <a href="/group-main/illit/illit-main-2026-04-30.html" className="idolList_link_a idolList_link_str">
+                    <div class="idolList_link">
+                        <a href="/group-main/illit/illit-main-2026-04-30.html" class="idolList_link_a idolList_link_str">
                             <img src={""} alt="이름" />
                             <div>
                                 <h4>ILLIT</h4>
@@ -295,8 +279,8 @@
                         </a>
                     </div>
 
-                    <div className="idolList_link">
-                        <a href="/group-main/rescene/rescene-main-2026-07-08.html" className="idolList_link_a idolList_link_str">
+                    <div class="idolList_link">
+                        <a href="/group-main/rescene/rescene-main-2026-07-08.html" class="idolList_link_a idolList_link_str">
                             <img src={""} alt="RESCENE" />
                             <div>
                                 <h4>RESCENE</h4>
@@ -347,7 +331,7 @@
             </section>
 
         </section>
-        <section className="idolList_12345">
+        <section class="idolList_12345">
             <Link to='/IdolList'>1</Link>
             <Link to='/IdolList2'>2</Link>
             <Link to='/'>3</Link>
