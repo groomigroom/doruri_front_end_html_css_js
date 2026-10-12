@@ -11,6 +11,81 @@
         .tri_e_last_win_part {
             display: none;
         }
+
+
+        .TenCM_e_last_input_part {
+            width: 100vw;
+            height: 380px;
+            position: relative;
+        }
+
+        .TenCM_e_last_input {
+            position: absolute;
+            width: 150px;
+            height: 30px;
+            border: 5px solid #191919;
+            background-color: #fcfcfc;
+            border-radius: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .TenCM_e_last_input_part > .TenCM_e_last_input:nth-of-type(1) {
+            top: 0px;
+        }
+
+        .TenCM_e_last_input_part > .TenCM_e_last_input:nth-of-type(2) {
+            top: 65px;
+        }
+
+        .TenCM_e_last_input_part > .TenCM_e_last_input:nth-of-type(3) {
+            top: 130px;
+        }
+
+        .TenCM_e_last_input_part > .TenCM_e_last_input:nth-of-type(4) {
+            top: 195px;
+        }
+
+        .TenCM_e_last_input_part > .TenCM_e_last_input:nth-of-type(5) {
+            top: 260px;
+        }
+
+        .TenCM_e_last_input_part > p {
+            width: 100vw;
+            text-align: center;
+            font-size: 15px;
+            line-height: 15px;
+            font-weight: 500;
+            position: absolute;
+        }
+
+        .TenCM_e_last_input_part > p:nth-of-type(1) {
+            top: 40px;
+        }
+
+        .TenCM_e_last_input_part > p:nth-of-type(2) {
+            top: 105px;
+        }
+
+        .TenCM_e_last_input_part > p:nth-of-type(3) {
+            top: 170px;
+        }
+
+        .TenCM_e_last_input_part > p:nth-of-type(4) {
+            top: 235px;
+        }
+
+        .TenCM_e_last_input_part > p:nth-of-type(5) {
+            top: 300px;
+        }
+
+        .TenCM_e_last_input_part > p:nth-of-type(6) {
+            top: 325px;
+        }
+
+        .TenCM_e_p_win_present_img {
+            border: 5px solid #000000;
+        }
     </style>
 </head>
 
@@ -40,19 +115,19 @@
     </section>
     <section class="TenCM_e_last_input_part">
         <!-- 5 -->
-        <input class="TenCM_e_last_input" type="text" name="Tencm_e_number_input1">
+        <input class="TenCM_e_last_input" type="text" name="Tencm_e_number_input1" autocomplete="off">
         <p>x</p>
         <!-- 2 -->
-        <input class="TenCM_e_last_input" type="text" name="Tencm_e_number_input2">
+        <input class="TenCM_e_last_input" type="text" name="Tencm_e_number_input2" autocomplete="off">
         <p>+</p>
         <!-- 4 -->
-        <input class="TenCM_e_last_input" type="text" name="Tencm_e_number_input3">
+        <input class="TenCM_e_last_input" type="text" name="Tencm_e_number_input3" autocomplete="off">
         <p>-</p>
         <!-- 1 -->
-        <input class="TenCM_e_last_input" type="text" name="Tencm_e_number_input4">
+        <input class="TenCM_e_last_input" type="text" name="Tencm_e_number_input4" autocomplete="off">
         <p>-</p>
         <!-- 3 -->
-        <input class="TenCM_e_last_input" type="text" name="Tencm_e_number_input5">
+        <input class="TenCM_e_last_input" type="text" name="Tencm_e_number_input5" autocomplete="off">
         <p>= 10</p>
         <p class="tencm_e_last_result">최종 결과 : </p>
     </section>
