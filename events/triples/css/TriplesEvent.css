@@ -1,17 +1,17 @@
 .triplesevent_full {
-    width: 100vw;
+    width: 100%;
     background-color: #fcfcfc;
 }
 
 header {
-    width: 100vw;
+    width: 100%;
     height: 80px;
     position: relative;
     z-index: 999;
 }
 
 .header_structure {
-    width: 100vw;
+    width: 100%;
     height: 80px;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
@@ -64,7 +64,7 @@ header {
 }
 
 
-.Menu_button>div {
+.Menu_button > div {
     width: 35px;
     height: 7px;
     background-color: #333;
@@ -72,7 +72,7 @@ header {
 }
 
 .header_wrap {
-    width: 100vw;
+    width: 100%;
     height: 0px;
     position: absolute;
     top: 0px;
@@ -98,12 +98,12 @@ nav {
     overflow: hidden;
 }
 
-nav>ul {
+nav > ul {
     display: flex;
     justify-content: space-between;
 }
 
-nav>ul li {
+nav > ul li {
     width: 150px;
     height: 40px;
     text-align: center;
@@ -112,58 +112,58 @@ nav>ul li {
     border-radius: 25px;
 }
 
-nav>ul>li {
+nav > ul > li {
     position: relative;
 }
 
-nav>ul>li:hover {
+nav > ul > li:hover {
     background-color: #333;
     color: #fcfcfc;
 }
 
-nav>ul>li>ul {
+nav > ul > li > ul {
     position: absolute;
     top: 45px;
     left: -5px;
 }
 
-nav>ul>li>ul>li {
+nav > ul > li > ul > li {
     position: absolute;
     left: 0px;
 }
 
-nav>ul>li>ul>li:nth-child(1) {
+nav > ul > li > ul > li:nth-child(1) {
     top: 0px;
 }
 
-nav>ul>li>ul>li:nth-child(2) {
+nav > ul > li > ul > li:nth-child(2) {
     top: 50px;
 }
 
-nav>ul>li>ul>li:nth-child(3) {
+nav > ul > li > ul > li:nth-child(3) {
     top: 100px;
 }
 
-nav>ul>li>ul>li:nth-child(4) {
+nav > ul > li > ul > li:nth-child(4) {
     top: 150px;
 }
 
-nav>ul>li>ul>li:hover {
+nav > ul > li > ul > li:hover {
     background-color: #333;
 }
 
-nav>ul>li>ul>li:hover>a {
+nav > ul > li > ul > li:hover > a {
     color: #fcfcfc;
 }
 
 
 .tri_e_logo {
-    width: 100vw;
+    width: 100%;
     height: 98px;
     position: relative;
 }
 
-.tri_e_logo>img {
+.tri_e_logo > img {
     height: 58px;
     position: absolute;
     top: 0px;
@@ -171,7 +171,7 @@ nav>ul>li>ul>li:hover>a {
     transform: translateX(-50%);
 }
 
-.tri_e_intropp>p {
+.tri_e_intropp > p {
     text-align: center;
     font-size: 15px;
     line-height: 140%;
@@ -200,7 +200,7 @@ nav>ul>li>ul>li:hover>a {
     left: 0px;
 }
 
-.triplesevent_imgt>img {
+.triplesevent_imgt > img {
     width: 150px;
     height: 150px;
     border: 5px solid #191919;
@@ -251,7 +251,7 @@ nav>ul>li>ul>li:hover>a {
     position: relative;
 }
 
-.tri_e_form_indiv>input {
+.tri_e_form_indiv > input {
     width: 130px;
     background-color: #fcfcfc;
     border: none;
@@ -287,12 +287,12 @@ nav>ul>li>ul>li:hover>a {
 }
 
 .tri_e_btn {
-    width: 100vw;
+    width: 100%;
     height: 80px;
     position: relative;
 }
 
-.tri_e_btn>button {
+.tri_e_btn > button {
     width: 150px;
     height: 40px;
     border: 5px solid #191919;
@@ -306,13 +306,13 @@ nav>ul>li>ul>li:hover>a {
     transform: translateX(-50%);
 }
 
-.tri_e_btn>button:hover {
+.tri_e_btn > button:hover {
     background-color: #191919;
     color: #fcfcfc;
 }
 
 .tri_e_last_win_part {
-    width: 100vw;
+    width: 100%;
     height: 700px;
     position: absolute;
     z-index: 100;
@@ -322,11 +322,11 @@ nav>ul>li>ul>li:hover>a {
 }
 
 .tri_e_p_win_intropp {
-    width: 100vw;
+    width: 100%;
     height: 145px;
 }
 
-.tri_e_p_win_intropp>p {
+.tri_e_p_win_intropp > p {
     text-align: center;
     font-size: 15px;
     line-height: 140%;
@@ -334,12 +334,12 @@ nav>ul>li>ul>li:hover>a {
 }
 
 .tri_e_p_win_present_150 {
-    width: 100vw;
+    width: 100%;
     height: 190px;
     position: relative;
 }
 
-.tri_e_p_win_present_150>img {
+.tri_e_p_win_present_150 > img {
     width: 150px;
     height: 150px;
     border-radius: 25px;
@@ -352,7 +352,7 @@ nav>ul>li>ul>li:hover>a {
 /* border: 5px solid #191919; */
 
 .tri_e_ghost_40px {
-    width: 100vw;
+    width: 100%;
     height: 40px;
 }
 
@@ -361,7 +361,7 @@ nav>ul>li>ul>li:hover>a {
 }
 
 .tri_e_p_full {
-    width: 100vw;
+    width: 100%;
     height: 700px;
     position: absolute;
     z-index: 100;
@@ -381,16 +381,16 @@ nav>ul>li>ul>li:hover>a {
     transform: translateX(-50%);
 }
 
-.tri_e_p_h2>img {
+.tri_e_p_h2 > img {
     margin: 0 20px;
 }
 
-.tri_e_p_h2>img:last-child {
+.tri_e_p_h2 > img:last-child {
     transform: rotateZ(180deg);
 }
 
 .tri_e_p_win {
-    width: 100vw;
+    width: 100%;
     height: 375px;
     position: absolute;
     top: 60px;
@@ -439,7 +439,7 @@ nav>ul>li>ul>li:hover>a {
     line-height: 140%;
 }
 
-.tri_e_p_pp>span {
+.tri_e_p_pp > span {
     font-weight: 600;
 }
 
