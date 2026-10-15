@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ALLDAY PROJECT</title>
     <link rel="stylesheet" href="../triples/css/TriplesMain.css">
+    <style>
+        .allday_project_m_mem_imgborder {
+            border: 5px solid #000000;
+        }
+    </style>
 </head>
 <body>
 <div class='tri_m_full'>
@@ -13,57 +18,67 @@
         <a href='/ALLDAY_PROJECTMain' class="on">한국어</a>
         <a href='/ALLDAY_PROJECTMainEng'>English</a>
     </section>
-    <img src="./img/All_m_logo.svg" alt="ALLDAY_PROJECT 로고" class='tri_m_logo'>
-    <h2 class='tri_m_h2 tri_m_h2_1'><img src={MainH2Deco} alt="ALLDAY_PROJECT 로고 꾸미기">ALLDAY PROJECT<img
-            src={MainH2Deco} alt="ALLDAY_PROJECT 로고 꾸미기"></h2>
-    <p class='tri_m_intropp'>
-        &apos;ALLDAY PROJECT&apos;와 함께<br/>
-        Show me<br>
-        You want me like that!
-    </p>
-    <img src={All_m_img} class='tri_m_img all_m_img' alt='ALLDAY PROJECT'/>
-    <h2 class='tri_m_h2 tri_m_h2_2'>▪ 멤버 ▪</h2>
-    <section class='tri_m_mem_tr_full all_m_mem_tr_full'>
-        <section class='all_m_mem_tr3'>
+    <section class='tri_m_logo_section'>
+        <img src="./img/All_m_logo.svg" alt="ALLDAY_PROJECT 로고" class='tri_m_logo'>
+    </section>
+    <section class='tri_m_h2'>
+        <h2><img src="../../imgs/main_h2_deco.png" alt="ALLDAY_PROJECT 로고 꾸미기">ALLDAY PROJECT<img
+                src="../../imgs/main_h2_deco.png" alt="ALLDAY_PROJECT 로고 꾸미기"></h2>
+    </section>
+    <section class='tri_m_intropp'>
+        <p>
+            &apos;ALLDAY PROJECT&apos;와 함께<br/>
+            Show me<br>
+            You want me like that!
+        </p>
+    </section>
+    <section class='tri_m_img'>
+        <img src={All_m_img} class='allday_project_m_mem_imgborder' alt='ALLDAY PROJECT'>
+    </section>
+    <section class='tri_m_h2'>
+        <h2>▪ 멤버 ▪</h2>
+    </section>
+    <section class='tri_m_mem_tr_full'>
+        <section class='tri_m_mem_tr3'>
             <a href='/AllMemAnnie' class='tri_m_mem_a'>
                 <article class='tri_m_mem'>
-                    <img src={All_m_MemAnnie_img} alt="애니 이미지"/>
-                    <div>
+                    <img src={All_m_MemAnnie_img} alt="애니 이미지" class='allday_project_m_mem_imgborder'>
+                    <div class='allday_project_m_mem_imgborder'>
                         <h4>애니</h4>
                     </div>
                 </article>
             </a>
             <a href='/AllMemTarzan' class='tri_m_mem_a'>
                 <article class='tri_m_mem'>
-                    <img src={All_m_MemTarzan_img} alt="타잔 이미지"/>
-                    <div>
+                    <img src={All_m_MemTarzan_img} alt="타잔 이미지" class='allday_project_m_mem_imgborder'>
+                    <div class='allday_project_m_mem_imgborder'>
                         <h4>타잔</h4>
                     </div>
                 </article>
             </a>
             <a href='/AllMemBailey' class='tri_m_mem_a'>
                 <article class='tri_m_mem'>
-                    <img src={All_m_MemBailey_img} alt="베일리 이미지">
-                    <div>
+                    <img src={All_m_MemBailey_img} alt="베일리 이미지" class='allday_project_m_mem_imgborder'>
+                    <div class='allday_project_m_mem_imgborder'>
                         <h4>베일리</h4>
                     </div>
                 </article>
             </a>
         </section>
 
-        <section class='all_m_mem_tr2'>
+        <section class='tri_m_mem_tr2'>
             <a href='/AllMemWoochan' class='tri_m_mem_a'>
                 <article class='tri_m_mem'>
-                    <img src={All_m_MemWoochan_img} alt="우찬 이미지"/>
-                    <div>
+                    <img src={All_m_MemWoochan_img} alt="우찬 이미지" class='allday_project_m_mem_imgborder'>
+                    <div class='allday_project_m_mem_imgborder'>
                         <h4>우찬</h4>
                     </div>
                 </article>
             </a>
             <a href='/AllMemYoungseo' class='tri_m_mem_a'>
                 <article class='tri_m_mem'>
-                    <img src={All_m_MemYoungseo_img} alt="영서 이미지">
-                    <div>
+                    <img src={All_m_MemYoungseo_img} alt="영서 이미지" class='allday_project_m_mem_imgborder'>
+                    <div class='allday_project_m_mem_imgborder'>
                         <h4>영서</h4>
                     </div>
                 </article>
@@ -72,13 +87,15 @@
         </section>
     </section>
 
-    <h2 class='tri_m_h2 allday_m_h2_4'>▪ 이벤트 ▪</h2>
-    <section class='tri_m_event_tr_full allday_m_event_tr_full'>
-        <section class='tri_m_event_tr'>
-            <a href='/AlldayProjectEvent' class='tri_m_event_a'>
-                <article class='tri_m_events'>
-                    <img src={All_m_img} alt="allday project event">
-                    <div>
+    <section class='tri_m_h2'>
+        <h2>▪ 이벤트 ▪</h2>
+    </section>
+    <section class='tri_m_mem_tr_full'>
+        <section class='tri_m_mem_tr1'>
+            <a href='/AlldayProjectEvent' className='tri_m_mem_a'>
+                <article class='tri_m_mem'>
+                    <img src={All_m_img} alt="allday project event" class='allday_project_m_mem_imgborder'>
+                    <div class='allday_project_m_mem_imgborder'>
                         <h4>
                             I DON'T<br/>
                             BARGAIN<br/>
@@ -90,13 +107,16 @@
         </section>
     </section>
 
-    <h2 class='tri_m_h2 allday_m_h2_5'>▪ 최신 앨범 ▪</h2>
-    <section class='tri_m_album_tr_full allday_m_album_tr_full'>
-        <section class='tri_m_album_tr'>
-            <a href='/AlldayProjectIDonBargainAlbum' class='tri_m_album_a'>
-                <article class='tri_m_albums'>
-                    <img src={AlldayProjectIDonBargainAlbum_img} alt="AlldayProjectIDonBargainAlbum">
-                    <div>
+    <section class='tri_m_h2'>
+        <h2>▪ 최신 앨범 ▪</h2>
+    </section>
+    <section class='tri_m_mem_tr_full'>
+        <section class='tri_m_mem_tr1'>
+            <a href='/AlldayProjectIDonBargainAlbum' class='tri_m_mem_a'>
+                <article class='tri_m_mem'>
+                    <img src={AlldayProjectIDonBargainAlbum_img} alt="AlldayProjectIDonBargainAlbum"
+                         class='allday_project_m_mem_imgborder'>
+                    <div class='allday_project_m_mem_imgborder'>
                         <h4>
                             I DON'T<br/>
                             BARGAIN
@@ -107,14 +127,17 @@
         </section>
     </section>
 
-    <h2 class='tri_m_h2 allday_m_h2_6'>▪ sns ▪</h2>
-    <section class='tri_m_sns_tr_full allday_m_sns_tr_full'>
-        <section class='tri_m_album_tr'>
+    <section class='tri_m_h2'>
+        <h2>▪ sns ▪</h2>
+    </section>
+    <section class='tri_m_mem_tr_full'>
+        <section class='tri_m_mem_tr2'>
             <a href="https://www.instagram.com/allday_project" target='_blank' rel='noopener noreferrer'
-               class='tri_m_sns_a allday_m_sns_a'>
-                <article class='tri_m_snss'>
-                    <img src={AlldayInstagram_icon_img} alt="ALLDAY PROJECT 인스타그램">
-                    <div>
+               class='tri_m_mem_a'>
+                <article class='tri_m_mem'>
+                    <img src={AlldayInstagram_icon_img} alt="ALLDAY PROJECT 인스타그램"
+                         class='allday_project_m_mem_imgborder'>
+                    <div class='allday_project_m_mem_imgborder'>
                         <h4>
                             인스타그램
                         </h4>
@@ -122,10 +145,10 @@
                 </article>
             </a>
             <a href="https://www.youtube.com/@ALLDAY_PROJECT" target='_blank' rel='noopener noreferrer'
-               class='tri_m_sns_a allday_m_sns_a'>
-                <article class='tri_m_snss'>
-                    <img src={AlldayYoutube_icon_img} alt="ALLDAY PROJECT 유튜브"/>
-                    <div>
+               class='tri_m_mem_a'>
+                <article class='tri_m_mem'>
+                    <img src={AlldayYoutube_icon_img} alt="ALLDAY PROJECT 유튜브" class='allday_project_m_mem_imgborder'>
+                    <div class='allday_project_m_mem_imgborder'>
                         <h4>
                             유튜브
                         </h4>
