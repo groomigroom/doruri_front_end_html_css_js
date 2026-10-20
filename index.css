@@ -296,10 +296,13 @@ nav > ul > li > ul > li:hover > a {
 .home_img_slide_full {
     width: 800px;
     height: 400px;
+    /*
     position: absolute;
     top: 280px;
     left: 50%;
     transform: translateX(-50%);
+     */
+    margin: 0 auto;
     border: 5px solid #333;
     border-radius: 25px;
     overflow: hidden;
@@ -432,6 +435,7 @@ nav > ul > li > ul > li:hover > a {
     color: #e6e6e6;
 }
 
+/*
 .home_img_slide_full {
     width: 800px;
     height: 400px;
@@ -442,7 +446,7 @@ nav > ul > li > ul > li:hover > a {
     border: 5px solid #333;
     border-radius: 25px;
     overflow: hidden;
-}
+}*/
 
 .home_img_slide_full_img_train {
     width: 2370px;
