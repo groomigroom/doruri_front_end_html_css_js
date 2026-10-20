@@ -258,12 +258,19 @@ nav > ul > li > ul > li:hover > a {
     position: relative;
 }
 
-.home_logo>img {
+.home_logo > img {
     height: 100px;
     position: absolute;
     top: 0px;
     left: 50%;
     transform: translateX(-50%);
+}
+
+.home_login_button {
+    width: 100%;
+    height: 80px;
+    position: relative;
+    background-color: #FF1E91;
 }
 
 .home_img_slide_full {
