@@ -118,16 +118,16 @@
         console.log(members);
 
         let ioi_go_to_answer = document.querySelector(".ioi_go_to_answer");
-        // 💡 member_thing 기준 내림차순 정렬
-        members.sort((a, b) => {
-            if (a.member_thing === b.member_thing) {
-                return 0; // 동점자 자리 유지
-            }
-            return b.member_thing - a.member_thing; // b에서 a를 빼면 내림차순이 됩니다.
+        ioi_go_to_answer.addEventListener("click", () => {
+            // 💡 member_thing 기준 내림차순 정렬
+            members.sort((a, b) => {
+                if (a.member_thing === b.member_thing) {
+                    return 0; // 동점자 자리 유지
+                }
+                return b.member_thing - a.member_thing; // b에서 a를 빼면 내림차순이 됩니다.
+            });
+            console.log(members);
         });
-
-
-        console.log(members);
     </script>
 </body>
 
