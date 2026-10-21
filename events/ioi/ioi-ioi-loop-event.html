@@ -106,7 +106,7 @@
         //9개 박스들 선언하기
         const ioi_boxs = [];
         for (let i = 0; i < 9; i++) {
-            ioi_boxs.push(`document.querySelector("ioi_box_${i + 1}>p")`);
+            ioi_boxs.push(document.querySelector(`.ioi_box_${i + 1}>p`));
         }
 
         console.log(ioi_boxs);
