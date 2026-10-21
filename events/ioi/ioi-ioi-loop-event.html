@@ -168,9 +168,12 @@
             let ioi_answer_quiz = document.querySelector(".ioi_answer_quiz");
             ioi_answer_quiz.textContent = ioi_last_real_answer + "번째로 물건이 많은 사람은?";
 
-            let user_last_answer = 0;
+            let user_last_answer = "";
             ioi_answer_button_array.forEach((an_button, index)=> {
-                
+                an_button.addEventListener("click", ()=>{
+                    user_last_answer = members_name_list[index];
+                    console.log(user_last_answer);
+                });
             }); 
         });
     </script>
