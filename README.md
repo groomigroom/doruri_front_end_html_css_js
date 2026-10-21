@@ -7,3 +7,4 @@
 * ioi_event -> 객체 방법 찾아서 다시 하기
 
 
+* https://github.com/groomigroom/doruri_front_end_html_css_js/blob/main/events/ioi/ioi-ioi-loop-event.html
