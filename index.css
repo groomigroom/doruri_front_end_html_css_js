@@ -277,10 +277,10 @@ nav > ul > li > ul > li:hover > a {
     display: block;
     width: 150px;
     height: 40px;
-    position: absolute;
-    top: 0px;
-    left: 50%;
-    transform: translateX(-50%);
+    /*position: absolute;*/
+    /*top: 0px;*/
+    /*left: 50%;*/
+    /*transform: translateX(-50%);*/
 }
 
 .home_login_button > a > button {
