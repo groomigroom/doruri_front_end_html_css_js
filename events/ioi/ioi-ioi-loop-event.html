@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="../triples/css/TriplesEvent.css">
 
     <style>
-
+        .ioi_answer_button {
+            display: none;
+        }
     </style>
 </head>
 
@@ -145,6 +147,7 @@
 
         //문제 맞추기 시작하기
         let ioi_go_to_answer = document.querySelector(".ioi_go_to_answer");
+        let ioi_answer_button_array = [];
         ioi_go_to_answer.addEventListener("click", () => {
             // 💡 member_thing 기준 내림차순 정렬
             members.sort((a, b) => {
