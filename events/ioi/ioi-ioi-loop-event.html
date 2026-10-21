@@ -88,7 +88,7 @@
     <div class="ioi_box_9">
         <p></p>
     </div>
-    <button>답 맞춰보기</button>
+    <button class="ioi_go_to_answer">답 맞춰보기</button>
     <script>
         const Menu_button = document.querySelector(".Menu_button");
         const header_wrap = document.querySelector(".header_wrap");
@@ -117,6 +117,7 @@
         }));
         console.log(members);
 
+        let ioi_go_to_answer = document.querySelector(".ioi_go_to_answer");
         // 💡 member_thing 기준 내림차순 정렬
         members.sort((a, b) => {
             if (a.member_thing === b.member_thing) {
