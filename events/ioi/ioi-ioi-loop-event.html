@@ -166,7 +166,9 @@
             let ioi_last_real_answer = Math.floor(Math.random()*9)+1;
             console.log(ioi_last_real_answer + "최종 정답");
             let ioi_answer_quiz = document.querySelector(".ioi_answer_quiz");
-            
+            ioi_answer_quiz.textContent = ioi_last_real_answer + "번째로 물건이 많은 사람은?";
+
+            let user_last_answer = 0;
         });
     </script>
 </body>
