@@ -173,11 +173,14 @@
                 an_button.addEventListener("click", ()=>{
                     user_last_answer = members_name_list[index];
                     console.log(user_last_answer);
+                    if (user_last_answer === members[ioi_last_real_answer-1].member_name) {
+                        console.log("정답");
+                    } else {
+                        console.log("정답아님");
+                    }
                 });
             }); 
-            if (user_last_answer === members[ioi_last_real_answer-1].member_name) {
-                console.log("정답");
-            }
+            
         });
     </script>
 </body>
