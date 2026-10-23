@@ -10,6 +10,236 @@
         .tri_e_last_win_part {
             display: none;
         }
+
+        .bol4_e_event_real_part_full {
+            width: 100%;
+            height: 440px;
+            position: relative;
+        }
+
+        .bol4_e_event_real_part {
+            width: 400px;
+            height: 400px;
+            position: absolute;
+            top: 0px;
+            left: 50%;
+            transform: translateX(-50%);
+            border: 5px solid #191919;
+            border-radius: 25px;
+            overflow: hidden;
+        }
+
+        .bol4_e_event_r_p_mbox {
+            width: 200px;
+            height: 100px;
+            border-radius: 25px;
+            position: absolute;
+            z-index: 2;
+            background-color: #fcfcfc;
+            border: 5px solid #191919;
+            border-radius: 25px;
+        }
+
+        .bol4_e_event_r_p_mbox1 {
+            animation: bol4_e_event_r_p_mbox1 1s ease 0s infinite;
+        }
+
+        @keyframes bol4_e_event_r_p_mbox1 {
+            0% {
+                top: 0px;
+                left: 0px;
+            }
+
+            50% {
+                top: 300px;
+                left: 200px;
+            }
+
+            100% {
+                top: 0px;
+                left: 0px;
+            }
+        }
+
+        .bol4_e_event_r_p_mbox2 {
+            animation: bol4_e_event_r_p_mbox2 2s ease 0s infinite;
+        }
+
+        @keyframes bol4_e_event_r_p_mbox2 {
+            0% {
+                top: 0px;
+                left: 200px;
+            }
+
+            50% {
+                top: 300px;
+                left: 0px;
+            }
+
+            100% {
+                top: 0px;
+                left: 200px;
+            }
+        }
+
+        .bol4_e_event_r_p_mbox3 {
+            animation: bol4_e_event_r_p_mbox3 3s ease 0s infinite;
+        }
+
+        @keyframes bol4_e_event_r_p_mbox3 {
+            0% {
+                top: 100px;
+                left: 0px;
+            }
+
+            50% {
+                top: 200px;
+                left: 200px;
+            }
+
+            100% {
+                top: 100px;
+                left: 0px;
+            }
+        }
+
+        .bol4_e_event_r_p_mbox4 {
+            animation: bol4_e_event_r_p_mbox4 4s ease 0s infinite;
+        }
+
+        @keyframes bol4_e_event_r_p_mbox4 {
+            0% {
+                top: 100px;
+                left: 200px;
+            }
+
+            50% {
+                top: 200px;
+                left: 0px;
+            }
+
+            100% {
+                top: 100px;
+                left: 200px;
+            }
+        }
+
+        .bol4_e_event_r_p_mbox5 {
+            animation: bol4_e_event_r_p_mbox5 1s ease 0s infinite;
+        }
+
+        @keyframes bol4_e_event_r_p_mbox5 {
+            0% {
+                top: 200px;
+                left: 0px;
+            }
+
+            50% {
+                top: 100px;
+                left: 200px;
+            }
+
+            100% {
+                top: 200px;
+                left: 0px;
+            }
+        }
+
+        .bol4_e_event_r_p_mbox6 {
+            animation: bol4_e_event_r_p_mbox6 2s ease 0s infinite;
+        }
+
+        @keyframes bol4_e_event_r_p_mbox6 {
+            0% {
+                top: 200px;
+                left: 200px;
+            }
+
+            50% {
+                top: 100px;
+                left: 0px;
+            }
+
+            100% {
+                top: 200px;
+                left: 200px;
+            }
+        }
+
+        .bol4_e_event_r_p_mbox7 {
+            animation: bol4_e_event_r_p_mbox7 3s ease 0s infinite;
+        }
+
+        @keyframes bol4_e_event_r_p_mbox7 {
+            0% {
+                top: 300px;
+                left: 0px;
+            }
+
+            50% {
+                top: 0px;
+                left: 200px;
+            }
+
+            100% {
+                top: 300px;
+                left: 0px;
+            }
+        }
+
+        .bol4_e_event_r_p_mbox8 {
+            animation: bol4_e_event_r_p_mbox8 4s ease 0s infinite;
+        }
+
+        @keyframes bol4_e_event_r_p_mbox8 {
+            0% {
+                top: 300px;
+                left: 200px;
+            }
+
+            50% {
+                top: 0px;
+                left: 0px;
+            }
+
+            100% {
+                top: 300px;
+                left: 200px;
+            }
+        }
+
+        .bol4_e_event_r_p_m_pp {
+            cursor: pointer;
+            position: absolute;
+            animation: bol4_e_event_r_p_m_pp 5s ease 0s infinite;
+        }
+
+        @keyframes bol4_e_event_r_p_m_pp {
+            0% {
+                top: 20px;
+                left: 20px;
+            }
+
+            25% {
+                top: 20px;
+                left: 295px;
+            }
+
+            50% {
+                top: 360px;
+                left: 295px;
+            }
+
+            75% {
+                top: 360px;
+                left: 20px;
+            }
+
+            100% {
+                top: 20px;
+                left: 20px;
+            }
+        }
     </style>
 </head>
 
@@ -22,7 +252,7 @@
                 <Link to='/Bol4EventEng'>English</Link>
             </section>
         </header>
-        <section class="tri_e_logo">
+        <!-- <section class="tri_e_logo">
             <img src={bol4_e_logo} alt="볼빨간사춘기 이벤트 로고" />
         </section>
         <section class="tri_m_h2">
@@ -34,7 +264,7 @@
                 앨범 제목을<br />
                 클릭해 주세요!
             </p>
-        </section>
+        </section> -->
         <section class="bol4_e_event_real_part_full">
             <section class="bol4_e_event_real_part">
                 <div class="bol4_e_event_r_p_mbox bol4_e_event_r_p_mbox1"></div>
