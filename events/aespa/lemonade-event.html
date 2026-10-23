@@ -115,32 +115,45 @@
     </section>
 </div>
 <script>
-    //##### 자바스크립트 수정하기...
     const intro = document.querySelector(".aespa_e_intropp2 > p");
     const inputs = document.querySelectorAll(".aespa_e_value");
     const win = document.querySelector(".tri_e_last_win_part");
-
     const answer = "lemonade";
 
     intro.textContent = "현재: 1번째 글자";
 
-    function check() {
-        for (let i = 0; i < inputs.length; i++) {
-            if (inputs[i].value !== answer[i]) {
-                intro.textContent = `현재: ${i + 1}번째 글자`;
-                inputs[i + 1].style.display = "block";
-                return;
-            }
-        }
+    function check(e) {
+        // 현재 입력이 일어난 input 요소와 그것의 인덱스(순서)를 찾습니다.
+        const currentInput = e.target;
+        const currentIndex = Array.from(inputs).indexOf(currentInput);
 
-        intro.textContent = "정답입니다!";
-        win.style.display = "block";
+        // 현재 입력한 글자가 정답의 해당 자리 글자와 일치하는지 확인합니다.
+        if (currentInput.value.toLowerCase() === answer[currentIndex]) {
+
+            // 마지막 글자까지 모두 맞췄는지 확인합니다.
+            if (currentIndex === answer.length - 1) {
+                intro.textContent = "정답입니다!";
+                win.style.display = "block";
+            } else {
+                // 다음 input 칸을 보여주고 포커스를 이동합니다.
+                const nextInput = inputs[currentIndex + 1];
+                nextInput.style.display = "block";
+                nextInput.focus();
+
+                intro.textContent = `현재: ${currentIndex + 2}번째 글자`;
+            }
+        } else {
+            // 틀렸을 경우 기존 글자를 지우거나 안내할 수 있습니다. (선택사항)
+            intro.textContent = `현재: ${currentIndex + 1}번째 글자 (틀렸습니다)`;
+        }
     }
 
+    // 각 input에 이벤트 리스너를 등록할 때 event 객체(e)를 전달합니다.
     inputs.forEach(input => {
         input.addEventListener("input", check);
     });
 </script>
+
 </body>
 
 </html>
