@@ -128,6 +128,7 @@
         for (let i = 0; i < inputs.length; i++) {
             if (inputs[i].value !== answer[i]) {
                 intro.textContent = `현재: ${i + 1}번째 글자`;
+                inputs[i + 1].style.display = "block";
                 return;
             }
         }
