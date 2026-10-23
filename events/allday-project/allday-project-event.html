@@ -293,6 +293,21 @@
                 tri_e_last_win_part.style.display = "block";
                 console.log("당첨");
             }
+            if (all_e_maze_running_box_top === 40 && all_e_maze_running_box_left === 40 || all_e_maze_running_box_top === 40 && all_e_maze_running_box_left === 120 || all_e_maze_running_box_top === 40 && all_e_maze_running_box_left === 200
+                || all_e_maze_running_box_top === 120 && all_e_maze_running_box_left === 40 || all_e_maze_running_box_top === 120 && all_e_maze_running_box_left === 120 || all_e_maze_running_box_top === 120 && all_e_maze_running_box_left === 200
+                || all_e_maze_running_box_top === 200 && all_e_maze_running_box_left === 40 || all_e_maze_running_box_top === 200 && all_e_maze_running_box_left === 120 || all_e_maze_running_box_top === 200 && all_e_maze_running_box_left === 200
+                || all_e_maze_running_box_left === -40 || all_e_maze_running_box_left === 280 ||
+                all_e_maze_running_box_top === -80 || all_e_maze_running_box_top === 320 ||
+                all_e_maze_running_box_top === 280 && all_e_maze_running_box_left === 80 || all_e_maze_running_box_top === 280 && all_e_maze_running_box_left === 40 || all_e_maze_running_box_top === 280 && all_e_maze_running_box_left === 0
+                || all_e_maze_running_box_top === 280 && all_e_maze_running_box_left === 160 || all_e_maze_running_box_top === 280 && all_e_maze_running_box_left === 200 || all_e_maze_running_box_top === 280 && all_e_maze_running_box_left === 240
+                || all_e_maze_running_box_top === -40 && all_e_maze_running_box_left === 80 || all_e_maze_running_box_top === -40 && all_e_maze_running_box_left === 40 || all_e_maze_running_box_top === -40 && all_e_maze_running_box_left === 0
+                || all_e_maze_running_box_top === -40 && all_e_maze_running_box_left === 160 || all_e_maze_running_box_top === -40 && all_e_maze_running_box_left === 200 || all_e_maze_running_box_top === -40 && all_e_maze_running_box_left === 240
+            ) {
+                all_e_maze_running_box_top = 280;
+                all_e_maze_running_box_left = 120;
+                alldayproject_e_maze_running_box.style.top = `${all_e_maze_running_box_top}px`;
+                alldayproject_e_maze_running_box.style.left = `${all_e_maze_running_box_left}px`;
+            }
         };
 
         //위쪽으로 이동
