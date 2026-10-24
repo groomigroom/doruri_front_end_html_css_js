@@ -116,12 +116,10 @@
         </section> -->
         <section class="epikhigh_e_lp_move_part_full">
             <section class="epikhigh_e_lp_move_part">
-                <div class="epikhigh_e_real_lp" style=top: `${epikhigh_e_real_lp_top}px`, left:
-                    `${epikhigh_e_real_lp_left}px`>
+                <div class="epikhigh_e_real_lp">
                     <img src={epikhigh_e_real_lp_img} alt='real_lp' />
                 </div>
-                <div class="epikhigh_e_fake_lp" style=top: `${epikhigh_e_fake_lp_top}px`, left:
-                    `${epikhigh_e_fake_lp_left}px`>
+                <div class="epikhigh_e_fake_lp">
                     <img src={epikhigh_e_fake_lp_img} alt='real_lp' />
                 </div>
                 <div class="epikhigh_e_lp_m_divide_y epikhigh_e_lp_m_divide1"></div>
@@ -143,9 +141,7 @@
             </section>
         </section>
         <FooterPart FooterPartText='ⓒ 아워즈' />
-        {
-        epikhigh_e_lp_move_count === 5 && (epikhigh_e_real_lp_top != epikhigh_e_fake_lp_top || epikhigh_e_real_lp_left
-        != epikhigh_e_fake_lp_left) && (
+
         <section class=" tri_e_last_win_part">
             <div class="tri_e_ghost_40px"></div>
             <section class="tri_m_h2">
@@ -166,11 +162,6 @@
                 <img src={epikhigh_e_pick} alt="" class="epikhigh_e_p_win_present_img" />
             </section>
         </section>
-        )
-        }
-        {
-        epikhigh_e_real_lp_top === epikhigh_e_fake_lp_top && epikhigh_e_real_lp_left === epikhigh_e_fake_lp_left &&
-        (
         <section class="tri_e_last_win_part">
             <div class="tri_e_ghost_40px"></div>
             <section class="tri_m_h2">
@@ -179,8 +170,7 @@
                 </h2>
             </section>
         </section>
-        )
-        }
+
         <script>
             let epikhigh_e_lp_move_count = 0;
             function epikhigh_e_lp_move_count_up() {
