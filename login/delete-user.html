@@ -1,0 +1,81 @@
+<!--#####-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원 탈퇴</title>
+</head>
+<body>
+<div class="container mt-5" style="max-width: 500px;">
+    <div class="card shadow border-danger">
+        <div class="card-header bg-danger text-white">
+            <h5 class="mb-0">회원 탈퇴</h5>
+        </div>
+        <div class="card-body">
+            <!-- 탈퇴 안내 주의사항 -->
+            <div class="alert alert-danger" role="alert">
+                <h6 class="alert-heading fw-bold">⚠️ 주의사항</h6>
+                <p class="small mb-0">탈퇴하시면 본인 계정에 저장된 모든 데이터가 삭제되거나 접근이 불가능해집니다. 이 작업은 취소할 수 없습니다.</p>
+            </div>
+
+            <form id="withdrawalForm">
+                <!-- 유의사항 동의 체크 -->
+                <div class="form-check mb-4">
+                    <input class="form-check-input" type="checkbox" id="agreeCheck" required>
+                    <label class="form-check-label small text-muted" for="agreeCheck">
+                        안내 사항을 모두 확인하였으며, 이에 동의합니다.
+                    </label>
+                </div>
+
+                <!-- 본인 확인 비밀번호 -->
+                <div class="mb-4">
+                    <label for="password" class="form-label fw-bold">본인 확인 비밀번호</label>
+                    <input type="password" class="form-control" id="password" placeholder="현재 비밀번호 입력" required>
+                </div>
+
+                <button type="submit" class="btn btn-danger w-100 fw-bold">계정 영구 탈퇴</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.getElementById('withdrawalForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        const agreeCheck = document.getElementById('agreeCheck').checked;
+        const password = document.getElementById('password').value;
+
+        if (!agreeCheck) {
+            alert('탈퇴 안내 동의에 체크해주세요.');
+            return;
+        }
+
+        // 최종 더블 체크 확인창
+        if (!confirm('정말로 탈퇴하시겠습니까? 탈퇴 후 데이터는 복구되지 않습니다.')) {
+            return;
+        }
+
+        // 서버로 탈퇴 요청 전송 (앞서 만든 DELETE API 주소)
+        fetch('/login/delete', {
+            method: 'DELETE',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ password })
+        })
+            .then(async response => {
+                if (response.ok) {
+                    alert('회원 탈퇴가 정상적으로 처리되었습니다. 이용해 주셔서 감사합니다.');
+                    window.location.href = '/'; // 탈퇴 완료 후 메인 페이지로 이동
+                } else {
+                    const errorMsg = await response.text();
+                    alert('탈퇴 실패: ' + errorMsg);
+                }
+            })
+            .catch(error => alert('에러가 발생했습니다: ' + error));
+    });
+</script>
+</body>
+</html>
