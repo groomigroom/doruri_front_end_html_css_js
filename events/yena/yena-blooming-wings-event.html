@@ -38,7 +38,7 @@
         <section class="yena_e_moving_part">
             <p onClick={Yena_e_true_cl_change} class="yena_e_me_part">나</p>
             <section onClick={Yena_e_false_cl_change} class="yena_e_you_part">
-                <YenaEventYouModule />
+                <div class="YenaEventYouModule_e_full"></div>
                 <YenaEventYouModule />
                 <YenaEventYouModule />
                 <YenaEventYouModule />
@@ -119,6 +119,12 @@
         </section>
         )}
     </div>
+    <script>
+        const YenaEventYouModule_e_full = document.querySelectorAll(".YenaEventYouModule_e_full");
+        YenaEventYouModule_e_full.forEach(module_e_full, () => {
+            
+        });
+    </script>
 </body>
 
 </html>
