@@ -228,7 +228,7 @@
             //59번줄 참조
             function epikhigh_e_real_lp_go_up() {
                 if (epikhigh_e_real_lp_top !== 20) {
-                    setEpikhigh_e_real_lp_top((PrevEpikhigh_e_real_lp_top) => (PrevEpikhigh_e_real_lp_top - 100));
+                    epikhigh_e_real_lp_top -= 100;
                     const Epikhigh_e_fake_lp_rdIndex = Math.floor(Math.random() * Epikhigh_e_fake_lp_functions.length);
 
                     Epikhigh_e_fake_lp_functions[Epikhigh_e_fake_lp_rdIndex]();
