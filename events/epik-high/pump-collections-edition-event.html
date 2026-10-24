@@ -176,7 +176,7 @@
             function epikhigh_e_lp_move_count_up() {
                 epikhigh_e_lp_move_count++;
                 console.log(epikhigh_e_lp_move_count)
-                if (epikhigh_e_lp_move_count === 5) {
+                if (epikhigh_e_lp_move_count === 5 || epikhigh_e_real_lp_top === epikhigh_e_fake_lp_top && epikhigh_e_real_lp_left === epikhigh_e_fake_lp_left) {
                     console.log("게임 끝");
                 }
             }
