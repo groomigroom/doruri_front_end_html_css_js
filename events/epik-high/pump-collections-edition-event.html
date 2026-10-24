@@ -133,20 +133,20 @@
         <section class='alldayproject_e_maze_RB_buttons_full'>
             <section class='alldayproject_e_maze_RB_buttons'>
                 <button class='alldayproject_e_maze_RB_button alldayproject_e_maze_RB_to_top'
-                    onClick={epikhigh_e_real_lp_go_up}>위로 이동</button>
+                    onclick="epikhigh_e_real_lp_go_up()">위로 이동</button>
                 <button class='alldayproject_e_maze_RB_button alldayproject_e_maze_RB_to_down'
-                    onClick={epikhigh_e_real_lp_go_down}>아래로 이동</button>
+                    onclick="epikhigh_e_real_lp_go_down()">아래로 이동</button>
                 <button class='alldayproject_e_maze_RB_button alldayproject_e_maze_RB_to_left'
-                    onClick={epikhigh_e_real_lp_go_left}>왼쪽으로 이동</button>
+                    onclick="epikhigh_e_real_lp_go_left()">왼쪽으로 이동</button>
                 <button class='alldayproject_e_maze_RB_button alldayproject_e_maze_RB_to_right'
-                    onClick={epikhigh_e_real_lp_go_right}>오른쪽으로 이동</button>
+                    onclick="epikhigh_e_real_lp_go_right()">오른쪽으로 이동</button>
             </section>
         </section>
         <FooterPart FooterPartText='ⓒ 아워즈' />
         {
         epikhigh_e_lp_move_count === 5 && (epikhigh_e_real_lp_top != epikhigh_e_fake_lp_top || epikhigh_e_real_lp_left
         != epikhigh_e_fake_lp_left) && (
-        <section class="tri_e_last_win_part">
+        <section class=" tri_e_last_win_part">
             <div class="tri_e_ghost_40px"></div>
             <section class="tri_m_h2">
                 <h2>
@@ -169,7 +169,8 @@
         )
         }
         {
-        epikhigh_e_real_lp_top === epikhigh_e_fake_lp_top && epikhigh_e_real_lp_left === epikhigh_e_fake_lp_left && (
+        epikhigh_e_real_lp_top === epikhigh_e_fake_lp_top && epikhigh_e_real_lp_left === epikhigh_e_fake_lp_left &&
+        (
         <section class="tri_e_last_win_part">
             <div class="tri_e_ghost_40px"></div>
             <section class="tri_m_h2">
