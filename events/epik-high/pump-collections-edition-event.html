@@ -226,6 +226,15 @@
             //진짜 lp 이동 함수부터 만들기
             //https://github.com/groomigroom/doruri_vite_react_tsx_code/blob/main/src/modules/EpikHigh/events/EpikHighEvent.tsx
             //59번줄 참조
+            function epikhigh_e_real_lp_go_up() {
+                if (epikhigh_e_real_lp_top !== 20) {
+                    setEpikhigh_e_real_lp_top((PrevEpikhigh_e_real_lp_top) => (PrevEpikhigh_e_real_lp_top - 100));
+                    const Epikhigh_e_fake_lp_rdIndex = Math.floor(Math.random() * Epikhigh_e_fake_lp_functions.length);
+
+                    Epikhigh_e_fake_lp_functions[Epikhigh_e_fake_lp_rdIndex]();
+                    epikhigh_e_lp_move_count_up();
+                }
+            }
         </script>
     </div>
 </body>
