@@ -185,6 +185,9 @@
             let epikhigh_e_lp_move_count = 0;
             function epikhigh_e_lp_move_count_up() {
                 epikhigh_e_lp_move_count++;
+                if (epikhigh_e_lp_move_count === 5) {
+                    console.log("게임 끝");
+                }
             }
             //진짜 lp 변수 선언
             let epikhigh_e_real_lp_top = 20;
