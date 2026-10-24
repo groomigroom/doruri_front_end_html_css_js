@@ -235,6 +235,16 @@
                     epikhigh_e_lp_move_count_up();
                 }
             }
+
+            function epikhigh_e_real_lp_go_down() {
+                if (epikhigh_e_real_lp_top !== 220) {
+                    epikhigh_e_real_lp_top += 100;
+                    const Epikhigh_e_fake_lp_rdIndex = Math.floor(Math.random() * Epikhigh_e_fake_lp_functions.length);
+
+                    Epikhigh_e_fake_lp_functions[Epikhigh_e_fake_lp_rdIndex]();
+                    epikhigh_e_lp_move_count_up();
+                }
+            };
         </script>
     </div>
 </body>
