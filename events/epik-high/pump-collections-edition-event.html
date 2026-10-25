@@ -13,6 +13,10 @@
             display: none;
         }
 
+        .tri_e_last_lose_part {
+            display: none;
+        }
+
         .epikhighEvent_full {
             width: 100vw;
             height: 1000px;
@@ -208,7 +212,7 @@
                 <img src="#####" alt="피크" class="epikhigh_e_p_win_present_img">
             </section>
         </section>
-        <section class="tri_e_last_win_part">
+        <section class="tri_e_last_lose_part">
             <div class="tri_e_ghost_40px"></div>
             <section class="tri_m_h2">
                 <h2>
@@ -220,6 +224,7 @@
         <script src="../../index.js"></script>
         <script>
             const tri_e_last_win_part = document.querySelector(".tri_e_last_win_part");
+            const tri_e_last_lose_part = document.querySelector(".tri_e_last_lose_part");
             const epikhigh_e_real_lp = document.querySelector(".epikhigh_e_real_lp");
             const epikhigh_e_fake_lp = document.querySelector(".epikhigh_e_fake_lp");
             let epikhigh_e_lp_move_count = 0;
@@ -227,7 +232,7 @@
                 epikhigh_e_lp_move_count++;
                 console.log(epikhigh_e_lp_move_count)
                 if (epikhigh_e_real_lp_top === epikhigh_e_fake_lp_top && epikhigh_e_real_lp_left === epikhigh_e_fake_lp_left) {
-                    console.log("게임 끝");
+                    tri_e_last_lose_part.style.display = "block"
                 }
                 if (epikhigh_e_lp_move_count === 5 && (epikhigh_e_real_lp_top != epikhigh_e_fake_lp_top || epikhigh_e_real_lp_left != epikhigh_e_fake_lp_left)) {
                     tri_e_last_win_part.style.display = "block";
