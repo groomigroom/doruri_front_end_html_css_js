@@ -167,8 +167,8 @@
             </p>
         </section> -->
         <section class="yena_e_moving_part">
-            <p onClick={Yena_e_true_cl_change} class="yena_e_me_part">나</p>
-            <section onClick={Yena_e_false_cl_change} class="yena_e_you_part">
+            <p onclick="triELastWinOpen()" class="yena_e_me_part">나</p>
+            <section class="yena_e_you_part">
                 <div class="YenaEventYouModule_e_full"></div>
                 <div class="YenaEventYouModule_e_full"></div>
                 <div class="YenaEventYouModule_e_full"></div>
@@ -239,16 +239,9 @@
 
             </section>
         </section>
-        {Yena_e_false_click && (
-        <section>
-            <p>당첨 아님</p>
-        </section>
-        )}
-        {Yena_e_true_click && (
-        <section>
+        <section class="tri_e_last_win_part">
             <p>당첨!!!!!</p>
         </section>
-        )}
     </div>
     <script>
         const YenaEventYouModule_e_full = document.querySelectorAll(".YenaEventYouModule_e_full");
@@ -319,6 +312,10 @@
                     </p>
                 </div>`;
         });
+        const tri_e_last_win_part = document.querySelector(".tri_e_last_win_part");
+        function triELastWinOpen() {
+            tri_e_last_win_part.style.display = "block";
+        }
     </script>
 </body>
 
