@@ -162,10 +162,10 @@
         <section class="epikhigh_e_lp_move_part_full">
             <section class="epikhigh_e_lp_move_part">
                 <div class="epikhigh_e_real_lp">
-                    <img src="#####" alt='real_lp'>
+                    <img src="#####" alt='real_lp' class="real_lp">
                 </div>
                 <div class="epikhigh_e_fake_lp">
-                    <img src="#####" alt='fake_lp'>
+                    <img src="#####" alt='fake_lp' class="fake_lp">
                 </div>
                 <div class="epikhigh_e_lp_m_divide_y epikhigh_e_lp_m_divide1"></div>
                 <div class="epikhigh_e_lp_m_divide_y epikhigh_e_lp_m_divide2"></div>
@@ -221,6 +221,7 @@
         <script>
             const tri_e_last_win_part = document.querySelector(".tri_e_last_win_part");
             const real_lp = document.querySelector(".real_lp");
+            const fake_lp = document.querySelector(".fake_lp");
             let epikhigh_e_lp_move_count = 0;
             function epikhigh_e_lp_move_count_up() {
                 epikhigh_e_lp_move_count++;
