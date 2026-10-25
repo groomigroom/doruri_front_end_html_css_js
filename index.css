@@ -93,7 +93,7 @@
     z-index: 1000000;
 }
 
-.home_translate > a.on {
+.home_translate>a.on {
     background-color: #333;
     color: #e6e6e6;
 }
@@ -160,7 +160,7 @@ header {
 }
 
 
-.Menu_button > div {
+.Menu_button>div {
     width: 35px;
     height: 7px;
     background-color: #333;
@@ -194,12 +194,12 @@ nav {
     overflow: hidden;
 }
 
-nav > ul {
+nav>ul {
     display: flex;
     justify-content: space-between;
 }
 
-nav > ul li {
+nav>ul li {
     width: 150px;
     height: 40px;
     text-align: center;
@@ -208,47 +208,47 @@ nav > ul li {
     border-radius: 25px;
 }
 
-nav > ul > li {
+nav>ul>li {
     position: relative;
 }
 
-nav > ul > li:hover {
+nav>ul>li:hover {
     background-color: #333;
     color: #fcfcfc;
 }
 
-nav > ul > li > ul {
+nav>ul>li>ul {
     position: absolute;
     top: 45px;
     left: -5px;
 }
 
-nav > ul > li > ul > li {
+nav>ul>li>ul>li {
     position: absolute;
     left: 0px;
 }
 
-nav > ul > li > ul > li:nth-child(1) {
+nav>ul>li>ul>li:nth-child(1) {
     top: 0px;
 }
 
-nav > ul > li > ul > li:nth-child(2) {
+nav>ul>li>ul>li:nth-child(2) {
     top: 50px;
 }
 
-nav > ul > li > ul > li:nth-child(3) {
+nav>ul>li>ul>li:nth-child(3) {
     top: 100px;
 }
 
-nav > ul > li > ul > li:nth-child(4) {
+nav>ul>li>ul>li:nth-child(4) {
     top: 150px;
 }
 
-nav > ul > li > ul > li:hover {
+nav>ul>li>ul>li:hover {
     background-color: #333;
 }
 
-nav > ul > li > ul > li:hover > a {
+nav>ul>li>ul>li:hover>a {
     color: #fcfcfc;
 }
 
@@ -258,12 +258,17 @@ nav > ul > li > ul > li:hover > a {
     position: relative;
 }
 
-.home_logo > img {
+.home_logo>img {
     height: 100px;
     position: absolute;
     top: 0px;
     left: 50%;
     transform: translateX(-50%);
+}
+
+.header_back_ghost {
+    width: 100%;
+    height: 120px;
 }
 
 .home_login_button {
@@ -273,7 +278,7 @@ nav > ul > li > ul > li:hover > a {
     background-color: #FF1E91;
 }
 
-.home_login_button > a {
+.home_login_button>a {
     display: block;
     width: 150px;
     height: 40px;
@@ -283,7 +288,7 @@ nav > ul > li > ul > li:hover > a {
     /*transform: translateX(-50%);*/
 }
 
-.home_login_button > a > button {
+.home_login_button>a>button {
     width: 150px;
     height: 40px;
     border: 5px solid #333333;
@@ -350,12 +355,12 @@ nav > ul > li > ul > li:hover > a {
     transform: translateX(-50%);
 }
 
-.home_main_intropa_tb > tbody > tr {
+.home_main_intropa_tb>tbody>tr {
     height: 50px;
     position: relative;
 }
 
-.home_main_intropa_tb > tbody > tr > .home_main_intropa_tb_td1 {
+.home_main_intropa_tb>tbody>tr>.home_main_intropa_tb_td1 {
     position: absolute;
     width: 115px;
     height: 50px;
@@ -368,7 +373,7 @@ nav > ul > li > ul > li:hover > a {
     border-right: 5px solid #e6e6e6;
 }
 
-.home_main_intropa_tb > tbody > tr > .home_main_intropa_tb_td1 > p {
+.home_main_intropa_tb>tbody>tr>.home_main_intropa_tb_td1>p {
     position: absolute;
     top: 50%;
     left: 10px;
@@ -377,7 +382,7 @@ nav > ul > li > ul > li:hover > a {
     font-weight: 600;
 }
 
-.home_main_intropa_tb > tbody > tr > .home_main_intropa_tb_td2 {
+.home_main_intropa_tb>tbody>tr>.home_main_intropa_tb_td2 {
     width: 285px;
     height: 50px;
     background-color: #e6e6e6;
@@ -388,8 +393,8 @@ nav > ul > li > ul > li:hover > a {
     border-right: 5px solid #333;
 }
 
-.home_main_intropa_tb > tbody > tr > .home_main_intropa_tb_td2 > p,
-.home_main_intropa_tb > tbody > tr > .home_main_intropa_tb_td2 > a {
+.home_main_intropa_tb>tbody>tr>.home_main_intropa_tb_td2>p,
+.home_main_intropa_tb>tbody>tr>.home_main_intropa_tb_td2>a {
     width: 270px;
     background-color: #e6e6e600;
     border: none;
@@ -400,15 +405,15 @@ nav > ul > li > ul > li:hover > a {
     transform: translateY(-50%);
 }
 
-.home_main_intropa_tb_tr1 > td:first-child {
+.home_main_intropa_tb_tr1>td:first-child {
     border-top-left-radius: 15px;
 }
 
-.home_main_intropa_tb_tr1 > td:last-child {
+.home_main_intropa_tb_tr1>td:last-child {
     border-top-right-radius: 15px;
 }
 
-.home_main_intropa_tb_tr6 > td {
+.home_main_intropa_tb_tr6>td {
     width: 400px;
     height: 50px;
     position: absolute;
@@ -416,7 +421,7 @@ nav > ul > li > ul > li:hover > a {
     left: 0px;
 }
 
-.home_main_intropa_tb_tr6 > td > a {
+.home_main_intropa_tb_tr6>td>a {
     display: block;
     width: 400px;
     height: 50px;
@@ -429,7 +434,7 @@ nav > ul > li > ul > li:hover > a {
     font-weight: 700;
 }
 
-.home_main_intropa_tb_tr6 > td > a:hover {
+.home_main_intropa_tb_tr6>td>a:hover {
     border: 5px solid #e6e6e6;
     background-color: #333;
     color: #e6e6e6;
@@ -490,12 +495,12 @@ nav > ul > li > ul > li:hover > a {
     transform: translateX(-50%);
 }
 
-.home_main_intropa_tb > tbody > tr {
+.home_main_intropa_tb>tbody>tr {
     height: 50px;
     position: relative;
 }
 
-.home_main_intropa_tb > tbody > tr > .home_main_intropa_tb_td1 {
+.home_main_intropa_tb>tbody>tr>.home_main_intropa_tb_td1 {
     position: absolute;
     width: 115px;
     height: 50px;
@@ -508,7 +513,7 @@ nav > ul > li > ul > li:hover > a {
     border-right: 5px solid #e6e6e6;
 }
 
-.home_main_intropa_tb > tbody > tr > .home_main_intropa_tb_td1 > p {
+.home_main_intropa_tb>tbody>tr>.home_main_intropa_tb_td1>p {
     position: absolute;
     top: 50%;
     left: 10px;
@@ -517,7 +522,7 @@ nav > ul > li > ul > li:hover > a {
     font-weight: 600;
 }
 
-.home_main_intropa_tb > tbody > tr > .home_main_intropa_tb_td2 {
+.home_main_intropa_tb>tbody>tr>.home_main_intropa_tb_td2 {
     width: 285px;
     height: 50px;
     background-color: #e6e6e6;
@@ -528,8 +533,8 @@ nav > ul > li > ul > li:hover > a {
     border-right: 5px solid #333;
 }
 
-.home_main_intropa_tb > tbody > tr > .home_main_intropa_tb_td2 > p,
-.home_main_intropa_tb > tbody > tr > .home_main_intropa_tb_td2 > a {
+.home_main_intropa_tb>tbody>tr>.home_main_intropa_tb_td2>p,
+.home_main_intropa_tb>tbody>tr>.home_main_intropa_tb_td2>a {
     width: 270px;
     background-color: #e6e6e600;
     border: none;
@@ -540,15 +545,15 @@ nav > ul > li > ul > li:hover > a {
     transform: translateY(-50%);
 }
 
-.home_main_intropa_tb_tr1 > td:first-child {
+.home_main_intropa_tb_tr1>td:first-child {
     border-top-left-radius: 15px;
 }
 
-.home_main_intropa_tb_tr1 > td:last-child {
+.home_main_intropa_tb_tr1>td:last-child {
     border-top-right-radius: 15px;
 }
 
-.home_main_intropa_tb_tr6 > td {
+.home_main_intropa_tb_tr6>td {
     width: 400px;
     height: 50px;
     position: absolute;
@@ -556,7 +561,7 @@ nav > ul > li > ul > li:hover > a {
     left: 0px;
 }
 
-.home_main_intropa_tb_tr6 > td > a {
+.home_main_intropa_tb_tr6>td>a {
     display: block;
     width: 400px;
     height: 50px;
@@ -569,7 +574,7 @@ nav > ul > li > ul > li:hover > a {
     font-weight: 700;
 }
 
-.home_main_intropa_tb_tr6 > td > a:hover {
+.home_main_intropa_tb_tr6>td>a:hover {
     border: 5px solid #e6e6e6;
     background-color: #333;
     color: #e6e6e6;
