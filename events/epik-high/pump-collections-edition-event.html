@@ -265,15 +265,19 @@
             function epikhigh_e_fake_lp_go_left() {
                 if (epikhigh_e_fake_lp_left !== 20) {
                     epikhigh_e_fake_lp_left -= 100;
+                    epikhigh_e_fake_lp.style.left = `${epikhigh_e_fake_lp_left}px`;
                 } else {
                     epikhigh_e_fake_lp_left += 100;
+                    epikhigh_e_fake_lp.style.left = `${epikhigh_e_fake_lp_left}px`;
                 }
             }
             function epikhigh_e_fake_lp_go_right() {
                 if (epikhigh_e_fake_lp_left !== 220) {
                     epikhigh_e_fake_lp_left += 100;
+                    epikhigh_e_fake_lp.style.left = `${epikhigh_e_fake_lp_left}px`;
                 } else {
                     epikhigh_e_fake_lp_left -= 100;
+                    epikhigh_e_fake_lp.style.left = `${epikhigh_e_fake_lp_left}px`;
                 }
             }
 
