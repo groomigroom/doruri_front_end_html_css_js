@@ -7,21 +7,39 @@
     <title>han</title>
     <link rel="stylesheet" href="../css/triples/TriplesEvent.css">
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         .win_popup {
             display: none;
+        }
+
+        .hanroro_event_button_train {
+            width: 320px;
+            height: 40px;
+        }
+
+        .hanroro_event_button_train>input {
+            width: 40px;
+            height: 40px;
         }
     </style>
 </head>
 
 <body>
-    <input type="button" value="1">
-    <input type="button" value="2">
-    <input type="button" value="3">
-    <input type="button" value="4">
-    <input type="button" value="5">
-    <input type="button" value="6">
-    <input type="button" value="7">
-    <input type="button" value="8">
+    <section class="hanroro_event_button_train">
+        <input type="button" value="1">
+        <input type="button" value="2">
+        <input type="button" value="3">
+        <input type="button" value="4">
+        <input type="button" value="5">
+        <input type="button" value="6">
+        <input type="button" value="7">
+        <input type="button" value="8">
+    </section>
     <div class="win_popup">당첨</div>
     <script>
         let last_str = "";
