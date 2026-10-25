@@ -247,15 +247,19 @@
             function epikhigh_e_fake_lp_go_up() {
                 if (epikhigh_e_fake_lp_top !== 20) {
                     epikhigh_e_fake_lp_top -= 100;
+                    epikhigh_e_fake_lp.style.top = `${epikhigh_e_fake_lp_top}px`;
                 } else {
                     epikhigh_e_fake_lp_top += 100;
+                    epikhigh_e_fake_lp.style.top = `${epikhigh_e_fake_lp_top}px`;
                 }
             }
             function epikhigh_e_fake_lp_go_down() {
                 if (epikhigh_e_fake_lp_top !== 220) {
                     epikhigh_e_fake_lp_top += 100;
+                    epikhigh_e_fake_lp.style.top = `${epikhigh_e_fake_lp_top}px`;
                 } else {
                     epikhigh_e_fake_lp_top -= 100;
+                    epikhigh_e_fake_lp.style.top = `${epikhigh_e_fake_lp_top}px`;
                 }
             }
             function epikhigh_e_fake_lp_go_left() {
