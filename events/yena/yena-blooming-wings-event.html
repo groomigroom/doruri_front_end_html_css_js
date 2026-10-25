@@ -10,6 +10,65 @@
         .tri_e_last_win_part {
             display: none;
         }
+
+        .YenaEventYouModule_e_full {
+            width: 30px;
+            height: 400px;
+            overflow: hidden;
+            display: flex;
+            position: relative;
+            flex-shrink: 0;
+        }
+
+        .YenaEventYouModule_e_full>div {
+            width: 15px;
+            height: 600px;
+            position: absolute;
+        }
+
+        .YenaEventYouModule_e_full>div>p {
+            font-size: 15px;
+            line-height: 140%;
+            font-weight: 500;
+        }
+
+        .yena_e_you_div1 {
+            left: 0px;
+            animation: yena_e_you_div1 4s linear 0s infinite;
+        }
+
+        .yena_e_you_div2 {
+            left: 15px;
+            animation: yena_e_you_div2 4s linear 0s infinite;
+        }
+
+        @keyframes yena_e_you_div1 {
+            0% {
+                top: 0px;
+            }
+
+            50% {
+                top: -200px;
+            }
+
+            100% {
+                top: 0px;
+            }
+        }
+
+        @keyframes yena_e_you_div2 {
+            0% {
+                bottom: 0px;
+            }
+
+            50% {
+                bottom: -200px;
+            }
+
+            100% {
+                bottom: 0px;
+            }
+        }
     </style>
 </head>
 
@@ -22,7 +81,7 @@
                 <Link to='/Day6EventEng'>English</Link>
             </section>
         </header>
-        <section class="tri_e_logo">
+        <!-- <section class="tri_e_logo">
             <img src={""} alt="최예나 이벤트 로고" />
         </section>
         <section class="tri_m_h2">
@@ -34,7 +93,7 @@
                 &apos;나&apos;를 찾아서<br />
                 찾아서 클릭해 주세요!
             </p>
-        </section>
+        </section> -->
         <section class="yena_e_moving_part">
             <p onClick={Yena_e_true_cl_change} class="yena_e_me_part">나</p>
             <section onClick={Yena_e_false_cl_change} class="yena_e_you_part">
