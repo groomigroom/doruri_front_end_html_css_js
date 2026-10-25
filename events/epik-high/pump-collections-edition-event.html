@@ -283,12 +283,10 @@
 
             const Epikhigh_e_fake_lp_functions = [epikhigh_e_fake_lp_go_up, epikhigh_e_fake_lp_go_down, epikhigh_e_fake_lp_go_left, epikhigh_e_fake_lp_go_right];
 
-            //진짜 lp 이동 함수부터 만들기
-            //https://github.com/groomigroom/doruri_vite_react_tsx_code/blob/main/src/modules/EpikHigh/events/EpikHighEvent.tsx
-            //59번줄 참조
             function epikhigh_e_real_lp_go_up() {
                 if (epikhigh_e_real_lp_top !== 20) {
                     epikhigh_e_real_lp_top -= 100;
+                    epikhigh_e_real_lp.style.top = `${epikhigh_e_real_lp_top}px`;
                     const Epikhigh_e_fake_lp_rdIndex = Math.floor(Math.random() * Epikhigh_e_fake_lp_functions.length);
 
                     Epikhigh_e_fake_lp_functions[Epikhigh_e_fake_lp_rdIndex]();
@@ -301,6 +299,7 @@
             function epikhigh_e_real_lp_go_down() {
                 if (epikhigh_e_real_lp_top !== 220) {
                     epikhigh_e_real_lp_top += 100;
+                    epikhigh_e_real_lp.style.top = `${epikhigh_e_real_lp_top}px`;
                     const Epikhigh_e_fake_lp_rdIndex = Math.floor(Math.random() * Epikhigh_e_fake_lp_functions.length);
 
                     Epikhigh_e_fake_lp_functions[Epikhigh_e_fake_lp_rdIndex]();
@@ -313,6 +312,7 @@
             function epikhigh_e_real_lp_go_left() {
                 if (epikhigh_e_real_lp_left !== 20) {
                     epikhigh_e_real_lp_left -= 100;
+                    epikhigh_e_real_lp.style.left = `${epikhigh_e_real_lp_left}px`;
                     const Epikhigh_e_fake_lp_rdIndex = Math.floor(Math.random() * Epikhigh_e_fake_lp_functions.length);
                     Epikhigh_e_fake_lp_functions[Epikhigh_e_fake_lp_rdIndex]();
                     epikhigh_e_lp_move_count_up();
@@ -324,6 +324,7 @@
             function epikhigh_e_real_lp_go_right() {
                 if (epikhigh_e_real_lp_left !== 220) {
                     epikhigh_e_real_lp_left += 100;
+                    epikhigh_e_real_lp.style.left = `${epikhigh_e_real_lp_left}px`;
                     const Epikhigh_e_fake_lp_rdIndex = Math.floor(Math.random() * Epikhigh_e_fake_lp_functions.length);
 
                     Epikhigh_e_fake_lp_functions[Epikhigh_e_fake_lp_rdIndex]();
