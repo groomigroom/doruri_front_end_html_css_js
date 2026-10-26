@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>itsnotover 이벤트</title>
-    <link rel="stylesheet" href="../css/triples/TriplesEvent.css">
+    <link rel="stylesheet" href="../../index.css">
+    <link rel="stylesheet" href="../../group-main/triples/css/TriplesMain.css">
+    <link rel="stylesheet" href="../triples/css/TriplesEvent.css">
     <style>
         .tri_e_last_win_part,
         .idntt_e_mem_node2,
@@ -525,279 +527,320 @@
 </head>
 
 <body>
-    <div class="idntt_e_full">
-        <header class="tri_m_header">
-            <Menu />
-            <section class="home_translate">
-                <Link to='/IdnttEvent' class="on">한국어</Link>
-                <Link to='/IdnttEventEng'>English</Link>
+<div class="tri_m_full">
+    <header>
+        <section class="header_structure">
+            <div class="Menu_button off">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </section>
+        <div class="header_wrap">
+            <nav>
+                <ul>
+                    <li>도루리는?
+                        <ul>
+                            <li><a href="./introduce/introduce/introduce.html">소개</a></li>
+                            <li><a href="">도루리 사이트 소개</a></li>
+                            <li><a href="">업데이트 내역</a></li>
+                            <li><a href="">세부4</a></li>
+                        </ul>
+                    </li>
+                    <li>아이돌 탐색
+                        <ul>
+                            <li><a href="/idol-search/idol-list.html">목록</a></li>
+                            <li><a href="">세부2</a></li>
+                            <li><a href="">세부3</a></li>
+                            <li><a href="">세부4</a></li>
+                        </ul>
+                    </li>
+                    <li>도루리
+                        <ul>
+                            <li><a href="/doruri-write/list">도루리 글</a></li>
+                            <li><a href="">세부2</a></li>
+                            <li><a href="">세부3</a></li>
+                            <li><a href="">도루리 상점</a></li>
+                        </ul>
+                    </li>
+                    <li>메뉴4
+                        <ul>
+                            <li><a href="">세부1</a></li>
+                            <li><a href="">세부2</a></li>
+                            <li><a href="">세부3</a></li>
+                            <li><a href="">세부4</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="header_back_ghost"></div>
+    <!--<section class="tri_e_logo">
+        <img src="" alt="idntt 이벤트 로고" />
+    </section>
+    <section class="tri_m_h2">
+        <h2><img src={MainH2Deco} alt="idntt" />멤버 id 순서 클릭 이벤트<img src={MainH2Deco} alt="idntt" /></h2>
+    </section>
+    <section class='tri_m_intropp'>
+        <p>
+            &apos;idntt&apos; 멤버들의<br />
+            id를 순서대로<br />
+            클릭해 주세요!
+        </p>
+    </section> -->
+    <section class="idntt_e_real_part">
+        <p onclick="idntt_id1_link()" class="idntt_e_mem_node1"></p>
+        <p onclick="idntt_id2_link()" class="idntt_e_mem_node2"></p>
+        <p onclick="idntt_id3_link()" class="idntt_e_mem_node3"></p>
+        <p onclick="idntt_id4_link()" class="idntt_e_mem_node4"></p>
+        <p onclick="idntt_id5_link()" class="idntt_e_mem_node5"></p>
+        <p onclick="idntt_id6_link()" class="idntt_e_mem_node6"></p>
+        <p onclick="idntt_id7_link()" class="idntt_e_mem_node7"></p>
+        <p onclick="idntt_id8_link()" class="idntt_e_mem_node8"></p>
+        <p onclick="idntt_id9_link()" class="idntt_e_mem_node9"></p>
+        <p onclick="idntt_id10_link()" class="idntt_e_mem_node10"></p>
+        <p onclick="idntt_id11_link()" class="idntt_e_mem_node11"></p>
+        <p onclick="idntt_id12_link()" class="idntt_e_mem_node12"></p>
+        <p onclick="idntt_id13_link()" class="idntt_e_mem_node13"></p>
+        <p onclick="idntt_id14_link()" class="idntt_e_mem_node14"></p>
+        <p onclick="idntt_id15_link()" class="idntt_e_mem_node15"></p>
+        <p onclick="idntt_id16_link()" class="idntt_e_mem_node16"></p>
+        <p onclick="idntt_id17_link()" class="idntt_e_mem_node17"></p>
+        <p onclick="idntt_id18_link()" class="idntt_e_mem_node18"></p>
+        <p onclick="idntt_id19_link()" class="idntt_e_mem_node19"></p>
+        <p onclick="idntt_id20_link()" class="idntt_e_mem_node20"></p>
+        <p class="idntt_e_mem_node21" onclick="idntt_id21_link()">{Idntt_e_node21.Idntt_e_mem_name}</p>
+        <!-- win popup -->
+        <section class="tri_e_last_win_part">
+            <div class="tri_e_ghost_40px"></div>
+            <section class="tri_m_h2">
+                <h2>
+                    <img src={MainH2Deco} alt="idntt"/>당첨입니다.<img src={MainH2Deco} alt="idntt"/>
+                </h2>
             </section>
-        </header>
-        <!--<section class="tri_e_logo">
-            <img src="" alt="idntt 이벤트 로고" />
-        </section>
-        <section class="tri_m_h2">
-            <h2><img src={MainH2Deco} alt="idntt" />멤버 id 순서 클릭 이벤트<img src={MainH2Deco} alt="idntt" /></h2>
-        </section>
-        <section class='tri_m_intropp'>
-            <p>
-                &apos;idntt&apos; 멤버들의<br />
-                id를 순서대로<br />
-                클릭해 주세요!
-            </p>
-        </section> -->
-        <section class="idntt_e_real_part">
-            <p onclick="idntt_id1_link()" class="idntt_e_mem_node1"></p>
-            <p onclick="idntt_id2_link()" class="idntt_e_mem_node2"></p>
-            <p onclick="idntt_id3_link()" class="idntt_e_mem_node3"></p>
-            <p onclick="idntt_id4_link()" class="idntt_e_mem_node4"></p>
-            <p onclick="idntt_id5_link()" class="idntt_e_mem_node5"></p>
-            <p onclick="idntt_id6_link()" class="idntt_e_mem_node6"></p>
-            <p onclick="idntt_id7_link()" class="idntt_e_mem_node7"></p>
-            <p onclick="idntt_id8_link()" class="idntt_e_mem_node8"></p>
-            <p onclick="idntt_id9_link()" class="idntt_e_mem_node9"></p>
-            <p onclick="idntt_id10_link()" class="idntt_e_mem_node10"></p>
-            <p onclick="idntt_id11_link()" class="idntt_e_mem_node11"></p>
-            <p onclick="idntt_id12_link()" class="idntt_e_mem_node12"></p>
-            <p onclick="idntt_id13_link()" class="idntt_e_mem_node13"></p>
-            <p onclick="idntt_id14_link()" class="idntt_e_mem_node14"></p>
-            <p onclick="idntt_id15_link()" class="idntt_e_mem_node15"></p>
-            <p onclick="idntt_id16_link()" class="idntt_e_mem_node16"></p>
-            <p onclick="idntt_id17_link()" class="idntt_e_mem_node17"></p>
-            <p onclick="idntt_id18_link()" class="idntt_e_mem_node18"></p>
-            <p onclick="idntt_id19_link()" class="idntt_e_mem_node19"></p>
-            <p onclick="idntt_id20_link()" class="idntt_e_mem_node20"></p>
-            <p class="idntt_e_mem_node21" onclick="idntt_id21_link()">{Idntt_e_node21.Idntt_e_mem_name}</p>
-            <!-- win popup -->
-            <section class="tri_e_last_win_part">
-                <div class="tri_e_ghost_40px"></div>
-                <section class="tri_m_h2">
-                    <h2>
-                        <img src={MainH2Deco} alt="idntt" />당첨입니다.<img src={MainH2Deco} alt="idntt" />
-                    </h2>
-                </section>
-                <section class="tri_e_p_win_intropp">
-                    <p>
-                        당첨을 축하드려요!<br />
-                        상품은 --입니다.<br />
-                        이벤트에 관심가져 주셔서 감사합니다.<br />
-                        이 이벤트는 가상의 이벤트입니다.<br />
-                        참고해 주시길 부탁드리겠습니다.<br />
-                    </p>
-                </section>
-                <section class="tri_e_p_win_present_150">
-                    <img src="" alt="" class="triples_e_p_win_present_img" />
-                </section>
+            <section class="tri_e_p_win_intropp">
+                <p>
+                    당첨을 축하드려요!<br/>
+                    상품은 --입니다.<br/>
+                    이벤트에 관심가져 주셔서 감사합니다.<br/>
+                    이 이벤트는 가상의 이벤트입니다.<br/>
+                    참고해 주시길 부탁드리겠습니다.<br/>
+                </p>
             </section>
-
+            <section class="tri_e_p_win_present_150">
+                <img src="" alt="" class="triples_e_p_win_present_img"/>
+            </section>
         </section>
-        <FooterPart FooterPartText='ⓒ 켄버스' />
-    </div>
-    <script>
-        class IdnttMemberConnectList {
-            constructor(name, next_name_class) {
-                // 올바른 필드 초기화 (this 사용)
-                this.name = name;
-                this.next_name_class = next_name_class;
-            }
 
-            setNextNameClass(to_set_next_name_class) {
-                // 인스턴스 변수에 올바르게 할당
-                this.next_name_class = to_set_next_name_class;
-            }
+    </section>
+    <FooterPart FooterPartText='ⓒ 켄버스'/>
+</div>
+<script>
+    class IdnttMemberConnectList {
+        constructor(name, next_name_class) {
+            // 올바른 필드 초기화 (this 사용)
+            this.name = name;
+            this.next_name_class = next_name_class;
         }
 
-        // 일반 따옴표("") 사용
-        const idntt_id1 = new IdnttMemberConnectList("1번", null);
-        const idntt_id2 = new IdnttMemberConnectList("2번", null);
-        const idntt_id3 = new IdnttMemberConnectList("3번", null);
-        const idntt_id4 = new IdnttMemberConnectList("4번", null);
-        const idntt_id5 = new IdnttMemberConnectList("5번", null);
-        const idntt_id6 = new IdnttMemberConnectList("6번", null);
-        const idntt_id7 = new IdnttMemberConnectList("7번", null);
-        const idntt_id8 = new IdnttMemberConnectList("8번", null);
-        const idntt_id9 = new IdnttMemberConnectList("9번", null);
-        const idntt_id10 = new IdnttMemberConnectList("10번", null);
-        const idntt_id11 = new IdnttMemberConnectList("11번", null);
-        const idntt_id12 = new IdnttMemberConnectList("12번", null);
-        const idntt_id13 = new IdnttMemberConnectList("13번", null);
-        const idntt_id14 = new IdnttMemberConnectList("14번", null);
-        const idntt_id15 = new IdnttMemberConnectList("15번", null);
-        const idntt_id16 = new IdnttMemberConnectList("16번", null);
-        const idntt_id17 = new IdnttMemberConnectList("17번", null);
-        const idntt_id18 = new IdnttMemberConnectList("18번", null);
-        const idntt_id19 = new IdnttMemberConnectList("19번", null);
-        const idntt_id20 = new IdnttMemberConnectList("20번", null);
-        const idntt_id21 = new IdnttMemberConnectList("21번", null);
+        setNextNameClass(to_set_next_name_class) {
+            // 인스턴스 변수에 올바르게 할당
+            this.next_name_class = to_set_next_name_class;
+        }
+    }
 
-        const idntt_e_mem_node1 = document.querySelector(".idntt_e_mem_node1");
-        const idntt_e_mem_node2 = document.querySelector(".idntt_e_mem_node2");
-        const idntt_e_mem_node3 = document.querySelector(".idntt_e_mem_node3");
-        const idntt_e_mem_node4 = document.querySelector(".idntt_e_mem_node4");
-        const idntt_e_mem_node5 = document.querySelector(".idntt_e_mem_node5");
-        const idntt_e_mem_node6 = document.querySelector(".idntt_e_mem_node6");
-        const idntt_e_mem_node7 = document.querySelector(".idntt_e_mem_node7");
-        const idntt_e_mem_node8 = document.querySelector(".idntt_e_mem_node8");
-        const idntt_e_mem_node9 = document.querySelector(".idntt_e_mem_node9");
-        const idntt_e_mem_node10 = document.querySelector(".idntt_e_mem_node10");
-        const idntt_e_mem_node11 = document.querySelector(".idntt_e_mem_node11");
-        const idntt_e_mem_node12 = document.querySelector(".idntt_e_mem_node12");
-        const idntt_e_mem_node13 = document.querySelector(".idntt_e_mem_node13");
-        const idntt_e_mem_node14 = document.querySelector(".idntt_e_mem_node14");
-        const idntt_e_mem_node15 = document.querySelector(".idntt_e_mem_node15");
-        const idntt_e_mem_node16 = document.querySelector(".idntt_e_mem_node16");
-        const idntt_e_mem_node17 = document.querySelector(".idntt_e_mem_node17");
-        const idntt_e_mem_node18 = document.querySelector(".idntt_e_mem_node18");
-        const idntt_e_mem_node19 = document.querySelector(".idntt_e_mem_node19");
-        const idntt_e_mem_node20 = document.querySelector(".idntt_e_mem_node20");
-        const idntt_e_mem_node21 = document.querySelector(".idntt_e_mem_node21");
-        const tri_e_last_win_part = document.querySelector(".tri_e_last_win_part");
-        idntt_e_mem_node1.textContent = idntt_id1.name;
+    // 일반 따옴표("") 사용
+    const idntt_id1 = new IdnttMemberConnectList("1번", null);
+    const idntt_id2 = new IdnttMemberConnectList("2번", null);
+    const idntt_id3 = new IdnttMemberConnectList("3번", null);
+    const idntt_id4 = new IdnttMemberConnectList("4번", null);
+    const idntt_id5 = new IdnttMemberConnectList("5번", null);
+    const idntt_id6 = new IdnttMemberConnectList("6번", null);
+    const idntt_id7 = new IdnttMemberConnectList("7번", null);
+    const idntt_id8 = new IdnttMemberConnectList("8번", null);
+    const idntt_id9 = new IdnttMemberConnectList("9번", null);
+    const idntt_id10 = new IdnttMemberConnectList("10번", null);
+    const idntt_id11 = new IdnttMemberConnectList("11번", null);
+    const idntt_id12 = new IdnttMemberConnectList("12번", null);
+    const idntt_id13 = new IdnttMemberConnectList("13번", null);
+    const idntt_id14 = new IdnttMemberConnectList("14번", null);
+    const idntt_id15 = new IdnttMemberConnectList("15번", null);
+    const idntt_id16 = new IdnttMemberConnectList("16번", null);
+    const idntt_id17 = new IdnttMemberConnectList("17번", null);
+    const idntt_id18 = new IdnttMemberConnectList("18번", null);
+    const idntt_id19 = new IdnttMemberConnectList("19번", null);
+    const idntt_id20 = new IdnttMemberConnectList("20번", null);
+    const idntt_id21 = new IdnttMemberConnectList("21번", null);
 
-        const idntt_id1_link = () => {
-            idntt_id1.setNextNameClass(idntt_id2);
-            console.log(idntt_id1.next_name_class);
-            idntt_e_mem_node2.textContent = idntt_id2.name;
-            idntt_e_mem_node2.style.display = "block";
-        };
+    const idntt_e_mem_node1 = document.querySelector(".idntt_e_mem_node1");
+    const idntt_e_mem_node2 = document.querySelector(".idntt_e_mem_node2");
+    const idntt_e_mem_node3 = document.querySelector(".idntt_e_mem_node3");
+    const idntt_e_mem_node4 = document.querySelector(".idntt_e_mem_node4");
+    const idntt_e_mem_node5 = document.querySelector(".idntt_e_mem_node5");
+    const idntt_e_mem_node6 = document.querySelector(".idntt_e_mem_node6");
+    const idntt_e_mem_node7 = document.querySelector(".idntt_e_mem_node7");
+    const idntt_e_mem_node8 = document.querySelector(".idntt_e_mem_node8");
+    const idntt_e_mem_node9 = document.querySelector(".idntt_e_mem_node9");
+    const idntt_e_mem_node10 = document.querySelector(".idntt_e_mem_node10");
+    const idntt_e_mem_node11 = document.querySelector(".idntt_e_mem_node11");
+    const idntt_e_mem_node12 = document.querySelector(".idntt_e_mem_node12");
+    const idntt_e_mem_node13 = document.querySelector(".idntt_e_mem_node13");
+    const idntt_e_mem_node14 = document.querySelector(".idntt_e_mem_node14");
+    const idntt_e_mem_node15 = document.querySelector(".idntt_e_mem_node15");
+    const idntt_e_mem_node16 = document.querySelector(".idntt_e_mem_node16");
+    const idntt_e_mem_node17 = document.querySelector(".idntt_e_mem_node17");
+    const idntt_e_mem_node18 = document.querySelector(".idntt_e_mem_node18");
+    const idntt_e_mem_node19 = document.querySelector(".idntt_e_mem_node19");
+    const idntt_e_mem_node20 = document.querySelector(".idntt_e_mem_node20");
+    const idntt_e_mem_node21 = document.querySelector(".idntt_e_mem_node21");
+    const tri_e_last_win_part = document.querySelector(".tri_e_last_win_part");
+    idntt_e_mem_node1.textContent = idntt_id1.name;
 
-        const idntt_id2_link = () => {
-            idntt_id2.setNextNameClass(idntt_id3);
-            console.log(idntt_id2.next_name_class);
-            idntt_e_mem_node3.textContent = idntt_id3.name;
-            idntt_e_mem_node3.style.display = "block";
-        };
+    const idntt_id1_link = () => {
+        idntt_id1.setNextNameClass(idntt_id2);
+        console.log(idntt_id1.next_name_class);
+        idntt_e_mem_node2.textContent = idntt_id2.name;
+        idntt_e_mem_node2.style.display = "block";
+    };
 
-        const idntt_id3_link = () => {
-            idntt_id3.setNextNameClass(idntt_id4);
-            console.log(idntt_id3.next_name_class);
-            idntt_e_mem_node4.textContent = idntt_id4.name;
-            idntt_e_mem_node4.style.display = "block";
-        };
+    const idntt_id2_link = () => {
+        idntt_id2.setNextNameClass(idntt_id3);
+        console.log(idntt_id2.next_name_class);
+        idntt_e_mem_node3.textContent = idntt_id3.name;
+        idntt_e_mem_node3.style.display = "block";
+    };
 
-        const idntt_id4_link = () => {
-            idntt_id4.setNextNameClass(idntt_id5);
-            console.log(idntt_id4.next_name_class);
-            idntt_e_mem_node5.textContent = idntt_id5.name;
-            idntt_e_mem_node5.style.display = "block";
-        };
+    const idntt_id3_link = () => {
+        idntt_id3.setNextNameClass(idntt_id4);
+        console.log(idntt_id3.next_name_class);
+        idntt_e_mem_node4.textContent = idntt_id4.name;
+        idntt_e_mem_node4.style.display = "block";
+    };
 
-        const idntt_id5_link = () => {
-            idntt_id5.setNextNameClass(idntt_id6);
-            console.log(idntt_id5.next_name_class);
-            idntt_e_mem_node6.textContent = idntt_id6.name;
-            idntt_e_mem_node6.style.display = "block";
-        };
+    const idntt_id4_link = () => {
+        idntt_id4.setNextNameClass(idntt_id5);
+        console.log(idntt_id4.next_name_class);
+        idntt_e_mem_node5.textContent = idntt_id5.name;
+        idntt_e_mem_node5.style.display = "block";
+    };
 
-        const idntt_id6_link = () => {
-            idntt_id6.setNextNameClass(idntt_id7);
-            console.log(idntt_id6.next_name_class);
-            idntt_e_mem_node7.textContent = idntt_id7.name;
-            idntt_e_mem_node7.style.display = "block";
-        };
+    const idntt_id5_link = () => {
+        idntt_id5.setNextNameClass(idntt_id6);
+        console.log(idntt_id5.next_name_class);
+        idntt_e_mem_node6.textContent = idntt_id6.name;
+        idntt_e_mem_node6.style.display = "block";
+    };
 
-        const idntt_id7_link = () => {
-            idntt_id7.setNextNameClass(idntt_id8);
-            console.log(idntt_id7.next_name_class);
-            idntt_e_mem_node8.textContent = idntt_id8.name;
-            idntt_e_mem_node8.style.display = "block";
-        };
+    const idntt_id6_link = () => {
+        idntt_id6.setNextNameClass(idntt_id7);
+        console.log(idntt_id6.next_name_class);
+        idntt_e_mem_node7.textContent = idntt_id7.name;
+        idntt_e_mem_node7.style.display = "block";
+    };
 
-        const idntt_id8_link = () => {
-            idntt_id8.setNextNameClass(idntt_id9);
-            console.log(idntt_id8.next_name_class);
-            idntt_e_mem_node9.textContent = idntt_id9.name;
-            idntt_e_mem_node9.style.display = "block";
-        };
+    const idntt_id7_link = () => {
+        idntt_id7.setNextNameClass(idntt_id8);
+        console.log(idntt_id7.next_name_class);
+        idntt_e_mem_node8.textContent = idntt_id8.name;
+        idntt_e_mem_node8.style.display = "block";
+    };
 
-        const idntt_id9_link = () => {
-            idntt_id9.setNextNameClass(idntt_id10);
-            console.log(idntt_id9.next_name_class);
-            idntt_e_mem_node10.textContent = idntt_id10.name;
-            idntt_e_mem_node10.style.display = "block";
-        };
+    const idntt_id8_link = () => {
+        idntt_id8.setNextNameClass(idntt_id9);
+        console.log(idntt_id8.next_name_class);
+        idntt_e_mem_node9.textContent = idntt_id9.name;
+        idntt_e_mem_node9.style.display = "block";
+    };
 
-        const idntt_id10_link = () => {
-            idntt_id10.setNextNameClass(idntt_id11);
-            console.log(idntt_id10.next_name_class);
-            idntt_e_mem_node11.textContent = idntt_id11.name;
-            idntt_e_mem_node11.style.display = "block";
-        };
+    const idntt_id9_link = () => {
+        idntt_id9.setNextNameClass(idntt_id10);
+        console.log(idntt_id9.next_name_class);
+        idntt_e_mem_node10.textContent = idntt_id10.name;
+        idntt_e_mem_node10.style.display = "block";
+    };
 
-        const idntt_id11_link = () => {
-            idntt_id11.setNextNameClass(idntt_id12);
-            console.log(idntt_id11.next_name_class);
-            idntt_e_mem_node12.textContent = idntt_id12.name;
-            idntt_e_mem_node12.style.display = "block";
-        };
+    const idntt_id10_link = () => {
+        idntt_id10.setNextNameClass(idntt_id11);
+        console.log(idntt_id10.next_name_class);
+        idntt_e_mem_node11.textContent = idntt_id11.name;
+        idntt_e_mem_node11.style.display = "block";
+    };
 
-        const idntt_id12_link = () => {
-            idntt_id12.setNextNameClass(idntt_id13);
-            console.log(idntt_id12.next_name_class);
-            idntt_e_mem_node13.textContent = idntt_id13.name;
-            idntt_e_mem_node13.style.display = "block";
-        };
+    const idntt_id11_link = () => {
+        idntt_id11.setNextNameClass(idntt_id12);
+        console.log(idntt_id11.next_name_class);
+        idntt_e_mem_node12.textContent = idntt_id12.name;
+        idntt_e_mem_node12.style.display = "block";
+    };
 
-        const idntt_id13_link = () => {
-            idntt_id13.setNextNameClass(idntt_id14);
-            console.log(idntt_id13.next_name_class);
-            idntt_e_mem_node14.textContent = idntt_id14.name;
-            idntt_e_mem_node14.style.display = "block";
-        };
+    const idntt_id12_link = () => {
+        idntt_id12.setNextNameClass(idntt_id13);
+        console.log(idntt_id12.next_name_class);
+        idntt_e_mem_node13.textContent = idntt_id13.name;
+        idntt_e_mem_node13.style.display = "block";
+    };
 
-        const idntt_id14_link = () => {
-            idntt_id14.setNextNameClass(idntt_id15);
-            console.log(idntt_id14.next_name_class);
-            idntt_e_mem_node15.textContent = idntt_id15.name;
-            idntt_e_mem_node15.style.display = "block";
-        };
+    const idntt_id13_link = () => {
+        idntt_id13.setNextNameClass(idntt_id14);
+        console.log(idntt_id13.next_name_class);
+        idntt_e_mem_node14.textContent = idntt_id14.name;
+        idntt_e_mem_node14.style.display = "block";
+    };
 
-        const idntt_id15_link = () => {
-            idntt_id15.setNextNameClass(idntt_id16);
-            console.log(idntt_id15.next_name_class);
-            idntt_e_mem_node16.textContent = idntt_id16.name;
-            idntt_e_mem_node16.style.display = "block";
-        };
+    const idntt_id14_link = () => {
+        idntt_id14.setNextNameClass(idntt_id15);
+        console.log(idntt_id14.next_name_class);
+        idntt_e_mem_node15.textContent = idntt_id15.name;
+        idntt_e_mem_node15.style.display = "block";
+    };
 
-        const idntt_id16_link = () => {
-            idntt_id16.setNextNameClass(idntt_id17);
-            console.log(idntt_id16.next_name_class);
-            idntt_e_mem_node17.textContent = idntt_id17.name;
-            idntt_e_mem_node17.style.display = "block";
-        };
+    const idntt_id15_link = () => {
+        idntt_id15.setNextNameClass(idntt_id16);
+        console.log(idntt_id15.next_name_class);
+        idntt_e_mem_node16.textContent = idntt_id16.name;
+        idntt_e_mem_node16.style.display = "block";
+    };
 
-        const idntt_id17_link = () => {
-            idntt_id17.setNextNameClass(idntt_id18);
-            console.log(idntt_id17.next_name_class);
-            idntt_e_mem_node18.textContent = idntt_id18.name;
-            idntt_e_mem_node18.style.display = "block";
-        };
+    const idntt_id16_link = () => {
+        idntt_id16.setNextNameClass(idntt_id17);
+        console.log(idntt_id16.next_name_class);
+        idntt_e_mem_node17.textContent = idntt_id17.name;
+        idntt_e_mem_node17.style.display = "block";
+    };
 
-        const idntt_id18_link = () => {
-            idntt_id18.setNextNameClass(idntt_id19);
-            console.log(idntt_id18.next_name_class);
-            idntt_e_mem_node19.textContent = idntt_id19.name;
-            idntt_e_mem_node19.style.display = "block";
-        };
+    const idntt_id17_link = () => {
+        idntt_id17.setNextNameClass(idntt_id18);
+        console.log(idntt_id17.next_name_class);
+        idntt_e_mem_node18.textContent = idntt_id18.name;
+        idntt_e_mem_node18.style.display = "block";
+    };
 
-        const idntt_id19_link = () => {
-            idntt_id19.setNextNameClass(idntt_id20);
-            console.log(idntt_id19.next_name_class);
-            idntt_e_mem_node20.textContent = idntt_id20.name;
-            idntt_e_mem_node20.style.display = "block";
-        };
+    const idntt_id18_link = () => {
+        idntt_id18.setNextNameClass(idntt_id19);
+        console.log(idntt_id18.next_name_class);
+        idntt_e_mem_node19.textContent = idntt_id19.name;
+        idntt_e_mem_node19.style.display = "block";
+    };
 
-        const idntt_id20_link = () => {
-            idntt_id20.setNextNameClass(idntt_id21);
-            console.log(idntt_id20.next_name_class);
-            idntt_e_mem_node21.textContent = idntt_id21.name;
-            idntt_e_mem_node21.style.display = "block";
-        };
+    const idntt_id19_link = () => {
+        idntt_id19.setNextNameClass(idntt_id20);
+        console.log(idntt_id19.next_name_class);
+        idntt_e_mem_node20.textContent = idntt_id20.name;
+        idntt_e_mem_node20.style.display = "block";
+    };
 
-        const idntt_id21_link = () => {
-            tri_e_last_win_part.style.display = "block";
-        };
-    </script>
+    const idntt_id20_link = () => {
+        idntt_id20.setNextNameClass(idntt_id21);
+        console.log(idntt_id20.next_name_class);
+        idntt_e_mem_node21.textContent = idntt_id21.name;
+        idntt_e_mem_node21.style.display = "block";
+    };
+
+    const idntt_id21_link = () => {
+        tri_e_last_win_part.style.display = "block";
+    };
+</script>
 </body>
 
 </html>
