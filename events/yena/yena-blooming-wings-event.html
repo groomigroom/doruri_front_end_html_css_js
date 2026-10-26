@@ -92,13 +92,13 @@
             flex-shrink: 0;
         }
 
-        .YenaEventYouModule_e_full>div {
+        .YenaEventYouModule_e_full > div {
             width: 15px;
             height: 600px;
             position: absolute;
         }
 
-        .YenaEventYouModule_e_full>div>p {
+        .YenaEventYouModule_e_full > div > p {
             font-size: 15px;
             line-height: 140%;
             font-weight: 500;
@@ -145,109 +145,111 @@
 </head>
 
 <body>
-    <div class="yenaevent_full">
-        <header class="tri_m_header">
-            <Menu />
-            <section class="home_translate">
-                <Link to='/Day6Event' class="on">한국어</Link>
-                <Link to='/Day6EventEng'>English</Link>
-            </section>
-        </header>
-        <!-- <section class="tri_e_logo">
-            <img src={""} alt="최예나 이벤트 로고" />
+<div class="yenaevent_full">
+    <header class="tri_m_header">
+        <Menu/>
+        <section class="home_translate">
+            <a href='/Day6Event' class="on">한국어</a>
+            <a href='/Day6EventEng'>English</a>
         </section>
-        <section class="tri_m_h2">
-            <h2><img src={MainH2Deco} alt="최예나" />&apos;나&apos; 클릭하기 이벤트<img src={MainH2Deco} alt="최예나" /></h2>
-        </section>
-        <section class='tri_m_intropp'>
-            <p>
-                자세히 보면 보이는<br />
-                &apos;나&apos;를 찾아서<br />
-                찾아서 클릭해 주세요!
-            </p>
-        </section> -->
-        <section class="yena_e_moving_part">
-            <p onclick="triELastWinOpen()" class="yena_e_me_part">나</p>
-            <section class="yena_e_you_part">
-                <div class="YenaEventYouModule_e_full"></div>
-                <div class="YenaEventYouModule_e_full"></div>
-                <div class="YenaEventYouModule_e_full"></div>
-                <div class="YenaEventYouModule_e_full"></div>
-                <div class="YenaEventYouModule_e_full"></div>
-                <div class="YenaEventYouModule_e_full"></div>
-                <div class="YenaEventYouModule_e_full"></div>
-                <div class="YenaEventYouModule_e_full"></div>
-                <div class="YenaEventYouModule_e_full"></div>
-                <div class="YenaEventYouModule_e_full"></div>
-                <div class="YenaEventYouModule_e_full"></div>
-                <div class="YenaEventYouModule_e_full"></div>
-                <div class="YenaEventYouModule_e_full"></div>
-                <div class="YenaEventYouModule_e_full"></div>
-                <div class="YenaEventYouModule_e_full"></div>
-                <div class="YenaEventYouModule_e_full"></div>
-                <div class="YenaEventYouModule_e_full"></div>
-                <div class="YenaEventYouModule_e_full"></div>
-                <div class="YenaEventYouModule_e_full"></div>
-                <div class="YenaEventYouModule_e_full"></div>
-                <div class="YenaEventYouModule_e_full"></div>
-                <div class="YenaEventYouModule_e_full"></div>
-                <div class="YenaEventYouModule_e_full"></div>
-                <div class="YenaEventYouModule_e_full"></div>
-                <div class="YenaEventYouModule_e_full"></div>
-                <div class="YenaEventYouModule_e_full"></div>
-                <div class="YenaEventYouModule_e_full"></div>
-                <div class="YenaEventYouModule_e_full"></div>
-                <div class="YenaEventYouModule_e_full"></div>
-                <div class="YenaEventYouModule_e_full"></div>
-                <div class="YenaEventYouModule_e_full"></div>
-                <div class="YenaEventYouModule_e_full"></div>
-                <div class="YenaEventYouModule_e_full"></div>
-                <div class="YenaEventYouModule_e_full"></div>
-                <div class="YenaEventYouModule_e_full"></div>
-                <div class="YenaEventYouModule_e_full"></div>
-                <div class="YenaEventYouModule_e_full"></div>
-                <div class="YenaEventYouModule_e_full"></div>
-                <div class="YenaEventYouModule_e_full"></div>
-                <div class="YenaEventYouModule_e_full"></div>
-                <div class="YenaEventYouModule_e_full"></div>
-                <div class="YenaEventYouModule_e_full"></div>
-                <div class="YenaEventYouModule_e_full"></div>
-                <div class="YenaEventYouModule_e_full"></div>
-                <div class="YenaEventYouModule_e_full"></div>
-                <div class="YenaEventYouModule_e_full"></div>
-                <div class="YenaEventYouModule_e_full"></div>
-                <div class="YenaEventYouModule_e_full"></div>
-                <div class="YenaEventYouModule_e_full"></div>
-                <div class="YenaEventYouModule_e_full"></div>
-                <div class="YenaEventYouModule_e_full"></div>
-                <div class="YenaEventYouModule_e_full"></div>
-                <div class="YenaEventYouModule_e_full"></div>
-                <div class="YenaEventYouModule_e_full"></div>
-                <div class="YenaEventYouModule_e_full"></div>
-                <div class="YenaEventYouModule_e_full"></div>
-                <div class="YenaEventYouModule_e_full"></div>
-                <div class="YenaEventYouModule_e_full"></div>
-                <div class="YenaEventYouModule_e_full"></div>
-                <div class="YenaEventYouModule_e_full"></div>
-                <div class="YenaEventYouModule_e_full"></div>
-                <div class="YenaEventYouModule_e_full"></div>
-                <div class="YenaEventYouModule_e_full"></div>
-                <div class="YenaEventYouModule_e_full"></div>
-                <div class="YenaEventYouModule_e_full"></div>
-                <div class="YenaEventYouModule_e_full"></div>
-                <div class="YenaEventYouModule_e_full"></div>
+    </header>
+    <section class="tri_e_logo">
+        <img src={""} alt="최예나 이벤트 로고"/>
+    </section>
+    <section class="tri_m_h2">
+        <h2><img src="../../imgs/main_h2_deco.png" alt="최예나">&apos;나&apos; 클릭하기 이벤트<img
+                src="../../imgs/main_h2_deco.png" alt="최예나">
+        </h2>
+    </section>
+    <section class='tri_m_intropp'>
+        <p>
+            자세히 보면 보이는<br>
+            &apos;나&apos;를 찾아서<br>
+            찾아서 클릭해 주세요!
+        </p>
+    </section>
+    <section class="yena_e_moving_part">
+        <p onclick="triELastWinOpen()" class="yena_e_me_part">나</p>
+        <section class="yena_e_you_part">
+            <div class="YenaEventYouModule_e_full"></div>
+            <div class="YenaEventYouModule_e_full"></div>
+            <div class="YenaEventYouModule_e_full"></div>
+            <div class="YenaEventYouModule_e_full"></div>
+            <div class="YenaEventYouModule_e_full"></div>
+            <div class="YenaEventYouModule_e_full"></div>
+            <div class="YenaEventYouModule_e_full"></div>
+            <div class="YenaEventYouModule_e_full"></div>
+            <div class="YenaEventYouModule_e_full"></div>
+            <div class="YenaEventYouModule_e_full"></div>
+            <div class="YenaEventYouModule_e_full"></div>
+            <div class="YenaEventYouModule_e_full"></div>
+            <div class="YenaEventYouModule_e_full"></div>
+            <div class="YenaEventYouModule_e_full"></div>
+            <div class="YenaEventYouModule_e_full"></div>
+            <div class="YenaEventYouModule_e_full"></div>
+            <div class="YenaEventYouModule_e_full"></div>
+            <div class="YenaEventYouModule_e_full"></div>
+            <div class="YenaEventYouModule_e_full"></div>
+            <div class="YenaEventYouModule_e_full"></div>
+            <div class="YenaEventYouModule_e_full"></div>
+            <div class="YenaEventYouModule_e_full"></div>
+            <div class="YenaEventYouModule_e_full"></div>
+            <div class="YenaEventYouModule_e_full"></div>
+            <div class="YenaEventYouModule_e_full"></div>
+            <div class="YenaEventYouModule_e_full"></div>
+            <div class="YenaEventYouModule_e_full"></div>
+            <div class="YenaEventYouModule_e_full"></div>
+            <div class="YenaEventYouModule_e_full"></div>
+            <div class="YenaEventYouModule_e_full"></div>
+            <div class="YenaEventYouModule_e_full"></div>
+            <div class="YenaEventYouModule_e_full"></div>
+            <div class="YenaEventYouModule_e_full"></div>
+            <div class="YenaEventYouModule_e_full"></div>
+            <div class="YenaEventYouModule_e_full"></div>
+            <div class="YenaEventYouModule_e_full"></div>
+            <div class="YenaEventYouModule_e_full"></div>
+            <div class="YenaEventYouModule_e_full"></div>
+            <div class="YenaEventYouModule_e_full"></div>
+            <div class="YenaEventYouModule_e_full"></div>
+            <div class="YenaEventYouModule_e_full"></div>
+            <div class="YenaEventYouModule_e_full"></div>
+            <div class="YenaEventYouModule_e_full"></div>
+            <div class="YenaEventYouModule_e_full"></div>
+            <div class="YenaEventYouModule_e_full"></div>
+            <div class="YenaEventYouModule_e_full"></div>
+            <div class="YenaEventYouModule_e_full"></div>
+            <div class="YenaEventYouModule_e_full"></div>
+            <div class="YenaEventYouModule_e_full"></div>
+            <div class="YenaEventYouModule_e_full"></div>
+            <div class="YenaEventYouModule_e_full"></div>
+            <div class="YenaEventYouModule_e_full"></div>
+            <div class="YenaEventYouModule_e_full"></div>
+            <div class="YenaEventYouModule_e_full"></div>
+            <div class="YenaEventYouModule_e_full"></div>
+            <div class="YenaEventYouModule_e_full"></div>
+            <div class="YenaEventYouModule_e_full"></div>
+            <div class="YenaEventYouModule_e_full"></div>
+            <div class="YenaEventYouModule_e_full"></div>
+            <div class="YenaEventYouModule_e_full"></div>
+            <div class="YenaEventYouModule_e_full"></div>
+            <div class="YenaEventYouModule_e_full"></div>
+            <div class="YenaEventYouModule_e_full"></div>
+            <div class="YenaEventYouModule_e_full"></div>
+            <div class="YenaEventYouModule_e_full"></div>
+            <div class="YenaEventYouModule_e_full"></div>
+            <div class="YenaEventYouModule_e_full"></div>
 
-            </section>
         </section>
-        <section class="tri_e_last_win_part">
-            <p>당첨!!!!!</p>
-        </section>
-    </div>
-    <script>
-        const YenaEventYouModule_e_full = document.querySelectorAll(".YenaEventYouModule_e_full");
-        YenaEventYouModule_e_full.forEach((module_e_full) => {
-            module_e_full.innerHTML =
-                `<div class="yena_e_you_div1">
+    </section>
+    <section class="tri_e_last_win_part">
+        <p>당첨!!!!!</p>
+    </section>
+</div>
+<script>
+    const YenaEventYouModule_e_full = document.querySelectorAll(".YenaEventYouModule_e_full");
+    YenaEventYouModule_e_full.forEach((module_e_full) => {
+        module_e_full.innerHTML =
+            `<div class="yena_e_you_div1">
                 <p>
                     너<br>
                     너<br>
@@ -311,12 +313,13 @@
                         너
                     </p>
                 </div>`;
-        });
-        const tri_e_last_win_part = document.querySelector(".tri_e_last_win_part");
-        function triELastWinOpen() {
-            tri_e_last_win_part.style.display = "block";
-        }
-    </script>
+    });
+    const tri_e_last_win_part = document.querySelector(".tri_e_last_win_part");
+
+    function triELastWinOpen() {
+        tri_e_last_win_part.style.display = "block";
+    }
+</script>
 </body>
 
 </html>
