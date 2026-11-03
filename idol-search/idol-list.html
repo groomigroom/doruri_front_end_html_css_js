@@ -468,7 +468,7 @@
 <script>
   const idollistAll = [
     {groupNameKor: "트리플에스", groupNameEng: "tripleS", groupNameNormal: "tripleS", arrayNum: 1},
-    {groupNameKor: "투모로우바이투게더", groupNameEng: "TXT", groupNameNormal: "투모로우바이투게더", arrayNum: 2},
+    {groupNameKor: "투모로우바이투게더", groupNameEng: "TXT", groupNameNormal: "투모로우<br>바이<br>투게더", arrayNum: 2},
     {groupNameKor: "악뮤", groupNameEng: "AKMU", groupNameNormal: "AKMU", arrayNum: 3},
     {groupNameKor: "아이오아이", groupNameEng: "IOI", groupNameNormal: "아이오아이", arrayNum: 4},
     {groupNameKor: "스트레이키즈", groupNameEng: "Stray Kids", groupNameNormal: "Stray Kids", arrayNum: 5},
@@ -503,12 +503,12 @@
     idollistAIds[0].href = "";
     idollistAIds[0].querySelector("img").src = "1번";
     idollistAIds[0].querySelector("img").alt = idollistAll[0].groupNameNormal;
-    idollistAIds[0].querySelector("h4").textContent = idollistAll[0].groupNameNormal;
+    idollistAIds[0].querySelector("h4").innerHTML = idollistAll[0].groupNameNormal;
 
     idollistAIds[1].href = "";
     idollistAIds[1].querySelector("img").src = "2번";
-    idollistAIds[1].querySelector("img").alt = "2번";
-    idollistAIds[1].querySelector("h4").textContent = "투모로우바이투게더";
+    idollistAIds[1].querySelector("img").alt = idollistAll[1].groupNameKor;
+    idollistAIds[1].querySelector("h4").innerHTML = idollistAll[1].groupNameNormal;
 
     idollistAIds[2].href = "";
     idollistAIds[2].querySelector("img").src = "3번";
