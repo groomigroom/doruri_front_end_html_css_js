@@ -209,7 +209,7 @@
     </div>
   </header>
   <!--#####-->
-  <button>d</button>
+  <button onclick="idollistAIdsNormal()">normal</button>
   <section class="home_translate">
     <a href='/IdolList' class="on">한국어</a>
     <a href='/IdolListEng'>English</a>
@@ -500,6 +500,8 @@
   }
   function idollistAIdsNormal() {
     idollistAIds[0].href = "https://www.naver.com";
+    idollistAIds[0].querySelector("img").src = "1번";
+    idollistAIds[0].querySelector("img").alt = "1번";
   }
 </script>
 </body>
