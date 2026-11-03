@@ -492,8 +492,10 @@
   ];
   const one = document.getElementById("idollist1");
   const idollistAIds = [];
-  for (let i = 1; i <= 24; i++) {}
-  console.log(one);
+  for (let i = 1; i <= 24; i++) {
+    idollistAIds.push(document.getElementById(`idollist${i}`));
+    console.log(idollistAIds[i-1]);
+  }
 </script>
 </body>
 </html>
