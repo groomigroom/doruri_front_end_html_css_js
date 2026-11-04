@@ -588,3 +588,12 @@ footer {
     border-top-right-radius: 25px;
     border: 5px solid #333;
 }
+
+footer > p {
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #333;
+    font-weight: 700;
+}
