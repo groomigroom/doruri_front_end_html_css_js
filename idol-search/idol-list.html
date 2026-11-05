@@ -1,625 +1,625 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>아이돌 목록</title>
-  <link rel="stylesheet" href="../index.css">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>아이돌 목록</title>
+    <link rel="stylesheet" href="../index.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
 
-    .idolList_full {
-      width: 100%;
-      height: 100%;
-      position: relative;
-    }
+        .idolList_full {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
 
-    .idolList_trainf {
-      width: 920px;
-      height: 680px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      background-color: bisque;
-      position: absolute;
+        .idolList_trainf {
+            width: 920px;
+            height: 680px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-color: bisque;
+            position: absolute;
 
-    }
+        }
 
-    .idolList_train {
-      width: 920px;
-      height: 200px;
-      display: flex;
-      justify-content: space-between;
-      background-color: cadetblue;
-    }
+        .idolList_train {
+            width: 920px;
+            height: 200px;
+            display: flex;
+            justify-content: space-between;
+            background-color: cadetblue;
+        }
 
-    .idolList_link {
-      display: block;
-      width: 200px;
-      height: 200px;
-      position: relative;
-      background-color: coral;
-    }
+        .idolList_link {
+            display: block;
+            width: 200px;
+            height: 200px;
+            position: relative;
+            background-color: coral;
+        }
 
-    .idolList_link_a {
-      width: 160px;
-      height: 160px;
-      position: absolute;
-      top: 20px;
-      left: 20px;
-      background-color: crimson;
-    }
+        .idolList_link_a {
+            width: 160px;
+            height: 160px;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: crimson;
+        }
 
-    .idolList_link_a>img {
-      width: 160px;
-      border-radius: 25px;
-      position: absolute;
-      top: 0px;
-      left: 0px;
-      opacity: 1;
-      transform: rotateY(0deg);
-      transition: all 0.6s ease 0s;
-    }
+        .idolList_link_a>img {
+            width: 160px;
+            border-radius: 25px;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            opacity: 1;
+            transform: rotateY(0deg);
+            transition: all 0.6s ease 0s;
+        }
 
-    .idolList_link_a>div {
-      width: 160px;
-      height: 160px;
-      border-radius: 25px;
-      position: absolute;
-      top: 0px;
-      left: 0px;
-      opacity: 0;
-      transform: rotateY(-180deg);
-      transition: all 0.6s ease 0s;
-    }
+        .idolList_link_a>div {
+            width: 160px;
+            height: 160px;
+            border-radius: 25px;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            opacity: 0;
+            transform: rotateY(-180deg);
+            transition: all 0.6s ease 0s;
+        }
 
-    .idolList_link_a>div>h4 {
-      font-weight: 700;
-      font-size: 19px;
-      line-height: 140%;
-      display: block;
-      width: 150px;
-      text-align: center;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
+        .idolList_link_a>div>h4 {
+            font-weight: 700;
+            font-size: 19px;
+            line-height: 140%;
+            display: block;
+            width: 150px;
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
 
-    .idolList_link_a:hover>img {
-      opacity: 0;
-      transform: rotateY(-180deg);
-    }
+        .idolList_link_a:hover>img {
+            opacity: 0;
+            transform: rotateY(-180deg);
+        }
 
-    .idolList_link_a:hover>div {
-      opacity: 1;
-      transform: rotateY(0deg);
-    }
+        .idolList_link_a:hover>div {
+            opacity: 1;
+            transform: rotateY(0deg);
+        }
 
-    .idolList_link_tri>img {
-      border: 5px solid #191919;
-    }
+        .idolList_link_tri>img {
+            border: 5px solid #191919;
+        }
 
-    .idolList_link_tri>div {
-      border: 5px solid #191919;
-    }
+        .idolList_link_tri>div {
+            border: 5px solid #191919;
+        }
 
-    .idolList_link_txt>img {
-      border: 5px solid #FF1E91;
-    }
+        .idolList_link_txt>img {
+            border: 5px solid #FF1E91;
+        }
 
-    .idolList_link_txt>div {
-      border: 5px solid #FF1E91;
-    }
+        .idolList_link_txt>div {
+            border: 5px solid #FF1E91;
+        }
 
-    .idolList_link_akmu>img {
-      border: 5px solid #13983f;
-    }
+        .idolList_link_akmu>img {
+            border: 5px solid #13983f;
+        }
 
-    .idolList_link_akmu>div {
-      border: 5px solid #13983f;
-    }
+        .idolList_link_akmu>div {
+            border: 5px solid #13983f;
+        }
 
-    .idolList_link_ioi>img {
-      border: 5px solid #F4CE9D;
-    }
+        .idolList_link_ioi>img {
+            border: 5px solid #F4CE9D;
+        }
 
-    .idolList_link_ioi>div {
-      border: 5px solid #F4CE9D;
-    }
+        .idolList_link_ioi>div {
+            border: 5px solid #F4CE9D;
+        }
 
-    .idolList_link_str>img {
-      border: 5px solid #191919;
-    }
+        .idolList_link_str>img {
+            border: 5px solid #191919;
+        }
 
-    .idolList_link_str>div {
-      border: 5px solid #191919;
-    }
+        .idolList_link_str>div {
+            border: 5px solid #191919;
+        }
 
-    .idolList_link_ten>img {
-      border: 5px solid #000000;
-    }
+        .idolList_link_ten>img {
+            border: 5px solid #000000;
+        }
 
-    .idolList_link_ten>div {
-      border: 5px solid #000000;
-    }
+        .idolList_link_ten>div {
+            border: 5px solid #000000;
+        }
 
-    .idolList_12345 {
-      position: absolute;
-      bottom: 400px;
-    }
+        .idolList_12345 {
+            position: absolute;
+            bottom: 400px;
+        }
 
-    .idolList_trainf_mobile {
-      display: none;
-    }
-  </style>
+        .idolList_trainf_mobile {
+            display: none;
+        }
+    </style>
 </head>
 <body>
 <div class="idolList_full">
-  <header>
-    <section class="header_structure">
-      <div class="Menu_button off">
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
+    <header>
+        <section class="header_structure">
+            <div class="Menu_button off">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </section>
+        <div class="header_wrap">
+            <nav>
+                <ul>
+                    <li>도루리는?
+                        <ul>
+                            <li><a href="">소개</a></li>
+                            <li><a href="">도루리 사이트 구조</a></li>
+                            <li><a href="">업데이트 내역</a></li>
+                            <li><a href="">세부4</a></li>
+                        </ul>
+                    </li>
+                    <li>아이돌 탐색
+                        <ul>
+                            <li><a href="">목록</a></li>
+                            <li><a href="">세부2</a></li>
+                            <li><a href="">세부3</a></li>
+                            <li><a href="">세부4</a></li>
+                        </ul>
+                    </li>
+                    <li>메뉴3
+                        <ul>
+                            <li><a href="">세부1</a></li>
+                            <li><a href="">세부2</a></li>
+                            <li><a href="">세부3</a></li>
+                            <li><a href="">세부4</a></li>
+                        </ul>
+                    </li>
+                    <li>메뉴4
+                        <ul>
+                            <li><a href="">세부1</a></li>
+                            <li><a href="">세부2</a></li>
+                            <li><a href="">세부3</a></li>
+                            <li><a href="">세부4</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!--#####-->
+    <button onclick="idollistAIdsNormal()">normal</button>
+    <section class="home_translate">
+        <a href='/IdolList' class="on">한국어</a>
+        <a href='/IdolListEng'>English</a>
     </section>
-    <div class="header_wrap">
-      <nav>
-        <ul>
-          <li>도루리는?
-            <ul>
-              <li><a href="">소개</a></li>
-              <li><a href="">도루리 사이트 구조</a></li>
-              <li><a href="">업데이트 내역</a></li>
-              <li><a href="">세부4</a></li>
-            </ul>
-          </li>
-          <li>아이돌 탐색
-            <ul>
-              <li><a href="">목록</a></li>
-              <li><a href="">세부2</a></li>
-              <li><a href="">세부3</a></li>
-              <li><a href="">세부4</a></li>
-            </ul>
-          </li>
-          <li>메뉴3
-            <ul>
-              <li><a href="">세부1</a></li>
-              <li><a href="">세부2</a></li>
-              <li><a href="">세부3</a></li>
-              <li><a href="">세부4</a></li>
-            </ul>
-          </li>
-          <li>메뉴4
-            <ul>
-              <li><a href="">세부1</a></li>
-              <li><a href="">세부2</a></li>
-              <li><a href="">세부3</a></li>
-              <li><a href="">세부4</a></li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-  <!--#####-->
-  <button onclick="idollistAIdsNormal()">normal</button>
-  <section class="home_translate">
-    <a href='/IdolList' class="on">한국어</a>
-    <a href='/IdolListEng'>English</a>
-  </section>
-  <section class="idolList_part">
-    <section class="idolList_trainf">
-      <section class="idolList_train">
-        <div class="idolList_link">
-          <a href="/group-main/triples/triples-main-2026-06-01.html" id="idollist1" class="idolList_link_a idolList_link_tri">
-            <img src="../group-main/triples/imgs/tri_m_img.jpg" alt="tripleS">
-            <div>
-              <h4>tripleS</h4>
-            </div>
-          </a>
-        </div>
+    <section class="idolList_part">
+        <section class="idolList_trainf">
+            <section class="idolList_train">
+                <div class="idolList_link">
+                    <a href="/group-main/24members/triples" id="idollist1" class="idolList_link_a idolList_link_tri">
+                        <img src="../group-main/triples/imgs/tri_m_img.jpg" alt="tripleS">
+                        <div>
+                            <h4>tripleS</h4>
+                        </div>
+                    </a>
+                </div>
 
-        <div class="idolList_link">
-          <a href="/group-main/txt/txt-main-2026-04-13.html" id="idollist2" class="idolList_link_a idolList_link_txt">
-            <img src="../group-main/txt/img/txt_m_txtimg.jpg" alt="투모로우바이투게더">
-            <div>
-              <h4>투모로우바이투게더</h4>
-            </div>
-          </a>
-        </div>
+                <div class="idolList_link">
+                    <a href="/group-main/txt/txt-main-2026-04-13.html" id="idollist2" class="idolList_link_a idolList_link_txt">
+                        <img src="../group-main/txt/img/txt_m_txtimg.jpg" alt="투모로우바이투게더">
+                        <div>
+                            <h4>투모로우바이투게더</h4>
+                        </div>
+                    </a>
+                </div>
 
-        <div class="idolList_link">
-          <a href="/group-main/akmu/akmu-main-2026-04-07.html" id="idollist3" class="idolList_link_a idolList_link_akmu">
-            <img src="../group-main/akmu/img/aknu_m_akmuimg.jpg" alt="AKMU" />
-            <div>
-              <h4>AKMU</h4>
-            </div>
-          </a>
-        </div>
+                <div class="idolList_link">
+                    <a href="/group-main/akmu/akmu-main-2026-04-07.html" id="idollist3" class="idolList_link_a idolList_link_akmu">
+                        <img src="../group-main/akmu/img/aknu_m_akmuimg.jpg" alt="AKMU" />
+                        <div>
+                            <h4>AKMU</h4>
+                        </div>
+                    </a>
+                </div>
 
-        <div class="idolList_link">
-          <a href="/group-main/ioi/ioi-main-2026-05-19.html" id="idollist4" class="idolList_link_a idolList_link_ioi">
-            <img src="../group-main/ioi/img/ioi_m_ioi.jpg" alt="아이오아이" />
-            <div>
-              <h4>아이오아이</h4>
-            </div>
-          </a>
-        </div>
-      </section>
-      <section class="idolList_train">
-        <div class="idolList_link">
-          <a href="/group-main/stray-kids/stray-kids-main-2026-08-01.html" id="idollist5" class="idolList_link_a idolList_link_str">
-            <img src="../group-main/stray-kids/img/stray_m_stray_kids.jpg" alt="Stray Kids" />
-            <div>
-              <h4>Stray Kids</h4>
-            </div>
-          </a>
-        </div>
+                <div class="idolList_link">
+                    <a href="/group-main/ioi/ioi-main-2026-05-19.html" id="idollist4" class="idolList_link_a idolList_link_ioi">
+                        <img src="../group-main/ioi/img/ioi_m_ioi.jpg" alt="아이오아이" />
+                        <div>
+                            <h4>아이오아이</h4>
+                        </div>
+                    </a>
+                </div>
+            </section>
+            <section class="idolList_train">
+                <div class="idolList_link">
+                    <a href="/group-main/stray-kids/stray-kids-main-2026-08-01.html" id="idollist5" class="idolList_link_a idolList_link_str">
+                        <img src="../group-main/stray-kids/img/stray_m_stray_kids.jpg" alt="Stray Kids" />
+                        <div>
+                            <h4>Stray Kids</h4>
+                        </div>
+                    </a>
+                </div>
 
-        <div class="idolList_link">
-          <a href="/group-main/illit/illit-main-2026-04-30.html" id="idollist6" class="idolList_link_a idolList_link_str">
-            <img src="../group-main/illit/img/illit_m_illit.jpg" alt="ILLIT" />
-            <div>
-              <h4>ILLIT</h4>
-            </div>
-          </a>
-        </div>
+                <div class="idolList_link">
+                    <a href="/group-main/illit/illit-main-2026-04-30.html" id="idollist6" class="idolList_link_a idolList_link_str">
+                        <img src="../group-main/illit/img/illit_m_illit.jpg" alt="ILLIT" />
+                        <div>
+                            <h4>ILLIT</h4>
+                        </div>
+                    </a>
+                </div>
 
-        <div class="idolList_link">
-          <a href="/group-main/tws/tws-main-2026-04-27.html" id="idollist7" class="idolList_link_a idolList_link_str">
-            <img src="../group-main/tws/img/tws_m_tws.jpg" alt="TWS">
-            <div>
-              <h4>TWS</h4>
-            </div>
-          </a>
-        </div>
+                <div class="idolList_link">
+                    <a href="/group-main/tws/tws-main-2026-04-27.html" id="idollist7" class="idolList_link_a idolList_link_str">
+                        <img src="../group-main/tws/img/tws_m_tws.jpg" alt="TWS">
+                        <div>
+                            <h4>TWS</h4>
+                        </div>
+                    </a>
+                </div>
 
-        <div class="idolList_link">
-          <a href="/group-main/rescene/rescene-main-2026-07-08.html" id="idollist8" class="idolList_link_a idolList_link_str">
-            <img src="../group-main/rescene/img/rescene_m_rescene.jpg" alt="RESCENE">
-            <div>
-              <h4>RESCENE</h4>
-            </div>
-          </a>
-        </div>
+                <div class="idolList_link">
+                    <a href="/group-main/rescene/rescene-main-2026-07-08.html" id="idollist8" class="idolList_link_a idolList_link_str">
+                        <img src="../group-main/rescene/img/rescene_m_rescene.jpg" alt="RESCENE">
+                        <div>
+                            <h4>RESCENE</h4>
+                        </div>
+                    </a>
+                </div>
 
-      </section>
+            </section>
 
-      <section class="idolList_train">
-        <div class="idolList_link">
-          <a href="/group-main/10cm/10cm-main-2026-07-02.html" id="idollist9" class="idolList_link_a idolList_link_ten">
-            <img src="../group-main/10cm/img/10cm_m_mem_Gwonjungyeol.jpg" alt="10CM" />
-            <div>
-              <h4>10CM</h4>
-            </div>
-          </a>
-        </div>
+            <section class="idolList_train">
+                <div class="idolList_link">
+                    <a href="/group-main/10cm/10cm-main-2026-07-02.html" id="idollist9" class="idolList_link_a idolList_link_ten">
+                        <img src="../group-main/10cm/img/10cm_m_mem_Gwonjungyeol.jpg" alt="10CM" />
+                        <div>
+                            <h4>10CM</h4>
+                        </div>
+                    </a>
+                </div>
 
-        <div class="idolList_link">
-          <a href="/group-main/aespa/aespa-main-2026-05-29.html" id="idollist10" class="idolList_link_a idolList_link_str">
-            <img src="../group-main/aespa/img/aespa_m_aespa.jpg" alt="aespa" />
-            <div>
-              <h4>aespa</h4>
-            </div>
-          </a>
-        </div>
+                <div class="idolList_link">
+                    <a href="/group-main/aespa/aespa-main-2026-05-29.html" id="idollist10" class="idolList_link_a idolList_link_str">
+                        <img src="../group-main/aespa/img/aespa_m_aespa.jpg" alt="aespa" />
+                        <div>
+                            <h4>aespa</h4>
+                        </div>
+                    </a>
+                </div>
 
-        <div class="idolList_link">
-          <a href="/group-main/allday-project/allday-project-main-2025-12-08.html" id="idollist11" class="idolList_link_a idolList_link_ten">
-            <img src="../group-main/allday-project/img/allday_m_allday_project.jpg" alt="ALLDAY PROJECT" />
-            <div>
-              <h4>ALLDAY PROJECT</h4>
-            </div>
-          </a>
-        </div>
+                <div class="idolList_link">
+                    <a href="/group-main/allday-project/allday-project-main-2025-12-08.html" id="idollist11" class="idolList_link_a idolList_link_ten">
+                        <img src="../group-main/allday-project/img/allday_m_allday_project.jpg" alt="ALLDAY PROJECT" />
+                        <div>
+                            <h4>ALLDAY PROJECT</h4>
+                        </div>
+                    </a>
+                </div>
 
-        <div class="idolList_link">
-          <a href="/group-main/day6/day6-main-2025-12-15.html" id="idollist12" class="idolList_link_a idolList_link_str">
-            <img src="../group-main/day6/img/day6_m_day6.jpg" alt="DAY6" />
-            <div>
-              <h4>DAY6</h4>
-            </div>
-          </a>
-        </div>
+                <div class="idolList_link">
+                    <a href="/group-main/day6/day6-main-2025-12-15.html" id="idollist12" class="idolList_link_a idolList_link_str">
+                        <img src="../group-main/day6/img/day6_m_day6.jpg" alt="DAY6" />
+                        <div>
+                            <h4>DAY6</h4>
+                        </div>
+                    </a>
+                </div>
 
-      </section>
-    </section>
+            </section>
+        </section>
 
-  </section>
-
-  <!--2번 파트-->
-  <section class="" style="position: absolute; top: 1500px;">
-    <section class="">
-      <section class="idolList_train">
-        <div class="idolList_link">
-          <a href="/group-main/bol4/bol4-main-2026-07-22.html" id="idollist13" class="idolList_link_a idolList_link_tri">
-            <img src="../group-main/bol4/img/bol4_m_mem_Anjiyoung.jpg" alt="볼빨간사춘기">
-            <div>
-              <h4>볼빨간사춘기</h4>
-            </div>
-          </a>
-        </div>
-
-        <div class="idolList_link">
-          <a href="/group-main/epik-high/epik-high-main-2024-10-18.html" id="idollist14" class="idolList_link_a idolList_link_txt">
-            <img src="../group-main/txt/img/txt_m_txtimg.jpg" alt="투모로우바이투게더">
-            <div>
-              <h4>에픽하이</h4>
-            </div>
-          </a>
-        </div>
-
-        <div class="idolList_link">
-          <a href="/group-main/yena/yena-main-2025-07-29.html" id="idollist15" class="idolList_link_a idolList_link_akmu">
-            <img src="../group-main/akmu/img/aknu_m_akmuimg.jpg" alt="AKMU" />
-            <div>
-              <h4>최예나</h4>
-            </div>
-          </a>
-        </div>
-
-        <div class="idolList_link">
-          <a href="/group-main/idntt/" id="idollist16" class="idolList_link_a idolList_link_ioi">
-            <img src="../group-main/ioi/img/ioi_m_ioi.jpg" alt="아이오아이" />
-            <div>
-              <h4>idntt</h4>
-            </div>
-          </a>
-        </div>
-      </section>
-      <section class="idolList_train">
-        <div class="idolList_link">
-          <a href="/group-main/artms/" id="idollist17" class="idolList_link_a idolList_link_str">
-            <img src="../group-main/stray-kids/img/stray_m_stray_kids.jpg" alt="Stray Kids" />
-            <div>
-              <h4>ARTMS</h4>
-            </div>
-          </a>
-        </div>
-
-        <div class="idolList_link">
-          <a href="/group-main/btob/" id="idollist18" class="idolList_link_a idolList_link_str">
-            <img src="../group-main/illit/img/illit_m_illit.jpg" alt="이름" />
-            <div>
-              <h4>비투비</h4>
-            </div>
-          </a>
-        </div>
-
-        <div class="idolList_link">
-          <a href="/group-main/hanroro/" id="idollist19" class="idolList_link_a idolList_link_str">
-            <img src="../group-main/tws/img/tws_m_tws.jpg" alt="TWS">
-            <div>
-              <h4>한로로</h4>
-            </div>
-          </a>
-        </div>
-
-        <div class="idolList_link">
-          <a href="/group-main/bts/" id="idollist20" class="idolList_link_a idolList_link_str">
-            <img src="../group-main/rescene/img/rescene_m_rescene.jpg" alt="RESCENE">
-            <div>
-              <h4>방탄소년단</h4>
-            </div>
-          </a>
-        </div>
-
-      </section>
-
-      <section class="idolList_train">
-        <div class="idolList_link">
-          <a href="/group-main/red-velvet/" id="idollist21" class="idolList_link_a idolList_link_ten">
-            <img src="../group-main/10cm/img/10cm_m_mem_Gwonjungyeol.jpg" alt="10CM" />
-            <div>
-              <h4>Red Velvet</h4>
-            </div>
-          </a>
-        </div>
-
-        <div class="idolList_link">
-          <a href="/group-main/zico/" id="idollist22" class="idolList_link_a idolList_link_str">
-            <img src="../group-main/aespa/img/aespa_m_aespa.jpg" alt="aespa" />
-            <div>
-              <h4>지코</h4>
-            </div>
-          </a>
-        </div>
-
-        <div class="idolList_link">
-          <a href="/group-main/fromis-9/" id="idollist23" class="idolList_link_a idolList_link_ten">
-            <img src={""} alt="이름" />
-            <div>
-              <h4>프로미스나인</h4>
-            </div>
-          </a>
-        </div>
-
-        <div class="idolList_link">
-          <a href="/group-main/cortis/" id="idollist24" class="idolList_link_a idolList_link_str">
-            <img src="../group-main/day6/img/day6_m_day6.jpg" alt="DAY6" />
-            <div>
-              <h4>CORTIS</h4>
-            </div>
-          </a>
-        </div>
-
-      </section>
     </section>
 
-  </section>
-  <section class="idolList_12345">
-    <Link to='/IdolList'>1</Link>
-    <Link to='/IdolList2'>2</Link>
-    <Link to='/'>3</Link>
-    <Link to='/'>4</Link>
-    <Link to='/'>5</Link>
-    Copyright ⓒ ㈜모드하우스
-  </section>
-  <FooterPart FooterPartText='ⓒ 도루리' />
+    <!--2번 파트-->
+    <section class="" style="position: absolute; top: 1500px;">
+        <section class="">
+            <section class="idolList_train">
+                <div class="idolList_link">
+                    <a href="/group-main/bol4/bol4-main-2026-07-22.html" id="idollist13" class="idolList_link_a idolList_link_tri">
+                        <img src="../group-main/bol4/img/bol4_m_mem_Anjiyoung.jpg" alt="볼빨간사춘기">
+                        <div>
+                            <h4>볼빨간사춘기</h4>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="idolList_link">
+                    <a href="/group-main/epik-high/epik-high-main-2024-10-18.html" id="idollist14" class="idolList_link_a idolList_link_txt">
+                        <img src="../group-main/txt/img/txt_m_txtimg.jpg" alt="투모로우바이투게더">
+                        <div>
+                            <h4>에픽하이</h4>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="idolList_link">
+                    <a href="/group-main/yena/yena-main-2025-07-29.html" id="idollist15" class="idolList_link_a idolList_link_akmu">
+                        <img src="../group-main/akmu/img/aknu_m_akmuimg.jpg" alt="AKMU" />
+                        <div>
+                            <h4>최예나</h4>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="idolList_link">
+                    <a href="/group-main/idntt/" id="idollist16" class="idolList_link_a idolList_link_ioi">
+                        <img src="../group-main/ioi/img/ioi_m_ioi.jpg" alt="아이오아이" />
+                        <div>
+                            <h4>idntt</h4>
+                        </div>
+                    </a>
+                </div>
+            </section>
+            <section class="idolList_train">
+                <div class="idolList_link">
+                    <a href="/group-main/artms/" id="idollist17" class="idolList_link_a idolList_link_str">
+                        <img src="../group-main/stray-kids/img/stray_m_stray_kids.jpg" alt="Stray Kids" />
+                        <div>
+                            <h4>ARTMS</h4>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="idolList_link">
+                    <a href="/group-main/btob/" id="idollist18" class="idolList_link_a idolList_link_str">
+                        <img src="../group-main/illit/img/illit_m_illit.jpg" alt="이름" />
+                        <div>
+                            <h4>비투비</h4>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="idolList_link">
+                    <a href="/group-main/hanroro/" id="idollist19" class="idolList_link_a idolList_link_str">
+                        <img src="../group-main/tws/img/tws_m_tws.jpg" alt="TWS">
+                        <div>
+                            <h4>한로로</h4>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="idolList_link">
+                    <a href="/group-main/bts/" id="idollist20" class="idolList_link_a idolList_link_str">
+                        <img src="../group-main/rescene/img/rescene_m_rescene.jpg" alt="RESCENE">
+                        <div>
+                            <h4>방탄소년단</h4>
+                        </div>
+                    </a>
+                </div>
+
+            </section>
+
+            <section class="idolList_train">
+                <div class="idolList_link">
+                    <a href="/group-main/red-velvet/" id="idollist21" class="idolList_link_a idolList_link_ten">
+                        <img src="../group-main/10cm/img/10cm_m_mem_Gwonjungyeol.jpg" alt="10CM" />
+                        <div>
+                            <h4>Red Velvet</h4>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="idolList_link">
+                    <a href="/group-main/zico/" id="idollist22" class="idolList_link_a idolList_link_str">
+                        <img src="../group-main/aespa/img/aespa_m_aespa.jpg" alt="aespa" />
+                        <div>
+                            <h4>지코</h4>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="idolList_link">
+                    <a href="/group-main/fromis-9/" id="idollist23" class="idolList_link_a idolList_link_ten">
+                        <img src={""} alt="이름" />
+                        <div>
+                            <h4>프로미스나인</h4>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="idolList_link">
+                    <a href="/group-main/cortis/" id="idollist24" class="idolList_link_a idolList_link_str">
+                        <img src="../group-main/day6/img/day6_m_day6.jpg" alt="DAY6" />
+                        <div>
+                            <h4>CORTIS</h4>
+                        </div>
+                    </a>
+                </div>
+
+            </section>
+        </section>
+
+    </section>
+    <section class="idolList_12345">
+        <Link to='/IdolList'>1</Link>
+        <Link to='/IdolList2'>2</Link>
+        <Link to='/'>3</Link>
+        <Link to='/'>4</Link>
+        <Link to='/'>5</Link>
+        Copyright ⓒ ㈜모드하우스
+    </section>
+    <FooterPart FooterPartText='ⓒ 도루리' />
 </div>
 <script src="../index.js"></script>
 <script>
-  const idollistAll = [
-    {groupNameKor: "트리플에스", groupNameEng: "tripleS", groupNameNormal: "tripleS", arrayNum: 1},
-    {groupNameKor: "투모로우바이투게더", groupNameEng: "TXT", groupNameNormal: "투모로우<br>바이<br>투게더", arrayNum: 2},
-    {groupNameKor: "악뮤", groupNameEng: "AKMU", groupNameNormal: "AKMU", arrayNum: 3},
-    {groupNameKor: "아이오아이", groupNameEng: "IOI", groupNameNormal: "아이오아이", arrayNum: 4},
-    {groupNameKor: "스트레이키즈", groupNameEng: "Stray Kids", groupNameNormal: "Stray Kids", arrayNum: 5},
-    {groupNameKor: "아일릿", groupNameEng: "ILLIT", groupNameNormal: "ILLIT", arrayNum: 6},
-    {groupNameKor: "투어스", groupNameEng: "TWS", groupNameNormal: "TWS", arrayNum: 7},
-    {groupNameKor: "리센느", groupNameEng: "RESCENE", groupNameNormal: "RESCENE", arrayNum: 8},
-    {groupNameKor: "십센치", groupNameEng: "ten cm", groupNameNormal: "10CM", arrayNum: 9},
-    {groupNameKor: "에스파", groupNameEng: "aespa", groupNameNormal: "aespa", arrayNum: 10},
-    {groupNameKor: "올데이 프로젝트", groupNameEng: "ALLDAY PROJECT", groupNameNormal: "ALLDAY PROJECT", arrayNum: 11},
-    {groupNameKor: "데이식스", groupNameEng: "DAY SIX", groupNameNormal: "DAY6", arrayNum: 12},
-    {groupNameKor: "볼빨간사춘기", groupNameEng: "Bol4", groupNameNormal: "볼빨간사춘기", arrayNum: 13},
-    {groupNameKor: "에픽하이", groupNameEng: "Epik High", groupNameNormal: "에픽하이", arrayNum: 14},
-    {groupNameKor: "최예나", groupNameEng: "Yena", groupNameNormal: "최예나", arrayNum: 15},
-    {groupNameKor: "아이덴티티", groupNameEng: "idntt", groupNameNormal: "idntt", arrayNum: 16},
-    {groupNameKor: "아르테미스", groupNameEng: "ARTMS", groupNameNormal: "ARTMS", arrayNum: 17},
-    {groupNameKor: "비투비", groupNameEng: "BTOB", groupNameNormal: "비투비", arrayNum: 18},
-    {groupNameKor: "한로로", groupNameEng: "Hanroro", groupNameNormal: "한로로", arrayNum: 19},
-    {groupNameKor: "방탄소년단", groupNameEng: "BTS", groupNameNormal: "방탄소년단", arrayNum: 20},
-    {groupNameKor: "레드벨벳", groupNameEng: "Red Velvet", groupNameNormal: "Red Velvet", arrayNum: 21},
-    {groupNameKor: "지코", groupNameEng: "Zico", groupNameNormal: "지코", arrayNum: 22},
-    {groupNameKor: "프로미스나인", groupNameEng: "Fromis-9", groupNameNormal: "프로미스나인", arrayNum: 23},
-    {groupNameKor: "코르티스", groupNameEng: "CORTIS", groupNameNormal: "CORTIS", arrayNum: 24}
-  ];
-  const one = document.getElementById("idollist1");
-  const idollistAIds = [];
-  for (let i = 1; i <= 24; i++) {
-    idollistAIds.push(document.getElementById(`idollist${i}`));
-    console.log(idollistAIds[i-1]);
-  }
-  function idollistAIdsNormal() {
-    //#####
-    idollistAIds[0].href = "";
-    idollistAIds[0].querySelector("img").src = "1번";
-    idollistAIds[0].querySelector("img").alt = idollistAll[0].groupNameNormal;
-    idollistAIds[0].querySelector("h4").innerHTML = idollistAll[0].groupNameNormal;
+    const idollistAll = [
+        {groupNameKor: "트리플에스", groupNameEng: "tripleS", groupNameNormal: "tripleS", arrayNum: 1},
+        {groupNameKor: "투모로우바이투게더", groupNameEng: "TXT", groupNameNormal: "투모로우<br>바이<br>투게더", arrayNum: 2},
+        {groupNameKor: "악뮤", groupNameEng: "AKMU", groupNameNormal: "AKMU", arrayNum: 3},
+        {groupNameKor: "아이오아이", groupNameEng: "IOI", groupNameNormal: "아이오아이", arrayNum: 4},
+        {groupNameKor: "스트레이키즈", groupNameEng: "Stray Kids", groupNameNormal: "Stray Kids", arrayNum: 5},
+        {groupNameKor: "아일릿", groupNameEng: "ILLIT", groupNameNormal: "ILLIT", arrayNum: 6},
+        {groupNameKor: "투어스", groupNameEng: "TWS", groupNameNormal: "TWS", arrayNum: 7},
+        {groupNameKor: "리센느", groupNameEng: "RESCENE", groupNameNormal: "RESCENE", arrayNum: 8},
+        {groupNameKor: "십센치", groupNameEng: "ten cm", groupNameNormal: "10CM", arrayNum: 9},
+        {groupNameKor: "에스파", groupNameEng: "aespa", groupNameNormal: "aespa", arrayNum: 10},
+        {groupNameKor: "올데이 프로젝트", groupNameEng: "ALLDAY PROJECT", groupNameNormal: "ALLDAY PROJECT", arrayNum: 11},
+        {groupNameKor: "데이식스", groupNameEng: "DAY SIX", groupNameNormal: "DAY6", arrayNum: 12},
+        {groupNameKor: "볼빨간사춘기", groupNameEng: "Bol4", groupNameNormal: "볼빨간사춘기", arrayNum: 13},
+        {groupNameKor: "에픽하이", groupNameEng: "Epik High", groupNameNormal: "에픽하이", arrayNum: 14},
+        {groupNameKor: "최예나", groupNameEng: "Yena", groupNameNormal: "최예나", arrayNum: 15},
+        {groupNameKor: "아이덴티티", groupNameEng: "idntt", groupNameNormal: "idntt", arrayNum: 16},
+        {groupNameKor: "아르테미스", groupNameEng: "ARTMS", groupNameNormal: "ARTMS", arrayNum: 17},
+        {groupNameKor: "비투비", groupNameEng: "BTOB", groupNameNormal: "비투비", arrayNum: 18},
+        {groupNameKor: "한로로", groupNameEng: "Hanroro", groupNameNormal: "한로로", arrayNum: 19},
+        {groupNameKor: "방탄소년단", groupNameEng: "BTS", groupNameNormal: "방탄소년단", arrayNum: 20},
+        {groupNameKor: "레드벨벳", groupNameEng: "Red Velvet", groupNameNormal: "Red Velvet", arrayNum: 21},
+        {groupNameKor: "지코", groupNameEng: "Zico", groupNameNormal: "지코", arrayNum: 22},
+        {groupNameKor: "프로미스나인", groupNameEng: "Fromis-9", groupNameNormal: "프로미스나인", arrayNum: 23},
+        {groupNameKor: "코르티스", groupNameEng: "CORTIS", groupNameNormal: "CORTIS", arrayNum: 24}
+    ];
+    const one = document.getElementById("idollist1");
+    const idollistAIds = [];
+    for (let i = 1; i <= 24; i++) {
+        idollistAIds.push(document.getElementById(`idollist${i}`));
+        console.log(idollistAIds[i-1]);
+    }
+    function idollistAIdsNormal() {
+        //#####
+        idollistAIds[0].href = "";
+        idollistAIds[0].querySelector("img").src = "1번";
+        idollistAIds[0].querySelector("img").alt = idollistAll[0].groupNameNormal;
+        idollistAIds[0].querySelector("h4").innerHTML = idollistAll[0].groupNameNormal;
 
-    idollistAIds[1].href = "";
-    idollistAIds[1].querySelector("img").src = "2번";
-    idollistAIds[1].querySelector("img").alt = idollistAll[1].groupNameKor;
-    idollistAIds[1].querySelector("h4").innerHTML = idollistAll[1].groupNameNormal;
+        idollistAIds[1].href = "";
+        idollistAIds[1].querySelector("img").src = "2번";
+        idollistAIds[1].querySelector("img").alt = idollistAll[1].groupNameKor;
+        idollistAIds[1].querySelector("h4").innerHTML = idollistAll[1].groupNameNormal;
 
-    idollistAIds[2].href = "";
-    idollistAIds[2].querySelector("img").src = "3번";
-    idollistAIds[2].querySelector("img").alt = idollistAll[2].groupNameNormal;
-    idollistAIds[2].querySelector("h4").textContent = idollistAll[2].groupNameNormal;
+        idollistAIds[2].href = "";
+        idollistAIds[2].querySelector("img").src = "3번";
+        idollistAIds[2].querySelector("img").alt = idollistAll[2].groupNameNormal;
+        idollistAIds[2].querySelector("h4").textContent = idollistAll[2].groupNameNormal;
 
-    idollistAIds[3].href = "";
-    idollistAIds[3].querySelector("img").src = "4번";
-    idollistAIds[3].querySelector("img").alt = idollistAll[3].groupNameNormal;
-    idollistAIds[3].querySelector("h4").textContent = idollistAll[3].groupNameNormal;
+        idollistAIds[3].href = "";
+        idollistAIds[3].querySelector("img").src = "4번";
+        idollistAIds[3].querySelector("img").alt = idollistAll[3].groupNameNormal;
+        idollistAIds[3].querySelector("h4").textContent = idollistAll[3].groupNameNormal;
 
-    idollistAIds[4].href = "";
-    idollistAIds[4].querySelector("img").src = "5번";
-    idollistAIds[4].querySelector("img").alt = idollistAll[4].groupNameNormal;
-    idollistAIds[4].querySelector("h4").textContent = idollistAll[4].groupNameNormal;
+        idollistAIds[4].href = "";
+        idollistAIds[4].querySelector("img").src = "5번";
+        idollistAIds[4].querySelector("img").alt = idollistAll[4].groupNameNormal;
+        idollistAIds[4].querySelector("h4").textContent = idollistAll[4].groupNameNormal;
 
-    idollistAIds[5].href = "";
-    idollistAIds[5].querySelector("img").src = "6번";
-    idollistAIds[5].querySelector("img").alt = idollistAll[5].groupNameNormal;
-    idollistAIds[5].querySelector("h4").textContent = idollistAll[5].groupNameNormal;
+        idollistAIds[5].href = "";
+        idollistAIds[5].querySelector("img").src = "6번";
+        idollistAIds[5].querySelector("img").alt = idollistAll[5].groupNameNormal;
+        idollistAIds[5].querySelector("h4").textContent = idollistAll[5].groupNameNormal;
 
-    idollistAIds[6].href = "";
-    idollistAIds[6].querySelector("img").src = "7번";
-    idollistAIds[6].querySelector("img").alt = idollistAll[6].groupNameNormal;
-    idollistAIds[6].querySelector("h4").textContent = idollistAll[6].groupNameNormal;
+        idollistAIds[6].href = "";
+        idollistAIds[6].querySelector("img").src = "7번";
+        idollistAIds[6].querySelector("img").alt = idollistAll[6].groupNameNormal;
+        idollistAIds[6].querySelector("h4").textContent = idollistAll[6].groupNameNormal;
 
-    idollistAIds[7].href = "";
-    idollistAIds[7].querySelector("img").src = "8번";
-    idollistAIds[7].querySelector("img").alt = idollistAll[7].groupNameNormal;
-    idollistAIds[7].querySelector("h4").textContent = idollistAll[7].groupNameNormal;
+        idollistAIds[7].href = "";
+        idollistAIds[7].querySelector("img").src = "8번";
+        idollistAIds[7].querySelector("img").alt = idollistAll[7].groupNameNormal;
+        idollistAIds[7].querySelector("h4").textContent = idollistAll[7].groupNameNormal;
 
-    idollistAIds[8].href = "";
-    idollistAIds[8].querySelector("img").src = "9번";
-    idollistAIds[8].querySelector("img").alt = idollistAll[8].groupNameNormal;
-    idollistAIds[8].querySelector("h4").textContent = idollistAll[8].groupNameNormal;
+        idollistAIds[8].href = "";
+        idollistAIds[8].querySelector("img").src = "9번";
+        idollistAIds[8].querySelector("img").alt = idollistAll[8].groupNameNormal;
+        idollistAIds[8].querySelector("h4").textContent = idollistAll[8].groupNameNormal;
 
-    idollistAIds[9].href = "";
-    idollistAIds[9].querySelector("img").src = "10번";
-    idollistAIds[9].querySelector("img").alt = idollistAll[9].groupNameNormal;
-    idollistAIds[9].querySelector("h4").textContent = idollistAll[9].groupNameNormal;
+        idollistAIds[9].href = "";
+        idollistAIds[9].querySelector("img").src = "10번";
+        idollistAIds[9].querySelector("img").alt = idollistAll[9].groupNameNormal;
+        idollistAIds[9].querySelector("h4").textContent = idollistAll[9].groupNameNormal;
 
-    idollistAIds[10].href = "";
-    idollistAIds[10].querySelector("img").src = "11번";
-    idollistAIds[10].querySelector("img").alt = idollistAll[10].groupNameNormal;
-    idollistAIds[10].querySelector("h4").textContent = idollistAll[10].groupNameNormal;
+        idollistAIds[10].href = "";
+        idollistAIds[10].querySelector("img").src = "11번";
+        idollistAIds[10].querySelector("img").alt = idollistAll[10].groupNameNormal;
+        idollistAIds[10].querySelector("h4").textContent = idollistAll[10].groupNameNormal;
 
-    idollistAIds[11].href = "";
-    idollistAIds[11].querySelector("img").src = "12번";
-    idollistAIds[11].querySelector("img").alt = idollistAll[11].groupNameNormal;
-    idollistAIds[11].querySelector("h4").textContent = idollistAll[11].groupNameNormal;
+        idollistAIds[11].href = "";
+        idollistAIds[11].querySelector("img").src = "12번";
+        idollistAIds[11].querySelector("img").alt = idollistAll[11].groupNameNormal;
+        idollistAIds[11].querySelector("h4").textContent = idollistAll[11].groupNameNormal;
 
-    idollistAIds[12].href = "";
-    idollistAIds[12].querySelector("img").src = "13번";
-    idollistAIds[12].querySelector("img").alt = idollistAll[12].groupNameNormal;
-    idollistAIds[12].querySelector("h4").textContent = idollistAll[12].groupNameNormal;
+        idollistAIds[12].href = "";
+        idollistAIds[12].querySelector("img").src = "13번";
+        idollistAIds[12].querySelector("img").alt = idollistAll[12].groupNameNormal;
+        idollistAIds[12].querySelector("h4").textContent = idollistAll[12].groupNameNormal;
 
-    idollistAIds[13].href = "";
-    idollistAIds[13].querySelector("img").src = "14번";
-    idollistAIds[13].querySelector("img").alt = idollistAll[13].groupNameNormal;
-    idollistAIds[13].querySelector("h4").textContent = idollistAll[13].groupNameNormal;
+        idollistAIds[13].href = "";
+        idollistAIds[13].querySelector("img").src = "14번";
+        idollistAIds[13].querySelector("img").alt = idollistAll[13].groupNameNormal;
+        idollistAIds[13].querySelector("h4").textContent = idollistAll[13].groupNameNormal;
 
-    idollistAIds[14].href = "";
-    idollistAIds[14].querySelector("img").src = "15번";
-    idollistAIds[14].querySelector("img").alt = idollistAll[14].groupNameNormal;
-    idollistAIds[14].querySelector("h4").textContent = idollistAll[14].groupNameNormal;
+        idollistAIds[14].href = "";
+        idollistAIds[14].querySelector("img").src = "15번";
+        idollistAIds[14].querySelector("img").alt = idollistAll[14].groupNameNormal;
+        idollistAIds[14].querySelector("h4").textContent = idollistAll[14].groupNameNormal;
 
-    idollistAIds[15].href = "";
-    idollistAIds[15].querySelector("img").src = "16번";
-    idollistAIds[15].querySelector("img").alt = idollistAll[15].groupNameNormal;
-    idollistAIds[15].querySelector("h4").textContent = idollistAll[15].groupNameNormal;
+        idollistAIds[15].href = "";
+        idollistAIds[15].querySelector("img").src = "16번";
+        idollistAIds[15].querySelector("img").alt = idollistAll[15].groupNameNormal;
+        idollistAIds[15].querySelector("h4").textContent = idollistAll[15].groupNameNormal;
 
-    idollistAIds[16].href = "";
-    idollistAIds[16].querySelector("img").src = "17번";
-    idollistAIds[16].querySelector("img").alt = idollistAll[16].groupNameNormal;
-    idollistAIds[16].querySelector("h4").textContent = idollistAll[16].groupNameNormal;
+        idollistAIds[16].href = "";
+        idollistAIds[16].querySelector("img").src = "17번";
+        idollistAIds[16].querySelector("img").alt = idollistAll[16].groupNameNormal;
+        idollistAIds[16].querySelector("h4").textContent = idollistAll[16].groupNameNormal;
 
-    idollistAIds[17].href = "";
-    idollistAIds[17].querySelector("img").src = "18번";
-    idollistAIds[17].querySelector("img").alt = idollistAll[17].groupNameNormal;
-    idollistAIds[17].querySelector("h4").textContent = idollistAll[17].groupNameNormal;
+        idollistAIds[17].href = "";
+        idollistAIds[17].querySelector("img").src = "18번";
+        idollistAIds[17].querySelector("img").alt = idollistAll[17].groupNameNormal;
+        idollistAIds[17].querySelector("h4").textContent = idollistAll[17].groupNameNormal;
 
-    idollistAIds[18].href = "";
-    idollistAIds[18].querySelector("img").src = "19번";
-    idollistAIds[18].querySelector("img").alt = idollistAll[18].groupNameNormal;
-    idollistAIds[18].querySelector("h4").textContent = idollistAll[18].groupNameNormal;
+        idollistAIds[18].href = "";
+        idollistAIds[18].querySelector("img").src = "19번";
+        idollistAIds[18].querySelector("img").alt = idollistAll[18].groupNameNormal;
+        idollistAIds[18].querySelector("h4").textContent = idollistAll[18].groupNameNormal;
 
-    idollistAIds[19].href = "";
-    idollistAIds[19].querySelector("img").src = "20번";
-    idollistAIds[19].querySelector("img").alt = idollistAll[19].groupNameNormal;
-    idollistAIds[19].querySelector("h4").textContent = idollistAll[19].groupNameNormal;
+        idollistAIds[19].href = "";
+        idollistAIds[19].querySelector("img").src = "20번";
+        idollistAIds[19].querySelector("img").alt = idollistAll[19].groupNameNormal;
+        idollistAIds[19].querySelector("h4").textContent = idollistAll[19].groupNameNormal;
 
-    idollistAIds[20].href = "";
-    idollistAIds[20].querySelector("img").src = "21번";
-    idollistAIds[20].querySelector("img").alt = idollistAll[20].groupNameNormal;
-    idollistAIds[20].querySelector("h4").textContent = idollistAll[20].groupNameNormal;
+        idollistAIds[20].href = "";
+        idollistAIds[20].querySelector("img").src = "21번";
+        idollistAIds[20].querySelector("img").alt = idollistAll[20].groupNameNormal;
+        idollistAIds[20].querySelector("h4").textContent = idollistAll[20].groupNameNormal;
 
-    idollistAIds[21].href = "";
-    idollistAIds[21].querySelector("img").src = "22번";
-    idollistAIds[21].querySelector("img").alt = idollistAll[21].groupNameNormal;
-    idollistAIds[21].querySelector("h4").textContent = idollistAll[21].groupNameNormal;
+        idollistAIds[21].href = "";
+        idollistAIds[21].querySelector("img").src = "22번";
+        idollistAIds[21].querySelector("img").alt = idollistAll[21].groupNameNormal;
+        idollistAIds[21].querySelector("h4").textContent = idollistAll[21].groupNameNormal;
 
-    idollistAIds[22].href = "";
-    idollistAIds[22].querySelector("img").src = "23번";
-    idollistAIds[22].querySelector("img").alt = idollistAll[22].groupNameNormal;
-    idollistAIds[22].querySelector("h4").textContent = idollistAll[22].groupNameNormal;
+        idollistAIds[22].href = "";
+        idollistAIds[22].querySelector("img").src = "23번";
+        idollistAIds[22].querySelector("img").alt = idollistAll[22].groupNameNormal;
+        idollistAIds[22].querySelector("h4").textContent = idollistAll[22].groupNameNormal;
 
-    idollistAIds[23].href = "https://www.naver.com";
-    idollistAIds[23].querySelector("img").src = "24번";
-    idollistAIds[23].querySelector("img").alt = idollistAll[23].groupNameNormal;
-    idollistAIds[23].querySelector("h4").textContent = idollistAll[23].groupNameNormal;
-  }
+        idollistAIds[23].href = "https://www.naver.com";
+        idollistAIds[23].querySelector("img").src = "24번";
+        idollistAIds[23].querySelector("img").alt = idollistAll[23].groupNameNormal;
+        idollistAIds[23].querySelector("h4").textContent = idollistAll[23].groupNameNormal;
+    }
 </script>
 </body>
 </html>
