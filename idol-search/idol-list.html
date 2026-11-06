@@ -498,6 +498,7 @@
         idollistAIds.push(document.getElementById(`idollist${i}`));
         console.log(idollistAIds[i-1]);
     }
+    //기본 등록순 정렬 함수
     function idollistAIdsNormal() {
         //#####
         idollistAIds[0].href = idollistAll[0].href;
@@ -619,6 +620,9 @@
         idollistAIds[23].querySelector("img").src = "24번";
         idollistAIds[23].querySelector("img").alt = idollistAll[23].groupNameNormal;
         idollistAIds[23].querySelector("h4").textContent = idollistAll[23].groupNameNormal;
+    }
+    function idollistAIdsKoreanSort() {
+        
     }
 </script>
 </body>
