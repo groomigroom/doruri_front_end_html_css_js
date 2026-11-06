@@ -621,15 +621,25 @@
         idollistAIds[23].querySelector("img").alt = idollistAll[23].groupNameNormal;
         idollistAIds[23].querySelector("h4").textContent = idollistAll[23].groupNameNormal;
     }
-    function idollistAIdsKoreanSort() {
+    //한국어 순정렬 함수
+    function idollistAIdsKoreanSort(idollistAll) {
         let idollistLength = idollistAll.length;
         let idollistPivot = idollistAll[idollistLength / 2].groupNameKor;
         let idollistLeftArray = [];
         let idollistRightArray = [];
         for (let n = 0; n < idollistLength; n++) {
-            if ()
+            if (idollistAll[n] < idollistPivot) {
+                idollistLeftArray.push(idollistAll[n]);
+            } else if (idollistAll[n] > idollistPivot) {
+                idollistRightArray.push(idollistAll[n]);
+            }
         }
+        return 
     }
+    function idollistAIdsKoreanSortToArray() {
+        let idollistAIdsKoreanSortArray = idollistAIdsKoreanSort()
+    }
+    
 </script>
 </body>
 </html>
