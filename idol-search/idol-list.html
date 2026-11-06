@@ -211,6 +211,7 @@
     <!--#####-->
     <button onclick="idollistAIdsNormal()">normal</button>
     <button onclick="idollistAIdsKoreanSortToArray()">한국어 순정렬</button>
+    <button onclick="idollistAIdsKoreanReverseSortToArray()">한국어 역정렬</button>
     <section class="home_translate">
         <a href='/IdolList' class="on">한국어</a>
         <a href='/IdolListEng'>English</a>
@@ -797,10 +798,10 @@
 
         let idollistAIdsKoreanSortArray =
             idollistAIdsKoreanSort(idollistAll);
-        idollistAIds[23].href = idollistAIdsKoreanSortArray[23].href;
-        idollistAIds[23].querySelector("img").src = "24번";
-        idollistAIds[23].querySelector("img").alt = idollistAIdsKoreanSortArray[23].groupNameNormal;
-        idollistAIds[23].querySelector("h4").innerHTML = idollistAIdsKoreanSortArray[23].groupNameNormal;
+        idollistAIds[23].href = idollistAIdsKoreanSortArray[0].href;
+        idollistAIds[23].querySelector("img").src = "1번";
+        idollistAIds[23].querySelector("img").alt = idollistAIdsKoreanSortArray[0].groupNameNormal;
+        idollistAIds[23].querySelector("h4").innerHTML = idollistAIdsKoreanSortArray[0].groupNameNormal;
     }
 
 </script>
