@@ -210,6 +210,7 @@
     </header>
     <!--#####-->
     <button onclick="idollistAIdsNormal()">normal</button>
+    <button onclick="idollistAIdsKoreanSortToArray()">한국어 순정렬</button>
     <section class="home_translate">
         <a href='/IdolList' class="on">한국어</a>
         <a href='/IdolListEng'>English</a>
@@ -624,20 +625,25 @@
     //한국어 순정렬 함수
     function idollistAIdsKoreanSort(idollistAll) {
         let idollistLength = idollistAll.length;
+        if (idollistLength <= 1) {
+            return idollistAll;
+        }
+
         let idollistPivot = idollistAll[idollistLength / 2].groupNameKor;
         let idollistLeftArray = [];
         let idollistRightArray = [];
         for (let n = 0; n < idollistLength; n++) {
-            if (idollistAll[n] < idollistPivot) {
+            if (idollistAll[n].groupNameKor < idollistPivot) {
                 idollistLeftArray.push(idollistAll[n]);
-            } else if (idollistAll[n] > idollistPivot) {
+            } else if (idollistAll[n].groupNameKor > idollistPivot) {
                 idollistRightArray.push(idollistAll[n]);
             }
         }
-        return 
+        return idollistAIdsKoreanSort(idollistLeftArray).concat([idollistPivot]).concat(idollistAIdsKoreanSort(idollistRightArray));
     }
     function idollistAIdsKoreanSortToArray() {
-        let idollistAIdsKoreanSortArray = idollistAIdsKoreanSort()
+        let idollistAIdsKoreanSortArray = idollistAIdsKoreanSort(idollistAll);
+        console.log(idollistAIdsKoreanSortArray);
     }
     
 </script>
