@@ -920,6 +920,48 @@
     
     }
 
+    // 영어 순정렬 함수
+    function idollistAIdsEnglishSort(idollistAll) {
+
+        let idollistLength = idollistAll.length;
+
+        // 재귀 종료 조건
+        if (idollistLength <= 1) {
+            return idollistAll;
+        }
+
+        // 피벗 인덱스 및 객체
+        let idollistPivotIndex = Math.floor(idollistLength / 2);
+        let idollistPivot = idollistAll[idollistPivotIndex];
+
+        let idollistLeftArray = [];
+        let idollistRightArray = [];
+
+        for (let n = 0; n < idollistLength; n++) {
+
+            // 피벗 자체는 비교 대상에서 제외
+            if (n === idollistPivotIndex) {
+                continue;
+            }
+
+            if (
+                idollistAll[n].groupNameEng.localeCompare(
+                    idollistPivot.groupNameEng,
+                    "eng"
+                ) < 0
+            ) {
+                idollistLeftArray.push(idollistAll[n]);
+
+            } else {
+                idollistRightArray.push(idollistAll[n]);
+            }
+        }
+
+        return idollistAIdsEnglishSort(idollistLeftArray)
+            .concat([idollistPivot])
+            .concat(idollistAIdsEnglishSort(idollistRightArray));
+    }
+
 </script>
 </body>
 </html>
