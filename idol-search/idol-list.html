@@ -947,7 +947,10 @@
             if (
                 idollistAll[n].groupNameEng.localeCompare(
                     idollistPivot.groupNameEng,
-                    "eng"
+                    //대소문자 구분없이
+                    "en", {
+                        sensitivity: "base"
+                    }
                 ) < 0
             ) {
                 idollistLeftArray.push(idollistAll[n]);
