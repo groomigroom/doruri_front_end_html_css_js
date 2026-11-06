@@ -792,6 +792,16 @@
         idollistAIds[23].querySelector("img").alt = idollistAIdsKoreanSortArray[23].groupNameNormal;
         idollistAIds[23].querySelector("h4").innerHTML = idollistAIdsKoreanSortArray[23].groupNameNormal;
     }
+    // 한국어 역정렬 실행 함수
+    function idollistAIdsKoreanReverseSortToArray() {
+
+        let idollistAIdsKoreanSortArray =
+            idollistAIdsKoreanSort(idollistAll);
+        idollistAIds[23].href = idollistAIdsKoreanSortArray[23].href;
+        idollistAIds[23].querySelector("img").src = "24번";
+        idollistAIds[23].querySelector("img").alt = idollistAIdsKoreanSortArray[23].groupNameNormal;
+        idollistAIds[23].querySelector("h4").innerHTML = idollistAIdsKoreanSortArray[23].groupNameNormal;
+    }
 
 </script>
 </body>
