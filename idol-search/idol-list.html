@@ -212,6 +212,7 @@
     <button onclick="idollistAIdsNormal()">normal</button>
     <button onclick="idollistAIdsKoreanSortToArray()">한국어 순정렬</button>
     <button onclick="idollistAIdsKoreanReverseSortToArray()">한국어 역정렬</button>
+    <button onclick="idollistAIdsEnglishSortToArray()">영어 순정렬</button>
     <section class="home_translate">
         <a href='/IdolList' class="on">한국어</a>
         <a href='/IdolListEng'>English</a>
@@ -964,8 +965,8 @@
             .concat([idollistPivot])
             .concat(idollistAIdsEnglishSort(idollistRightArray));
     }
-    // 영어 순정렬 실행 함수 부터
-    function idollistAIdsKoreanSortToArray() {
+    // 영어 순정렬 실행 함수
+    function idollistAIdsEnglishSortToArray() {
 
         let idollistAIdsEnglishSortArray =
             idollistAIdsEnglishSort(idollistAll);
@@ -1089,6 +1090,8 @@
         idollistAIds[23].querySelector("img").alt = idollistAIdsEnglishSortArray[23].groupNameNormal;
         idollistAIds[23].querySelector("h4").innerHTML = idollistAIdsEnglishSortArray[23].groupNameNormal;
     }
+
+
 </script>
 </body>
 </html>
