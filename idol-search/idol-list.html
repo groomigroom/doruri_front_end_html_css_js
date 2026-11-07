@@ -65,7 +65,9 @@
             opacity: 1;
             transform: rotateY(0deg);
             transition: all 0.6s ease 0s;
-            border: 5px solid #191919;
+            border-width: 5px;
+            border-style: solid;
+            /* border-color: #191919; */
         }
 
         .idolList_link_a>div {
@@ -78,7 +80,8 @@
             opacity: 0;
             transform: rotateY(-180deg);
             transition: all 0.6s ease 0s;
-            border: 5px solid #191919;
+            border-width: 5px;
+            border-style: solid;
         }
 
         .idolList_link_a>div>h4 {
@@ -484,22 +487,22 @@
     <script src="../index.js"></script>
     <script>
         const idollistAll = [
-            { groupNameKor: "트리플에스", groupNameEng: "tripleS", groupNameNormal: "tripleS", arrayNum: 1, href: "/group-main/24members/triples" },
-            { groupNameKor: "투모로우바이투게더", groupNameEng: "TXT", groupNameNormal: "투모로우<br>바이<br>투게더", arrayNum: 2, href: "/group-main/5members/txt" },
-            { groupNameKor: "악뮤", groupNameEng: "AKMU", groupNameNormal: "AKMU", arrayNum: 3, href: "/group-main/2members/akmu" },
-            { groupNameKor: "아이오아이", groupNameEng: "IOI", groupNameNormal: "아이오아이", arrayNum: 4, href: "/group-main/11members/ioi" },
-            { groupNameKor: "스트레이키즈", groupNameEng: "Stray Kids", groupNameNormal: "Stray Kids", arrayNum: 5, href: "/group-main/8members/stray-kids" },
-            { groupNameKor: "아일릿", groupNameEng: "ILLIT", groupNameNormal: "ILLIT", arrayNum: 6, href: "/group-main/5members/illit" },
-            { groupNameKor: "투어스", groupNameEng: "TWS", groupNameNormal: "TWS", arrayNum: 7, href: "/group-main/6members/tws" },
-            { groupNameKor: "리센느", groupNameEng: "RESCENE", groupNameNormal: "RESCENE", arrayNum: 8, href: "/group-main/5members/rescene" },
-            { groupNameKor: "십센치", groupNameEng: "ten cm", groupNameNormal: "10CM", arrayNum: 9, href: "/group-main/1members/10cm" },
-            { groupNameKor: "에스파", groupNameEng: "aespa", groupNameNormal: "aespa", arrayNum: 10, href: "/group-main/4members/aespa" },
-            { groupNameKor: "올데이 프로젝트", groupNameEng: "ALLDAY PROJECT", groupNameNormal: "ALLDAY PROJECT", arrayNum: 11, href: "/group-main/5members/allday-project" },
-            { groupNameKor: "데이식스", groupNameEng: "DAY SIX", groupNameNormal: "DAY6", arrayNum: 12, href: "/group-main/4members/day6" },
-            { groupNameKor: "볼빨간사춘기", groupNameEng: "Bol4", groupNameNormal: "볼빨간사춘기", arrayNum: 13, href: "/group-main/1members/bol4" },
-            { groupNameKor: "에픽하이", groupNameEng: "Epik High", groupNameNormal: "에픽하이", arrayNum: 14, href: "/group-main/3members/epik-high" },
-            { groupNameKor: "최예나", groupNameEng: "Yena", groupNameNormal: "최예나", arrayNum: 15, href: "/group-main/1members/yena" },
-            { groupNameKor: "아이덴티티", groupNameEng: "idntt", groupNameNormal: "idntt", arrayNum: 16, href: "/group-main/24members/idntt" },
+            { groupNameKor: "트리플에스", groupNameEng: "tripleS", groupNameNormal: "tripleS", arrayNum: 1, href: "/group-main/24members/triples", borderColorHex: "#191919" },
+            { groupNameKor: "투모로우바이투게더", groupNameEng: "TXT", groupNameNormal: "투모로우<br>바이<br>투게더", arrayNum: 2, href: "/group-main/5members/txt", borderColorHex: "#FF1E91" },
+            { groupNameKor: "악뮤", groupNameEng: "AKMU", groupNameNormal: "AKMU", arrayNum: 3, href: "/group-main/2members/akmu", borderColorHex: "#13983f" },
+            { groupNameKor: "아이오아이", groupNameEng: "IOI", groupNameNormal: "아이오아이", arrayNum: 4, href: "/group-main/11members/ioi", borderColorHex: "" },
+            { groupNameKor: "스트레이키즈", groupNameEng: "Stray Kids", groupNameNormal: "Stray Kids", arrayNum: 5, href: "/group-main/8members/stray-kids", borderColorHex: "" },
+            { groupNameKor: "아일릿", groupNameEng: "ILLIT", groupNameNormal: "ILLIT", arrayNum: 6, href: "/group-main/5members/illit", borderColorHex: "" },
+            { groupNameKor: "투어스", groupNameEng: "TWS", groupNameNormal: "TWS", arrayNum: 7, href: "/group-main/6members/tws", borderColorHex: "" },
+            { groupNameKor: "리센느", groupNameEng: "RESCENE", groupNameNormal: "RESCENE", arrayNum: 8, href: "/group-main/5members/rescene", borderColorHex: "" },
+            { groupNameKor: "십센치", groupNameEng: "ten cm", groupNameNormal: "10CM", arrayNum: 9, href: "/group-main/1members/10cm", borderColorHex: "" },
+            { groupNameKor: "에스파", groupNameEng: "aespa", groupNameNormal: "aespa", arrayNum: 10, href: "/group-main/4members/aespa", borderColorHex: "" },
+            { groupNameKor: "올데이 프로젝트", groupNameEng: "ALLDAY PROJECT", groupNameNormal: "ALLDAY PROJECT", arrayNum: 11, href: "/group-main/5members/allday-project", borderColorHex: "" },
+            { groupNameKor: "데이식스", groupNameEng: "DAY SIX", groupNameNormal: "DAY6", arrayNum: 12, href: "/group-main/4members/day6", borderColorHex: "" },
+            { groupNameKor: "볼빨간사춘기", groupNameEng: "Bol4", groupNameNormal: "볼빨간사춘기", arrayNum: 13, href: "/group-main/1members/bol4", borderColorHex: "" },
+            { groupNameKor: "에픽하이", groupNameEng: "Epik High", groupNameNormal: "에픽하이", arrayNum: 14, href: "/group-main/3members/epik-high", borderColorHex: "" },
+            { groupNameKor: "최예나", groupNameEng: "Yena", groupNameNormal: "최예나", arrayNum: 15, href: "/group-main/1members/yena", borderColorHex: "" },
+            { groupNameKor: "아이덴티티", groupNameEng: "idntt", groupNameNormal: "idntt", arrayNum: 16, href: "/group-main/24members/idntt", borderColorHex: "" },
             { groupNameKor: "아르테미스", groupNameEng: "ARTMS", groupNameNormal: "ARTMS", arrayNum: 17, href: "/group-main/5members/artms" },
             { groupNameKor: "비투비", groupNameEng: "BTOB", groupNameNormal: "비투비", arrayNum: 18, href: "/group-main/6members/btob" },
             { groupNameKor: "한로로", groupNameEng: "Hanroro", groupNameNormal: "한로로", arrayNum: 19, href: "/group-main/1members/hanroro" },
