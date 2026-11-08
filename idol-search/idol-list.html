@@ -163,1333 +163,1333 @@
 </head>
 
 <body>
-    <div class="idolList_full">
-        <header>
-            <section class="header_structure">
-                <div class="Menu_button off">
-                    <div></div>
-                    <div></div>
-                    <div></div>
+<div class="idolList_full">
+<!--    <header>-->
+<!--        <section class="header_structure">-->
+<!--            <div class="Menu_button off">-->
+<!--                <div></div>-->
+<!--                <div></div>-->
+<!--                <div></div>-->
+<!--            </div>-->
+<!--        </section>-->
+<!--        <div class="header_wrap">-->
+<!--            <nav>-->
+<!--                <ul>-->
+<!--                    <li>도루리는?-->
+<!--                        <ul>-->
+<!--                            <li><a href="">소개</a></li>-->
+<!--                            <li><a href="">도루리 사이트 구조</a></li>-->
+<!--                            <li><a href="">업데이트 내역</a></li>-->
+<!--                            <li><a href="">세부4</a></li>-->
+<!--                        </ul>-->
+<!--                    </li>-->
+<!--                    <li>아이돌 탐색-->
+<!--                        <ul>-->
+<!--                            <li><a href="">목록</a></li>-->
+<!--                            <li><a href="">세부2</a></li>-->
+<!--                            <li><a href="">세부3</a></li>-->
+<!--                            <li><a href="">세부4</a></li>-->
+<!--                        </ul>-->
+<!--                    </li>-->
+<!--                    <li>메뉴3-->
+<!--                        <ul>-->
+<!--                            <li><a href="">세부1</a></li>-->
+<!--                            <li><a href="">세부2</a></li>-->
+<!--                            <li><a href="">세부3</a></li>-->
+<!--                            <li><a href="">세부4</a></li>-->
+<!--                        </ul>-->
+<!--                    </li>-->
+<!--                    <li>메뉴4-->
+<!--                        <ul>-->
+<!--                            <li><a href="">세부1</a></li>-->
+<!--                            <li><a href="">세부2</a></li>-->
+<!--                            <li><a href="">세부3</a></li>-->
+<!--                            <li><a href="">세부4</a></li>-->
+<!--                        </ul>-->
+<!--                    </li>-->
+<!--                </ul>-->
+<!--            </nav>-->
+<!--        </div>-->
+<!--    </header>-->
+    <!--#####-->
+    <button onclick="idollistAIdsNormal()">normal</button>
+    <button onclick="idollistAIdsKoreanSortToArray()">한국어 순정렬</button>
+    <button onclick="idollistAIdsKoreanReverseSortToArray()">한국어 역정렬</button>
+    <button onclick="idollistAIdsEnglishSortToArray()">영어 순정렬</button>
+    <button onclick="idollistAIdsEnglishReverseSortToArray()">영어 역정렬</button>
+    <section class="home_translate">
+        <a href='/IdolList' class="on">한국어</a>
+        <a href='/IdolListEng'>English</a>
+    </section>
+    <section class="idolList_part">
+        <section class="idolList_trainf">
+            <section class="idolList_train">
+                <div class="idolList_link">
+                    <a href="/group-main/24members/triples" id="idollist1"
+                       class="idolList_link_a idolList_link_tri">
+                        <img src="../group-main/triples/imgs/tri_m_img.jpg" alt="tripleS" style="border: 5px solid
+                                #191919;">
+                        <div style="border: 5px solid #191919;">
+                            <h4>tripleS</h4>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="idolList_link">
+                    <a href="/group-main/5members/txt" id="idollist2" class="idolList_link_a idolList_link_txt">
+                        <img src="../group-main/txt/img/txt_m_txtimg.jpg" alt="투모로우바이투게더" style="border: 5px solid
+                                #FF1E91;">
+                        <div style="border: 5px solid #FF1E91;">
+                            <h4>투모로우<br>바이<br>투게더</h4>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="idolList_link">
+                    <a href="/group-main/2members/akmu" id="idollist3" class="idolList_link_a idolList_link_akmu">
+                        <img src="../group-main/akmu/img/aknu_m_akmuimg.jpg" alt="AKMU" style="border: 5px solid
+                                #13983f;">
+                        <div style="border: 5px solid #13983f;">
+                            <h4>AKMU</h4>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="idolList_link">
+                    <a href="/group-main/11members/ioi" id="idollist4" class="idolList_link_a idolList_link_ioi">
+                        <img src="../group-main/ioi/img/ioi_m_ioi.jpg" alt="아이오아이" style="border: 5px solid
+                                #F4CE9D;">
+                        <div style="border: 5px solid #F4CE9D;">
+                            <h4>아이오아이</h4>
+                        </div>
+                    </a>
                 </div>
             </section>
-            <div class="header_wrap">
-                <nav>
-                    <ul>
-                        <li>도루리는?
-                            <ul>
-                                <li><a href="">소개</a></li>
-                                <li><a href="">도루리 사이트 구조</a></li>
-                                <li><a href="">업데이트 내역</a></li>
-                                <li><a href="">세부4</a></li>
-                            </ul>
-                        </li>
-                        <li>아이돌 탐색
-                            <ul>
-                                <li><a href="">목록</a></li>
-                                <li><a href="">세부2</a></li>
-                                <li><a href="">세부3</a></li>
-                                <li><a href="">세부4</a></li>
-                            </ul>
-                        </li>
-                        <li>메뉴3
-                            <ul>
-                                <li><a href="">세부1</a></li>
-                                <li><a href="">세부2</a></li>
-                                <li><a href="">세부3</a></li>
-                                <li><a href="">세부4</a></li>
-                            </ul>
-                        </li>
-                        <li>메뉴4
-                            <ul>
-                                <li><a href="">세부1</a></li>
-                                <li><a href="">세부2</a></li>
-                                <li><a href="">세부3</a></li>
-                                <li><a href="">세부4</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-        <!--#####-->
-        <button onclick="idollistAIdsNormal()">normal</button>
-        <button onclick="idollistAIdsKoreanSortToArray()">한국어 순정렬</button>
-        <button onclick="idollistAIdsKoreanReverseSortToArray()">한국어 역정렬</button>
-        <button onclick="idollistAIdsEnglishSortToArray()">영어 순정렬</button>
-        <button onclick="idollistAIdsEnglishReverseSortToArray()">영어 역정렬</button>
-        <section class="home_translate">
-            <a href='/IdolList' class="on">한국어</a>
-            <a href='/IdolListEng'>English</a>
-        </section>
-        <section class="idolList_part">
-            <section class="idolList_trainf">
-                <section class="idolList_train">
-                    <div class="idolList_link">
-                        <a href="/group-main/24members/triples" id="idollist1"
-                            class="idolList_link_a idolList_link_tri">
-                            <img src="../group-main/triples/imgs/tri_m_img.jpg" alt="tripleS" style="border: 5px solid
-                                #191919;">
-                            <div style="border: 5px solid #191919;">
-                                <h4>tripleS</h4>
-                            </div>
-                        </a>
-                    </div>
+            <section class="idolList_train">
+                <div class="idolList_link">
+                    <a href="/group-main/8members/stray-kids" id="idollist5"
+                       class="idolList_link_a idolList_link_str">
+                        <img src="../group-main/stray-kids/img/stray_m_stray_kids.jpg" alt="Stray Kids"
+                             style="border: 5px solid #191919;">
+                        <div style="border: 5px solid #191919;">
+                            <h4>Stray Kids</h4>
+                        </div>
+                    </a>
+                </div>
 
-                    <div class="idolList_link">
-                        <a href="/group-main/5members/txt" id="idollist2" class="idolList_link_a idolList_link_txt">
-                            <img src="../group-main/txt/img/txt_m_txtimg.jpg" alt="투모로우바이투게더" style="border: 5px solid 
-                                #FF1E91;">
-                            <div style="border: 5px solid #FF1E91;">
-                                <h4>투모로우<br>바이<br>투게더</h4>
-                            </div>
-                        </a>
-                    </div>
+                <div class="idolList_link">
+                    <a href="/group-main/5members/illit" id="idollist6" class="idolList_link_a idolList_link_str">
+                        <img src="../group-main/illit/img/illit_m_illit.jpg" alt="ILLIT"
+                             style="border: 5px solid #191919;">
+                        <div style="border: 5px solid #191919;">
+                            <h4>ILLIT</h4>
+                        </div>
+                    </a>
+                </div>
 
-                    <div class="idolList_link">
-                        <a href="/group-main/2members/akmu" id="idollist3" class="idolList_link_a idolList_link_akmu">
-                            <img src="../group-main/akmu/img/aknu_m_akmuimg.jpg" alt="AKMU" style="border: 5px solid 
-                                #13983f;">
-                            <div style="border: 5px solid #13983f;">
-                                <h4>AKMU</h4>
-                            </div>
-                        </a>
-                    </div>
+                <div class="idolList_link">
+                    <a href="/group-main/6members/tws" id="idollist7" class="idolList_link_a idolList_link_str">
+                        <img src="../group-main/tws/img/tws_m_tws.jpg" alt="TWS" style="border: 5px solid #191919;">
+                        <div style="border: 5px solid #191919;">
+                            <h4>TWS</h4>
+                        </div>
+                    </a>
+                </div>
 
-                    <div class="idolList_link">
-                        <a href="/group-main/11members/ioi" id="idollist4" class="idolList_link_a idolList_link_ioi">
-                            <img src="../group-main/ioi/img/ioi_m_ioi.jpg" alt="아이오아이" style="border: 5px solid 
-                                #F4CE9D;">
-                            <div style="border: 5px solid #F4CE9D;">
-                                <h4>아이오아이</h4>
-                            </div>
-                        </a>
-                    </div>
-                </section>
-                <section class="idolList_train">
-                    <div class="idolList_link">
-                        <a href="/group-main/8members/stray-kids" id="idollist5"
-                            class="idolList_link_a idolList_link_str">
-                            <img src="../group-main/stray-kids/img/stray_m_stray_kids.jpg" alt="Stray Kids"
-                                style="border: 5px solid #191919;">
-                            <div style="border: 5px solid #191919;">
-                                <h4>Stray Kids</h4>
-                            </div>
-                        </a>
-                    </div>
+                <div class="idolList_link">
+                    <a href="/group-main/5members/rescene" id="idollist8" class="idolList_link_a idolList_link_str">
+                        <img src="../group-main/rescene/img/rescene_m_rescene.jpg" alt="RESCENE"
+                             style="border: 5px solid #191919;">
+                        <div style="border: 5px solid #191919;">
+                            <h4>RESCENE</h4>
+                        </div>
+                    </a>
+                </div>
 
-                    <div class="idolList_link">
-                        <a href="/group-main/5members/illit" id="idollist6" class="idolList_link_a idolList_link_str">
-                            <img src="../group-main/illit/img/illit_m_illit.jpg" alt="ILLIT"
-                                style="border: 5px solid #191919;">
-                            <div style="border: 5px solid #191919;">
-                                <h4>ILLIT</h4>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="idolList_link">
-                        <a href="/group-main/6members/tws" id="idollist7" class="idolList_link_a idolList_link_str">
-                            <img src="../group-main/tws/img/tws_m_tws.jpg" alt="TWS" style="border: 5px solid #191919;">
-                            <div style="border: 5px solid #191919;">
-                                <h4>TWS</h4>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="idolList_link">
-                        <a href="/group-main/5members/rescene" id="idollist8" class="idolList_link_a idolList_link_str">
-                            <img src="../group-main/rescene/img/rescene_m_rescene.jpg" alt="RESCENE"
-                                style="border: 5px solid #191919;">
-                            <div style="border: 5px solid #191919;">
-                                <h4>RESCENE</h4>
-                            </div>
-                        </a>
-                    </div>
-
-                </section>
-
-                <section class="idolList_train">
-                    <div class="idolList_link">
-                        <a href="/group-main/1members/10cm" id="idollist9" class="idolList_link_a idolList_link_ten">
-                            <img src="../group-main/10cm/img/10cm_m_mem_Gwonjungyeol.jpg" alt="10CM"
-                                style="border: 5px solid #000000;">
-                            <div style="border: 5px solid #000000;">
-                                <h4>10CM</h4>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="idolList_link">
-                        <a href="/group-main/4members/aespa" id="idollist10" class="idolList_link_a idolList_link_str">
-                            <img src="../group-main/aespa/img/aespa_m_aespa.jpg" alt="aespa"
-                                style="border: 5px solid #191919;">
-                            <div style="border: 5px solid #191919;">
-                                <h4>aespa</h4>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="idolList_link">
-                        <a href="/group-main/5members/allday-project" id="idollist11"
-                            class="idolList_link_a idolList_link_ten">
-                            <img src="../group-main/allday-project/img/allday_m_allday_project.jpg" alt="ALLDAY PROJECT"
-                                style="border: 5px solid #000000;">
-                            <div style="border: 5px solid #000000;">
-                                <h4>ALLDAY PROJECT</h4>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="idolList_link">
-                        <a href="/group-main/4members/day6" id="idollist12" class="idolList_link_a idolList_link_str">
-                            <img src="../group-main/day6/img/day6_m_day6.jpg" alt="DAY6"
-                                style="border: 5px solid #000000;">
-                            <div style="border: 5px solid #000000;">
-                                <h4>DAY6</h4>
-                            </div>
-                        </a>
-                    </div>
-
-                </section>
             </section>
 
+            <section class="idolList_train">
+                <div class="idolList_link">
+                    <a href="/group-main/1members/10cm" id="idollist9" class="idolList_link_a idolList_link_ten">
+                        <img src="../group-main/10cm/img/10cm_m_mem_Gwonjungyeol.jpg" alt="10CM"
+                             style="border: 5px solid #000000;">
+                        <div style="border: 5px solid #000000;">
+                            <h4>10CM</h4>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="idolList_link">
+                    <a href="/group-main/4members/aespa" id="idollist10" class="idolList_link_a idolList_link_str">
+                        <img src="../group-main/aespa/img/aespa_m_aespa.jpg" alt="aespa"
+                             style="border: 5px solid #191919;">
+                        <div style="border: 5px solid #191919;">
+                            <h4>aespa</h4>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="idolList_link">
+                    <a href="/group-main/5members/allday-project" id="idollist11"
+                       class="idolList_link_a idolList_link_ten">
+                        <img src="../group-main/allday-project/img/allday_m_allday_project.jpg" alt="ALLDAY PROJECT"
+                             style="border: 5px solid #000000;">
+                        <div style="border: 5px solid #000000;">
+                            <h4>ALLDAY PROJECT</h4>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="idolList_link">
+                    <a href="/group-main/4members/day6" id="idollist12" class="idolList_link_a idolList_link_str">
+                        <img src="../group-main/day6/img/day6_m_day6.jpg" alt="DAY6"
+                             style="border: 5px solid #000000;">
+                        <div style="border: 5px solid #000000;">
+                            <h4>DAY6</h4>
+                        </div>
+                    </a>
+                </div>
+
+            </section>
         </section>
 
-        <!--2번 파트-->
-        <section class="" style="position: absolute; top: 1500px;">
-            <section class="">
-                <section class="idolList_train">
-                    <div class="idolList_link">
-                        <a href="/group-main/1members/bol4" id="idollist13" class="idolList_link_a idolList_link_tri">
-                            <img src="../group-main/bol4/img/bol4_m_mem_Anjiyoung.jpg" alt="볼빨간사춘기"
-                                style="border: 5px solid #191919;">
-                            <div style="border: 5px solid #191919;">
-                                <h4>볼빨간사춘기</h4>
-                            </div>
-                        </a>
-                    </div>
+    </section>
 
-                    <div class="idolList_link">
-                        <a href="/group-main/3members/epik-high" id="idollist14"
-                            class="idolList_link_a idolList_link_txt">
-                            <img src="../group-main/txt/img/txt_m_txtimg.jpg" alt="에픽하이"
-                                style="border: 5px solid #000000;">
-                            <div style="border: 5px solid #000000;">
-                                <h4>에픽하이</h4>
-                            </div>
-                        </a>
-                    </div>
+    <!--2번 파트-->
+    <section class="" style="position: absolute; top: 1500px;">
+        <section class="">
+            <section class="idolList_train">
+                <div class="idolList_link">
+                    <a href="/group-main/1members/bol4" id="idollist13" class="idolList_link_a idolList_link_tri">
+                        <img src="../group-main/bol4/img/bol4_m_mem_Anjiyoung.jpg" alt="볼빨간사춘기"
+                             style="border: 5px solid #191919;">
+                        <div style="border: 5px solid #191919;">
+                            <h4>볼빨간사춘기</h4>
+                        </div>
+                    </a>
+                </div>
 
-                    <div class="idolList_link">
-                        <a href="/group-main/1members/yena" id="idollist15" class="idolList_link_a idolList_link_akmu">
-                            <img src="../group-main/akmu/img/aknu_m_akmuimg.jpg" alt="최예나"
-                                style="border: 5px solid #191919;">
-                            <div style="border: 5px solid #191919;">
-                                <h4>최예나</h4>
-                            </div>
-                        </a>
-                    </div>
+                <div class="idolList_link">
+                    <a href="/group-main/3members/epik-high" id="idollist14"
+                       class="idolList_link_a idolList_link_txt">
+                        <img src="../group-main/epik-high/img/Epi_m_img.jpg" alt="에픽하이"
+                             style="border: 5px solid #000000;">
+                        <div style="border: 5px solid #000000;">
+                            <h4>에픽하이</h4>
+                        </div>
+                    </a>
+                </div>
 
-                    <div class="idolList_link">
-                        <a href="/group-main/24members/idntt" id="idollist16" class="idolList_link_a idolList_link_ioi">
-                            <img src="../group-main/ioi/img/ioi_m_ioi.jpg" alt="idntt"
-                                style="border: 5px solid #0957c3;">
-                            <div style="border: 5px solid #0957c3;">
-                                <h4>idntt</h4>
-                            </div>
-                        </a>
-                    </div>
-                </section>
-                <section class="idolList_train">
-                    <div class="idolList_link">
-                        <a href="/group-main/5members/artms" id="idollist17" class="idolList_link_a idolList_link_str">
-                            <img src="../group-main/stray-kids/img/stray_m_stray_kids.jpg" alt="ARTMS"
-                                style="border: 5px solid #191919;">
-                            <div style="border: 5px solid #191919;">
-                                <h4>ARTMS</h4>
-                            </div>
-                        </a>
-                    </div>
+                <div class="idolList_link">
+                    <a href="/group-main/1members/yena" id="idollist15" class="idolList_link_a idolList_link_akmu">
+                        <img src="../group-main/yena/img/Yen_m_img.jpg" alt="최예나"
+                             style="border: 5px solid #191919;">
+                        <div style="border: 5px solid #191919;">
+                            <h4>최예나</h4>
+                        </div>
+                    </a>
+                </div>
 
-                    <div class="idolList_link">
-                        <a href="/group-main/6members/btob" id="idollist18" class="idolList_link_a idolList_link_str">
-                            <img src="../group-main/illit/img/illit_m_illit.jpg" alt="비투비"
-                                style="border: 5px solid #191919;">
-                            <div style="border: 5px solid #191919;">
-                                <h4>비투비</h4>
-                            </div>
-                        </a>
-                    </div>
+                <div class="idolList_link">
+                    <a href="/group-main/24members/idntt" id="idollist16" class="idolList_link_a idolList_link_ioi">
+                        <img src="../group-main/ioi/img/ioi_m_ioi.jpg" alt="idntt"
+                             style="border: 5px solid #0957c3;">
+                        <div style="border: 5px solid #0957c3;">
+                            <h4>idntt</h4>
+                        </div>
+                    </a>
+                </div>
+            </section>
+            <section class="idolList_train">
+                <div class="idolList_link">
+                    <a href="/group-main/5members/artms" id="idollist17" class="idolList_link_a idolList_link_str">
+                        <img src="../group-main/stray-kids/img/stray_m_stray_kids.jpg" alt="ARTMS"
+                             style="border: 5px solid #191919;">
+                        <div style="border: 5px solid #191919;">
+                            <h4>ARTMS</h4>
+                        </div>
+                    </a>
+                </div>
 
-                    <div class="idolList_link">
-                        <a href="/group-main/1members/hanroro" id="idollist19"
-                            class="idolList_link_a idolList_link_str">
-                            <img src="../group-main/tws/img/tws_m_tws.jpg" alt="한로로" style="border: 5px solid #191919;">
-                            <div style="border: 5px solid #191919;">
-                                <h4>한로로</h4>
-                            </div>
-                        </a>
-                    </div>
+                <div class="idolList_link">
+                    <a href="/group-main/6members/btob" id="idollist18" class="idolList_link_a idolList_link_str">
+                        <img src="../group-main/illit/img/illit_m_illit.jpg" alt="비투비"
+                             style="border: 5px solid #191919;">
+                        <div style="border: 5px solid #191919;">
+                            <h4>비투비</h4>
+                        </div>
+                    </a>
+                </div>
 
-                    <div class="idolList_link">
-                        <a href="/group-main/7members/bts" id="idollist20" class="idolList_link_a idolList_link_str">
-                            <img src="../group-main/rescene/img/rescene_m_rescene.jpg" alt="방탄소년단"
-                                style="border: 5px solid #191919;">
-                            <div style="border: 5px solid #191919;">
-                                <h4>방탄소년단</h4>
-                            </div>
-                        </a>
-                    </div>
+                <div class="idolList_link">
+                    <a href="/group-main/1members/hanroro" id="idollist19"
+                       class="idolList_link_a idolList_link_str">
+                        <img src="../group-main/tws/img/tws_m_tws.jpg" alt="한로로" style="border: 5px solid #191919;">
+                        <div style="border: 5px solid #191919;">
+                            <h4>한로로</h4>
+                        </div>
+                    </a>
+                </div>
 
-                </section>
+                <div class="idolList_link">
+                    <a href="/group-main/7members/bts" id="idollist20" class="idolList_link_a idolList_link_str">
+                        <img src="../group-main/rescene/img/rescene_m_rescene.jpg" alt="방탄소년단"
+                             style="border: 5px solid #191919;">
+                        <div style="border: 5px solid #191919;">
+                            <h4>방탄소년단</h4>
+                        </div>
+                    </a>
+                </div>
 
-                <section class="idolList_train">
-                    <div class="idolList_link">
-                        <a href="/group-main/5members/red-velvet" id="idollist21"
-                            class="idolList_link_a idolList_link_ten">
-                            <img src="../group-main/10cm/img/10cm_m_mem_Gwonjungyeol.jpg" alt="Red Velvet"
-                                style="border: 5px solid #191919;">
-                            <div style="border: 5px solid #191919;">
-                                <h4>Red Velvet</h4>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="idolList_link">
-                        <a href="/group-main/1members/zico" id="idollist22" class="idolList_link_a idolList_link_str">
-                            <img src="../group-main/aespa/img/aespa_m_aespa.jpg" alt="지코"
-                                style="border: 5px solid #000000;">
-                            <div style="border: 5px solid #000000;">
-                                <h4>지코</h4>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="idolList_link">
-                        <a href="/group-main/5members/fromis-9" id="idollist23"
-                            class="idolList_link_a idolList_link_ten">
-                            <img src="" alt="프로미스나인" style="border: 5px solid #4c4c4c;">
-                            <div style="border: 5px solid #4c4c4c;">
-                                <h4>프로미스나인</h4>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="idolList_link">
-                        <a href="/group-main/5members/cortis" id="idollist24" class="idolList_link_a idolList_link_str">
-                            <img src="../group-main/day6/img/day6_m_day6.jpg" alt="CORTIS"
-                                style="border: 5px solid #000000;">
-                            <div style="border: 5px solid #000000;">
-                                <h4>CORTIS</h4>
-                            </div>
-                        </a>
-                    </div>
-
-                </section>
             </section>
 
+            <section class="idolList_train">
+                <div class="idolList_link">
+                    <a href="/group-main/5members/red-velvet" id="idollist21"
+                       class="idolList_link_a idolList_link_ten">
+                        <img src="../group-main/10cm/img/10cm_m_mem_Gwonjungyeol.jpg" alt="Red Velvet"
+                             style="border: 5px solid #191919;">
+                        <div style="border: 5px solid #191919;">
+                            <h4>Red Velvet</h4>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="idolList_link">
+                    <a href="/group-main/1members/zico" id="idollist22" class="idolList_link_a idolList_link_str">
+                        <img src="../group-main/aespa/img/aespa_m_aespa.jpg" alt="지코"
+                             style="border: 5px solid #000000;">
+                        <div style="border: 5px solid #000000;">
+                            <h4>지코</h4>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="idolList_link">
+                    <a href="/group-main/5members/fromis-9" id="idollist23"
+                       class="idolList_link_a idolList_link_ten">
+                        <img src="" alt="프로미스나인" style="border: 5px solid #4c4c4c;">
+                        <div style="border: 5px solid #4c4c4c;">
+                            <h4>프로미스나인</h4>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="idolList_link">
+                    <a href="/group-main/5members/cortis" id="idollist24" class="idolList_link_a idolList_link_str">
+                        <img src="../group-main/day6/img/day6_m_day6.jpg" alt="CORTIS"
+                             style="border: 5px solid #000000;">
+                        <div style="border: 5px solid #000000;">
+                            <h4>CORTIS</h4>
+                        </div>
+                    </a>
+                </div>
+
+            </section>
         </section>
-        <section class="idolList_12345">
-            <Link to='/IdolList'>1</Link>
-            <Link to='/IdolList2'>2</Link>
-            <Link to='/'>3</Link>
-            <Link to='/'>4</Link>
-            <Link to='/'>5</Link>
-            Copyright ⓒ ㈜모드하우스
-        </section>
-        <FooterPart FooterPartText='ⓒ 도루리' />
-    </div>
-    <script src="../index.js"></script>
-    <script>
-        const idollistAll = [
-            { groupNameKor: "트리플에스", groupNameEng: "tripleS", groupNameNormal: "tripleS", arrayNum: 1, href: "/group-main/24members/triples", borderColorHex: "#191919" },
-            { groupNameKor: "투모로우바이투게더", groupNameEng: "TXT", groupNameNormal: "투모로우<br>바이<br>투게더", arrayNum: 2, href: "/group-main/5members/txt", borderColorHex: "#FF1E91" },
-            { groupNameKor: "악뮤", groupNameEng: "AKMU", groupNameNormal: "AKMU", arrayNum: 3, href: "/group-main/2members/akmu", borderColorHex: "#13983f" },
-            { groupNameKor: "아이오아이", groupNameEng: "IOI", groupNameNormal: "아이오아이", arrayNum: 4, href: "/group-main/11members/ioi", borderColorHex: "#F4CE9D" },
-            { groupNameKor: "스트레이키즈", groupNameEng: "Stray Kids", groupNameNormal: "Stray Kids", arrayNum: 5, href: "/group-main/8members/stray-kids", borderColorHex: "#191919" },
-            { groupNameKor: "아일릿", groupNameEng: "ILLIT", groupNameNormal: "ILLIT", arrayNum: 6, href: "/group-main/5members/illit", borderColorHex: "#191919" },
-            { groupNameKor: "투어스", groupNameEng: "TWS", groupNameNormal: "TWS", arrayNum: 7, href: "/group-main/6members/tws", borderColorHex: "#191919" },
-            { groupNameKor: "리센느", groupNameEng: "RESCENE", groupNameNormal: "RESCENE", arrayNum: 8, href: "/group-main/5members/rescene", borderColorHex: "#191919" },
-            { groupNameKor: "십센치", groupNameEng: "ten cm", groupNameNormal: "10CM", arrayNum: 9, href: "/group-main/1members/10cm", borderColorHex: "#000000" },
-            { groupNameKor: "에스파", groupNameEng: "aespa", groupNameNormal: "aespa", arrayNum: 10, href: "/group-main/4members/aespa", borderColorHex: "#191919" },
-            { groupNameKor: "올데이 프로젝트", groupNameEng: "ALLDAY PROJECT", groupNameNormal: "ALLDAY PROJECT", arrayNum: 11, href: "/group-main/5members/allday-project", borderColorHex: "#000000" },
-            { groupNameKor: "데이식스", groupNameEng: "DAY SIX", groupNameNormal: "DAY6", arrayNum: 12, href: "/group-main/4members/day6", borderColorHex: "#000000" },
-            { groupNameKor: "볼빨간사춘기", groupNameEng: "Bol4", groupNameNormal: "볼빨간사춘기", arrayNum: 13, href: "/group-main/1members/bol4", borderColorHex: "#191919" },
-            { groupNameKor: "에픽하이", groupNameEng: "Epik High", groupNameNormal: "에픽하이", arrayNum: 14, href: "/group-main/3members/epik-high", borderColorHex: "#000000" },
-            { groupNameKor: "최예나", groupNameEng: "Yena", groupNameNormal: "최예나", arrayNum: 15, href: "/group-main/1members/yena", borderColorHex: "#191919" },
-            { groupNameKor: "아이덴티티", groupNameEng: "idntt", groupNameNormal: "idntt", arrayNum: 16, href: "/group-main/24members/idntt", borderColorHex: "#0957c3" },
-            { groupNameKor: "아르테미스", groupNameEng: "ARTMS", groupNameNormal: "ARTMS", arrayNum: 17, href: "/group-main/5members/artms", borderColorHex: "#191919" },
-            { groupNameKor: "비투비", groupNameEng: "BTOB", groupNameNormal: "비투비", arrayNum: 18, href: "/group-main/6members/btob", borderColorHex: "#191919" },
-            { groupNameKor: "한로로", groupNameEng: "Hanroro", groupNameNormal: "한로로", arrayNum: 19, href: "/group-main/1members/hanroro", borderColorHex: "#191919" },
-            { groupNameKor: "방탄소년단", groupNameEng: "BTS", groupNameNormal: "방탄소년단", arrayNum: 20, href: "/group-main/7members/bts", borderColorHex: "#191919" },
-            { groupNameKor: "레드벨벳", groupNameEng: "Red Velvet", groupNameNormal: "Red Velvet", arrayNum: 21, href: "/group-main/5members/red-velvet", borderColorHex: "#191919" },
-            { groupNameKor: "지코", groupNameEng: "Zico", groupNameNormal: "지코", arrayNum: 22, href: "/group-main/1members/zico", borderColorHex: "#000000" },
-            { groupNameKor: "프로미스나인", groupNameEng: "Fromis-9", groupNameNormal: "프로미스나인", arrayNum: 23, href: "/group-main/5members/fromis-9", borderColorHex: "#4c4c4c" },
-            { groupNameKor: "코르티스", groupNameEng: "CORTIS", groupNameNormal: "CORTIS", arrayNum: 24, href: "/group-main/5members/cortis", borderColorHex: "#000000" }
-        ];
-        const one = document.getElementById("idollist1");
-        const idollistAIds = [];
-        for (let i = 1; i <= 24; i++) {
-            idollistAIds.push(document.getElementById(`idollist${i}`));
-            console.log(idollistAIds[i - 1]);
+
+    </section>
+    <section class="idolList_12345">
+        <Link to='/IdolList'>1</Link>
+        <Link to='/IdolList2'>2</Link>
+        <Link to='/'>3</Link>
+        <Link to='/'>4</Link>
+        <Link to='/'>5</Link>
+        Copyright ⓒ ㈜모드하우스
+    </section>
+    <FooterPart FooterPartText='ⓒ 도루리' />
+</div>
+<script src="../index.js"></script>
+<script>
+    const idollistAll = [
+        { groupNameKor: "트리플에스", groupNameEng: "tripleS", groupNameNormal: "tripleS", arrayNum: 1, href: "/group-main/24members/triples", borderColorHex: "#191919" },
+        { groupNameKor: "투모로우바이투게더", groupNameEng: "TXT", groupNameNormal: "투모로우<br>바이<br>투게더", arrayNum: 2, href: "/group-main/5members/txt", borderColorHex: "#FF1E91" },
+        { groupNameKor: "악뮤", groupNameEng: "AKMU", groupNameNormal: "AKMU", arrayNum: 3, href: "/group-main/2members/akmu", borderColorHex: "#13983f" },
+        { groupNameKor: "아이오아이", groupNameEng: "IOI", groupNameNormal: "아이오아이", arrayNum: 4, href: "/group-main/11members/ioi", borderColorHex: "#F4CE9D" },
+        { groupNameKor: "스트레이키즈", groupNameEng: "Stray Kids", groupNameNormal: "Stray Kids", arrayNum: 5, href: "/group-main/8members/stray-kids", borderColorHex: "#191919" },
+        { groupNameKor: "아일릿", groupNameEng: "ILLIT", groupNameNormal: "ILLIT", arrayNum: 6, href: "/group-main/5members/illit", borderColorHex: "#191919" },
+        { groupNameKor: "투어스", groupNameEng: "TWS", groupNameNormal: "TWS", arrayNum: 7, href: "/group-main/6members/tws", borderColorHex: "#191919" },
+        { groupNameKor: "리센느", groupNameEng: "RESCENE", groupNameNormal: "RESCENE", arrayNum: 8, href: "/group-main/5members/rescene", borderColorHex: "#191919" },
+        { groupNameKor: "십센치", groupNameEng: "ten cm", groupNameNormal: "10CM", arrayNum: 9, href: "/group-main/1members/10cm", borderColorHex: "#000000" },
+        { groupNameKor: "에스파", groupNameEng: "aespa", groupNameNormal: "aespa", arrayNum: 10, href: "/group-main/4members/aespa", borderColorHex: "#191919" },
+        { groupNameKor: "올데이 프로젝트", groupNameEng: "ALLDAY PROJECT", groupNameNormal: "ALLDAY PROJECT", arrayNum: 11, href: "/group-main/5members/allday-project", borderColorHex: "#000000" },
+        { groupNameKor: "데이식스", groupNameEng: "DAY SIX", groupNameNormal: "DAY6", arrayNum: 12, href: "/group-main/4members/day6", borderColorHex: "#000000" },
+        { groupNameKor: "볼빨간사춘기", groupNameEng: "Bol4", groupNameNormal: "볼빨간사춘기", arrayNum: 13, href: "/group-main/1members/bol4", borderColorHex: "#191919" },
+        { groupNameKor: "에픽하이", groupNameEng: "Epik High", groupNameNormal: "에픽하이", arrayNum: 14, href: "/group-main/3members/epik-high", borderColorHex: "#000000" },
+        { groupNameKor: "최예나", groupNameEng: "Yena", groupNameNormal: "최예나", arrayNum: 15, href: "/group-main/1members/yena", borderColorHex: "#191919" },
+        { groupNameKor: "아이덴티티", groupNameEng: "idntt", groupNameNormal: "idntt", arrayNum: 16, href: "/group-main/24members/idntt", borderColorHex: "#0957c3" },
+        { groupNameKor: "아르테미스", groupNameEng: "ARTMS", groupNameNormal: "ARTMS", arrayNum: 17, href: "/group-main/5members/artms", borderColorHex: "#191919" },
+        { groupNameKor: "비투비", groupNameEng: "BTOB", groupNameNormal: "비투비", arrayNum: 18, href: "/group-main/6members/btob", borderColorHex: "#191919" },
+        { groupNameKor: "한로로", groupNameEng: "Hanroro", groupNameNormal: "한로로", arrayNum: 19, href: "/group-main/1members/hanroro", borderColorHex: "#191919" },
+        { groupNameKor: "방탄소년단", groupNameEng: "BTS", groupNameNormal: "방탄소년단", arrayNum: 20, href: "/group-main/7members/bts", borderColorHex: "#191919" },
+        { groupNameKor: "레드벨벳", groupNameEng: "Red Velvet", groupNameNormal: "Red Velvet", arrayNum: 21, href: "/group-main/5members/red-velvet", borderColorHex: "#191919" },
+        { groupNameKor: "지코", groupNameEng: "Zico", groupNameNormal: "지코", arrayNum: 22, href: "/group-main/1members/zico", borderColorHex: "#000000" },
+        { groupNameKor: "프로미스나인", groupNameEng: "Fromis-9", groupNameNormal: "프로미스나인", arrayNum: 23, href: "/group-main/5members/fromis-9", borderColorHex: "#4c4c4c" },
+        { groupNameKor: "코르티스", groupNameEng: "CORTIS", groupNameNormal: "CORTIS", arrayNum: 24, href: "/group-main/5members/cortis", borderColorHex: "#000000" }
+    ];
+    const one = document.getElementById("idollist1");
+    const idollistAIds = [];
+    for (let i = 1; i <= 24; i++) {
+        idollistAIds.push(document.getElementById(`idollist${i}`));
+        console.log(idollistAIds[i - 1]);
+    }
+    //기본 등록순 정렬 함수
+    function idollistAIdsNormal() {
+        //#####
+        idollistAIds[0].href = idollistAll[0].href;
+        idollistAIds[0].querySelector("img").src = "";
+        idollistAIds[0].querySelector("img").alt = idollistAll[0].groupNameKor;
+        idollistAIds[0].querySelector("img").style.border = `5px solid ${idollistAll[0].borderColorHex}`;
+        idollistAIds[0].querySelector("div").style.border = `5px solid ${idollistAll[0].borderColorHex}`;
+        idollistAIds[0].querySelector("h4").innerHTML = idollistAll[0].groupNameNormal;
+
+        idollistAIds[1].href = idollistAll[1].href;
+        idollistAIds[1].querySelector("img").src = "2번";
+        idollistAIds[1].querySelector("img").alt = idollistAll[1].groupNameKor;
+        idollistAIds[1].querySelector("img").style.border = `5px solid ${idollistAll[1].borderColorHex}`;
+        idollistAIds[1].querySelector("div").style.border = `5px solid ${idollistAll[1].borderColorHex}`;
+        idollistAIds[1].querySelector("h4").innerHTML = idollistAll[1].groupNameNormal;
+
+        idollistAIds[2].href = idollistAll[2].href;
+        idollistAIds[2].querySelector("img").src = "3번";
+        idollistAIds[2].querySelector("img").alt = idollistAll[2].groupNameKor;
+        idollistAIds[2].querySelector("img").style.border = `5px solid ${idollistAll[2].borderColorHex}`;
+        idollistAIds[2].querySelector("div").style.border = `5px solid ${idollistAll[2].borderColorHex}`;
+        idollistAIds[2].querySelector("h4").innerHTML = idollistAll[2].groupNameNormal;
+
+        idollistAIds[3].href = idollistAll[3].href;
+        idollistAIds[3].querySelector("img").src = "4번";
+        idollistAIds[3].querySelector("img").alt = idollistAll[3].groupNameKor;
+        idollistAIds[3].querySelector("img").style.border = `5px solid ${idollistAll[3].borderColorHex}`;
+        idollistAIds[3].querySelector("div").style.border = `5px solid ${idollistAll[3].borderColorHex}`;
+        idollistAIds[3].querySelector("h4").innerHTML = idollistAll[3].groupNameNormal;
+
+        idollistAIds[4].href = idollistAll[4].href;
+        idollistAIds[4].querySelector("img").src = "5번";
+        idollistAIds[4].querySelector("img").alt = idollistAll[4].groupNameKor;
+        idollistAIds[4].querySelector("img").style.border = `5px solid ${idollistAll[4].borderColorHex}`;
+        idollistAIds[4].querySelector("div").style.border = `5px solid ${idollistAll[4].borderColorHex}`;
+        idollistAIds[4].querySelector("h4").innerHTML = idollistAll[4].groupNameNormal;
+
+        idollistAIds[5].href = idollistAll[5].href;
+        idollistAIds[5].querySelector("img").src = "6번";
+        idollistAIds[5].querySelector("img").alt = idollistAll[5].groupNameKor;
+        idollistAIds[5].querySelector("img").style.border = `5px solid ${idollistAll[5].borderColorHex}`;
+        idollistAIds[5].querySelector("div").style.border = `5px solid ${idollistAll[5].borderColorHex}`;
+        idollistAIds[5].querySelector("h4").innerHTML = idollistAll[5].groupNameNormal;
+
+        idollistAIds[6].href = idollistAll[6].href;
+        idollistAIds[6].querySelector("img").src = "7번";
+        idollistAIds[6].querySelector("img").alt = idollistAll[6].groupNameKor;
+        idollistAIds[6].querySelector("img").style.border = `5px solid ${idollistAll[6].borderColorHex}`;
+        idollistAIds[6].querySelector("div").style.border = `5px solid ${idollistAll[6].borderColorHex}`;
+        idollistAIds[6].querySelector("h4").innerHTML = idollistAll[6].groupNameNormal;
+
+        idollistAIds[7].href = idollistAll[7].href;
+        idollistAIds[7].querySelector("img").src = "8번";
+        idollistAIds[7].querySelector("img").alt = idollistAll[7].groupNameKor;
+        idollistAIds[7].querySelector("img").style.border = `5px solid ${idollistAll[7].borderColorHex}`;
+        idollistAIds[7].querySelector("div").style.border = `5px solid ${idollistAll[7].borderColorHex}`;
+        idollistAIds[7].querySelector("h4").innerHTML = idollistAll[7].groupNameNormal;
+
+        idollistAIds[8].href = idollistAll[8].href;
+        idollistAIds[8].querySelector("img").src = "9번";
+        idollistAIds[8].querySelector("img").alt = idollistAll[8].groupNameKor;
+        idollistAIds[8].querySelector("img").style.border = `5px solid ${idollistAll[8].borderColorHex}`;
+        idollistAIds[8].querySelector("div").style.border = `5px solid ${idollistAll[8].borderColorHex}`;
+        idollistAIds[8].querySelector("h4").innerHTML = idollistAll[8].groupNameNormal;
+
+        idollistAIds[9].href = idollistAll[9].href;
+        idollistAIds[9].querySelector("img").src = "10번";
+        idollistAIds[9].querySelector("img").alt = idollistAll[9].groupNameKor;
+        idollistAIds[9].querySelector("img").style.border = `5px solid ${idollistAll[9].borderColorHex}`;
+        idollistAIds[9].querySelector("div").style.border = `5px solid ${idollistAll[9].borderColorHex}`;
+        idollistAIds[9].querySelector("h4").innerHTML = idollistAll[9].groupNameNormal;
+
+        idollistAIds[10].href = idollistAll[10].href;
+        idollistAIds[10].querySelector("img").src = "11번";
+        idollistAIds[10].querySelector("img").alt = idollistAll[10].groupNameKor;
+        idollistAIds[10].querySelector("img").style.border = `5px solid ${idollistAll[10].borderColorHex}`;
+        idollistAIds[10].querySelector("div").style.border = `5px solid ${idollistAll[10].borderColorHex}`;
+        idollistAIds[10].querySelector("h4").innerHTML = idollistAll[10].groupNameNormal;
+
+        idollistAIds[11].href = idollistAll[11].href;
+        idollistAIds[11].querySelector("img").src = "12번";
+        idollistAIds[11].querySelector("img").alt = idollistAll[11].groupNameKor;
+        idollistAIds[11].querySelector("img").style.border = `5px solid ${idollistAll[11].borderColorHex}`;
+        idollistAIds[11].querySelector("div").style.border = `5px solid ${idollistAll[11].borderColorHex}`;
+        idollistAIds[11].querySelector("h4").innerHTML = idollistAll[11].groupNameNormal;
+
+        idollistAIds[12].href = idollistAll[12].href;
+        idollistAIds[12].querySelector("img").src = "13번";
+        idollistAIds[12].querySelector("img").alt = idollistAll[12].groupNameKor;
+        idollistAIds[12].querySelector("img").style.border = `5px solid ${idollistAll[12].borderColorHex}`;
+        idollistAIds[12].querySelector("div").style.border = `5px solid ${idollistAll[12].borderColorHex}`;
+        idollistAIds[12].querySelector("h4").innerHTML = idollistAll[12].groupNameNormal;
+
+        idollistAIds[13].href = idollistAll[13].href;
+        idollistAIds[13].querySelector("img").src = "14번";
+        idollistAIds[13].querySelector("img").alt = idollistAll[13].groupNameKor;
+        idollistAIds[13].querySelector("img").style.border = `5px solid ${idollistAll[13].borderColorHex}`;
+        idollistAIds[13].querySelector("div").style.border = `5px solid ${idollistAll[13].borderColorHex}`;
+        idollistAIds[13].querySelector("h4").innerHTML = idollistAll[13].groupNameNormal;
+
+        idollistAIds[14].href = idollistAll[14].href;
+        idollistAIds[14].querySelector("img").src = "15번";
+        idollistAIds[14].querySelector("img").alt = idollistAll[14].groupNameKor;
+        idollistAIds[14].querySelector("img").style.border = `5px solid ${idollistAll[14].borderColorHex}`;
+        idollistAIds[14].querySelector("div").style.border = `5px solid ${idollistAll[14].borderColorHex}`;
+        idollistAIds[14].querySelector("h4").innerHTML = idollistAll[14].groupNameNormal;
+
+        idollistAIds[15].href = idollistAll[15].href;
+        idollistAIds[15].querySelector("img").src = "16번";
+        idollistAIds[15].querySelector("img").alt = idollistAll[15].groupNameKor;
+        idollistAIds[15].querySelector("img").style.border = `5px solid ${idollistAll[15].borderColorHex}`;
+        idollistAIds[15].querySelector("div").style.border = `5px solid ${idollistAll[15].borderColorHex}`;
+        idollistAIds[15].querySelector("h4").innerHTML = idollistAll[15].groupNameNormal;
+
+        idollistAIds[16].href = idollistAll[16].href;
+        idollistAIds[16].querySelector("img").src = "17번";
+        idollistAIds[16].querySelector("img").alt = idollistAll[16].groupNameKor;
+        idollistAIds[16].querySelector("img").style.border = `5px solid ${idollistAll[16].borderColorHex}`;
+        idollistAIds[16].querySelector("div").style.border = `5px solid ${idollistAll[16].borderColorHex}`;
+        idollistAIds[16].querySelector("h4").innerHTML = idollistAll[16].groupNameNormal;
+
+        idollistAIds[17].href = idollistAll[17].href;
+        idollistAIds[17].querySelector("img").src = "18번";
+        idollistAIds[17].querySelector("img").alt = idollistAll[17].groupNameKor;
+        idollistAIds[17].querySelector("img").style.border = `5px solid ${idollistAll[17].borderColorHex}`;
+        idollistAIds[17].querySelector("div").style.border = `5px solid ${idollistAll[17].borderColorHex}`;
+        idollistAIds[17].querySelector("h4").innerHTML = idollistAll[17].groupNameNormal;
+
+        idollistAIds[18].href = idollistAll[18].href;
+        idollistAIds[18].querySelector("img").src = "19번";
+        idollistAIds[18].querySelector("img").alt = idollistAll[18].groupNameKor;
+        idollistAIds[18].querySelector("img").style.border = `5px solid ${idollistAll[18].borderColorHex}`;
+        idollistAIds[18].querySelector("div").style.border = `5px solid ${idollistAll[18].borderColorHex}`;
+        idollistAIds[18].querySelector("h4").innerHTML = idollistAll[18].groupNameNormal;
+
+        idollistAIds[19].href = idollistAll[19].href;
+        idollistAIds[19].querySelector("img").src = "20번";
+        idollistAIds[19].querySelector("img").alt = idollistAll[19].groupNameKor;
+        idollistAIds[19].querySelector("img").style.border = `5px solid ${idollistAll[19].borderColorHex}`;
+        idollistAIds[19].querySelector("div").style.border = `5px solid ${idollistAll[19].borderColorHex}`;
+        idollistAIds[19].querySelector("h4").innerHTML = idollistAll[19].groupNameNormal;
+
+        idollistAIds[20].href = idollistAll[20].href;
+        idollistAIds[20].querySelector("img").src = "21번";
+        idollistAIds[20].querySelector("img").alt = idollistAll[20].groupNameKor;
+        idollistAIds[20].querySelector("img").style.border = `5px solid ${idollistAll[20].borderColorHex}`;
+        idollistAIds[20].querySelector("div").style.border = `5px solid ${idollistAll[20].borderColorHex}`;
+        idollistAIds[20].querySelector("h4").innerHTML = idollistAll[20].groupNameNormal;
+
+        idollistAIds[21].href = idollistAll[21].href;
+        idollistAIds[21].querySelector("img").src = "22번";
+        idollistAIds[21].querySelector("img").alt = idollistAll[21].groupNameKor;
+        idollistAIds[21].querySelector("img").style.border = `5px solid ${idollistAll[21].borderColorHex}`;
+        idollistAIds[21].querySelector("div").style.border = `5px solid ${idollistAll[21].borderColorHex}`;
+        idollistAIds[21].querySelector("h4").innerHTML = idollistAll[21].groupNameNormal;
+
+        idollistAIds[22].href = idollistAll[22].href;
+        idollistAIds[22].querySelector("img").src = "23번";
+        idollistAIds[22].querySelector("img").alt = idollistAll[22].groupNameKor;
+        idollistAIds[22].querySelector("img").style.border = `5px solid ${idollistAll[22].borderColorHex}`;
+        idollistAIds[22].querySelector("div").style.border = `5px solid ${idollistAll[22].borderColorHex}`;
+        idollistAIds[22].querySelector("h4").innerHTML = idollistAll[22].groupNameNormal;
+
+        idollistAIds[23].href = idollistAll[23].href;
+        idollistAIds[23].querySelector("img").src = "24번";
+        idollistAIds[23].querySelector("img").alt = idollistAll[23].groupNameKor;
+        idollistAIds[23].querySelector("img").style.border = `5px solid ${idollistAll[23].borderColorHex}`;
+        idollistAIds[23].querySelector("div").style.border = `5px solid ${idollistAll[23].borderColorHex}`;
+        idollistAIds[23].querySelector("h4").innerHTML = idollistAll[23].groupNameNormal;
+    }
+
+    // 한국어 순정렬 함수
+    function idollistAIdsKoreanSort(idollistAll) {
+
+        let idollistLength = idollistAll.length;
+
+        // 재귀 종료 조건
+        if (idollistLength <= 1) {
+            return idollistAll;
         }
-        //기본 등록순 정렬 함수
-        function idollistAIdsNormal() {
-            //#####
-            idollistAIds[0].href = idollistAll[0].href;
-            idollistAIds[0].querySelector("img").src = "";
-            idollistAIds[0].querySelector("img").alt = idollistAll[0].groupNameKor;
-            idollistAIds[0].querySelector("img").style.border = `5px solid ${idollistAll[0].borderColorHex}`;
-            idollistAIds[0].querySelector("div").style.border = `5px solid ${idollistAll[0].borderColorHex}`;
-            idollistAIds[0].querySelector("h4").innerHTML = idollistAll[0].groupNameNormal;
 
-            idollistAIds[1].href = idollistAll[1].href;
-            idollistAIds[1].querySelector("img").src = "2번";
-            idollistAIds[1].querySelector("img").alt = idollistAll[1].groupNameKor;
-            idollistAIds[1].querySelector("img").style.border = `5px solid ${idollistAll[1].borderColorHex}`;
-            idollistAIds[1].querySelector("div").style.border = `5px solid ${idollistAll[1].borderColorHex}`;
-            idollistAIds[1].querySelector("h4").innerHTML = idollistAll[1].groupNameNormal;
+        // 피벗 인덱스 및 객체
+        let idollistPivotIndex = Math.floor(idollistLength / 2);
+        let idollistPivot = idollistAll[idollistPivotIndex];
 
-            idollistAIds[2].href = idollistAll[2].href;
-            idollistAIds[2].querySelector("img").src = "3번";
-            idollistAIds[2].querySelector("img").alt = idollistAll[2].groupNameKor;
-            idollistAIds[2].querySelector("img").style.border = `5px solid ${idollistAll[2].borderColorHex}`;
-            idollistAIds[2].querySelector("div").style.border = `5px solid ${idollistAll[2].borderColorHex}`;
-            idollistAIds[2].querySelector("h4").innerHTML = idollistAll[2].groupNameNormal;
+        let idollistLeftArray = [];
+        let idollistRightArray = [];
 
-            idollistAIds[3].href = idollistAll[3].href;
-            idollistAIds[3].querySelector("img").src = "4번";
-            idollistAIds[3].querySelector("img").alt = idollistAll[3].groupNameKor;
-            idollistAIds[3].querySelector("img").style.border = `5px solid ${idollistAll[3].borderColorHex}`;
-            idollistAIds[3].querySelector("div").style.border = `5px solid ${idollistAll[3].borderColorHex}`;
-            idollistAIds[3].querySelector("h4").innerHTML = idollistAll[3].groupNameNormal;
+        for (let n = 0; n < idollistLength; n++) {
 
-            idollistAIds[4].href = idollistAll[4].href;
-            idollistAIds[4].querySelector("img").src = "5번";
-            idollistAIds[4].querySelector("img").alt = idollistAll[4].groupNameKor;
-            idollistAIds[4].querySelector("img").style.border = `5px solid ${idollistAll[4].borderColorHex}`;
-            idollistAIds[4].querySelector("div").style.border = `5px solid ${idollistAll[4].borderColorHex}`;
-            idollistAIds[4].querySelector("h4").innerHTML = idollistAll[4].groupNameNormal;
-
-            idollistAIds[5].href = idollistAll[5].href;
-            idollistAIds[5].querySelector("img").src = "6번";
-            idollistAIds[5].querySelector("img").alt = idollistAll[5].groupNameKor;
-            idollistAIds[5].querySelector("img").style.border = `5px solid ${idollistAll[5].borderColorHex}`;
-            idollistAIds[5].querySelector("div").style.border = `5px solid ${idollistAll[5].borderColorHex}`;
-            idollistAIds[5].querySelector("h4").innerHTML = idollistAll[5].groupNameNormal;
-
-            idollistAIds[6].href = idollistAll[6].href;
-            idollistAIds[6].querySelector("img").src = "7번";
-            idollistAIds[6].querySelector("img").alt = idollistAll[6].groupNameKor;
-            idollistAIds[6].querySelector("img").style.border = `5px solid ${idollistAll[6].borderColorHex}`;
-            idollistAIds[6].querySelector("div").style.border = `5px solid ${idollistAll[6].borderColorHex}`;
-            idollistAIds[6].querySelector("h4").innerHTML = idollistAll[6].groupNameNormal;
-
-            idollistAIds[7].href = idollistAll[7].href;
-            idollistAIds[7].querySelector("img").src = "8번";
-            idollistAIds[7].querySelector("img").alt = idollistAll[7].groupNameKor;
-            idollistAIds[7].querySelector("img").style.border = `5px solid ${idollistAll[7].borderColorHex}`;
-            idollistAIds[7].querySelector("div").style.border = `5px solid ${idollistAll[7].borderColorHex}`;
-            idollistAIds[7].querySelector("h4").innerHTML = idollistAll[7].groupNameNormal;
-
-            idollistAIds[8].href = idollistAll[8].href;
-            idollistAIds[8].querySelector("img").src = "9번";
-            idollistAIds[8].querySelector("img").alt = idollistAll[8].groupNameKor;
-            idollistAIds[8].querySelector("img").style.border = `5px solid ${idollistAll[8].borderColorHex}`;
-            idollistAIds[8].querySelector("div").style.border = `5px solid ${idollistAll[8].borderColorHex}`;
-            idollistAIds[8].querySelector("h4").innerHTML = idollistAll[8].groupNameNormal;
-
-            idollistAIds[9].href = idollistAll[9].href;
-            idollistAIds[9].querySelector("img").src = "10번";
-            idollistAIds[9].querySelector("img").alt = idollistAll[9].groupNameKor;
-            idollistAIds[9].querySelector("img").style.border = `5px solid ${idollistAll[9].borderColorHex}`;
-            idollistAIds[9].querySelector("div").style.border = `5px solid ${idollistAll[9].borderColorHex}`;
-            idollistAIds[9].querySelector("h4").innerHTML = idollistAll[9].groupNameNormal;
-
-            idollistAIds[10].href = idollistAll[10].href;
-            idollistAIds[10].querySelector("img").src = "11번";
-            idollistAIds[10].querySelector("img").alt = idollistAll[10].groupNameKor;
-            idollistAIds[10].querySelector("img").style.border = `5px solid ${idollistAll[10].borderColorHex}`;
-            idollistAIds[10].querySelector("div").style.border = `5px solid ${idollistAll[10].borderColorHex}`;
-            idollistAIds[10].querySelector("h4").innerHTML = idollistAll[10].groupNameNormal;
-
-            idollistAIds[11].href = idollistAll[11].href;
-            idollistAIds[11].querySelector("img").src = "12번";
-            idollistAIds[11].querySelector("img").alt = idollistAll[11].groupNameKor;
-            idollistAIds[11].querySelector("img").style.border = `5px solid ${idollistAll[11].borderColorHex}`;
-            idollistAIds[11].querySelector("div").style.border = `5px solid ${idollistAll[11].borderColorHex}`;
-            idollistAIds[11].querySelector("h4").innerHTML = idollistAll[11].groupNameNormal;
-
-            idollistAIds[12].href = idollistAll[12].href;
-            idollistAIds[12].querySelector("img").src = "13번";
-            idollistAIds[12].querySelector("img").alt = idollistAll[12].groupNameKor;
-            idollistAIds[12].querySelector("img").style.border = `5px solid ${idollistAll[12].borderColorHex}`;
-            idollistAIds[12].querySelector("div").style.border = `5px solid ${idollistAll[12].borderColorHex}`;
-            idollistAIds[12].querySelector("h4").innerHTML = idollistAll[12].groupNameNormal;
-
-            idollistAIds[13].href = idollistAll[13].href;
-            idollistAIds[13].querySelector("img").src = "14번";
-            idollistAIds[13].querySelector("img").alt = idollistAll[13].groupNameKor;
-            idollistAIds[13].querySelector("img").style.border = `5px solid ${idollistAll[13].borderColorHex}`;
-            idollistAIds[13].querySelector("div").style.border = `5px solid ${idollistAll[13].borderColorHex}`;
-            idollistAIds[13].querySelector("h4").innerHTML = idollistAll[13].groupNameNormal;
-
-            idollistAIds[14].href = idollistAll[14].href;
-            idollistAIds[14].querySelector("img").src = "15번";
-            idollistAIds[14].querySelector("img").alt = idollistAll[14].groupNameKor;
-            idollistAIds[14].querySelector("img").style.border = `5px solid ${idollistAll[14].borderColorHex}`;
-            idollistAIds[14].querySelector("div").style.border = `5px solid ${idollistAll[14].borderColorHex}`;
-            idollistAIds[14].querySelector("h4").innerHTML = idollistAll[14].groupNameNormal;
-
-            idollistAIds[15].href = idollistAll[15].href;
-            idollistAIds[15].querySelector("img").src = "16번";
-            idollistAIds[15].querySelector("img").alt = idollistAll[15].groupNameKor;
-            idollistAIds[15].querySelector("img").style.border = `5px solid ${idollistAll[15].borderColorHex}`;
-            idollistAIds[15].querySelector("div").style.border = `5px solid ${idollistAll[15].borderColorHex}`;
-            idollistAIds[15].querySelector("h4").innerHTML = idollistAll[15].groupNameNormal;
-
-            idollistAIds[16].href = idollistAll[16].href;
-            idollistAIds[16].querySelector("img").src = "17번";
-            idollistAIds[16].querySelector("img").alt = idollistAll[16].groupNameKor;
-            idollistAIds[16].querySelector("img").style.border = `5px solid ${idollistAll[16].borderColorHex}`;
-            idollistAIds[16].querySelector("div").style.border = `5px solid ${idollistAll[16].borderColorHex}`;
-            idollistAIds[16].querySelector("h4").innerHTML = idollistAll[16].groupNameNormal;
-
-            idollistAIds[17].href = idollistAll[17].href;
-            idollistAIds[17].querySelector("img").src = "18번";
-            idollistAIds[17].querySelector("img").alt = idollistAll[17].groupNameKor;
-            idollistAIds[17].querySelector("img").style.border = `5px solid ${idollistAll[17].borderColorHex}`;
-            idollistAIds[17].querySelector("div").style.border = `5px solid ${idollistAll[17].borderColorHex}`;
-            idollistAIds[17].querySelector("h4").innerHTML = idollistAll[17].groupNameNormal;
-
-            idollistAIds[18].href = idollistAll[18].href;
-            idollistAIds[18].querySelector("img").src = "19번";
-            idollistAIds[18].querySelector("img").alt = idollistAll[18].groupNameKor;
-            idollistAIds[18].querySelector("img").style.border = `5px solid ${idollistAll[18].borderColorHex}`;
-            idollistAIds[18].querySelector("div").style.border = `5px solid ${idollistAll[18].borderColorHex}`;
-            idollistAIds[18].querySelector("h4").innerHTML = idollistAll[18].groupNameNormal;
-
-            idollistAIds[19].href = idollistAll[19].href;
-            idollistAIds[19].querySelector("img").src = "20번";
-            idollistAIds[19].querySelector("img").alt = idollistAll[19].groupNameKor;
-            idollistAIds[19].querySelector("img").style.border = `5px solid ${idollistAll[19].borderColorHex}`;
-            idollistAIds[19].querySelector("div").style.border = `5px solid ${idollistAll[19].borderColorHex}`;
-            idollistAIds[19].querySelector("h4").innerHTML = idollistAll[19].groupNameNormal;
-
-            idollistAIds[20].href = idollistAll[20].href;
-            idollistAIds[20].querySelector("img").src = "21번";
-            idollistAIds[20].querySelector("img").alt = idollistAll[20].groupNameKor;
-            idollistAIds[20].querySelector("img").style.border = `5px solid ${idollistAll[20].borderColorHex}`;
-            idollistAIds[20].querySelector("div").style.border = `5px solid ${idollistAll[20].borderColorHex}`;
-            idollistAIds[20].querySelector("h4").innerHTML = idollistAll[20].groupNameNormal;
-
-            idollistAIds[21].href = idollistAll[21].href;
-            idollistAIds[21].querySelector("img").src = "22번";
-            idollistAIds[21].querySelector("img").alt = idollistAll[21].groupNameKor;
-            idollistAIds[21].querySelector("img").style.border = `5px solid ${idollistAll[21].borderColorHex}`;
-            idollistAIds[21].querySelector("div").style.border = `5px solid ${idollistAll[21].borderColorHex}`;
-            idollistAIds[21].querySelector("h4").innerHTML = idollistAll[21].groupNameNormal;
-
-            idollistAIds[22].href = idollistAll[22].href;
-            idollistAIds[22].querySelector("img").src = "23번";
-            idollistAIds[22].querySelector("img").alt = idollistAll[22].groupNameKor;
-            idollistAIds[22].querySelector("img").style.border = `5px solid ${idollistAll[22].borderColorHex}`;
-            idollistAIds[22].querySelector("div").style.border = `5px solid ${idollistAll[22].borderColorHex}`;
-            idollistAIds[22].querySelector("h4").innerHTML = idollistAll[22].groupNameNormal;
-
-            idollistAIds[23].href = idollistAll[23].href;
-            idollistAIds[23].querySelector("img").src = "24번";
-            idollistAIds[23].querySelector("img").alt = idollistAll[23].groupNameKor;
-            idollistAIds[23].querySelector("img").style.border = `5px solid ${idollistAll[23].borderColorHex}`;
-            idollistAIds[23].querySelector("div").style.border = `5px solid ${idollistAll[23].borderColorHex}`;
-            idollistAIds[23].querySelector("h4").innerHTML = idollistAll[23].groupNameNormal;
-        }
-
-        // 한국어 순정렬 함수
-        function idollistAIdsKoreanSort(idollistAll) {
-
-            let idollistLength = idollistAll.length;
-
-            // 재귀 종료 조건
-            if (idollistLength <= 1) {
-                return idollistAll;
+            // 피벗 자체는 비교 대상에서 제외
+            if (n === idollistPivotIndex) {
+                continue;
             }
 
-            // 피벗 인덱스 및 객체
-            let idollistPivotIndex = Math.floor(idollistLength / 2);
-            let idollistPivot = idollistAll[idollistPivotIndex];
+            if (
+                idollistAll[n].groupNameKor.localeCompare(
+                    idollistPivot.groupNameKor,
+                    "ko"
+                ) < 0
+            ) {
+                idollistLeftArray.push(idollistAll[n]);
 
-            let idollistLeftArray = [];
-            let idollistRightArray = [];
+            } else {
+                idollistRightArray.push(idollistAll[n]);
+            }
+        }
 
-            for (let n = 0; n < idollistLength; n++) {
+        return idollistAIdsKoreanSort(idollistLeftArray)
+            .concat([idollistPivot])
+            .concat(idollistAIdsKoreanSort(idollistRightArray));
+    }
 
-                // 피벗 자체는 비교 대상에서 제외
-                if (n === idollistPivotIndex) {
-                    continue;
-                }
+    // 한국어 순정렬 실행 함수
+    function idollistAIdsKoreanSortToArray() {
 
-                if (
-                    idollistAll[n].groupNameKor.localeCompare(
-                        idollistPivot.groupNameKor,
-                        "ko"
-                    ) < 0
-                ) {
-                    idollistLeftArray.push(idollistAll[n]);
+        let idollistAIdsKoreanSortArray =
+            idollistAIdsKoreanSort(idollistAll);
 
-                } else {
-                    idollistRightArray.push(idollistAll[n]);
-                }
+        console.log(idollistAIdsKoreanSortArray);
+        idollistAIds[0].href = idollistAIdsKoreanSortArray[0].href;
+        idollistAIds[0].querySelector("img").src = "";
+        idollistAIds[0].querySelector("img").alt = idollistAIdsKoreanSortArray[0].groupNameKor;
+        idollistAIds[0].querySelector("img").style.border = `5px solid ${idollistAIdsKoreanSortArray[0].borderColorHex}`;
+        idollistAIds[0].querySelector("div").style.border = `5px solid ${idollistAIdsKoreanSortArray[0].borderColorHex}`;
+        idollistAIds[0].querySelector("h4").innerHTML = idollistAIdsKoreanSortArray[0].groupNameNormal;
+
+        idollistAIds[1].href = idollistAIdsKoreanSortArray[1].href;
+        idollistAIds[1].querySelector("img").src = "2번";
+        idollistAIds[1].querySelector("img").alt = idollistAIdsKoreanSortArray[1].groupNameKor;
+        idollistAIds[1].querySelector("img").style.border = `5px solid ${idollistAIdsKoreanSortArray[1].borderColorHex}`;
+        idollistAIds[1].querySelector("div").style.border = `5px solid ${idollistAIdsKoreanSortArray[1].borderColorHex}`;
+        idollistAIds[1].querySelector("h4").innerHTML = idollistAIdsKoreanSortArray[1].groupNameNormal;
+
+        idollistAIds[2].href = idollistAIdsKoreanSortArray[2].href;
+        idollistAIds[2].querySelector("img").src = "3번";
+        idollistAIds[2].querySelector("img").alt = idollistAIdsKoreanSortArray[2].groupNameKor;
+        idollistAIds[2].querySelector("img").style.border = `5px solid ${idollistAIdsKoreanSortArray[2].borderColorHex}`;
+        idollistAIds[2].querySelector("div").style.border = `5px solid ${idollistAIdsKoreanSortArray[2].borderColorHex}`;
+        idollistAIds[2].querySelector("h4").innerHTML = idollistAIdsKoreanSortArray[2].groupNameNormal;
+
+        idollistAIds[3].href = idollistAIdsKoreanSortArray[3].href;
+        idollistAIds[3].querySelector("img").src = "4번";
+        idollistAIds[3].querySelector("img").alt = idollistAIdsKoreanSortArray[3].groupNameKor;
+        idollistAIds[3].querySelector("img").style.border = `5px solid ${idollistAIdsKoreanSortArray[3].borderColorHex}`;
+        idollistAIds[3].querySelector("div").style.border = `5px solid ${idollistAIdsKoreanSortArray[3].borderColorHex}`;
+        idollistAIds[3].querySelector("h4").innerHTML = idollistAIdsKoreanSortArray[3].groupNameNormal;
+
+        idollistAIds[4].href = idollistAIdsKoreanSortArray[4].href;
+        idollistAIds[4].querySelector("img").src = "5번";
+        idollistAIds[4].querySelector("img").alt = idollistAIdsKoreanSortArray[4].groupNameKor;
+        idollistAIds[4].querySelector("img").style.border = `5px solid ${idollistAIdsKoreanSortArray[4].borderColorHex}`;
+        idollistAIds[4].querySelector("div").style.border = `5px solid ${idollistAIdsKoreanSortArray[4].borderColorHex}`;
+        idollistAIds[4].querySelector("h4").innerHTML = idollistAIdsKoreanSortArray[4].groupNameNormal;
+
+        idollistAIds[5].href = idollistAIdsKoreanSortArray[5].href;
+        idollistAIds[5].querySelector("img").src = "6번";
+        idollistAIds[5].querySelector("img").alt = idollistAIdsKoreanSortArray[5].groupNameKor;
+        idollistAIds[5].querySelector("img").style.border = `5px solid ${idollistAIdsKoreanSortArray[5].borderColorHex}`;
+        idollistAIds[5].querySelector("div").style.border = `5px solid ${idollistAIdsKoreanSortArray[5].borderColorHex}`;
+        idollistAIds[5].querySelector("h4").innerHTML = idollistAIdsKoreanSortArray[5].groupNameNormal;
+
+        idollistAIds[6].href = idollistAIdsKoreanSortArray[6].href;
+        idollistAIds[6].querySelector("img").src = "7번";
+        idollistAIds[6].querySelector("img").alt = idollistAIdsKoreanSortArray[6].groupNameKor;
+        idollistAIds[6].querySelector("img").style.border = `5px solid ${idollistAIdsKoreanSortArray[6].borderColorHex}`;
+        idollistAIds[6].querySelector("div").style.border = `5px solid ${idollistAIdsKoreanSortArray[6].borderColorHex}`;
+        idollistAIds[6].querySelector("h4").innerHTML = idollistAIdsKoreanSortArray[6].groupNameNormal;
+
+        idollistAIds[7].href = idollistAIdsKoreanSortArray[7].href;
+        idollistAIds[7].querySelector("img").src = "8번";
+        idollistAIds[7].querySelector("img").alt = idollistAIdsKoreanSortArray[7].groupNameKor;
+        idollistAIds[7].querySelector("img").style.border = `5px solid ${idollistAIdsKoreanSortArray[7].borderColorHex}`;
+        idollistAIds[7].querySelector("div").style.border = `5px solid ${idollistAIdsKoreanSortArray[7].borderColorHex}`;
+        idollistAIds[7].querySelector("h4").innerHTML = idollistAIdsKoreanSortArray[7].groupNameNormal;
+
+        idollistAIds[8].href = idollistAIdsKoreanSortArray[8].href;
+        idollistAIds[8].querySelector("img").src = "9번";
+        idollistAIds[8].querySelector("img").alt = idollistAIdsKoreanSortArray[8].groupNameKor;
+        idollistAIds[8].querySelector("img").style.border = `5px solid ${idollistAIdsKoreanSortArray[8].borderColorHex}`;
+        idollistAIds[8].querySelector("div").style.border = `5px solid ${idollistAIdsKoreanSortArray[8].borderColorHex}`;
+        idollistAIds[8].querySelector("h4").innerHTML = idollistAIdsKoreanSortArray[8].groupNameNormal;
+
+        idollistAIds[9].href = idollistAIdsKoreanSortArray[9].href;
+        idollistAIds[9].querySelector("img").src = "10번";
+        idollistAIds[9].querySelector("img").alt = idollistAIdsKoreanSortArray[9].groupNameKor;
+        idollistAIds[9].querySelector("img").style.border = `5px solid ${idollistAIdsKoreanSortArray[9].borderColorHex}`;
+        idollistAIds[9].querySelector("div").style.border = `5px solid ${idollistAIdsKoreanSortArray[9].borderColorHex}`;
+        idollistAIds[9].querySelector("h4").innerHTML = idollistAIdsKoreanSortArray[9].groupNameNormal;
+
+        idollistAIds[10].href = idollistAIdsKoreanSortArray[10].href;
+        idollistAIds[10].querySelector("img").src = "11번";
+        idollistAIds[10].querySelector("img").alt = idollistAIdsKoreanSortArray[10].groupNameKor;
+        idollistAIds[10].querySelector("img").style.border = `5px solid ${idollistAIdsKoreanSortArray[10].borderColorHex}`;
+        idollistAIds[10].querySelector("div").style.border = `5px solid ${idollistAIdsKoreanSortArray[10].borderColorHex}`;
+        idollistAIds[10].querySelector("h4").innerHTML = idollistAIdsKoreanSortArray[10].groupNameNormal;
+
+        idollistAIds[11].href = idollistAIdsKoreanSortArray[11].href;
+        idollistAIds[11].querySelector("img").src = "12번";
+        idollistAIds[11].querySelector("img").alt = idollistAIdsKoreanSortArray[11].groupNameKor;
+        idollistAIds[11].querySelector("img").style.border = `5px solid ${idollistAIdsKoreanSortArray[11].borderColorHex}`;
+        idollistAIds[11].querySelector("div").style.border = `5px solid ${idollistAIdsKoreanSortArray[11].borderColorHex}`;
+        idollistAIds[11].querySelector("h4").innerHTML = idollistAIdsKoreanSortArray[11].groupNameNormal;
+
+        idollistAIds[12].href = idollistAIdsKoreanSortArray[12].href;
+        idollistAIds[12].querySelector("img").src = "13번";
+        idollistAIds[12].querySelector("img").alt = idollistAIdsKoreanSortArray[12].groupNameKor;
+        idollistAIds[12].querySelector("img").style.border = `5px solid ${idollistAIdsKoreanSortArray[12].borderColorHex}`;
+        idollistAIds[12].querySelector("div").style.border = `5px solid ${idollistAIdsKoreanSortArray[12].borderColorHex}`;
+        idollistAIds[12].querySelector("h4").innerHTML = idollistAIdsKoreanSortArray[12].groupNameNormal;
+
+        idollistAIds[13].href = idollistAIdsKoreanSortArray[13].href;
+        idollistAIds[13].querySelector("img").src = "14번";
+        idollistAIds[13].querySelector("img").alt = idollistAIdsKoreanSortArray[13].groupNameKor;
+        idollistAIds[13].querySelector("img").style.border = `5px solid ${idollistAIdsKoreanSortArray[13].borderColorHex}`;
+        idollistAIds[13].querySelector("div").style.border = `5px solid ${idollistAIdsKoreanSortArray[13].borderColorHex}`;
+        idollistAIds[13].querySelector("h4").innerHTML = idollistAIdsKoreanSortArray[13].groupNameNormal;
+
+        idollistAIds[14].href = idollistAIdsKoreanSortArray[14].href;
+        idollistAIds[14].querySelector("img").src = "15번";
+        idollistAIds[14].querySelector("img").alt = idollistAIdsKoreanSortArray[14].groupNameKor;
+        idollistAIds[14].querySelector("img").style.border = `5px solid ${idollistAIdsKoreanSortArray[14].borderColorHex}`;
+        idollistAIds[14].querySelector("div").style.border = `5px solid ${idollistAIdsKoreanSortArray[14].borderColorHex}`;
+        idollistAIds[14].querySelector("h4").innerHTML = idollistAIdsKoreanSortArray[14].groupNameNormal;
+
+        idollistAIds[15].href = idollistAIdsKoreanSortArray[15].href;
+        idollistAIds[15].querySelector("img").src = "16번";
+        idollistAIds[15].querySelector("img").alt = idollistAIdsKoreanSortArray[15].groupNameKor;
+        idollistAIds[15].querySelector("img").style.border = `5px solid ${idollistAIdsKoreanSortArray[15].borderColorHex}`;
+        idollistAIds[15].querySelector("div").style.border = `5px solid ${idollistAIdsKoreanSortArray[15].borderColorHex}`;
+        idollistAIds[15].querySelector("h4").innerHTML = idollistAIdsKoreanSortArray[15].groupNameNormal;
+
+        idollistAIds[16].href = idollistAIdsKoreanSortArray[16].href;
+        idollistAIds[16].querySelector("img").src = "17번";
+        idollistAIds[16].querySelector("img").alt = idollistAIdsKoreanSortArray[16].groupNameKor;
+        idollistAIds[16].querySelector("img").style.border = `5px solid ${idollistAIdsKoreanSortArray[16].borderColorHex}`;
+        idollistAIds[16].querySelector("div").style.border = `5px solid ${idollistAIdsKoreanSortArray[16].borderColorHex}`;
+        idollistAIds[16].querySelector("h4").innerHTML = idollistAIdsKoreanSortArray[16].groupNameNormal;
+
+        idollistAIds[17].href = idollistAIdsKoreanSortArray[17].href;
+        idollistAIds[17].querySelector("img").src = "18번";
+        idollistAIds[17].querySelector("img").alt = idollistAIdsKoreanSortArray[17].groupNameKor;
+        idollistAIds[17].querySelector("img").style.border = `5px solid ${idollistAIdsKoreanSortArray[17].borderColorHex}`;
+        idollistAIds[17].querySelector("div").style.border = `5px solid ${idollistAIdsKoreanSortArray[17].borderColorHex}`;
+        idollistAIds[17].querySelector("h4").innerHTML = idollistAIdsKoreanSortArray[17].groupNameNormal;
+
+        idollistAIds[18].href = idollistAIdsKoreanSortArray[18].href;
+        idollistAIds[18].querySelector("img").src = "19번";
+        idollistAIds[18].querySelector("img").alt = idollistAIdsKoreanSortArray[18].groupNameKor;
+        idollistAIds[18].querySelector("img").style.border = `5px solid ${idollistAIdsKoreanSortArray[18].borderColorHex}`;
+        idollistAIds[18].querySelector("div").style.border = `5px solid ${idollistAIdsKoreanSortArray[18].borderColorHex}`;
+        idollistAIds[18].querySelector("h4").innerHTML = idollistAIdsKoreanSortArray[18].groupNameNormal;
+
+        idollistAIds[19].href = idollistAIdsKoreanSortArray[19].href;
+        idollistAIds[19].querySelector("img").src = "20번";
+        idollistAIds[19].querySelector("img").alt = idollistAIdsKoreanSortArray[19].groupNameKor;
+        idollistAIds[19].querySelector("img").style.border = `5px solid ${idollistAIdsKoreanSortArray[19].borderColorHex}`;
+        idollistAIds[19].querySelector("div").style.border = `5px solid ${idollistAIdsKoreanSortArray[19].borderColorHex}`;
+        idollistAIds[19].querySelector("h4").innerHTML = idollistAIdsKoreanSortArray[19].groupNameNormal;
+
+        idollistAIds[20].href = idollistAIdsKoreanSortArray[20].href;
+        idollistAIds[20].querySelector("img").src = "21번";
+        idollistAIds[20].querySelector("img").alt = idollistAIdsKoreanSortArray[20].groupNameKor;
+        idollistAIds[20].querySelector("img").style.border = `5px solid ${idollistAIdsKoreanSortArray[20].borderColorHex}`;
+        idollistAIds[20].querySelector("div").style.border = `5px solid ${idollistAIdsKoreanSortArray[20].borderColorHex}`;
+        idollistAIds[20].querySelector("h4").innerHTML = idollistAIdsKoreanSortArray[20].groupNameNormal;
+
+        idollistAIds[21].href = idollistAIdsKoreanSortArray[21].href;
+        idollistAIds[21].querySelector("img").src = "22번";
+        idollistAIds[21].querySelector("img").alt = idollistAIdsKoreanSortArray[21].groupNameKor;
+        idollistAIds[21].querySelector("img").style.border = `5px solid ${idollistAIdsKoreanSortArray[21].borderColorHex}`;
+        idollistAIds[21].querySelector("div").style.border = `5px solid ${idollistAIdsKoreanSortArray[21].borderColorHex}`;
+        idollistAIds[21].querySelector("h4").innerHTML = idollistAIdsKoreanSortArray[21].groupNameNormal;
+
+        idollistAIds[22].href = idollistAIdsKoreanSortArray[22].href;
+        idollistAIds[22].querySelector("img").src = "23번";
+        idollistAIds[22].querySelector("img").alt = idollistAIdsKoreanSortArray[22].groupNameKor;
+        idollistAIds[22].querySelector("img").style.border = `5px solid ${idollistAIdsKoreanSortArray[22].borderColorHex}`;
+        idollistAIds[22].querySelector("div").style.border = `5px solid ${idollistAIdsKoreanSortArray[22].borderColorHex}`;
+        idollistAIds[22].querySelector("h4").innerHTML = idollistAIdsKoreanSortArray[22].groupNameNormal;
+
+        idollistAIds[23].href = idollistAIdsKoreanSortArray[23].href;
+        idollistAIds[23].querySelector("img").src = "24번";
+        idollistAIds[23].querySelector("img").alt = idollistAIdsKoreanSortArray[23].groupNameKor;
+        idollistAIds[23].querySelector("img").style.border = `5px solid ${idollistAIdsKoreanSortArray[23].borderColorHex}`;
+        idollistAIds[23].querySelector("div").style.border = `5px solid ${idollistAIdsKoreanSortArray[23].borderColorHex}`;
+        idollistAIds[23].querySelector("h4").innerHTML = idollistAIdsKoreanSortArray[23].groupNameNormal;
+    }
+    // 한국어 역정렬 실행 함수
+    function idollistAIdsKoreanReverseSortToArray() {
+
+        let idollistAIdsKoreanSortArray =
+            idollistAIdsKoreanSort(idollistAll);
+        idollistAIds[23].href = idollistAIdsKoreanSortArray[0].href;
+        idollistAIds[23].querySelector("img").src = "1번";
+        idollistAIds[23].querySelector("img").alt = idollistAIdsKoreanSortArray[0].groupNameKor;
+        idollistAIds[23].querySelector("img").style.border = `5px solid ${idollistAIdsKoreanSortArray[0].borderColorHex}`;
+        idollistAIds[23].querySelector("div").style.border = `5px solid ${idollistAIdsKoreanSortArray[0].borderColorHex}`;
+        idollistAIds[23].querySelector("h4").innerHTML = idollistAIdsKoreanSortArray[0].groupNameNormal;
+
+        idollistAIds[22].href = idollistAIdsKoreanSortArray[1].href;
+        idollistAIds[22].querySelector("img").src = "2번";
+        idollistAIds[22].querySelector("img").alt = idollistAIdsKoreanSortArray[1].groupNameKor;
+        idollistAIds[22].querySelector("img").style.border = `5px solid ${idollistAIdsKoreanSortArray[1].borderColorHex}`;
+        idollistAIds[22].querySelector("div").style.border = `5px solid ${idollistAIdsKoreanSortArray[1].borderColorHex}`;
+        idollistAIds[22].querySelector("h4").innerHTML = idollistAIdsKoreanSortArray[1].groupNameNormal;
+
+        idollistAIds[21].href = idollistAIdsKoreanSortArray[2].href;
+        idollistAIds[21].querySelector("img").src = "3번";
+        idollistAIds[21].querySelector("img").alt = idollistAIdsKoreanSortArray[2].groupNameKor;
+        idollistAIds[21].querySelector("img").style.border = `5px solid ${idollistAIdsKoreanSortArray[2].borderColorHex}`;
+        idollistAIds[21].querySelector("div").style.border = `5px solid ${idollistAIdsKoreanSortArray[2].borderColorHex}`;
+        idollistAIds[21].querySelector("h4").innerHTML = idollistAIdsKoreanSortArray[2].groupNameNormal;
+
+        idollistAIds[20].href = idollistAIdsKoreanSortArray[3].href;
+        idollistAIds[20].querySelector("img").src = "4번";
+        idollistAIds[20].querySelector("img").alt = idollistAIdsKoreanSortArray[3].groupNameKor;
+        idollistAIds[20].querySelector("img").style.border = `5px solid ${idollistAIdsKoreanSortArray[3].borderColorHex}`;
+        idollistAIds[20].querySelector("div").style.border = `5px solid ${idollistAIdsKoreanSortArray[3].borderColorHex}`;
+        idollistAIds[20].querySelector("h4").innerHTML = idollistAIdsKoreanSortArray[3].groupNameNormal;
+
+        idollistAIds[19].href = idollistAIdsKoreanSortArray[4].href;
+        idollistAIds[19].querySelector("img").src = "5번";
+        idollistAIds[19].querySelector("img").alt = idollistAIdsKoreanSortArray[4].groupNameKor;
+        idollistAIds[19].querySelector("img").style.border = `5px solid ${idollistAIdsKoreanSortArray[4].borderColorHex}`;
+        idollistAIds[19].querySelector("div").style.border = `5px solid ${idollistAIdsKoreanSortArray[4].borderColorHex}`;
+        idollistAIds[19].querySelector("h4").innerHTML = idollistAIdsKoreanSortArray[4].groupNameNormal;
+
+        idollistAIds[18].href = idollistAIdsKoreanSortArray[5].href;
+        idollistAIds[18].querySelector("img").src = "6번";
+        idollistAIds[18].querySelector("img").alt = idollistAIdsKoreanSortArray[5].groupNameKor;
+        idollistAIds[18].querySelector("img").style.border = `5px solid ${idollistAIdsKoreanSortArray[5].borderColorHex}`;
+        idollistAIds[18].querySelector("div").style.border = `5px solid ${idollistAIdsKoreanSortArray[5].borderColorHex}`;
+        idollistAIds[18].querySelector("h4").innerHTML = idollistAIdsKoreanSortArray[5].groupNameNormal;
+
+        idollistAIds[17].href = idollistAIdsKoreanSortArray[6].href;
+        idollistAIds[17].querySelector("img").src = "7번";
+        idollistAIds[17].querySelector("img").alt = idollistAIdsKoreanSortArray[6].groupNameKor;
+        idollistAIds[17].querySelector("img").style.border = `5px solid ${idollistAIdsKoreanSortArray[6].borderColorHex}`;
+        idollistAIds[17].querySelector("div").style.border = `5px solid ${idollistAIdsKoreanSortArray[6].borderColorHex}`;
+        idollistAIds[17].querySelector("h4").innerHTML = idollistAIdsKoreanSortArray[6].groupNameNormal;
+
+        idollistAIds[16].href = idollistAIdsKoreanSortArray[7].href;
+        idollistAIds[16].querySelector("img").src = "8번";
+        idollistAIds[16].querySelector("img").alt = idollistAIdsKoreanSortArray[7].groupNameKor;
+        idollistAIds[16].querySelector("img").style.border = `5px solid ${idollistAIdsKoreanSortArray[7].borderColorHex}`;
+        idollistAIds[16].querySelector("div").style.border = `5px solid ${idollistAIdsKoreanSortArray[7].borderColorHex}`;
+        idollistAIds[16].querySelector("h4").innerHTML = idollistAIdsKoreanSortArray[7].groupNameNormal;
+
+        idollistAIds[15].href = idollistAIdsKoreanSortArray[8].href;
+        idollistAIds[15].querySelector("img").src = "9번";
+        idollistAIds[15].querySelector("img").alt = idollistAIdsKoreanSortArray[8].groupNameKor;
+        idollistAIds[15].querySelector("img").style.border = `5px solid ${idollistAIdsKoreanSortArray[8].borderColorHex}`;
+        idollistAIds[15].querySelector("div").style.border = `5px solid ${idollistAIdsKoreanSortArray[8].borderColorHex}`;
+        idollistAIds[15].querySelector("h4").innerHTML = idollistAIdsKoreanSortArray[8].groupNameNormal;
+
+        idollistAIds[14].href = idollistAIdsKoreanSortArray[9].href;
+        idollistAIds[14].querySelector("img").src = "10번";
+        idollistAIds[14].querySelector("img").alt = idollistAIdsKoreanSortArray[9].groupNameKor;
+        idollistAIds[14].querySelector("img").style.border = `5px solid ${idollistAIdsKoreanSortArray[9].borderColorHex}`;
+        idollistAIds[14].querySelector("div").style.border = `5px solid ${idollistAIdsKoreanSortArray[9].borderColorHex}`;
+        idollistAIds[14].querySelector("h4").innerHTML = idollistAIdsKoreanSortArray[9].groupNameNormal;
+
+        idollistAIds[13].href = idollistAIdsKoreanSortArray[10].href;
+        idollistAIds[13].querySelector("img").src = "11번";
+        idollistAIds[13].querySelector("img").alt = idollistAIdsKoreanSortArray[10].groupNameKor;
+        idollistAIds[13].querySelector("img").style.border = `5px solid ${idollistAIdsKoreanSortArray[10].borderColorHex}`;
+        idollistAIds[13].querySelector("div").style.border = `5px solid ${idollistAIdsKoreanSortArray[10].borderColorHex}`;
+        idollistAIds[13].querySelector("h4").innerHTML = idollistAIdsKoreanSortArray[10].groupNameNormal;
+
+        idollistAIds[12].href = idollistAIdsKoreanSortArray[11].href;
+        idollistAIds[12].querySelector("img").src = "12번";
+        idollistAIds[12].querySelector("img").alt = idollistAIdsKoreanSortArray[11].groupNameKor;
+        idollistAIds[12].querySelector("img").style.border = `5px solid ${idollistAIdsKoreanSortArray[11].borderColorHex}`;
+        idollistAIds[12].querySelector("div").style.border = `5px solid ${idollistAIdsKoreanSortArray[11].borderColorHex}`;
+        idollistAIds[12].querySelector("h4").innerHTML = idollistAIdsKoreanSortArray[11].groupNameNormal;
+
+        idollistAIds[11].href = idollistAIdsKoreanSortArray[12].href;
+        idollistAIds[11].querySelector("img").src = "13번";
+        idollistAIds[11].querySelector("img").alt = idollistAIdsKoreanSortArray[12].groupNameKor;
+        idollistAIds[11].querySelector("img").style.border = `5px solid ${idollistAIdsKoreanSortArray[12].borderColorHex}`;
+        idollistAIds[11].querySelector("div").style.border = `5px solid ${idollistAIdsKoreanSortArray[12].borderColorHex}`;
+        idollistAIds[11].querySelector("h4").innerHTML = idollistAIdsKoreanSortArray[12].groupNameNormal;
+
+        idollistAIds[10].href = idollistAIdsKoreanSortArray[13].href;
+        idollistAIds[10].querySelector("img").src = "14번";
+        idollistAIds[10].querySelector("img").alt = idollistAIdsKoreanSortArray[13].groupNameKor;
+        idollistAIds[10].querySelector("img").style.border = `5px solid ${idollistAIdsKoreanSortArray[13].borderColorHex}`;
+        idollistAIds[10].querySelector("div").style.border = `5px solid ${idollistAIdsKoreanSortArray[13].borderColorHex}`;
+        idollistAIds[10].querySelector("h4").innerHTML = idollistAIdsKoreanSortArray[13].groupNameNormal;
+
+        idollistAIds[9].href = idollistAIdsKoreanSortArray[14].href;
+        idollistAIds[9].querySelector("img").src = "15번";
+        idollistAIds[9].querySelector("img").alt = idollistAIdsKoreanSortArray[14].groupNameKor;
+        idollistAIds[9].querySelector("img").style.border = `5px solid ${idollistAIdsKoreanSortArray[14].borderColorHex}`;
+        idollistAIds[9].querySelector("div").style.border = `5px solid ${idollistAIdsKoreanSortArray[14].borderColorHex}`;
+        idollistAIds[9].querySelector("h4").innerHTML = idollistAIdsKoreanSortArray[14].groupNameNormal;
+
+        idollistAIds[8].href = idollistAIdsKoreanSortArray[15].href;
+        idollistAIds[8].querySelector("img").src = "16번";
+        idollistAIds[8].querySelector("img").alt = idollistAIdsKoreanSortArray[15].groupNameKor;
+        idollistAIds[8].querySelector("img").style.border = `5px solid ${idollistAIdsKoreanSortArray[15].borderColorHex}`;
+        idollistAIds[8].querySelector("div").style.border = `5px solid ${idollistAIdsKoreanSortArray[15].borderColorHex}`;
+        idollistAIds[8].querySelector("h4").innerHTML = idollistAIdsKoreanSortArray[15].groupNameNormal;
+
+        idollistAIds[7].href = idollistAIdsKoreanSortArray[16].href;
+        idollistAIds[7].querySelector("img").src = "17번";
+        idollistAIds[7].querySelector("img").alt = idollistAIdsKoreanSortArray[16].groupNameKor;
+        idollistAIds[7].querySelector("img").style.border = `5px solid ${idollistAIdsKoreanSortArray[16].borderColorHex}`;
+        idollistAIds[7].querySelector("div").style.border = `5px solid ${idollistAIdsKoreanSortArray[16].borderColorHex}`;
+        idollistAIds[7].querySelector("h4").innerHTML = idollistAIdsKoreanSortArray[16].groupNameNormal;
+
+        idollistAIds[6].href = idollistAIdsKoreanSortArray[17].href;
+        idollistAIds[6].querySelector("img").src = "18번";
+        idollistAIds[6].querySelector("img").alt = idollistAIdsKoreanSortArray[17].groupNameKor;
+        idollistAIds[6].querySelector("img").style.border = `5px solid ${idollistAIdsKoreanSortArray[17].borderColorHex}`;
+        idollistAIds[6].querySelector("div").style.border = `5px solid ${idollistAIdsKoreanSortArray[17].borderColorHex}`;
+        idollistAIds[6].querySelector("h4").innerHTML = idollistAIdsKoreanSortArray[17].groupNameNormal;
+
+        idollistAIds[5].href = idollistAIdsKoreanSortArray[18].href;
+        idollistAIds[5].querySelector("img").src = "19번";
+        idollistAIds[5].querySelector("img").alt = idollistAIdsKoreanSortArray[18].groupNameKor;
+        idollistAIds[5].querySelector("img").style.border = `5px solid ${idollistAIdsKoreanSortArray[18].borderColorHex}`;
+        idollistAIds[5].querySelector("div").style.border = `5px solid ${idollistAIdsKoreanSortArray[18].borderColorHex}`;
+        idollistAIds[5].querySelector("h4").innerHTML = idollistAIdsKoreanSortArray[18].groupNameNormal;
+
+        idollistAIds[4].href = idollistAIdsKoreanSortArray[19].href;
+        idollistAIds[4].querySelector("img").src = "20번";
+        idollistAIds[4].querySelector("img").alt = idollistAIdsKoreanSortArray[19].groupNameKor;
+        idollistAIds[4].querySelector("img").style.border = `5px solid ${idollistAIdsKoreanSortArray[19].borderColorHex}`;
+        idollistAIds[4].querySelector("div").style.border = `5px solid ${idollistAIdsKoreanSortArray[19].borderColorHex}`;
+        idollistAIds[4].querySelector("h4").innerHTML = idollistAIdsKoreanSortArray[19].groupNameNormal;
+
+        idollistAIds[3].href = idollistAIdsKoreanSortArray[20].href;
+        idollistAIds[3].querySelector("img").src = "21번";
+        idollistAIds[3].querySelector("img").alt = idollistAIdsKoreanSortArray[20].groupNameKor;
+        idollistAIds[3].querySelector("img").style.border = `5px solid ${idollistAIdsKoreanSortArray[20].borderColorHex}`;
+        idollistAIds[3].querySelector("div").style.border = `5px solid ${idollistAIdsKoreanSortArray[20].borderColorHex}`;
+        idollistAIds[3].querySelector("h4").innerHTML = idollistAIdsKoreanSortArray[20].groupNameNormal;
+
+        idollistAIds[2].href = idollistAIdsKoreanSortArray[21].href;
+        idollistAIds[2].querySelector("img").src = "22번";
+        idollistAIds[2].querySelector("img").alt = idollistAIdsKoreanSortArray[21].groupNameKor;
+        idollistAIds[2].querySelector("img").style.border = `5px solid ${idollistAIdsKoreanSortArray[21].borderColorHex}`;
+        idollistAIds[2].querySelector("div").style.border = `5px solid ${idollistAIdsKoreanSortArray[21].borderColorHex}`;
+        idollistAIds[2].querySelector("h4").innerHTML = idollistAIdsKoreanSortArray[21].groupNameNormal;
+
+        idollistAIds[1].href = idollistAIdsKoreanSortArray[22].href;
+        idollistAIds[1].querySelector("img").src = "23번";
+        idollistAIds[1].querySelector("img").alt = idollistAIdsKoreanSortArray[22].groupNameKor;
+        idollistAIds[1].querySelector("img").style.border = `5px solid ${idollistAIdsKoreanSortArray[22].borderColorHex}`;
+        idollistAIds[1].querySelector("div").style.border = `5px solid ${idollistAIdsKoreanSortArray[22].borderColorHex}`;
+        idollistAIds[1].querySelector("h4").innerHTML = idollistAIdsKoreanSortArray[22].groupNameNormal;
+
+        idollistAIds[0].href = idollistAIdsKoreanSortArray[23].href;
+        idollistAIds[0].querySelector("img").src = "24번";
+        idollistAIds[0].querySelector("img").alt = idollistAIdsKoreanSortArray[23].groupNameKor;
+        idollistAIds[0].querySelector("img").style.border = `5px solid ${idollistAIdsKoreanSortArray[23].borderColorHex}`;
+        idollistAIds[0].querySelector("div").style.border = `5px solid ${idollistAIdsKoreanSortArray[23].borderColorHex}`;
+        idollistAIds[0].querySelector("h4").innerHTML = idollistAIdsKoreanSortArray[23].groupNameNormal;
+
+    }
+
+    // 영어 순정렬 함수
+    function idollistAIdsEnglishSort(idollistAll) {
+
+        let idollistLength = idollistAll.length;
+
+        // 재귀 종료 조건
+        if (idollistLength <= 1) {
+            return idollistAll;
+        }
+
+        // 피벗 인덱스 및 객체
+        let idollistPivotIndex = Math.floor(idollistLength / 2);
+        let idollistPivot = idollistAll[idollistPivotIndex];
+
+        let idollistLeftArray = [];
+        let idollistRightArray = [];
+
+        for (let n = 0; n < idollistLength; n++) {
+
+            // 피벗 자체는 비교 대상에서 제외
+            if (n === idollistPivotIndex) {
+                continue;
             }
 
-            return idollistAIdsKoreanSort(idollistLeftArray)
-                .concat([idollistPivot])
-                .concat(idollistAIdsKoreanSort(idollistRightArray));
-        }
-
-        // 한국어 순정렬 실행 함수
-        function idollistAIdsKoreanSortToArray() {
-
-            let idollistAIdsKoreanSortArray =
-                idollistAIdsKoreanSort(idollistAll);
-
-            console.log(idollistAIdsKoreanSortArray);
-            idollistAIds[0].href = idollistAIdsKoreanSortArray[0].href;
-            idollistAIds[0].querySelector("img").src = "";
-            idollistAIds[0].querySelector("img").alt = idollistAIdsKoreanSortArray[0].groupNameKor;
-            idollistAIds[0].querySelector("img").style.border = `5px solid ${idollistAIdsKoreanSortArray[0].borderColorHex}`;
-            idollistAIds[0].querySelector("div").style.border = `5px solid ${idollistAIdsKoreanSortArray[0].borderColorHex}`;
-            idollistAIds[0].querySelector("h4").innerHTML = idollistAIdsKoreanSortArray[0].groupNameNormal;
-
-            idollistAIds[1].href = idollistAIdsKoreanSortArray[1].href;
-            idollistAIds[1].querySelector("img").src = "2번";
-            idollistAIds[1].querySelector("img").alt = idollistAIdsKoreanSortArray[1].groupNameKor;
-            idollistAIds[1].querySelector("img").style.border = `5px solid ${idollistAIdsKoreanSortArray[1].borderColorHex}`;
-            idollistAIds[1].querySelector("div").style.border = `5px solid ${idollistAIdsKoreanSortArray[1].borderColorHex}`;
-            idollistAIds[1].querySelector("h4").innerHTML = idollistAIdsKoreanSortArray[1].groupNameNormal;
-
-            idollistAIds[2].href = idollistAIdsKoreanSortArray[2].href;
-            idollistAIds[2].querySelector("img").src = "3번";
-            idollistAIds[2].querySelector("img").alt = idollistAIdsKoreanSortArray[2].groupNameKor;
-            idollistAIds[2].querySelector("img").style.border = `5px solid ${idollistAIdsKoreanSortArray[2].borderColorHex}`;
-            idollistAIds[2].querySelector("div").style.border = `5px solid ${idollistAIdsKoreanSortArray[2].borderColorHex}`;
-            idollistAIds[2].querySelector("h4").innerHTML = idollistAIdsKoreanSortArray[2].groupNameNormal;
-
-            idollistAIds[3].href = idollistAIdsKoreanSortArray[3].href;
-            idollistAIds[3].querySelector("img").src = "4번";
-            idollistAIds[3].querySelector("img").alt = idollistAIdsKoreanSortArray[3].groupNameKor;
-            idollistAIds[3].querySelector("img").style.border = `5px solid ${idollistAIdsKoreanSortArray[3].borderColorHex}`;
-            idollistAIds[3].querySelector("div").style.border = `5px solid ${idollistAIdsKoreanSortArray[3].borderColorHex}`;
-            idollistAIds[3].querySelector("h4").innerHTML = idollistAIdsKoreanSortArray[3].groupNameNormal;
-
-            idollistAIds[4].href = idollistAIdsKoreanSortArray[4].href;
-            idollistAIds[4].querySelector("img").src = "5번";
-            idollistAIds[4].querySelector("img").alt = idollistAIdsKoreanSortArray[4].groupNameKor;
-            idollistAIds[4].querySelector("img").style.border = `5px solid ${idollistAIdsKoreanSortArray[4].borderColorHex}`;
-            idollistAIds[4].querySelector("div").style.border = `5px solid ${idollistAIdsKoreanSortArray[4].borderColorHex}`;
-            idollistAIds[4].querySelector("h4").innerHTML = idollistAIdsKoreanSortArray[4].groupNameNormal;
-
-            idollistAIds[5].href = idollistAIdsKoreanSortArray[5].href;
-            idollistAIds[5].querySelector("img").src = "6번";
-            idollistAIds[5].querySelector("img").alt = idollistAIdsKoreanSortArray[5].groupNameKor;
-            idollistAIds[5].querySelector("img").style.border = `5px solid ${idollistAIdsKoreanSortArray[5].borderColorHex}`;
-            idollistAIds[5].querySelector("div").style.border = `5px solid ${idollistAIdsKoreanSortArray[5].borderColorHex}`;
-            idollistAIds[5].querySelector("h4").innerHTML = idollistAIdsKoreanSortArray[5].groupNameNormal;
-
-            idollistAIds[6].href = idollistAIdsKoreanSortArray[6].href;
-            idollistAIds[6].querySelector("img").src = "7번";
-            idollistAIds[6].querySelector("img").alt = idollistAIdsKoreanSortArray[6].groupNameKor;
-            idollistAIds[6].querySelector("img").style.border = `5px solid ${idollistAIdsKoreanSortArray[6].borderColorHex}`;
-            idollistAIds[6].querySelector("div").style.border = `5px solid ${idollistAIdsKoreanSortArray[6].borderColorHex}`;
-            idollistAIds[6].querySelector("h4").innerHTML = idollistAIdsKoreanSortArray[6].groupNameNormal;
-
-            idollistAIds[7].href = idollistAIdsKoreanSortArray[7].href;
-            idollistAIds[7].querySelector("img").src = "8번";
-            idollistAIds[7].querySelector("img").alt = idollistAIdsKoreanSortArray[7].groupNameKor;
-            idollistAIds[7].querySelector("img").style.border = `5px solid ${idollistAIdsKoreanSortArray[7].borderColorHex}`;
-            idollistAIds[7].querySelector("div").style.border = `5px solid ${idollistAIdsKoreanSortArray[7].borderColorHex}`;
-            idollistAIds[7].querySelector("h4").innerHTML = idollistAIdsKoreanSortArray[7].groupNameNormal;
-
-            idollistAIds[8].href = idollistAIdsKoreanSortArray[8].href;
-            idollistAIds[8].querySelector("img").src = "9번";
-            idollistAIds[8].querySelector("img").alt = idollistAIdsKoreanSortArray[8].groupNameKor;
-            idollistAIds[8].querySelector("img").style.border = `5px solid ${idollistAIdsKoreanSortArray[8].borderColorHex}`;
-            idollistAIds[8].querySelector("div").style.border = `5px solid ${idollistAIdsKoreanSortArray[8].borderColorHex}`;
-            idollistAIds[8].querySelector("h4").innerHTML = idollistAIdsKoreanSortArray[8].groupNameNormal;
-
-            idollistAIds[9].href = idollistAIdsKoreanSortArray[9].href;
-            idollistAIds[9].querySelector("img").src = "10번";
-            idollistAIds[9].querySelector("img").alt = idollistAIdsKoreanSortArray[9].groupNameKor;
-            idollistAIds[9].querySelector("img").style.border = `5px solid ${idollistAIdsKoreanSortArray[9].borderColorHex}`;
-            idollistAIds[9].querySelector("div").style.border = `5px solid ${idollistAIdsKoreanSortArray[9].borderColorHex}`;
-            idollistAIds[9].querySelector("h4").innerHTML = idollistAIdsKoreanSortArray[9].groupNameNormal;
-
-            idollistAIds[10].href = idollistAIdsKoreanSortArray[10].href;
-            idollistAIds[10].querySelector("img").src = "11번";
-            idollistAIds[10].querySelector("img").alt = idollistAIdsKoreanSortArray[10].groupNameKor;
-            idollistAIds[10].querySelector("img").style.border = `5px solid ${idollistAIdsKoreanSortArray[10].borderColorHex}`;
-            idollistAIds[10].querySelector("div").style.border = `5px solid ${idollistAIdsKoreanSortArray[10].borderColorHex}`;
-            idollistAIds[10].querySelector("h4").innerHTML = idollistAIdsKoreanSortArray[10].groupNameNormal;
-
-            idollistAIds[11].href = idollistAIdsKoreanSortArray[11].href;
-            idollistAIds[11].querySelector("img").src = "12번";
-            idollistAIds[11].querySelector("img").alt = idollistAIdsKoreanSortArray[11].groupNameKor;
-            idollistAIds[11].querySelector("img").style.border = `5px solid ${idollistAIdsKoreanSortArray[11].borderColorHex}`;
-            idollistAIds[11].querySelector("div").style.border = `5px solid ${idollistAIdsKoreanSortArray[11].borderColorHex}`;
-            idollistAIds[11].querySelector("h4").innerHTML = idollistAIdsKoreanSortArray[11].groupNameNormal;
-
-            idollistAIds[12].href = idollistAIdsKoreanSortArray[12].href;
-            idollistAIds[12].querySelector("img").src = "13번";
-            idollistAIds[12].querySelector("img").alt = idollistAIdsKoreanSortArray[12].groupNameKor;
-            idollistAIds[12].querySelector("img").style.border = `5px solid ${idollistAIdsKoreanSortArray[12].borderColorHex}`;
-            idollistAIds[12].querySelector("div").style.border = `5px solid ${idollistAIdsKoreanSortArray[12].borderColorHex}`;
-            idollistAIds[12].querySelector("h4").innerHTML = idollistAIdsKoreanSortArray[12].groupNameNormal;
-
-            idollistAIds[13].href = idollistAIdsKoreanSortArray[13].href;
-            idollistAIds[13].querySelector("img").src = "14번";
-            idollistAIds[13].querySelector("img").alt = idollistAIdsKoreanSortArray[13].groupNameKor;
-            idollistAIds[13].querySelector("img").style.border = `5px solid ${idollistAIdsKoreanSortArray[13].borderColorHex}`;
-            idollistAIds[13].querySelector("div").style.border = `5px solid ${idollistAIdsKoreanSortArray[13].borderColorHex}`;
-            idollistAIds[13].querySelector("h4").innerHTML = idollistAIdsKoreanSortArray[13].groupNameNormal;
-
-            idollistAIds[14].href = idollistAIdsKoreanSortArray[14].href;
-            idollistAIds[14].querySelector("img").src = "15번";
-            idollistAIds[14].querySelector("img").alt = idollistAIdsKoreanSortArray[14].groupNameKor;
-            idollistAIds[14].querySelector("img").style.border = `5px solid ${idollistAIdsKoreanSortArray[14].borderColorHex}`;
-            idollistAIds[14].querySelector("div").style.border = `5px solid ${idollistAIdsKoreanSortArray[14].borderColorHex}`;
-            idollistAIds[14].querySelector("h4").innerHTML = idollistAIdsKoreanSortArray[14].groupNameNormal;
-
-            idollistAIds[15].href = idollistAIdsKoreanSortArray[15].href;
-            idollistAIds[15].querySelector("img").src = "16번";
-            idollistAIds[15].querySelector("img").alt = idollistAIdsKoreanSortArray[15].groupNameKor;
-            idollistAIds[15].querySelector("img").style.border = `5px solid ${idollistAIdsKoreanSortArray[15].borderColorHex}`;
-            idollistAIds[15].querySelector("div").style.border = `5px solid ${idollistAIdsKoreanSortArray[15].borderColorHex}`;
-            idollistAIds[15].querySelector("h4").innerHTML = idollistAIdsKoreanSortArray[15].groupNameNormal;
-
-            idollistAIds[16].href = idollistAIdsKoreanSortArray[16].href;
-            idollistAIds[16].querySelector("img").src = "17번";
-            idollistAIds[16].querySelector("img").alt = idollistAIdsKoreanSortArray[16].groupNameKor;
-            idollistAIds[16].querySelector("img").style.border = `5px solid ${idollistAIdsKoreanSortArray[16].borderColorHex}`;
-            idollistAIds[16].querySelector("div").style.border = `5px solid ${idollistAIdsKoreanSortArray[16].borderColorHex}`;
-            idollistAIds[16].querySelector("h4").innerHTML = idollistAIdsKoreanSortArray[16].groupNameNormal;
-
-            idollistAIds[17].href = idollistAIdsKoreanSortArray[17].href;
-            idollistAIds[17].querySelector("img").src = "18번";
-            idollistAIds[17].querySelector("img").alt = idollistAIdsKoreanSortArray[17].groupNameKor;
-            idollistAIds[17].querySelector("img").style.border = `5px solid ${idollistAIdsKoreanSortArray[17].borderColorHex}`;
-            idollistAIds[17].querySelector("div").style.border = `5px solid ${idollistAIdsKoreanSortArray[17].borderColorHex}`;
-            idollistAIds[17].querySelector("h4").innerHTML = idollistAIdsKoreanSortArray[17].groupNameNormal;
-
-            idollistAIds[18].href = idollistAIdsKoreanSortArray[18].href;
-            idollistAIds[18].querySelector("img").src = "19번";
-            idollistAIds[18].querySelector("img").alt = idollistAIdsKoreanSortArray[18].groupNameKor;
-            idollistAIds[18].querySelector("img").style.border = `5px solid ${idollistAIdsKoreanSortArray[18].borderColorHex}`;
-            idollistAIds[18].querySelector("div").style.border = `5px solid ${idollistAIdsKoreanSortArray[18].borderColorHex}`;
-            idollistAIds[18].querySelector("h4").innerHTML = idollistAIdsKoreanSortArray[18].groupNameNormal;
-
-            idollistAIds[19].href = idollistAIdsKoreanSortArray[19].href;
-            idollistAIds[19].querySelector("img").src = "20번";
-            idollistAIds[19].querySelector("img").alt = idollistAIdsKoreanSortArray[19].groupNameKor;
-            idollistAIds[19].querySelector("img").style.border = `5px solid ${idollistAIdsKoreanSortArray[19].borderColorHex}`;
-            idollistAIds[19].querySelector("div").style.border = `5px solid ${idollistAIdsKoreanSortArray[19].borderColorHex}`;
-            idollistAIds[19].querySelector("h4").innerHTML = idollistAIdsKoreanSortArray[19].groupNameNormal;
-
-            idollistAIds[20].href = idollistAIdsKoreanSortArray[20].href;
-            idollistAIds[20].querySelector("img").src = "21번";
-            idollistAIds[20].querySelector("img").alt = idollistAIdsKoreanSortArray[20].groupNameKor;
-            idollistAIds[20].querySelector("img").style.border = `5px solid ${idollistAIdsKoreanSortArray[20].borderColorHex}`;
-            idollistAIds[20].querySelector("div").style.border = `5px solid ${idollistAIdsKoreanSortArray[20].borderColorHex}`;
-            idollistAIds[20].querySelector("h4").innerHTML = idollistAIdsKoreanSortArray[20].groupNameNormal;
-
-            idollistAIds[21].href = idollistAIdsKoreanSortArray[21].href;
-            idollistAIds[21].querySelector("img").src = "22번";
-            idollistAIds[21].querySelector("img").alt = idollistAIdsKoreanSortArray[21].groupNameKor;
-            idollistAIds[21].querySelector("img").style.border = `5px solid ${idollistAIdsKoreanSortArray[21].borderColorHex}`;
-            idollistAIds[21].querySelector("div").style.border = `5px solid ${idollistAIdsKoreanSortArray[21].borderColorHex}`;
-            idollistAIds[21].querySelector("h4").innerHTML = idollistAIdsKoreanSortArray[21].groupNameNormal;
-
-            idollistAIds[22].href = idollistAIdsKoreanSortArray[22].href;
-            idollistAIds[22].querySelector("img").src = "23번";
-            idollistAIds[22].querySelector("img").alt = idollistAIdsKoreanSortArray[22].groupNameKor;
-            idollistAIds[22].querySelector("img").style.border = `5px solid ${idollistAIdsKoreanSortArray[22].borderColorHex}`;
-            idollistAIds[22].querySelector("div").style.border = `5px solid ${idollistAIdsKoreanSortArray[22].borderColorHex}`;
-            idollistAIds[22].querySelector("h4").innerHTML = idollistAIdsKoreanSortArray[22].groupNameNormal;
-
-            idollistAIds[23].href = idollistAIdsKoreanSortArray[23].href;
-            idollistAIds[23].querySelector("img").src = "24번";
-            idollistAIds[23].querySelector("img").alt = idollistAIdsKoreanSortArray[23].groupNameKor;
-            idollistAIds[23].querySelector("img").style.border = `5px solid ${idollistAIdsKoreanSortArray[23].borderColorHex}`;
-            idollistAIds[23].querySelector("div").style.border = `5px solid ${idollistAIdsKoreanSortArray[23].borderColorHex}`;
-            idollistAIds[23].querySelector("h4").innerHTML = idollistAIdsKoreanSortArray[23].groupNameNormal;
-        }
-        // 한국어 역정렬 실행 함수
-        function idollistAIdsKoreanReverseSortToArray() {
-
-            let idollistAIdsKoreanSortArray =
-                idollistAIdsKoreanSort(idollistAll);
-            idollistAIds[23].href = idollistAIdsKoreanSortArray[0].href;
-            idollistAIds[23].querySelector("img").src = "1번";
-            idollistAIds[23].querySelector("img").alt = idollistAIdsKoreanSortArray[0].groupNameKor;
-            idollistAIds[23].querySelector("img").style.border = `5px solid ${idollistAIdsKoreanSortArray[0].borderColorHex}`;
-            idollistAIds[23].querySelector("div").style.border = `5px solid ${idollistAIdsKoreanSortArray[0].borderColorHex}`;
-            idollistAIds[23].querySelector("h4").innerHTML = idollistAIdsKoreanSortArray[0].groupNameNormal;
-
-            idollistAIds[22].href = idollistAIdsKoreanSortArray[1].href;
-            idollistAIds[22].querySelector("img").src = "2번";
-            idollistAIds[22].querySelector("img").alt = idollistAIdsKoreanSortArray[1].groupNameKor;
-            idollistAIds[22].querySelector("img").style.border = `5px solid ${idollistAIdsKoreanSortArray[1].borderColorHex}`;
-            idollistAIds[22].querySelector("div").style.border = `5px solid ${idollistAIdsKoreanSortArray[1].borderColorHex}`;
-            idollistAIds[22].querySelector("h4").innerHTML = idollistAIdsKoreanSortArray[1].groupNameNormal;
-
-            idollistAIds[21].href = idollistAIdsKoreanSortArray[2].href;
-            idollistAIds[21].querySelector("img").src = "3번";
-            idollistAIds[21].querySelector("img").alt = idollistAIdsKoreanSortArray[2].groupNameKor;
-            idollistAIds[21].querySelector("img").style.border = `5px solid ${idollistAIdsKoreanSortArray[2].borderColorHex}`;
-            idollistAIds[21].querySelector("div").style.border = `5px solid ${idollistAIdsKoreanSortArray[2].borderColorHex}`;
-            idollistAIds[21].querySelector("h4").innerHTML = idollistAIdsKoreanSortArray[2].groupNameNormal;
-
-            idollistAIds[20].href = idollistAIdsKoreanSortArray[3].href;
-            idollistAIds[20].querySelector("img").src = "4번";
-            idollistAIds[20].querySelector("img").alt = idollistAIdsKoreanSortArray[3].groupNameKor;
-            idollistAIds[20].querySelector("img").style.border = `5px solid ${idollistAIdsKoreanSortArray[3].borderColorHex}`;
-            idollistAIds[20].querySelector("div").style.border = `5px solid ${idollistAIdsKoreanSortArray[3].borderColorHex}`;
-            idollistAIds[20].querySelector("h4").innerHTML = idollistAIdsKoreanSortArray[3].groupNameNormal;
-
-            idollistAIds[19].href = idollistAIdsKoreanSortArray[4].href;
-            idollistAIds[19].querySelector("img").src = "5번";
-            idollistAIds[19].querySelector("img").alt = idollistAIdsKoreanSortArray[4].groupNameKor;
-            idollistAIds[19].querySelector("img").style.border = `5px solid ${idollistAIdsKoreanSortArray[4].borderColorHex}`;
-            idollistAIds[19].querySelector("div").style.border = `5px solid ${idollistAIdsKoreanSortArray[4].borderColorHex}`;
-            idollistAIds[19].querySelector("h4").innerHTML = idollistAIdsKoreanSortArray[4].groupNameNormal;
-
-            idollistAIds[18].href = idollistAIdsKoreanSortArray[5].href;
-            idollistAIds[18].querySelector("img").src = "6번";
-            idollistAIds[18].querySelector("img").alt = idollistAIdsKoreanSortArray[5].groupNameKor;
-            idollistAIds[18].querySelector("img").style.border = `5px solid ${idollistAIdsKoreanSortArray[5].borderColorHex}`;
-            idollistAIds[18].querySelector("div").style.border = `5px solid ${idollistAIdsKoreanSortArray[5].borderColorHex}`;
-            idollistAIds[18].querySelector("h4").innerHTML = idollistAIdsKoreanSortArray[5].groupNameNormal;
-
-            idollistAIds[17].href = idollistAIdsKoreanSortArray[6].href;
-            idollistAIds[17].querySelector("img").src = "7번";
-            idollistAIds[17].querySelector("img").alt = idollistAIdsKoreanSortArray[6].groupNameKor;
-            idollistAIds[17].querySelector("img").style.border = `5px solid ${idollistAIdsKoreanSortArray[6].borderColorHex}`;
-            idollistAIds[17].querySelector("div").style.border = `5px solid ${idollistAIdsKoreanSortArray[6].borderColorHex}`;
-            idollistAIds[17].querySelector("h4").innerHTML = idollistAIdsKoreanSortArray[6].groupNameNormal;
-
-            idollistAIds[16].href = idollistAIdsKoreanSortArray[7].href;
-            idollistAIds[16].querySelector("img").src = "8번";
-            idollistAIds[16].querySelector("img").alt = idollistAIdsKoreanSortArray[7].groupNameKor;
-            idollistAIds[16].querySelector("img").style.border = `5px solid ${idollistAIdsKoreanSortArray[7].borderColorHex}`;
-            idollistAIds[16].querySelector("div").style.border = `5px solid ${idollistAIdsKoreanSortArray[7].borderColorHex}`;
-            idollistAIds[16].querySelector("h4").innerHTML = idollistAIdsKoreanSortArray[7].groupNameNormal;
-
-            idollistAIds[15].href = idollistAIdsKoreanSortArray[8].href;
-            idollistAIds[15].querySelector("img").src = "9번";
-            idollistAIds[15].querySelector("img").alt = idollistAIdsKoreanSortArray[8].groupNameKor;
-            idollistAIds[15].querySelector("img").style.border = `5px solid ${idollistAIdsKoreanSortArray[8].borderColorHex}`;
-            idollistAIds[15].querySelector("div").style.border = `5px solid ${idollistAIdsKoreanSortArray[8].borderColorHex}`;
-            idollistAIds[15].querySelector("h4").innerHTML = idollistAIdsKoreanSortArray[8].groupNameNormal;
-
-            idollistAIds[14].href = idollistAIdsKoreanSortArray[9].href;
-            idollistAIds[14].querySelector("img").src = "10번";
-            idollistAIds[14].querySelector("img").alt = idollistAIdsKoreanSortArray[9].groupNameKor;
-            idollistAIds[14].querySelector("img").style.border = `5px solid ${idollistAIdsKoreanSortArray[9].borderColorHex}`;
-            idollistAIds[14].querySelector("div").style.border = `5px solid ${idollistAIdsKoreanSortArray[9].borderColorHex}`;
-            idollistAIds[14].querySelector("h4").innerHTML = idollistAIdsKoreanSortArray[9].groupNameNormal;
-
-            idollistAIds[13].href = idollistAIdsKoreanSortArray[10].href;
-            idollistAIds[13].querySelector("img").src = "11번";
-            idollistAIds[13].querySelector("img").alt = idollistAIdsKoreanSortArray[10].groupNameKor;
-            idollistAIds[13].querySelector("img").style.border = `5px solid ${idollistAIdsKoreanSortArray[10].borderColorHex}`;
-            idollistAIds[13].querySelector("div").style.border = `5px solid ${idollistAIdsKoreanSortArray[10].borderColorHex}`;
-            idollistAIds[13].querySelector("h4").innerHTML = idollistAIdsKoreanSortArray[10].groupNameNormal;
-
-            idollistAIds[12].href = idollistAIdsKoreanSortArray[11].href;
-            idollistAIds[12].querySelector("img").src = "12번";
-            idollistAIds[12].querySelector("img").alt = idollistAIdsKoreanSortArray[11].groupNameKor;
-            idollistAIds[12].querySelector("img").style.border = `5px solid ${idollistAIdsKoreanSortArray[11].borderColorHex}`;
-            idollistAIds[12].querySelector("div").style.border = `5px solid ${idollistAIdsKoreanSortArray[11].borderColorHex}`;
-            idollistAIds[12].querySelector("h4").innerHTML = idollistAIdsKoreanSortArray[11].groupNameNormal;
-
-            idollistAIds[11].href = idollistAIdsKoreanSortArray[12].href;
-            idollistAIds[11].querySelector("img").src = "13번";
-            idollistAIds[11].querySelector("img").alt = idollistAIdsKoreanSortArray[12].groupNameKor;
-            idollistAIds[11].querySelector("img").style.border = `5px solid ${idollistAIdsKoreanSortArray[12].borderColorHex}`;
-            idollistAIds[11].querySelector("div").style.border = `5px solid ${idollistAIdsKoreanSortArray[12].borderColorHex}`;
-            idollistAIds[11].querySelector("h4").innerHTML = idollistAIdsKoreanSortArray[12].groupNameNormal;
-
-            idollistAIds[10].href = idollistAIdsKoreanSortArray[13].href;
-            idollistAIds[10].querySelector("img").src = "14번";
-            idollistAIds[10].querySelector("img").alt = idollistAIdsKoreanSortArray[13].groupNameKor;
-            idollistAIds[10].querySelector("img").style.border = `5px solid ${idollistAIdsKoreanSortArray[13].borderColorHex}`;
-            idollistAIds[10].querySelector("div").style.border = `5px solid ${idollistAIdsKoreanSortArray[13].borderColorHex}`;
-            idollistAIds[10].querySelector("h4").innerHTML = idollistAIdsKoreanSortArray[13].groupNameNormal;
-
-            idollistAIds[9].href = idollistAIdsKoreanSortArray[14].href;
-            idollistAIds[9].querySelector("img").src = "15번";
-            idollistAIds[9].querySelector("img").alt = idollistAIdsKoreanSortArray[14].groupNameKor;
-            idollistAIds[9].querySelector("img").style.border = `5px solid ${idollistAIdsKoreanSortArray[14].borderColorHex}`;
-            idollistAIds[9].querySelector("div").style.border = `5px solid ${idollistAIdsKoreanSortArray[14].borderColorHex}`;
-            idollistAIds[9].querySelector("h4").innerHTML = idollistAIdsKoreanSortArray[14].groupNameNormal;
-
-            idollistAIds[8].href = idollistAIdsKoreanSortArray[15].href;
-            idollistAIds[8].querySelector("img").src = "16번";
-            idollistAIds[8].querySelector("img").alt = idollistAIdsKoreanSortArray[15].groupNameKor;
-            idollistAIds[8].querySelector("img").style.border = `5px solid ${idollistAIdsKoreanSortArray[15].borderColorHex}`;
-            idollistAIds[8].querySelector("div").style.border = `5px solid ${idollistAIdsKoreanSortArray[15].borderColorHex}`;
-            idollistAIds[8].querySelector("h4").innerHTML = idollistAIdsKoreanSortArray[15].groupNameNormal;
-
-            idollistAIds[7].href = idollistAIdsKoreanSortArray[16].href;
-            idollistAIds[7].querySelector("img").src = "17번";
-            idollistAIds[7].querySelector("img").alt = idollistAIdsKoreanSortArray[16].groupNameKor;
-            idollistAIds[7].querySelector("img").style.border = `5px solid ${idollistAIdsKoreanSortArray[16].borderColorHex}`;
-            idollistAIds[7].querySelector("div").style.border = `5px solid ${idollistAIdsKoreanSortArray[16].borderColorHex}`;
-            idollistAIds[7].querySelector("h4").innerHTML = idollistAIdsKoreanSortArray[16].groupNameNormal;
-
-            idollistAIds[6].href = idollistAIdsKoreanSortArray[17].href;
-            idollistAIds[6].querySelector("img").src = "18번";
-            idollistAIds[6].querySelector("img").alt = idollistAIdsKoreanSortArray[17].groupNameKor;
-            idollistAIds[6].querySelector("img").style.border = `5px solid ${idollistAIdsKoreanSortArray[17].borderColorHex}`;
-            idollistAIds[6].querySelector("div").style.border = `5px solid ${idollistAIdsKoreanSortArray[17].borderColorHex}`;
-            idollistAIds[6].querySelector("h4").innerHTML = idollistAIdsKoreanSortArray[17].groupNameNormal;
-
-            idollistAIds[5].href = idollistAIdsKoreanSortArray[18].href;
-            idollistAIds[5].querySelector("img").src = "19번";
-            idollistAIds[5].querySelector("img").alt = idollistAIdsKoreanSortArray[18].groupNameKor;
-            idollistAIds[5].querySelector("img").style.border = `5px solid ${idollistAIdsKoreanSortArray[18].borderColorHex}`;
-            idollistAIds[5].querySelector("div").style.border = `5px solid ${idollistAIdsKoreanSortArray[18].borderColorHex}`;
-            idollistAIds[5].querySelector("h4").innerHTML = idollistAIdsKoreanSortArray[18].groupNameNormal;
-
-            idollistAIds[4].href = idollistAIdsKoreanSortArray[19].href;
-            idollistAIds[4].querySelector("img").src = "20번";
-            idollistAIds[4].querySelector("img").alt = idollistAIdsKoreanSortArray[19].groupNameKor;
-            idollistAIds[4].querySelector("img").style.border = `5px solid ${idollistAIdsKoreanSortArray[19].borderColorHex}`;
-            idollistAIds[4].querySelector("div").style.border = `5px solid ${idollistAIdsKoreanSortArray[19].borderColorHex}`;
-            idollistAIds[4].querySelector("h4").innerHTML = idollistAIdsKoreanSortArray[19].groupNameNormal;
-
-            idollistAIds[3].href = idollistAIdsKoreanSortArray[20].href;
-            idollistAIds[3].querySelector("img").src = "21번";
-            idollistAIds[3].querySelector("img").alt = idollistAIdsKoreanSortArray[20].groupNameKor;
-            idollistAIds[3].querySelector("img").style.border = `5px solid ${idollistAIdsKoreanSortArray[20].borderColorHex}`;
-            idollistAIds[3].querySelector("div").style.border = `5px solid ${idollistAIdsKoreanSortArray[20].borderColorHex}`;
-            idollistAIds[3].querySelector("h4").innerHTML = idollistAIdsKoreanSortArray[20].groupNameNormal;
-
-            idollistAIds[2].href = idollistAIdsKoreanSortArray[21].href;
-            idollistAIds[2].querySelector("img").src = "22번";
-            idollistAIds[2].querySelector("img").alt = idollistAIdsKoreanSortArray[21].groupNameKor;
-            idollistAIds[2].querySelector("img").style.border = `5px solid ${idollistAIdsKoreanSortArray[21].borderColorHex}`;
-            idollistAIds[2].querySelector("div").style.border = `5px solid ${idollistAIdsKoreanSortArray[21].borderColorHex}`;
-            idollistAIds[2].querySelector("h4").innerHTML = idollistAIdsKoreanSortArray[21].groupNameNormal;
-
-            idollistAIds[1].href = idollistAIdsKoreanSortArray[22].href;
-            idollistAIds[1].querySelector("img").src = "23번";
-            idollistAIds[1].querySelector("img").alt = idollistAIdsKoreanSortArray[22].groupNameKor;
-            idollistAIds[1].querySelector("img").style.border = `5px solid ${idollistAIdsKoreanSortArray[22].borderColorHex}`;
-            idollistAIds[1].querySelector("div").style.border = `5px solid ${idollistAIdsKoreanSortArray[22].borderColorHex}`;
-            idollistAIds[1].querySelector("h4").innerHTML = idollistAIdsKoreanSortArray[22].groupNameNormal;
-
-            idollistAIds[0].href = idollistAIdsKoreanSortArray[23].href;
-            idollistAIds[0].querySelector("img").src = "24번";
-            idollistAIds[0].querySelector("img").alt = idollistAIdsKoreanSortArray[23].groupNameKor;
-            idollistAIds[0].querySelector("img").style.border = `5px solid ${idollistAIdsKoreanSortArray[23].borderColorHex}`;
-            idollistAIds[0].querySelector("div").style.border = `5px solid ${idollistAIdsKoreanSortArray[23].borderColorHex}`;
-            idollistAIds[0].querySelector("h4").innerHTML = idollistAIdsKoreanSortArray[23].groupNameNormal;
-
-        }
-
-        // 영어 순정렬 함수
-        function idollistAIdsEnglishSort(idollistAll) {
-
-            let idollistLength = idollistAll.length;
-
-            // 재귀 종료 조건
-            if (idollistLength <= 1) {
-                return idollistAll;
-            }
-
-            // 피벗 인덱스 및 객체
-            let idollistPivotIndex = Math.floor(idollistLength / 2);
-            let idollistPivot = idollistAll[idollistPivotIndex];
-
-            let idollistLeftArray = [];
-            let idollistRightArray = [];
-
-            for (let n = 0; n < idollistLength; n++) {
-
-                // 피벗 자체는 비교 대상에서 제외
-                if (n === idollistPivotIndex) {
-                    continue;
-                }
-
-                if (
-                    idollistAll[n].groupNameEng.localeCompare(
-                        idollistPivot.groupNameEng,
-                        //대소문자 구분없이
-                        "en", {
+            if (
+                idollistAll[n].groupNameEng.localeCompare(
+                    idollistPivot.groupNameEng,
+                    //대소문자 구분없이
+                    "en", {
                         sensitivity: "base"
                     }
-                    ) < 0
-                ) {
-                    idollistLeftArray.push(idollistAll[n]);
+                ) < 0
+            ) {
+                idollistLeftArray.push(idollistAll[n]);
 
-                } else {
-                    idollistRightArray.push(idollistAll[n]);
-                }
+            } else {
+                idollistRightArray.push(idollistAll[n]);
             }
-
-            return idollistAIdsEnglishSort(idollistLeftArray)
-                .concat([idollistPivot])
-                .concat(idollistAIdsEnglishSort(idollistRightArray));
-        }
-        // 영어 순정렬 실행 함수
-        function idollistAIdsEnglishSortToArray() {
-
-            let idollistAIdsEnglishSortArray =
-                idollistAIdsEnglishSort(idollistAll);
-            idollistAIds[0].href = idollistAIdsEnglishSortArray[0].href;
-            idollistAIds[0].querySelector("img").src = "";
-            idollistAIds[0].querySelector("img").alt = idollistAIdsEnglishSortArray[0].groupNameEng;
-            idollistAIds[0].querySelector("img").style.border = `5px solid ${idollistAIdsEnglishSortArray[0].borderColorHex}`;
-            idollistAIds[0].querySelector("div").style.border = `5px solid ${idollistAIdsEnglishSortArray[0].borderColorHex}`;
-            idollistAIds[0].querySelector("h4").innerHTML = idollistAIdsEnglishSortArray[0].groupNameNormal;
-
-            idollistAIds[1].href = idollistAIdsEnglishSortArray[1].href;
-            idollistAIds[1].querySelector("img").src = "2번";
-            idollistAIds[1].querySelector("img").alt = idollistAIdsEnglishSortArray[1].groupNameEng;
-            idollistAIds[1].querySelector("img").style.border = `5px solid ${idollistAIdsEnglishSortArray[1].borderColorHex}`;
-            idollistAIds[1].querySelector("div").style.border = `5px solid ${idollistAIdsEnglishSortArray[1].borderColorHex}`;
-            idollistAIds[1].querySelector("h4").innerHTML = idollistAIdsEnglishSortArray[1].groupNameNormal;
-
-            idollistAIds[2].href = idollistAIdsEnglishSortArray[2].href;
-            idollistAIds[2].querySelector("img").src = "3번";
-            idollistAIds[2].querySelector("img").alt = idollistAIdsEnglishSortArray[2].groupNameEng;
-            idollistAIds[2].querySelector("img").style.border = `5px solid ${idollistAIdsEnglishSortArray[2].borderColorHex}`;
-            idollistAIds[2].querySelector("div").style.border = `5px solid ${idollistAIdsEnglishSortArray[2].borderColorHex}`;
-            idollistAIds[2].querySelector("h4").innerHTML = idollistAIdsEnglishSortArray[2].groupNameNormal;
-
-            idollistAIds[3].href = idollistAIdsEnglishSortArray[3].href;
-            idollistAIds[3].querySelector("img").src = "4번";
-            idollistAIds[3].querySelector("img").alt = idollistAIdsEnglishSortArray[3].groupNameEng;
-            idollistAIds[3].querySelector("img").style.border = `5px solid ${idollistAIdsEnglishSortArray[3].borderColorHex}`;
-            idollistAIds[3].querySelector("div").style.border = `5px solid ${idollistAIdsEnglishSortArray[3].borderColorHex}`;
-            idollistAIds[3].querySelector("h4").innerHTML = idollistAIdsEnglishSortArray[3].groupNameNormal;
-
-            idollistAIds[4].href = idollistAIdsEnglishSortArray[4].href;
-            idollistAIds[4].querySelector("img").src = "5번";
-            idollistAIds[4].querySelector("img").alt = idollistAIdsEnglishSortArray[4].groupNameEng;
-            idollistAIds[4].querySelector("img").style.border = `5px solid ${idollistAIdsEnglishSortArray[4].borderColorHex}`;
-            idollistAIds[4].querySelector("div").style.border = `5px solid ${idollistAIdsEnglishSortArray[4].borderColorHex}`;
-            idollistAIds[4].querySelector("h4").innerHTML = idollistAIdsEnglishSortArray[4].groupNameNormal;
-
-            idollistAIds[5].href = idollistAIdsEnglishSortArray[5].href;
-            idollistAIds[5].querySelector("img").src = "6번";
-            idollistAIds[5].querySelector("img").alt = idollistAIdsEnglishSortArray[5].groupNameEng;
-            idollistAIds[5].querySelector("img").style.border = `5px solid ${idollistAIdsEnglishSortArray[5].borderColorHex}`;
-            idollistAIds[5].querySelector("div").style.border = `5px solid ${idollistAIdsEnglishSortArray[5].borderColorHex}`;
-            idollistAIds[5].querySelector("h4").innerHTML = idollistAIdsEnglishSortArray[5].groupNameNormal;
-
-            idollistAIds[6].href = idollistAIdsEnglishSortArray[6].href;
-            idollistAIds[6].querySelector("img").src = "7번";
-            idollistAIds[6].querySelector("img").alt = idollistAIdsEnglishSortArray[6].groupNameEng;
-            idollistAIds[6].querySelector("img").style.border = `5px solid ${idollistAIdsEnglishSortArray[6].borderColorHex}`;
-            idollistAIds[6].querySelector("div").style.border = `5px solid ${idollistAIdsEnglishSortArray[6].borderColorHex}`;
-            idollistAIds[6].querySelector("h4").innerHTML = idollistAIdsEnglishSortArray[6].groupNameNormal;
-
-            idollistAIds[7].href = idollistAIdsEnglishSortArray[7].href;
-            idollistAIds[7].querySelector("img").src = "8번";
-            idollistAIds[7].querySelector("img").alt = idollistAIdsEnglishSortArray[7].groupNameEng;
-            idollistAIds[7].querySelector("img").style.border = `5px solid ${idollistAIdsEnglishSortArray[7].borderColorHex}`;
-            idollistAIds[7].querySelector("div").style.border = `5px solid ${idollistAIdsEnglishSortArray[7].borderColorHex}`;
-            idollistAIds[7].querySelector("h4").innerHTML = idollistAIdsEnglishSortArray[7].groupNameNormal;
-
-            idollistAIds[8].href = idollistAIdsEnglishSortArray[8].href;
-            idollistAIds[8].querySelector("img").src = "9번";
-            idollistAIds[8].querySelector("img").alt = idollistAIdsEnglishSortArray[8].groupNameEng;
-            idollistAIds[8].querySelector("img").style.border = `5px solid ${idollistAIdsEnglishSortArray[8].borderColorHex}`;
-            idollistAIds[8].querySelector("div").style.border = `5px solid ${idollistAIdsEnglishSortArray[8].borderColorHex}`;
-            idollistAIds[8].querySelector("h4").innerHTML = idollistAIdsEnglishSortArray[8].groupNameNormal;
-
-            idollistAIds[9].href = idollistAIdsEnglishSortArray[9].href;
-            idollistAIds[9].querySelector("img").src = "10번";
-            idollistAIds[9].querySelector("img").alt = idollistAIdsEnglishSortArray[9].groupNameEng;
-            idollistAIds[9].querySelector("img").style.border = `5px solid ${idollistAIdsEnglishSortArray[9].borderColorHex}`;
-            idollistAIds[9].querySelector("div").style.border = `5px solid ${idollistAIdsEnglishSortArray[9].borderColorHex}`;
-            idollistAIds[9].querySelector("h4").innerHTML = idollistAIdsEnglishSortArray[9].groupNameNormal;
-
-            idollistAIds[10].href = idollistAIdsEnglishSortArray[10].href;
-            idollistAIds[10].querySelector("img").src = "11번";
-            idollistAIds[10].querySelector("img").alt = idollistAIdsEnglishSortArray[10].groupNameEng;
-            idollistAIds[10].querySelector("img").style.border = `5px solid ${idollistAIdsEnglishSortArray[10].borderColorHex}`;
-            idollistAIds[10].querySelector("div").style.border = `5px solid ${idollistAIdsEnglishSortArray[10].borderColorHex}`;
-            idollistAIds[10].querySelector("h4").innerHTML = idollistAIdsEnglishSortArray[10].groupNameNormal;
-
-            idollistAIds[11].href = idollistAIdsEnglishSortArray[11].href;
-            idollistAIds[11].querySelector("img").src = "12번";
-            idollistAIds[11].querySelector("img").alt = idollistAIdsEnglishSortArray[11].groupNameEng;
-            idollistAIds[11].querySelector("img").style.border = `5px solid ${idollistAIdsEnglishSortArray[11].borderColorHex}`;
-            idollistAIds[11].querySelector("div").style.border = `5px solid ${idollistAIdsEnglishSortArray[11].borderColorHex}`;
-            idollistAIds[11].querySelector("h4").innerHTML = idollistAIdsEnglishSortArray[11].groupNameNormal;
-
-            idollistAIds[12].href = idollistAIdsEnglishSortArray[12].href;
-            idollistAIds[12].querySelector("img").src = "13번";
-            idollistAIds[12].querySelector("img").alt = idollistAIdsEnglishSortArray[12].groupNameEng;
-            idollistAIds[12].querySelector("img").style.border = `5px solid ${idollistAIdsEnglishSortArray[12].borderColorHex}`;
-            idollistAIds[12].querySelector("div").style.border = `5px solid ${idollistAIdsEnglishSortArray[12].borderColorHex}`;
-            idollistAIds[12].querySelector("h4").innerHTML = idollistAIdsEnglishSortArray[12].groupNameNormal;
-
-            idollistAIds[13].href = idollistAIdsEnglishSortArray[13].href;
-            idollistAIds[13].querySelector("img").src = "14번";
-            idollistAIds[13].querySelector("img").alt = idollistAIdsEnglishSortArray[13].groupNameEng;
-            idollistAIds[13].querySelector("img").style.border = `5px solid ${idollistAIdsEnglishSortArray[13].borderColorHex}`;
-            idollistAIds[13].querySelector("div").style.border = `5px solid ${idollistAIdsEnglishSortArray[13].borderColorHex}`;
-            idollistAIds[13].querySelector("h4").innerHTML = idollistAIdsEnglishSortArray[13].groupNameNormal;
-
-            idollistAIds[14].href = idollistAIdsEnglishSortArray[14].href;
-            idollistAIds[14].querySelector("img").src = "15번";
-            idollistAIds[14].querySelector("img").alt = idollistAIdsEnglishSortArray[14].groupNameEng;
-            idollistAIds[14].querySelector("img").style.border = `5px solid ${idollistAIdsEnglishSortArray[14].borderColorHex}`;
-            idollistAIds[14].querySelector("div").style.border = `5px solid ${idollistAIdsEnglishSortArray[14].borderColorHex}`;
-            idollistAIds[14].querySelector("h4").innerHTML = idollistAIdsEnglishSortArray[14].groupNameNormal;
-
-            idollistAIds[15].href = idollistAIdsEnglishSortArray[15].href;
-            idollistAIds[15].querySelector("img").src = "16번";
-            idollistAIds[15].querySelector("img").alt = idollistAIdsEnglishSortArray[15].groupNameEng;
-            idollistAIds[15].querySelector("img").style.border = `5px solid ${idollistAIdsEnglishSortArray[15].borderColorHex}`;
-            idollistAIds[15].querySelector("div").style.border = `5px solid ${idollistAIdsEnglishSortArray[15].borderColorHex}`;
-            idollistAIds[15].querySelector("h4").innerHTML = idollistAIdsEnglishSortArray[15].groupNameNormal;
-
-            idollistAIds[16].href = idollistAIdsEnglishSortArray[16].href;
-            idollistAIds[16].querySelector("img").src = "17번";
-            idollistAIds[16].querySelector("img").alt = idollistAIdsEnglishSortArray[16].groupNameEng;
-            idollistAIds[16].querySelector("img").style.border = `5px solid ${idollistAIdsEnglishSortArray[16].borderColorHex}`;
-            idollistAIds[16].querySelector("div").style.border = `5px solid ${idollistAIdsEnglishSortArray[16].borderColorHex}`;
-            idollistAIds[16].querySelector("h4").innerHTML = idollistAIdsEnglishSortArray[16].groupNameNormal;
-
-            idollistAIds[17].href = idollistAIdsEnglishSortArray[17].href;
-            idollistAIds[17].querySelector("img").src = "18번";
-            idollistAIds[17].querySelector("img").alt = idollistAIdsEnglishSortArray[17].groupNameEng;
-            idollistAIds[17].querySelector("img").style.border = `5px solid ${idollistAIdsEnglishSortArray[17].borderColorHex}`;
-            idollistAIds[17].querySelector("div").style.border = `5px solid ${idollistAIdsEnglishSortArray[17].borderColorHex}`;
-            idollistAIds[17].querySelector("h4").innerHTML = idollistAIdsEnglishSortArray[17].groupNameNormal;
-
-            idollistAIds[18].href = idollistAIdsEnglishSortArray[18].href;
-            idollistAIds[18].querySelector("img").src = "19번";
-            idollistAIds[18].querySelector("img").alt = idollistAIdsEnglishSortArray[18].groupNameEng;
-            idollistAIds[18].querySelector("img").style.border = `5px solid ${idollistAIdsEnglishSortArray[18].borderColorHex}`;
-            idollistAIds[18].querySelector("div").style.border = `5px solid ${idollistAIdsEnglishSortArray[18].borderColorHex}`;
-            idollistAIds[18].querySelector("h4").innerHTML = idollistAIdsEnglishSortArray[18].groupNameNormal;
-
-            idollistAIds[19].href = idollistAIdsEnglishSortArray[19].href;
-            idollistAIds[19].querySelector("img").src = "20번";
-            idollistAIds[19].querySelector("img").alt = idollistAIdsEnglishSortArray[19].groupNameEng;
-            idollistAIds[19].querySelector("img").style.border = `5px solid ${idollistAIdsEnglishSortArray[19].borderColorHex}`;
-            idollistAIds[19].querySelector("div").style.border = `5px solid ${idollistAIdsEnglishSortArray[19].borderColorHex}`;
-            idollistAIds[19].querySelector("h4").innerHTML = idollistAIdsEnglishSortArray[19].groupNameNormal;
-
-            idollistAIds[20].href = idollistAIdsEnglishSortArray[20].href;
-            idollistAIds[20].querySelector("img").src = "21번";
-            idollistAIds[20].querySelector("img").alt = idollistAIdsEnglishSortArray[20].groupNameEng;
-            idollistAIds[20].querySelector("img").style.border = `5px solid ${idollistAIdsEnglishSortArray[20].borderColorHex}`;
-            idollistAIds[20].querySelector("div").style.border = `5px solid ${idollistAIdsEnglishSortArray[20].borderColorHex}`;
-            idollistAIds[20].querySelector("h4").innerHTML = idollistAIdsEnglishSortArray[20].groupNameNormal;
-
-            idollistAIds[21].href = idollistAIdsEnglishSortArray[21].href;
-            idollistAIds[21].querySelector("img").src = "22번";
-            idollistAIds[21].querySelector("img").alt = idollistAIdsEnglishSortArray[21].groupNameEng;
-            idollistAIds[21].querySelector("img").style.border = `5px solid ${idollistAIdsEnglishSortArray[21].borderColorHex}`;
-            idollistAIds[21].querySelector("div").style.border = `5px solid ${idollistAIdsEnglishSortArray[21].borderColorHex}`;
-            idollistAIds[21].querySelector("h4").innerHTML = idollistAIdsEnglishSortArray[21].groupNameNormal;
-
-            idollistAIds[22].href = idollistAIdsEnglishSortArray[22].href;
-            idollistAIds[22].querySelector("img").src = "23번";
-            idollistAIds[22].querySelector("img").alt = idollistAIdsEnglishSortArray[22].groupNameEng;
-            idollistAIds[22].querySelector("img").style.border = `5px solid ${idollistAIdsEnglishSortArray[22].borderColorHex}`;
-            idollistAIds[22].querySelector("div").style.border = `5px solid ${idollistAIdsEnglishSortArray[22].borderColorHex}`;
-            idollistAIds[22].querySelector("h4").innerHTML = idollistAIdsEnglishSortArray[22].groupNameNormal;
-
-            idollistAIds[23].href = idollistAIdsEnglishSortArray[23].href;
-            idollistAIds[23].querySelector("img").src = "24번";
-            idollistAIds[23].querySelector("img").alt = idollistAIdsEnglishSortArray[23].groupNameEng;
-            idollistAIds[23].querySelector("img").style.border = `5px solid ${idollistAIdsEnglishSortArray[23].borderColorHex}`;
-            idollistAIds[23].querySelector("div").style.border = `5px solid ${idollistAIdsEnglishSortArray[23].borderColorHex}`;
-            idollistAIds[23].querySelector("h4").innerHTML = idollistAIdsEnglishSortArray[23].groupNameNormal;
-        }
-        // 영어 역정렬 실행 함수
-        function idollistAIdsEnglishReverseSortToArray() {
-
-            let idollistAIdsEnglishSortArray =
-                idollistAIdsEnglishSort(idollistAll);
-            idollistAIds[23].href = idollistAIdsEnglishSortArray[0].href;
-            idollistAIds[23].querySelector("img").src = "";
-            idollistAIds[23].querySelector("img").alt = idollistAIdsEnglishSortArray[0].groupNameEng;
-            idollistAIds[23].querySelector("img").style.border = `5px solid ${idollistAIdsEnglishSortArray[0].borderColorHex}`;
-            idollistAIds[23].querySelector("div").style.border = `5px solid ${idollistAIdsEnglishSortArray[0].borderColorHex}`;
-            idollistAIds[23].querySelector("h4").innerHTML = idollistAIdsEnglishSortArray[0].groupNameNormal;
-
-            idollistAIds[22].href = idollistAIdsEnglishSortArray[1].href;
-            idollistAIds[22].querySelector("img").src = "2번";
-            idollistAIds[22].querySelector("img").alt = idollistAIdsEnglishSortArray[1].groupNameEng;
-            idollistAIds[22].querySelector("img").style.border = `5px solid ${idollistAIdsEnglishSortArray[1].borderColorHex}`;
-            idollistAIds[22].querySelector("div").style.border = `5px solid ${idollistAIdsEnglishSortArray[1].borderColorHex}`;
-            idollistAIds[22].querySelector("h4").innerHTML = idollistAIdsEnglishSortArray[1].groupNameNormal;
-
-            idollistAIds[21].href = idollistAIdsEnglishSortArray[2].href;
-            idollistAIds[21].querySelector("img").src = "3번";
-            idollistAIds[21].querySelector("img").alt = idollistAIdsEnglishSortArray[2].groupNameEng;
-            idollistAIds[21].querySelector("img").style.border = `5px solid ${idollistAIdsEnglishSortArray[2].borderColorHex}`;
-            idollistAIds[21].querySelector("div").style.border = `5px solid ${idollistAIdsEnglishSortArray[2].borderColorHex}`;
-            idollistAIds[21].querySelector("h4").innerHTML = idollistAIdsEnglishSortArray[2].groupNameNormal;
-
-            idollistAIds[20].href = idollistAIdsEnglishSortArray[3].href;
-            idollistAIds[20].querySelector("img").src = "4번";
-            idollistAIds[20].querySelector("img").alt = idollistAIdsEnglishSortArray[3].groupNameEng;
-            idollistAIds[20].querySelector("img").style.border = `5px solid ${idollistAIdsEnglishSortArray[3].borderColorHex}`;
-            idollistAIds[20].querySelector("div").style.border = `5px solid ${idollistAIdsEnglishSortArray[3].borderColorHex}`;
-            idollistAIds[20].querySelector("h4").innerHTML = idollistAIdsEnglishSortArray[3].groupNameNormal;
-
-            idollistAIds[19].href = idollistAIdsEnglishSortArray[4].href;
-            idollistAIds[19].querySelector("img").src = "5번";
-            idollistAIds[19].querySelector("img").alt = idollistAIdsEnglishSortArray[4].groupNameEng;
-            idollistAIds[19].querySelector("img").style.border = `5px solid ${idollistAIdsEnglishSortArray[4].borderColorHex}`;
-            idollistAIds[19].querySelector("div").style.border = `5px solid ${idollistAIdsEnglishSortArray[4].borderColorHex}`;
-            idollistAIds[19].querySelector("h4").innerHTML = idollistAIdsEnglishSortArray[4].groupNameNormal;
-
-            idollistAIds[18].href = idollistAIdsEnglishSortArray[5].href;
-            idollistAIds[18].querySelector("img").src = "6번";
-            idollistAIds[18].querySelector("img").alt = idollistAIdsEnglishSortArray[5].groupNameEng;
-            idollistAIds[18].querySelector("img").style.border = `5px solid ${idollistAIdsEnglishSortArray[5].borderColorHex}`;
-            idollistAIds[18].querySelector("div").style.border = `5px solid ${idollistAIdsEnglishSortArray[5].borderColorHex}`;
-            idollistAIds[18].querySelector("h4").innerHTML = idollistAIdsEnglishSortArray[5].groupNameNormal;
-
-            idollistAIds[17].href = idollistAIdsEnglishSortArray[6].href;
-            idollistAIds[17].querySelector("img").src = "7번";
-            idollistAIds[17].querySelector("img").alt = idollistAIdsEnglishSortArray[6].groupNameEng;
-            idollistAIds[17].querySelector("img").style.border = `5px solid ${idollistAIdsEnglishSortArray[6].borderColorHex}`;
-            idollistAIds[17].querySelector("div").style.border = `5px solid ${idollistAIdsEnglishSortArray[6].borderColorHex}`;
-            idollistAIds[17].querySelector("h4").innerHTML = idollistAIdsEnglishSortArray[6].groupNameNormal;
-
-            idollistAIds[16].href = idollistAIdsEnglishSortArray[7].href;
-            idollistAIds[16].querySelector("img").src = "8번";
-            idollistAIds[16].querySelector("img").alt = idollistAIdsEnglishSortArray[7].groupNameEng;
-            idollistAIds[16].querySelector("img").style.border = `5px solid ${idollistAIdsEnglishSortArray[7].borderColorHex}`;
-            idollistAIds[16].querySelector("div").style.border = `5px solid ${idollistAIdsEnglishSortArray[7].borderColorHex}`;
-            idollistAIds[16].querySelector("h4").innerHTML = idollistAIdsEnglishSortArray[7].groupNameNormal;
-
-            idollistAIds[15].href = idollistAIdsEnglishSortArray[8].href;
-            idollistAIds[15].querySelector("img").src = "9번";
-            idollistAIds[15].querySelector("img").alt = idollistAIdsEnglishSortArray[8].groupNameEng;
-            idollistAIds[15].querySelector("img").style.border = `5px solid ${idollistAIdsEnglishSortArray[8].borderColorHex}`;
-            idollistAIds[15].querySelector("div").style.border = `5px solid ${idollistAIdsEnglishSortArray[8].borderColorHex}`;
-            idollistAIds[15].querySelector("h4").innerHTML = idollistAIdsEnglishSortArray[8].groupNameNormal;
-
-            idollistAIds[14].href = idollistAIdsEnglishSortArray[9].href;
-            idollistAIds[14].querySelector("img").src = "10번";
-            idollistAIds[14].querySelector("img").alt = idollistAIdsEnglishSortArray[9].groupNameEng;
-            idollistAIds[14].querySelector("img").style.border = `5px solid ${idollistAIdsEnglishSortArray[9].borderColorHex}`;
-            idollistAIds[14].querySelector("div").style.border = `5px solid ${idollistAIdsEnglishSortArray[9].borderColorHex}`;
-            idollistAIds[14].querySelector("h4").innerHTML = idollistAIdsEnglishSortArray[9].groupNameNormal;
-
-            idollistAIds[13].href = idollistAIdsEnglishSortArray[10].href;
-            idollistAIds[13].querySelector("img").src = "11번";
-            idollistAIds[13].querySelector("img").alt = idollistAIdsEnglishSortArray[10].groupNameEng;
-            idollistAIds[13].querySelector("img").style.border = `5px solid ${idollistAIdsEnglishSortArray[10].borderColorHex}`;
-            idollistAIds[13].querySelector("div").style.border = `5px solid ${idollistAIdsEnglishSortArray[10].borderColorHex}`;
-            idollistAIds[13].querySelector("h4").innerHTML = idollistAIdsEnglishSortArray[10].groupNameNormal;
-
-            idollistAIds[12].href = idollistAIdsEnglishSortArray[11].href;
-            idollistAIds[12].querySelector("img").src = "12번";
-            idollistAIds[12].querySelector("img").alt = idollistAIdsEnglishSortArray[11].groupNameEng;
-            idollistAIds[12].querySelector("img").style.border = `5px solid ${idollistAIdsEnglishSortArray[11].borderColorHex}`;
-            idollistAIds[12].querySelector("div").style.border = `5px solid ${idollistAIdsEnglishSortArray[11].borderColorHex}`;
-            idollistAIds[12].querySelector("h4").innerHTML = idollistAIdsEnglishSortArray[11].groupNameNormal;
-
-            idollistAIds[11].href = idollistAIdsEnglishSortArray[12].href;
-            idollistAIds[11].querySelector("img").src = "13번";
-            idollistAIds[11].querySelector("img").alt = idollistAIdsEnglishSortArray[12].groupNameEng;
-            idollistAIds[11].querySelector("img").style.border = `5px solid ${idollistAIdsEnglishSortArray[12].borderColorHex}`;
-            idollistAIds[11].querySelector("div").style.border = `5px solid ${idollistAIdsEnglishSortArray[12].borderColorHex}`;
-            idollistAIds[11].querySelector("h4").innerHTML = idollistAIdsEnglishSortArray[12].groupNameNormal;
-
-            idollistAIds[10].href = idollistAIdsEnglishSortArray[13].href;
-            idollistAIds[10].querySelector("img").src = "14번";
-            idollistAIds[10].querySelector("img").alt = idollistAIdsEnglishSortArray[13].groupNameEng;
-            idollistAIds[10].querySelector("img").style.border = `5px solid ${idollistAIdsEnglishSortArray[13].borderColorHex}`;
-            idollistAIds[10].querySelector("div").style.border = `5px solid ${idollistAIdsEnglishSortArray[13].borderColorHex}`;
-            idollistAIds[10].querySelector("h4").innerHTML = idollistAIdsEnglishSortArray[13].groupNameNormal;
-
-            idollistAIds[9].href = idollistAIdsEnglishSortArray[14].href;
-            idollistAIds[9].querySelector("img").src = "15번";
-            idollistAIds[9].querySelector("img").alt = idollistAIdsEnglishSortArray[14].groupNameEng;
-            idollistAIds[9].querySelector("img").style.border = `5px solid ${idollistAIdsEnglishSortArray[14].borderColorHex}`;
-            idollistAIds[9].querySelector("div").style.border = `5px solid ${idollistAIdsEnglishSortArray[14].borderColorHex}`;
-            idollistAIds[9].querySelector("h4").innerHTML = idollistAIdsEnglishSortArray[14].groupNameNormal;
-
-            idollistAIds[8].href = idollistAIdsEnglishSortArray[15].href;
-            idollistAIds[8].querySelector("img").src = "16번";
-            idollistAIds[8].querySelector("img").alt = idollistAIdsEnglishSortArray[15].groupNameEng;
-            idollistAIds[8].querySelector("img").style.border = `5px solid ${idollistAIdsEnglishSortArray[15].borderColorHex}`;
-            idollistAIds[8].querySelector("div").style.border = `5px solid ${idollistAIdsEnglishSortArray[15].borderColorHex}`;
-            idollistAIds[8].querySelector("h4").innerHTML = idollistAIdsEnglishSortArray[15].groupNameNormal;
-
-            idollistAIds[7].href = idollistAIdsEnglishSortArray[16].href;
-            idollistAIds[7].querySelector("img").src = "17번";
-            idollistAIds[7].querySelector("img").alt = idollistAIdsEnglishSortArray[16].groupNameEng;
-            idollistAIds[7].querySelector("img").style.border = `5px solid ${idollistAIdsEnglishSortArray[16].borderColorHex}`;
-            idollistAIds[7].querySelector("div").style.border = `5px solid ${idollistAIdsEnglishSortArray[16].borderColorHex}`;
-            idollistAIds[7].querySelector("h4").innerHTML = idollistAIdsEnglishSortArray[16].groupNameNormal;
-
-            idollistAIds[6].href = idollistAIdsEnglishSortArray[17].href;
-            idollistAIds[6].querySelector("img").src = "18번";
-            idollistAIds[6].querySelector("img").alt = idollistAIdsEnglishSortArray[17].groupNameEng;
-            idollistAIds[6].querySelector("img").style.border = `5px solid ${idollistAIdsEnglishSortArray[17].borderColorHex}`;
-            idollistAIds[6].querySelector("div").style.border = `5px solid ${idollistAIdsEnglishSortArray[17].borderColorHex}`;
-            idollistAIds[6].querySelector("h4").innerHTML = idollistAIdsEnglishSortArray[17].groupNameNormal;
-
-            idollistAIds[5].href = idollistAIdsEnglishSortArray[18].href;
-            idollistAIds[5].querySelector("img").src = "19번";
-            idollistAIds[5].querySelector("img").alt = idollistAIdsEnglishSortArray[18].groupNameEng;
-            idollistAIds[5].querySelector("img").style.border = `5px solid ${idollistAIdsEnglishSortArray[18].borderColorHex}`;
-            idollistAIds[5].querySelector("div").style.border = `5px solid ${idollistAIdsEnglishSortArray[18].borderColorHex}`;
-            idollistAIds[5].querySelector("h4").innerHTML = idollistAIdsEnglishSortArray[18].groupNameNormal;
-
-            idollistAIds[4].href = idollistAIdsEnglishSortArray[19].href;
-            idollistAIds[4].querySelector("img").src = "20번";
-            idollistAIds[4].querySelector("img").alt = idollistAIdsEnglishSortArray[19].groupNameEng;
-            idollistAIds[4].querySelector("img").style.border = `5px solid ${idollistAIdsEnglishSortArray[19].borderColorHex}`;
-            idollistAIds[4].querySelector("div").style.border = `5px solid ${idollistAIdsEnglishSortArray[19].borderColorHex}`;
-            idollistAIds[4].querySelector("h4").innerHTML = idollistAIdsEnglishSortArray[19].groupNameNormal;
-
-            idollistAIds[3].href = idollistAIdsEnglishSortArray[20].href;
-            idollistAIds[3].querySelector("img").src = "21번";
-            idollistAIds[3].querySelector("img").alt = idollistAIdsEnglishSortArray[20].groupNameEng;
-            idollistAIds[3].querySelector("img").style.border = `5px solid ${idollistAIdsEnglishSortArray[20].borderColorHex}`;
-            idollistAIds[3].querySelector("div").style.border = `5px solid ${idollistAIdsEnglishSortArray[20].borderColorHex}`;
-            idollistAIds[3].querySelector("h4").innerHTML = idollistAIdsEnglishSortArray[20].groupNameNormal;
-
-            idollistAIds[2].href = idollistAIdsEnglishSortArray[21].href;
-            idollistAIds[2].querySelector("img").src = "22번";
-            idollistAIds[2].querySelector("img").alt = idollistAIdsEnglishSortArray[21].groupNameEng;
-            idollistAIds[2].querySelector("img").style.border = `5px solid ${idollistAIdsEnglishSortArray[21].borderColorHex}`;
-            idollistAIds[2].querySelector("div").style.border = `5px solid ${idollistAIdsEnglishSortArray[21].borderColorHex}`;
-            idollistAIds[2].querySelector("h4").innerHTML = idollistAIdsEnglishSortArray[21].groupNameNormal;
-
-            idollistAIds[1].href = idollistAIdsEnglishSortArray[22].href;
-            idollistAIds[1].querySelector("img").src = "23번";
-            idollistAIds[1].querySelector("img").alt = idollistAIdsEnglishSortArray[22].groupNameEng;
-            idollistAIds[1].querySelector("img").style.border = `5px solid ${idollistAIdsEnglishSortArray[22].borderColorHex}`;
-            idollistAIds[1].querySelector("div").style.border = `5px solid ${idollistAIdsEnglishSortArray[22].borderColorHex}`;
-            idollistAIds[1].querySelector("h4").innerHTML = idollistAIdsEnglishSortArray[22].groupNameNormal;
-
-            idollistAIds[0].href = idollistAIdsEnglishSortArray[23].href;
-            idollistAIds[0].querySelector("img").src = "24번";
-            idollistAIds[0].querySelector("img").alt = idollistAIdsEnglishSortArray[23].groupNameEng;
-            idollistAIds[0].querySelector("img").style.border = `5px solid ${idollistAIdsEnglishSortArray[23].borderColorHex}`;
-            idollistAIds[0].querySelector("div").style.border = `5px solid ${idollistAIdsEnglishSortArray[23].borderColorHex}`;
-            idollistAIds[0].querySelector("h4").innerHTML = idollistAIdsEnglishSortArray[23].groupNameNormal;
         }
 
+        return idollistAIdsEnglishSort(idollistLeftArray)
+            .concat([idollistPivot])
+            .concat(idollistAIdsEnglishSort(idollistRightArray));
+    }
+    // 영어 순정렬 실행 함수
+    function idollistAIdsEnglishSortToArray() {
 
-    </script>
+        let idollistAIdsEnglishSortArray =
+            idollistAIdsEnglishSort(idollistAll);
+        idollistAIds[0].href = idollistAIdsEnglishSortArray[0].href;
+        idollistAIds[0].querySelector("img").src = "";
+        idollistAIds[0].querySelector("img").alt = idollistAIdsEnglishSortArray[0].groupNameEng;
+        idollistAIds[0].querySelector("img").style.border = `5px solid ${idollistAIdsEnglishSortArray[0].borderColorHex}`;
+        idollistAIds[0].querySelector("div").style.border = `5px solid ${idollistAIdsEnglishSortArray[0].borderColorHex}`;
+        idollistAIds[0].querySelector("h4").innerHTML = idollistAIdsEnglishSortArray[0].groupNameNormal;
+
+        idollistAIds[1].href = idollistAIdsEnglishSortArray[1].href;
+        idollistAIds[1].querySelector("img").src = "2번";
+        idollistAIds[1].querySelector("img").alt = idollistAIdsEnglishSortArray[1].groupNameEng;
+        idollistAIds[1].querySelector("img").style.border = `5px solid ${idollistAIdsEnglishSortArray[1].borderColorHex}`;
+        idollistAIds[1].querySelector("div").style.border = `5px solid ${idollistAIdsEnglishSortArray[1].borderColorHex}`;
+        idollistAIds[1].querySelector("h4").innerHTML = idollistAIdsEnglishSortArray[1].groupNameNormal;
+
+        idollistAIds[2].href = idollistAIdsEnglishSortArray[2].href;
+        idollistAIds[2].querySelector("img").src = "3번";
+        idollistAIds[2].querySelector("img").alt = idollistAIdsEnglishSortArray[2].groupNameEng;
+        idollistAIds[2].querySelector("img").style.border = `5px solid ${idollistAIdsEnglishSortArray[2].borderColorHex}`;
+        idollistAIds[2].querySelector("div").style.border = `5px solid ${idollistAIdsEnglishSortArray[2].borderColorHex}`;
+        idollistAIds[2].querySelector("h4").innerHTML = idollistAIdsEnglishSortArray[2].groupNameNormal;
+
+        idollistAIds[3].href = idollistAIdsEnglishSortArray[3].href;
+        idollistAIds[3].querySelector("img").src = "4번";
+        idollistAIds[3].querySelector("img").alt = idollistAIdsEnglishSortArray[3].groupNameEng;
+        idollistAIds[3].querySelector("img").style.border = `5px solid ${idollistAIdsEnglishSortArray[3].borderColorHex}`;
+        idollistAIds[3].querySelector("div").style.border = `5px solid ${idollistAIdsEnglishSortArray[3].borderColorHex}`;
+        idollistAIds[3].querySelector("h4").innerHTML = idollistAIdsEnglishSortArray[3].groupNameNormal;
+
+        idollistAIds[4].href = idollistAIdsEnglishSortArray[4].href;
+        idollistAIds[4].querySelector("img").src = "5번";
+        idollistAIds[4].querySelector("img").alt = idollistAIdsEnglishSortArray[4].groupNameEng;
+        idollistAIds[4].querySelector("img").style.border = `5px solid ${idollistAIdsEnglishSortArray[4].borderColorHex}`;
+        idollistAIds[4].querySelector("div").style.border = `5px solid ${idollistAIdsEnglishSortArray[4].borderColorHex}`;
+        idollistAIds[4].querySelector("h4").innerHTML = idollistAIdsEnglishSortArray[4].groupNameNormal;
+
+        idollistAIds[5].href = idollistAIdsEnglishSortArray[5].href;
+        idollistAIds[5].querySelector("img").src = "6번";
+        idollistAIds[5].querySelector("img").alt = idollistAIdsEnglishSortArray[5].groupNameEng;
+        idollistAIds[5].querySelector("img").style.border = `5px solid ${idollistAIdsEnglishSortArray[5].borderColorHex}`;
+        idollistAIds[5].querySelector("div").style.border = `5px solid ${idollistAIdsEnglishSortArray[5].borderColorHex}`;
+        idollistAIds[5].querySelector("h4").innerHTML = idollistAIdsEnglishSortArray[5].groupNameNormal;
+
+        idollistAIds[6].href = idollistAIdsEnglishSortArray[6].href;
+        idollistAIds[6].querySelector("img").src = "7번";
+        idollistAIds[6].querySelector("img").alt = idollistAIdsEnglishSortArray[6].groupNameEng;
+        idollistAIds[6].querySelector("img").style.border = `5px solid ${idollistAIdsEnglishSortArray[6].borderColorHex}`;
+        idollistAIds[6].querySelector("div").style.border = `5px solid ${idollistAIdsEnglishSortArray[6].borderColorHex}`;
+        idollistAIds[6].querySelector("h4").innerHTML = idollistAIdsEnglishSortArray[6].groupNameNormal;
+
+        idollistAIds[7].href = idollistAIdsEnglishSortArray[7].href;
+        idollistAIds[7].querySelector("img").src = "8번";
+        idollistAIds[7].querySelector("img").alt = idollistAIdsEnglishSortArray[7].groupNameEng;
+        idollistAIds[7].querySelector("img").style.border = `5px solid ${idollistAIdsEnglishSortArray[7].borderColorHex}`;
+        idollistAIds[7].querySelector("div").style.border = `5px solid ${idollistAIdsEnglishSortArray[7].borderColorHex}`;
+        idollistAIds[7].querySelector("h4").innerHTML = idollistAIdsEnglishSortArray[7].groupNameNormal;
+
+        idollistAIds[8].href = idollistAIdsEnglishSortArray[8].href;
+        idollistAIds[8].querySelector("img").src = "9번";
+        idollistAIds[8].querySelector("img").alt = idollistAIdsEnglishSortArray[8].groupNameEng;
+        idollistAIds[8].querySelector("img").style.border = `5px solid ${idollistAIdsEnglishSortArray[8].borderColorHex}`;
+        idollistAIds[8].querySelector("div").style.border = `5px solid ${idollistAIdsEnglishSortArray[8].borderColorHex}`;
+        idollistAIds[8].querySelector("h4").innerHTML = idollistAIdsEnglishSortArray[8].groupNameNormal;
+
+        idollistAIds[9].href = idollistAIdsEnglishSortArray[9].href;
+        idollistAIds[9].querySelector("img").src = "10번";
+        idollistAIds[9].querySelector("img").alt = idollistAIdsEnglishSortArray[9].groupNameEng;
+        idollistAIds[9].querySelector("img").style.border = `5px solid ${idollistAIdsEnglishSortArray[9].borderColorHex}`;
+        idollistAIds[9].querySelector("div").style.border = `5px solid ${idollistAIdsEnglishSortArray[9].borderColorHex}`;
+        idollistAIds[9].querySelector("h4").innerHTML = idollistAIdsEnglishSortArray[9].groupNameNormal;
+
+        idollistAIds[10].href = idollistAIdsEnglishSortArray[10].href;
+        idollistAIds[10].querySelector("img").src = "11번";
+        idollistAIds[10].querySelector("img").alt = idollistAIdsEnglishSortArray[10].groupNameEng;
+        idollistAIds[10].querySelector("img").style.border = `5px solid ${idollistAIdsEnglishSortArray[10].borderColorHex}`;
+        idollistAIds[10].querySelector("div").style.border = `5px solid ${idollistAIdsEnglishSortArray[10].borderColorHex}`;
+        idollistAIds[10].querySelector("h4").innerHTML = idollistAIdsEnglishSortArray[10].groupNameNormal;
+
+        idollistAIds[11].href = idollistAIdsEnglishSortArray[11].href;
+        idollistAIds[11].querySelector("img").src = "12번";
+        idollistAIds[11].querySelector("img").alt = idollistAIdsEnglishSortArray[11].groupNameEng;
+        idollistAIds[11].querySelector("img").style.border = `5px solid ${idollistAIdsEnglishSortArray[11].borderColorHex}`;
+        idollistAIds[11].querySelector("div").style.border = `5px solid ${idollistAIdsEnglishSortArray[11].borderColorHex}`;
+        idollistAIds[11].querySelector("h4").innerHTML = idollistAIdsEnglishSortArray[11].groupNameNormal;
+
+        idollistAIds[12].href = idollistAIdsEnglishSortArray[12].href;
+        idollistAIds[12].querySelector("img").src = "13번";
+        idollistAIds[12].querySelector("img").alt = idollistAIdsEnglishSortArray[12].groupNameEng;
+        idollistAIds[12].querySelector("img").style.border = `5px solid ${idollistAIdsEnglishSortArray[12].borderColorHex}`;
+        idollistAIds[12].querySelector("div").style.border = `5px solid ${idollistAIdsEnglishSortArray[12].borderColorHex}`;
+        idollistAIds[12].querySelector("h4").innerHTML = idollistAIdsEnglishSortArray[12].groupNameNormal;
+
+        idollistAIds[13].href = idollistAIdsEnglishSortArray[13].href;
+        idollistAIds[13].querySelector("img").src = "14번";
+        idollistAIds[13].querySelector("img").alt = idollistAIdsEnglishSortArray[13].groupNameEng;
+        idollistAIds[13].querySelector("img").style.border = `5px solid ${idollistAIdsEnglishSortArray[13].borderColorHex}`;
+        idollistAIds[13].querySelector("div").style.border = `5px solid ${idollistAIdsEnglishSortArray[13].borderColorHex}`;
+        idollistAIds[13].querySelector("h4").innerHTML = idollistAIdsEnglishSortArray[13].groupNameNormal;
+
+        idollistAIds[14].href = idollistAIdsEnglishSortArray[14].href;
+        idollistAIds[14].querySelector("img").src = "15번";
+        idollistAIds[14].querySelector("img").alt = idollistAIdsEnglishSortArray[14].groupNameEng;
+        idollistAIds[14].querySelector("img").style.border = `5px solid ${idollistAIdsEnglishSortArray[14].borderColorHex}`;
+        idollistAIds[14].querySelector("div").style.border = `5px solid ${idollistAIdsEnglishSortArray[14].borderColorHex}`;
+        idollistAIds[14].querySelector("h4").innerHTML = idollistAIdsEnglishSortArray[14].groupNameNormal;
+
+        idollistAIds[15].href = idollistAIdsEnglishSortArray[15].href;
+        idollistAIds[15].querySelector("img").src = "16번";
+        idollistAIds[15].querySelector("img").alt = idollistAIdsEnglishSortArray[15].groupNameEng;
+        idollistAIds[15].querySelector("img").style.border = `5px solid ${idollistAIdsEnglishSortArray[15].borderColorHex}`;
+        idollistAIds[15].querySelector("div").style.border = `5px solid ${idollistAIdsEnglishSortArray[15].borderColorHex}`;
+        idollistAIds[15].querySelector("h4").innerHTML = idollistAIdsEnglishSortArray[15].groupNameNormal;
+
+        idollistAIds[16].href = idollistAIdsEnglishSortArray[16].href;
+        idollistAIds[16].querySelector("img").src = "17번";
+        idollistAIds[16].querySelector("img").alt = idollistAIdsEnglishSortArray[16].groupNameEng;
+        idollistAIds[16].querySelector("img").style.border = `5px solid ${idollistAIdsEnglishSortArray[16].borderColorHex}`;
+        idollistAIds[16].querySelector("div").style.border = `5px solid ${idollistAIdsEnglishSortArray[16].borderColorHex}`;
+        idollistAIds[16].querySelector("h4").innerHTML = idollistAIdsEnglishSortArray[16].groupNameNormal;
+
+        idollistAIds[17].href = idollistAIdsEnglishSortArray[17].href;
+        idollistAIds[17].querySelector("img").src = "18번";
+        idollistAIds[17].querySelector("img").alt = idollistAIdsEnglishSortArray[17].groupNameEng;
+        idollistAIds[17].querySelector("img").style.border = `5px solid ${idollistAIdsEnglishSortArray[17].borderColorHex}`;
+        idollistAIds[17].querySelector("div").style.border = `5px solid ${idollistAIdsEnglishSortArray[17].borderColorHex}`;
+        idollistAIds[17].querySelector("h4").innerHTML = idollistAIdsEnglishSortArray[17].groupNameNormal;
+
+        idollistAIds[18].href = idollistAIdsEnglishSortArray[18].href;
+        idollistAIds[18].querySelector("img").src = "19번";
+        idollistAIds[18].querySelector("img").alt = idollistAIdsEnglishSortArray[18].groupNameEng;
+        idollistAIds[18].querySelector("img").style.border = `5px solid ${idollistAIdsEnglishSortArray[18].borderColorHex}`;
+        idollistAIds[18].querySelector("div").style.border = `5px solid ${idollistAIdsEnglishSortArray[18].borderColorHex}`;
+        idollistAIds[18].querySelector("h4").innerHTML = idollistAIdsEnglishSortArray[18].groupNameNormal;
+
+        idollistAIds[19].href = idollistAIdsEnglishSortArray[19].href;
+        idollistAIds[19].querySelector("img").src = "20번";
+        idollistAIds[19].querySelector("img").alt = idollistAIdsEnglishSortArray[19].groupNameEng;
+        idollistAIds[19].querySelector("img").style.border = `5px solid ${idollistAIdsEnglishSortArray[19].borderColorHex}`;
+        idollistAIds[19].querySelector("div").style.border = `5px solid ${idollistAIdsEnglishSortArray[19].borderColorHex}`;
+        idollistAIds[19].querySelector("h4").innerHTML = idollistAIdsEnglishSortArray[19].groupNameNormal;
+
+        idollistAIds[20].href = idollistAIdsEnglishSortArray[20].href;
+        idollistAIds[20].querySelector("img").src = "21번";
+        idollistAIds[20].querySelector("img").alt = idollistAIdsEnglishSortArray[20].groupNameEng;
+        idollistAIds[20].querySelector("img").style.border = `5px solid ${idollistAIdsEnglishSortArray[20].borderColorHex}`;
+        idollistAIds[20].querySelector("div").style.border = `5px solid ${idollistAIdsEnglishSortArray[20].borderColorHex}`;
+        idollistAIds[20].querySelector("h4").innerHTML = idollistAIdsEnglishSortArray[20].groupNameNormal;
+
+        idollistAIds[21].href = idollistAIdsEnglishSortArray[21].href;
+        idollistAIds[21].querySelector("img").src = "22번";
+        idollistAIds[21].querySelector("img").alt = idollistAIdsEnglishSortArray[21].groupNameEng;
+        idollistAIds[21].querySelector("img").style.border = `5px solid ${idollistAIdsEnglishSortArray[21].borderColorHex}`;
+        idollistAIds[21].querySelector("div").style.border = `5px solid ${idollistAIdsEnglishSortArray[21].borderColorHex}`;
+        idollistAIds[21].querySelector("h4").innerHTML = idollistAIdsEnglishSortArray[21].groupNameNormal;
+
+        idollistAIds[22].href = idollistAIdsEnglishSortArray[22].href;
+        idollistAIds[22].querySelector("img").src = "23번";
+        idollistAIds[22].querySelector("img").alt = idollistAIdsEnglishSortArray[22].groupNameEng;
+        idollistAIds[22].querySelector("img").style.border = `5px solid ${idollistAIdsEnglishSortArray[22].borderColorHex}`;
+        idollistAIds[22].querySelector("div").style.border = `5px solid ${idollistAIdsEnglishSortArray[22].borderColorHex}`;
+        idollistAIds[22].querySelector("h4").innerHTML = idollistAIdsEnglishSortArray[22].groupNameNormal;
+
+        idollistAIds[23].href = idollistAIdsEnglishSortArray[23].href;
+        idollistAIds[23].querySelector("img").src = "24번";
+        idollistAIds[23].querySelector("img").alt = idollistAIdsEnglishSortArray[23].groupNameEng;
+        idollistAIds[23].querySelector("img").style.border = `5px solid ${idollistAIdsEnglishSortArray[23].borderColorHex}`;
+        idollistAIds[23].querySelector("div").style.border = `5px solid ${idollistAIdsEnglishSortArray[23].borderColorHex}`;
+        idollistAIds[23].querySelector("h4").innerHTML = idollistAIdsEnglishSortArray[23].groupNameNormal;
+    }
+    // 영어 역정렬 실행 함수
+    function idollistAIdsEnglishReverseSortToArray() {
+
+        let idollistAIdsEnglishSortArray =
+            idollistAIdsEnglishSort(idollistAll);
+        idollistAIds[23].href = idollistAIdsEnglishSortArray[0].href;
+        idollistAIds[23].querySelector("img").src = "";
+        idollistAIds[23].querySelector("img").alt = idollistAIdsEnglishSortArray[0].groupNameEng;
+        idollistAIds[23].querySelector("img").style.border = `5px solid ${idollistAIdsEnglishSortArray[0].borderColorHex}`;
+        idollistAIds[23].querySelector("div").style.border = `5px solid ${idollistAIdsEnglishSortArray[0].borderColorHex}`;
+        idollistAIds[23].querySelector("h4").innerHTML = idollistAIdsEnglishSortArray[0].groupNameNormal;
+
+        idollistAIds[22].href = idollistAIdsEnglishSortArray[1].href;
+        idollistAIds[22].querySelector("img").src = "2번";
+        idollistAIds[22].querySelector("img").alt = idollistAIdsEnglishSortArray[1].groupNameEng;
+        idollistAIds[22].querySelector("img").style.border = `5px solid ${idollistAIdsEnglishSortArray[1].borderColorHex}`;
+        idollistAIds[22].querySelector("div").style.border = `5px solid ${idollistAIdsEnglishSortArray[1].borderColorHex}`;
+        idollistAIds[22].querySelector("h4").innerHTML = idollistAIdsEnglishSortArray[1].groupNameNormal;
+
+        idollistAIds[21].href = idollistAIdsEnglishSortArray[2].href;
+        idollistAIds[21].querySelector("img").src = "3번";
+        idollistAIds[21].querySelector("img").alt = idollistAIdsEnglishSortArray[2].groupNameEng;
+        idollistAIds[21].querySelector("img").style.border = `5px solid ${idollistAIdsEnglishSortArray[2].borderColorHex}`;
+        idollistAIds[21].querySelector("div").style.border = `5px solid ${idollistAIdsEnglishSortArray[2].borderColorHex}`;
+        idollistAIds[21].querySelector("h4").innerHTML = idollistAIdsEnglishSortArray[2].groupNameNormal;
+
+        idollistAIds[20].href = idollistAIdsEnglishSortArray[3].href;
+        idollistAIds[20].querySelector("img").src = "4번";
+        idollistAIds[20].querySelector("img").alt = idollistAIdsEnglishSortArray[3].groupNameEng;
+        idollistAIds[20].querySelector("img").style.border = `5px solid ${idollistAIdsEnglishSortArray[3].borderColorHex}`;
+        idollistAIds[20].querySelector("div").style.border = `5px solid ${idollistAIdsEnglishSortArray[3].borderColorHex}`;
+        idollistAIds[20].querySelector("h4").innerHTML = idollistAIdsEnglishSortArray[3].groupNameNormal;
+
+        idollistAIds[19].href = idollistAIdsEnglishSortArray[4].href;
+        idollistAIds[19].querySelector("img").src = "5번";
+        idollistAIds[19].querySelector("img").alt = idollistAIdsEnglishSortArray[4].groupNameEng;
+        idollistAIds[19].querySelector("img").style.border = `5px solid ${idollistAIdsEnglishSortArray[4].borderColorHex}`;
+        idollistAIds[19].querySelector("div").style.border = `5px solid ${idollistAIdsEnglishSortArray[4].borderColorHex}`;
+        idollistAIds[19].querySelector("h4").innerHTML = idollistAIdsEnglishSortArray[4].groupNameNormal;
+
+        idollistAIds[18].href = idollistAIdsEnglishSortArray[5].href;
+        idollistAIds[18].querySelector("img").src = "6번";
+        idollistAIds[18].querySelector("img").alt = idollistAIdsEnglishSortArray[5].groupNameEng;
+        idollistAIds[18].querySelector("img").style.border = `5px solid ${idollistAIdsEnglishSortArray[5].borderColorHex}`;
+        idollistAIds[18].querySelector("div").style.border = `5px solid ${idollistAIdsEnglishSortArray[5].borderColorHex}`;
+        idollistAIds[18].querySelector("h4").innerHTML = idollistAIdsEnglishSortArray[5].groupNameNormal;
+
+        idollistAIds[17].href = idollistAIdsEnglishSortArray[6].href;
+        idollistAIds[17].querySelector("img").src = "7번";
+        idollistAIds[17].querySelector("img").alt = idollistAIdsEnglishSortArray[6].groupNameEng;
+        idollistAIds[17].querySelector("img").style.border = `5px solid ${idollistAIdsEnglishSortArray[6].borderColorHex}`;
+        idollistAIds[17].querySelector("div").style.border = `5px solid ${idollistAIdsEnglishSortArray[6].borderColorHex}`;
+        idollistAIds[17].querySelector("h4").innerHTML = idollistAIdsEnglishSortArray[6].groupNameNormal;
+
+        idollistAIds[16].href = idollistAIdsEnglishSortArray[7].href;
+        idollistAIds[16].querySelector("img").src = "8번";
+        idollistAIds[16].querySelector("img").alt = idollistAIdsEnglishSortArray[7].groupNameEng;
+        idollistAIds[16].querySelector("img").style.border = `5px solid ${idollistAIdsEnglishSortArray[7].borderColorHex}`;
+        idollistAIds[16].querySelector("div").style.border = `5px solid ${idollistAIdsEnglishSortArray[7].borderColorHex}`;
+        idollistAIds[16].querySelector("h4").innerHTML = idollistAIdsEnglishSortArray[7].groupNameNormal;
+
+        idollistAIds[15].href = idollistAIdsEnglishSortArray[8].href;
+        idollistAIds[15].querySelector("img").src = "9번";
+        idollistAIds[15].querySelector("img").alt = idollistAIdsEnglishSortArray[8].groupNameEng;
+        idollistAIds[15].querySelector("img").style.border = `5px solid ${idollistAIdsEnglishSortArray[8].borderColorHex}`;
+        idollistAIds[15].querySelector("div").style.border = `5px solid ${idollistAIdsEnglishSortArray[8].borderColorHex}`;
+        idollistAIds[15].querySelector("h4").innerHTML = idollistAIdsEnglishSortArray[8].groupNameNormal;
+
+        idollistAIds[14].href = idollistAIdsEnglishSortArray[9].href;
+        idollistAIds[14].querySelector("img").src = "10번";
+        idollistAIds[14].querySelector("img").alt = idollistAIdsEnglishSortArray[9].groupNameEng;
+        idollistAIds[14].querySelector("img").style.border = `5px solid ${idollistAIdsEnglishSortArray[9].borderColorHex}`;
+        idollistAIds[14].querySelector("div").style.border = `5px solid ${idollistAIdsEnglishSortArray[9].borderColorHex}`;
+        idollistAIds[14].querySelector("h4").innerHTML = idollistAIdsEnglishSortArray[9].groupNameNormal;
+
+        idollistAIds[13].href = idollistAIdsEnglishSortArray[10].href;
+        idollistAIds[13].querySelector("img").src = "11번";
+        idollistAIds[13].querySelector("img").alt = idollistAIdsEnglishSortArray[10].groupNameEng;
+        idollistAIds[13].querySelector("img").style.border = `5px solid ${idollistAIdsEnglishSortArray[10].borderColorHex}`;
+        idollistAIds[13].querySelector("div").style.border = `5px solid ${idollistAIdsEnglishSortArray[10].borderColorHex}`;
+        idollistAIds[13].querySelector("h4").innerHTML = idollistAIdsEnglishSortArray[10].groupNameNormal;
+
+        idollistAIds[12].href = idollistAIdsEnglishSortArray[11].href;
+        idollistAIds[12].querySelector("img").src = "12번";
+        idollistAIds[12].querySelector("img").alt = idollistAIdsEnglishSortArray[11].groupNameEng;
+        idollistAIds[12].querySelector("img").style.border = `5px solid ${idollistAIdsEnglishSortArray[11].borderColorHex}`;
+        idollistAIds[12].querySelector("div").style.border = `5px solid ${idollistAIdsEnglishSortArray[11].borderColorHex}`;
+        idollistAIds[12].querySelector("h4").innerHTML = idollistAIdsEnglishSortArray[11].groupNameNormal;
+
+        idollistAIds[11].href = idollistAIdsEnglishSortArray[12].href;
+        idollistAIds[11].querySelector("img").src = "13번";
+        idollistAIds[11].querySelector("img").alt = idollistAIdsEnglishSortArray[12].groupNameEng;
+        idollistAIds[11].querySelector("img").style.border = `5px solid ${idollistAIdsEnglishSortArray[12].borderColorHex}`;
+        idollistAIds[11].querySelector("div").style.border = `5px solid ${idollistAIdsEnglishSortArray[12].borderColorHex}`;
+        idollistAIds[11].querySelector("h4").innerHTML = idollistAIdsEnglishSortArray[12].groupNameNormal;
+
+        idollistAIds[10].href = idollistAIdsEnglishSortArray[13].href;
+        idollistAIds[10].querySelector("img").src = "14번";
+        idollistAIds[10].querySelector("img").alt = idollistAIdsEnglishSortArray[13].groupNameEng;
+        idollistAIds[10].querySelector("img").style.border = `5px solid ${idollistAIdsEnglishSortArray[13].borderColorHex}`;
+        idollistAIds[10].querySelector("div").style.border = `5px solid ${idollistAIdsEnglishSortArray[13].borderColorHex}`;
+        idollistAIds[10].querySelector("h4").innerHTML = idollistAIdsEnglishSortArray[13].groupNameNormal;
+
+        idollistAIds[9].href = idollistAIdsEnglishSortArray[14].href;
+        idollistAIds[9].querySelector("img").src = "15번";
+        idollistAIds[9].querySelector("img").alt = idollistAIdsEnglishSortArray[14].groupNameEng;
+        idollistAIds[9].querySelector("img").style.border = `5px solid ${idollistAIdsEnglishSortArray[14].borderColorHex}`;
+        idollistAIds[9].querySelector("div").style.border = `5px solid ${idollistAIdsEnglishSortArray[14].borderColorHex}`;
+        idollistAIds[9].querySelector("h4").innerHTML = idollistAIdsEnglishSortArray[14].groupNameNormal;
+
+        idollistAIds[8].href = idollistAIdsEnglishSortArray[15].href;
+        idollistAIds[8].querySelector("img").src = "16번";
+        idollistAIds[8].querySelector("img").alt = idollistAIdsEnglishSortArray[15].groupNameEng;
+        idollistAIds[8].querySelector("img").style.border = `5px solid ${idollistAIdsEnglishSortArray[15].borderColorHex}`;
+        idollistAIds[8].querySelector("div").style.border = `5px solid ${idollistAIdsEnglishSortArray[15].borderColorHex}`;
+        idollistAIds[8].querySelector("h4").innerHTML = idollistAIdsEnglishSortArray[15].groupNameNormal;
+
+        idollistAIds[7].href = idollistAIdsEnglishSortArray[16].href;
+        idollistAIds[7].querySelector("img").src = "17번";
+        idollistAIds[7].querySelector("img").alt = idollistAIdsEnglishSortArray[16].groupNameEng;
+        idollistAIds[7].querySelector("img").style.border = `5px solid ${idollistAIdsEnglishSortArray[16].borderColorHex}`;
+        idollistAIds[7].querySelector("div").style.border = `5px solid ${idollistAIdsEnglishSortArray[16].borderColorHex}`;
+        idollistAIds[7].querySelector("h4").innerHTML = idollistAIdsEnglishSortArray[16].groupNameNormal;
+
+        idollistAIds[6].href = idollistAIdsEnglishSortArray[17].href;
+        idollistAIds[6].querySelector("img").src = "18번";
+        idollistAIds[6].querySelector("img").alt = idollistAIdsEnglishSortArray[17].groupNameEng;
+        idollistAIds[6].querySelector("img").style.border = `5px solid ${idollistAIdsEnglishSortArray[17].borderColorHex}`;
+        idollistAIds[6].querySelector("div").style.border = `5px solid ${idollistAIdsEnglishSortArray[17].borderColorHex}`;
+        idollistAIds[6].querySelector("h4").innerHTML = idollistAIdsEnglishSortArray[17].groupNameNormal;
+
+        idollistAIds[5].href = idollistAIdsEnglishSortArray[18].href;
+        idollistAIds[5].querySelector("img").src = "19번";
+        idollistAIds[5].querySelector("img").alt = idollistAIdsEnglishSortArray[18].groupNameEng;
+        idollistAIds[5].querySelector("img").style.border = `5px solid ${idollistAIdsEnglishSortArray[18].borderColorHex}`;
+        idollistAIds[5].querySelector("div").style.border = `5px solid ${idollistAIdsEnglishSortArray[18].borderColorHex}`;
+        idollistAIds[5].querySelector("h4").innerHTML = idollistAIdsEnglishSortArray[18].groupNameNormal;
+
+        idollistAIds[4].href = idollistAIdsEnglishSortArray[19].href;
+        idollistAIds[4].querySelector("img").src = "20번";
+        idollistAIds[4].querySelector("img").alt = idollistAIdsEnglishSortArray[19].groupNameEng;
+        idollistAIds[4].querySelector("img").style.border = `5px solid ${idollistAIdsEnglishSortArray[19].borderColorHex}`;
+        idollistAIds[4].querySelector("div").style.border = `5px solid ${idollistAIdsEnglishSortArray[19].borderColorHex}`;
+        idollistAIds[4].querySelector("h4").innerHTML = idollistAIdsEnglishSortArray[19].groupNameNormal;
+
+        idollistAIds[3].href = idollistAIdsEnglishSortArray[20].href;
+        idollistAIds[3].querySelector("img").src = "21번";
+        idollistAIds[3].querySelector("img").alt = idollistAIdsEnglishSortArray[20].groupNameEng;
+        idollistAIds[3].querySelector("img").style.border = `5px solid ${idollistAIdsEnglishSortArray[20].borderColorHex}`;
+        idollistAIds[3].querySelector("div").style.border = `5px solid ${idollistAIdsEnglishSortArray[20].borderColorHex}`;
+        idollistAIds[3].querySelector("h4").innerHTML = idollistAIdsEnglishSortArray[20].groupNameNormal;
+
+        idollistAIds[2].href = idollistAIdsEnglishSortArray[21].href;
+        idollistAIds[2].querySelector("img").src = "22번";
+        idollistAIds[2].querySelector("img").alt = idollistAIdsEnglishSortArray[21].groupNameEng;
+        idollistAIds[2].querySelector("img").style.border = `5px solid ${idollistAIdsEnglishSortArray[21].borderColorHex}`;
+        idollistAIds[2].querySelector("div").style.border = `5px solid ${idollistAIdsEnglishSortArray[21].borderColorHex}`;
+        idollistAIds[2].querySelector("h4").innerHTML = idollistAIdsEnglishSortArray[21].groupNameNormal;
+
+        idollistAIds[1].href = idollistAIdsEnglishSortArray[22].href;
+        idollistAIds[1].querySelector("img").src = "23번";
+        idollistAIds[1].querySelector("img").alt = idollistAIdsEnglishSortArray[22].groupNameEng;
+        idollistAIds[1].querySelector("img").style.border = `5px solid ${idollistAIdsEnglishSortArray[22].borderColorHex}`;
+        idollistAIds[1].querySelector("div").style.border = `5px solid ${idollistAIdsEnglishSortArray[22].borderColorHex}`;
+        idollistAIds[1].querySelector("h4").innerHTML = idollistAIdsEnglishSortArray[22].groupNameNormal;
+
+        idollistAIds[0].href = idollistAIdsEnglishSortArray[23].href;
+        idollistAIds[0].querySelector("img").src = "24번";
+        idollistAIds[0].querySelector("img").alt = idollistAIdsEnglishSortArray[23].groupNameEng;
+        idollistAIds[0].querySelector("img").style.border = `5px solid ${idollistAIdsEnglishSortArray[23].borderColorHex}`;
+        idollistAIds[0].querySelector("div").style.border = `5px solid ${idollistAIdsEnglishSortArray[23].borderColorHex}`;
+        idollistAIds[0].querySelector("h4").innerHTML = idollistAIdsEnglishSortArray[23].groupNameNormal;
+    }
+
+
+</script>
 </body>
 
 </html>
