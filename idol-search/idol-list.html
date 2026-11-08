@@ -502,7 +502,7 @@
 <script src="../index.js"></script>
 <script>
     const idollistAll = [
-        { groupNameKor: "트리플에스", groupNameEng: "tripleS", groupNameNormal: "tripleS", arrayNum: 1, href: "/group-main/24members/triples", borderColorHex: "#191919" },
+        { groupNameKor: "트리플에스", groupNameEng: "tripleS", groupNameNormal: "tripleS", arrayNum: 1, href: "/group-main/24members/triples", borderColorHex: "#191919", imgSrc: "../group-main/triples/imgs/tri_m_img.jpg" },
         { groupNameKor: "투모로우바이투게더", groupNameEng: "TXT", groupNameNormal: "투모로우<br>바이<br>투게더", arrayNum: 2, href: "/group-main/5members/txt", borderColorHex: "#FF1E91" },
         { groupNameKor: "악뮤", groupNameEng: "AKMU", groupNameNormal: "AKMU", arrayNum: 3, href: "/group-main/2members/akmu", borderColorHex: "#13983f" },
         { groupNameKor: "아이오아이", groupNameEng: "IOI", groupNameNormal: "아이오아이", arrayNum: 4, href: "/group-main/11members/ioi", borderColorHex: "#F4CE9D" },
@@ -537,7 +537,7 @@
     function idollistAIdsNormal() {
         //#####
         idollistAIds[0].href = idollistAll[0].href;
-        idollistAIds[0].querySelector("img").src = "";
+        idollistAIds[0].querySelector("img").src = idollistAll[0].imgSrc;
         idollistAIds[0].querySelector("img").alt = idollistAll[0].groupNameKor;
         idollistAIds[0].querySelector("img").style.border = `5px solid ${idollistAll[0].borderColorHex}`;
         idollistAIds[0].querySelector("div").style.border = `5px solid ${idollistAll[0].borderColorHex}`;
