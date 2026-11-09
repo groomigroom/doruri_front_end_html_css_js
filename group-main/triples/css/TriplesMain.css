@@ -616,17 +616,22 @@ body {
     .tri_m_sub_writes>a {
         display: block;
         width: 150px;
-        height: 30px;
+        height: 40px;
         border-radius: 10px;
         background-color: #fcfcfc;
         font-weight: 700;
         font-size: 16px;
         text-align: center;
-        line-height: 40px;
+        line-height: 30px;
         position: absolute;
         top: 0px;
         left: 50%;
         transform: translateX(-50%);
+    }
+
+    .tri_m_sub_writes a:hover {
+        background-color: var(--hover-color);
+        color: #fcfcfc;
     }
 }
 
