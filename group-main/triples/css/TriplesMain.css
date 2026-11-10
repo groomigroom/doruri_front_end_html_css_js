@@ -613,7 +613,8 @@ body {
         position: relative;
     }
 
-    .tri_m_sub_writes>a {
+    .tri_m_sub_writes>a,
+    .tri_m_sub_writes>button {
         display: block;
         width: 150px;
         height: 40px;
@@ -629,7 +630,8 @@ body {
         transform: translateX(-50%);
     }
 
-    .tri_m_sub_writes a:hover {
+    .tri_m_sub_writes a:hover,
+    .tri_m_sub_writes>button:hover {
         background-color: var(--hover-color);
         color: #fcfcfc;
     }
