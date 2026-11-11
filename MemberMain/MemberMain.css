@@ -174,8 +174,8 @@ body {
     }*/
 
     .header_ghost {
-        width: 100vw;
-        height: 140px;
+        width: 100%;
+        height: 120px;
     }
 
     .member_main_h2_section {
