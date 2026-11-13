@@ -355,4 +355,10 @@ body {
         transform: translateY(-50%);
         color: #e6e6e6;
     }*/
+
+    .member_main_100vh_footer {
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+    }
 }
