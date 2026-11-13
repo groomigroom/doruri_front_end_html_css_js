@@ -179,6 +179,7 @@
                 if (data.isLoggedIn) {
                     console.log("로그인된 사용자 ID:", data.userId);
                     login_user_name.textContent = data.userId;
+                    index_my_information_href.href = ``;
                 }
             } catch (error) {
                 console.error('에러 발생:', error);
