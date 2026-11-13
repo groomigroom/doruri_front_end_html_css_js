@@ -83,6 +83,12 @@ body {
         background-color: #fcfcfc;
     }
 
+    .member_main_100vh_full {
+        width: 100%;
+        height: 100vh;
+        background-color: #fcfcfc;
+    }
+
     /*header {
         width: 100vw;
         height: 100px;
