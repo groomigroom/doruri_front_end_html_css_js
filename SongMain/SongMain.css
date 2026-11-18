@@ -82,7 +82,7 @@ body {
         width: 100%;
         background-color: #fcfcfc;
     }
-
+/*
     header {
         width: 100vw;
         height: 100px;
@@ -113,7 +113,7 @@ body {
     .home_translate>a.on {
         background-color: #333;
         color: #e6e6e6;
-    }
+    }*/
 
     /* .menu_mobile_button {
         display: none;
@@ -122,7 +122,7 @@ body {
     /* .menu_mobile_off {
         display: none;
     } */
-
+/*
     .menu_nav {
         width: 600px;
         height: 40px;
@@ -173,12 +173,7 @@ body {
     .menu_nav>ul>li>ul>li>a:hover {
         color: #e6e6e6;
         background-color: #575656;
-    }
-
-    .header_ghost {
-        width: 100%;
-        height: 140px;
-    }
+    }*/
 
     .song_main_h2_section {
         width: 100%;
@@ -378,6 +373,36 @@ body {
         border-bottom: 5px solid #333;
     }
 
+    .songmain_sub_writes {
+        width: 100%;
+        height: 80px;
+        position: relative;
+    }
+
+    .songmain_sub_writes>a,
+    .songmain_sub_writes>button {
+        display: block;
+        width: 150px;
+        height: 40px;
+        border-radius: 10px;
+        background-color: #fcfcfc;
+        font-weight: 700;
+        font-size: 16px;
+        text-align: center;
+        line-height: 30px;
+        position: absolute;
+        top: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+        cursor: pointer;
+    }
+
+    .songmain_sub_writes a:hover,
+    .songmain_sub_writes>button:hover {
+        background-color: var(--hover-color);
+        color: #fcfcfc;
+    }
+/*
     footer {
         width: 100%;
         height: 100px;
@@ -393,5 +418,5 @@ body {
         top: 50%;
         transform: translateY(-50%);
         color: #e6e6e6;
-    }
+    }*/
 }
