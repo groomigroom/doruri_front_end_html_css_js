@@ -66,11 +66,11 @@
             <!--            <img src="./imgs/index_logo.svg" alt="도루리 로고">-->
         </section>
         <section class="home_login_button">
-            <a href="/login/login-real" class="home_login_button_login" style="display: none;">
+            <a href="/login/login-real" class="home_login_button_login">
                 <button type="button">로그인</button>
             </a>
             <a href="/logout">
-                <button type="button" class="home_login_button_logout" style="display: none;">로그아웃</button>
+                <button type="button" class="home_login_button_logout">로그아웃</button>
             </a>
         </section>
         <section class="home_img_slide_full">
@@ -167,6 +167,8 @@
                 if (response.status === 401) {
                     console.log("현재 비로그인 상태입니다.");
                     login_user_name.textContent = "로그인 해주세요";
+                    document.querySelector(".home_login_button_login").style.display = "block";
+                    document.querySelector(".home_login_button_logout").style.display = "none";
                     return;
                 }
 
@@ -179,6 +181,8 @@
                 if (data.isLoggedIn) {
                     console.log("로그인된 사용자 ID:", data.userId);
                     login_user_name.textContent = data.userId;
+                    document.querySelector(".home_login_button_logout").style.display = "block";
+                    document.querySelector(".home_login_button_login").style.display = "none";
                     index_my_information_href.href = `/login/details/${data.userId}`;
                 }
             } catch (error) {
