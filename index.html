@@ -69,7 +69,7 @@
         height: 60px;
         position: relative;">
             <h2 class="login_user_name" style="font-weight: 700; font-size: 20px; line-height: 20px; position: absolute; top:
-                0px; left: 50%; transform: translateX(-50%);">로그인 해주세요</h2>
+                0px; left: 50%; transform: translateX(-50%);">▪ 로그인 해주세요 ▪</h2>
         </section>
         <section class="home_login_button">
             <a href="/login/login-real" class="home_login_button_login">
@@ -172,7 +172,7 @@
                 // "로그인 해주세요" 상태를 부드럽게 유지하도록 턴을 넘겨줍니다.
                 if (response.status === 401) {
                     console.log("현재 비로그인 상태입니다.");
-                    login_user_name.textContent = "로그인 해주세요";
+                    login_user_name.textContent = "▪ 로그인 해주세요 ▪";
                     document.querySelector(".home_login_button_login").style.display = "block";
                     document.querySelector(".home_login_button_logout").style.display = "none";
                     return;
@@ -186,7 +186,7 @@
 
                 if (data.isLoggedIn) {
                     console.log("로그인된 사용자 ID:", data.userId);
-                    login_user_name.textContent = data.userId;
+                    login_user_name.textContent = `▪ ${data.userId}님 안녕하세요. ▪`;
                     document.querySelector(".home_login_button_logout").style.display = "block";
                     document.querySelector(".home_login_button_login").style.display = "none";
                     index_my_information_href.href = `/login/details/${data.userId}`;
