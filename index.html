@@ -79,7 +79,7 @@
                 <button type="button">로그아웃</button>
             </a>
         </section>
-        <section class="home_login_button">
+        <section class="home_login_button home_signup">
             <a href="/login/signup">
                 <button type="button">회원가입</button>
             </a>
@@ -180,6 +180,7 @@
                     login_user_name.textContent = "▪ 로그인 해주세요 ▪";
                     document.querySelector(".home_login_button_login").style.display = "block";
                     document.querySelector(".home_login_button_logout").style.display = "none";
+                    document.querySelector(".home_signup").style.display = "block";
                     return;
                 }
 
@@ -194,6 +195,7 @@
                     login_user_name.textContent = `▪ ${data.userId}님 안녕하세요. ▪`;
                     document.querySelector(".home_login_button_logout").style.display = "block";
                     document.querySelector(".home_login_button_login").style.display = "none";
+                    document.querySelector(".home_signup").style.display = "none";
                     index_my_information_href.href = `/login/details/${data.userId}`;
                 }
             } catch (error) {
