@@ -266,18 +266,7 @@
         const tri_e_p_win = document.querySelector(".tri_e_p_win");
         const tri_e_p_lose = document.querySelector(".tri_e_p_lose");
 
-        const triples_e_last_popup = () => {
-            tri_e_p_full.style.display = "block";
-            if (triples_e_result_count === 24) {
-                tri_e_p_win.style.display = "block";
-            } else {
-                tri_e_p_lose.style.display = "block";
-            }
-        };
 
-        const triples_e_last_popup_close = () => {
-            tri_e_p_full.style.display = "none";
-        };
 
 
         //로그인 유저 받아오기########################################
@@ -310,7 +299,73 @@
 
         getUserInfo();
 
+        function getCookie(name) {
+            const value = `; ${document.cookie}`;
+            const parts = value.split(`; ${name}=`);
 
+            if (parts.length === 2) {
+                return parts.pop().split(';').shift();
+            }
+
+            return null;
+        }
+
+        async function init() {
+
+            try {
+                // 1. CSRF 토큰 발급
+                const csrfResponse = await fetch("/event-boolean/csrf-token", {
+                    method: "GET",
+                    credentials: "same-origin"
+                });
+
+                if (!csrfResponse.ok) {
+                    throw new Error("CSRF 토큰 발급 실패");
+                }
+
+                const csrfData = await csrfResponse.json();
+
+                console.log("CSRF 토큰 발급 완료");
+
+                // 2. 로그인 사용자 확인 및 POST 요청
+                const response = await fetch("/event-boolean/registration", {
+                    method: "POST",
+                    credentials: "same-origin",
+                    headers: {
+                        "Content-Type": "application/json",
+                        [csrfData.headerName]: csrfData.token
+                    },
+                    body: JSON.stringify({
+                        originalLink: "triples-love-and-pop-pt1-event"
+                    })
+                });
+
+                const result = await response.text();
+
+                if (response.ok) {
+                    alert(result);
+                } else {
+                    alert(result);
+                }
+
+            } catch (error) {
+                console.error("네트워크 에러:", error);
+            }
+        }
+
+        const triples_e_last_popup = () => {
+            tri_e_p_full.style.display = "block";
+            if (triples_e_result_count === 24) {
+                tri_e_p_win.style.display = "block";
+                init()
+            } else {
+                tri_e_p_lose.style.display = "block";
+            }
+        };
+
+        const triples_e_last_popup_close = () => {
+            tri_e_p_full.style.display = "none";
+        };
 
         /*
 
