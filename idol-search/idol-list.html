@@ -225,7 +225,8 @@
         <section
             style="width: 920px; height: 680px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); overflow: hidden;">
             <!-- overflow: hidden; -->
-            <section class="idolList_part" style="width: 1840px; height: 680px; display: flex;">
+            <section class="idolList_part"
+                style="width: 1840px; height: 680px; display: flex; position: absolute; top: 0px; left: 0px; transition: all 0.6s ease 0s;">
                 <section class="idolList_trainf">
                     <section class="idolList_train">
                         <div class="idolList_link">
@@ -1504,10 +1505,12 @@
         function idolListPartToLeft() {
             document.querySelector("#to_left").style.display = "none"
             document.querySelector("#to_right").style.display = "block"
+            document.querySelector(".idolList_part").style.left = "0px"
         }
         function idolListPartToRight() {
             document.querySelector("#to_right").style.display = "none"
             document.querySelector("#to_left").style.display = "block"
+            document.querySelector(".idolList_part").style.left = "-920px"
         }
     </script>
 </body>
