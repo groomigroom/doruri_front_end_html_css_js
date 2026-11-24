@@ -12,11 +12,11 @@
 <body>
     <div class="triplesevent_full">
         <header class="tri_m_header">
-            <Menu />
-            <section class="home_translate">
-                <Link to='/TriplesEvent' class="on">한국어</Link>
-                <Link to='/TriplesEventEng'>English</Link>
-            </section>
+            <Menu>
+                <section class="home_translate">
+                    <Link to='/TriplesEvent' class="on">한국어</Link>
+                    <Link to='/TriplesEventEng'>English</Link>
+                </section>
         </header>
         <section class="tri_e_logo">
             <img src="" alt="트리플에스 이벤트 로고" />
@@ -280,6 +280,35 @@
         };
 
 
+        //로그인 유저 받아오기########################################
+        let login_user = "";
+        async function getUserInfo() {
+            try {
+                const response = await fetch('/login/login-data');
+
+                // 💡 401 권한 없음(로그아웃 상태)일 때는 에러를 터뜨리지 않고
+                // "로그인 해주세요" 상태를 부드럽게 유지하도록 턴을 넘겨줍니다.
+                if (response.status === 401) {
+                    console.log("현재 비로그인 상태입니다.");
+                    return;
+                }
+
+                if (!response.ok) {
+                    throw new Error('데이터를 가져오는데 실패했습니다.');
+                }
+
+                const data = await response.json(); // JSON으로 읽기
+
+                if (data.isLoggedIn) {
+                    console.log("로그인된 사용자 ID:", data.userId);
+                    login_user = data.userId;
+                }
+            } catch (error) {
+                console.error('에러 발생:', error);
+            }
+        }
+
+        getUserInfo();
 
 
 
