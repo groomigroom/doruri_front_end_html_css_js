@@ -1177,6 +1177,12 @@
         // 영어 순정렬 실행 함수
         function idollistAIdsEnglishSortToArray() {
 
+            document.querySelector("#idollistAIdsNormal_btn").style.display = "inline-block"
+            document.querySelector("#idollistAIdsKoreanSortToArray_btn").style.display = "inline-block"
+            document.querySelector("#idollistAIdsKoreanReverseSortToArray_btn").style.display = "inline-block"
+            document.querySelector("#idollistAIdsEnglishSortToArray_btn").style.display = "none"
+            document.querySelector("#idollistAIdsEnglishReverseSortToArray_btn").style.display = "inline-block"
+
             let idollistAIdsEnglishSortArray =
                 idollistAIdsEnglishSort(idollistAll);
             idollistAIds[0].href = idollistAIdsEnglishSortArray[0].href;
