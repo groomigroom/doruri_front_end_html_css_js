@@ -37,60 +37,54 @@
 </head>
 
 <body>
-    <div class="akmuevent_full">
-        <header class="tri_m_header">
-            <a to='/' class='menu_logo'>
-                <img src="" alt="">
-            </a>
-            <section class="home_translate">
-                <Link to='/TxtEvent' class="on">한국어</Link>
-                <Link to='/TxtEventEng'>English</Link>
+    <div style="width: 100vw; height: 100vh; position: relative;">
+        <header>
+            <section class="header_structure">
+                <div class="Menu_button off">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <a href="/" class="header_to_menu_logo"><img src="../../imgs/index_logo.svg"></a>
             </section>
-            <!-- <div className="menu_mobile_button" onClick={MenuOnToggle}>보기</div> -->
-            <nav class="menu_nav">
-                <!-- <div className="menu_mobile_off" onClick={MenuOffToggle}>닫기</div> -->
-                <ul>
-                    <li><a href="#">도루리는?</a><!--<button className='menu_nav_li_btn1'>메뉴 버튼1</button>-->
-                        <ul>
-                            <li><a href="#">소개</a></li>
-                            <li>
-                                <a href="/DoruriMap">도루리 사이트 구조</a>
-                            </li>
-                            <li>
-                                <a href='/DoruriUpdate'>업데이트 내역</a>
-                            </li>
-                            <li><a href="#">세부4</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href='#'>아이돌 탐색</a>
-                        <ul>
-                            <li>
-                                <a href='/IdolList'>목록</a>
-                            </li>
-                            <li><a href="#">세부2</a></li>
-                            <li><a href="#">세부3</a></li>
-                            <li><a href="#">세부4</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">메뉴1</a>
-                        <ul>
-                            <li><a href="#">세부1</a></li>
-                            <li><a href="#">세부2</a></li>
-                            <li><a href="#">세부3</a></li>
-                            <li><a href="#">세부4</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">메뉴1</a>
-                        <ul>
-                            <li><a href="#">세부1</a></li>
-                            <li><a href="#">세부2</a></li>
-                            <li><a href="#">세부3</a></li>
-                            <li><a href="#">세부4</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
+            <div class="header_wrap">
+                <nav>
+                    <ul>
+                        <li>도루리는?
+                            <ul>
+                                <li><a href="./introduce/introduce/introduce.html">소개</a></li>
+                                <li><a href="">도루리 사이트 영상</a></li>
+                                <li><a href="">업데이트 내역</a></li>
+                                <li><a href="">ㅇㅇ목록</a></li>
+                            </ul>
+                        </li>
+                        <li>아이돌 탐색
+                            <ul>
+                                <li><a href="/idol-search/idol-list.html">목록</a></li>
+                                <li><a href="">세부2</a></li>
+                                <li><a id="home_idol_search_my_group_like_list" href="">내 그룹 좋아요 목록</a></li>
+                                <li><a id="home_idol_search_my_song_like_list" href="">내 앨범 좋아요 목록</a></li>
+                            </ul>
+                        </li>
+                        <li>도루리
+                            <ul>
+                                <li><a href="/doruri-write/list">도루리 글</a></li>
+                                <li><a href="/worldStories/worldStories.html">세계관 목록</a></li>
+                                <li><a href="">세부3</a></li>
+                                <li><a href="/selling-things/list">도루리 상점</a></li>
+                            </ul>
+                        </li>
+                        <li>회원 정보
+                            <ul>
+                                <li><a class="index_my_information_href" href="">내 정보</a></li>
+                                <li><a href="/login/details-list">회원 탐색</a></li>
+                                <li><a href="">세부3</a></li>
+                                <li><a href="">세부4</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </header>
         <section class="tri_e_logo">
             <img src="./img/akmu_e_m_logo.png" alt="악뮤 이벤트 로고">
@@ -129,7 +123,9 @@
                 <p>아름다운 마음, 슬픔, 기쁨</p>
             </div>
         </form>
-        <FooterPart100vh FooterPartText='ⓒ 영감의 샘터' />
+        <footer style="position: absolute; bottom: 0px; left: 0px;">
+            <p>ⓒ 영감의 샘터</p>
+        </footer>
         <!--1번 일 때-->
         <section class="tri_e_last_win_part">
             <section class="tri_e_last_win_part_win">
