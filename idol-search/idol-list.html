@@ -952,6 +952,12 @@
         // 한국어 역정렬 실행 함수
         function idollistAIdsKoreanReverseSortToArray() {
 
+            document.querySelector("#idollistAIdsNormal_btn").style.display = "inline-block"
+            document.querySelector("#idollistAIdsKoreanSortToArray_btn").style.display = "inline-block"
+            document.querySelector("#idollistAIdsKoreanReverseSortToArray_btn").style.display = "none"
+            document.querySelector("#idollistAIdsEnglishSortToArray_btn").style.display = "inline-block"
+            document.querySelector("#idollistAIdsEnglishReverseSortToArray_btn").style.display = "inline-block"
+
             let idollistAIdsKoreanSortArray =
                 idollistAIdsKoreanSort(idollistAll);
             idollistAIds[23].href = idollistAIdsKoreanSortArray[0].href;
