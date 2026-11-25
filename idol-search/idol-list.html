@@ -550,7 +550,9 @@
         }
         //기본 등록순 정렬 함수
         function idollistAIdsNormal() {
-            //#####
+
+            document.querySelector("#idollistAIdsNormal_btn").style.display = "none"
+
             idollistAIds[0].href = idollistAll[0].href;
             idollistAIds[0].querySelector("img").src = idollistAll[0].imgSrc;
             idollistAIds[0].querySelector("img").alt = idollistAll[0].groupNameKor;
