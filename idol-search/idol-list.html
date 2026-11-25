@@ -213,11 +213,11 @@
         </section>
         <div class="header_back_ghost"></div>
         <section>
-            <button onclick="idollistAIdsNormal()">등록 순 정렬</button>
-            <button onclick="idollistAIdsKoreanSortToArray()">한국어 순정렬</button>
-            <button onclick="idollistAIdsKoreanReverseSortToArray()">한국어 역정렬</button>
-            <button onclick="idollistAIdsEnglishSortToArray()">영어 순정렬</button>
-            <button onclick="idollistAIdsEnglishReverseSortToArray()">영어 역정렬</button>
+            <button onclick="idollistAIdsNormal()" id="idollistAIdsNormal_btn">등록 순 정렬</button>
+            <button onclick="idollistAIdsKoreanSortToArray()" id="idollistAIdsKoreanSortToArray_btn">한국어 순정렬</button>
+            <button onclick="idollistAIdsKoreanReverseSortToArray()" id="idollistAIdsKoreanReverseSortToArray_btn">한국어 역정렬</button>
+            <button onclick="idollistAIdsEnglishSortToArray()" id="idollistAIdsEnglishSortToArray_btn">영어 순정렬</button>
+            <button onclick="idollistAIdsEnglishReverseSortToArray()" id="idollistAIdsEnglishReverseSortToArray_btn">영어 역정렬</button>
             <button onclick="idolListPartToLeft()" style="display: none;" id="to_left">왼쪽</button>
             <button onclick="idolListPartToRight()" id="to_right">오른쪽</button>
         </section>
@@ -764,6 +764,8 @@
 
         // 한국어 순정렬 실행 함수
         function idollistAIdsKoreanSortToArray() {
+
+            document.querySelector("#idollistAIdsKoreanSortToArray_btn").style.display = "none"
 
             let idollistAIdsKoreanSortArray =
                 idollistAIdsKoreanSort(idollistAll);
