@@ -771,7 +771,11 @@
         // 한국어 순정렬 실행 함수
         function idollistAIdsKoreanSortToArray() {
 
+            document.querySelector("#idollistAIdsNormal_btn").style.display = "inline-block"
             document.querySelector("#idollistAIdsKoreanSortToArray_btn").style.display = "none"
+            document.querySelector("#idollistAIdsKoreanReverseSortToArray_btn").style.display = "inline-block"
+            document.querySelector("#idollistAIdsEnglishSortToArray_btn").style.display = "inline-block"
+            document.querySelector("#idollistAIdsEnglishReverseSortToArray_btn").style.display = "inline-block"
 
             let idollistAIdsKoreanSortArray =
                 idollistAIdsKoreanSort(idollistAll);
