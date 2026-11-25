@@ -158,7 +158,7 @@
 </head>
 
 <body>
-    <div class="idolList_full">
+    <div style="width: 100vw; height: 100vh; position: relative; background-color: #fcfcfc;">
         <header>
             <section class="header_structure">
                 <div class="Menu_button off">
@@ -213,7 +213,7 @@
         </section>
         <div class="header_back_ghost"></div>
         <section>
-            <button onclick="idollistAIdsNormal()">normal</button>
+            <button onclick="idollistAIdsNormal()">등록 순 정렬</button>
             <button onclick="idollistAIdsKoreanSortToArray()">한국어 순정렬</button>
             <button onclick="idollistAIdsKoreanReverseSortToArray()">한국어 역정렬</button>
             <button onclick="idollistAIdsEnglishSortToArray()">영어 순정렬</button>
@@ -222,7 +222,7 @@
             <button onclick="idolListPartToRight()" id="to_right">오른쪽</button>
         </section>
         <section
-            style="width: 920px; height: 680px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); overflow: hidden;">
+            style="width: 920px; height: 680px; position: relative; margin: 0 auto; overflow: hidden;">
             <!-- overflow: hidden; -->
             <section class="idolList_part"
                 style="width: 1840px; height: 680px; display: flex; position: absolute; top: 0px; left: 0px; transition: all 0.6s ease 0s;">
