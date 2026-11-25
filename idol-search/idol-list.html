@@ -37,7 +37,6 @@
             width: 150px;
             height: 150px;
             position: relative;
-            background-color: #0957c3;
         }
 
         .idolList_link_a {
@@ -169,10 +168,10 @@
         <button onclick="idolListPartToLeft()" style="display: none;" id="to_left">왼쪽</button>
         <button onclick="idolListPartToRight()" id="to_right">오른쪽</button>
         <section
-            style="width: 920px; height: 680px; position: relative; margin: 0 auto; overflow: hidden;">
+            style="width: 720px; height: 570px; position: relative; margin: 0 auto; overflow: hidden;">
             <!-- overflow: hidden; -->
             <section class="idolList_part"
-                style="width: 1840px; height: 680px; display: flex; position: absolute; top: 0px; left: 0px; transition: all 0.6s ease 0s;">
+                style="width: 1440px; height: 570px; display: flex; position: absolute; top: 0px; left: 0px; transition: all 0.6s ease 0s;">
                 <section class="idolList_trainf">
                     <section class="idolList_train">
                         <div class="idolList_link">
@@ -1487,7 +1486,7 @@
         function idolListPartToRight() {
             document.querySelector("#to_right").style.display = "none"
             document.querySelector("#to_left").style.display = "block"
-            document.querySelector(".idolList_part").style.left = "-920px"
+            document.querySelector(".idolList_part").style.left = "-720px"
         }
     </script>
 </body>
