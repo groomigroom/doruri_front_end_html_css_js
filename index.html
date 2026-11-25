@@ -33,7 +33,7 @@
                             <ul>
                                 <li><a href="/idol-search/idol-list.html">목록</a></li>
                                 <li><a href="">세부2</a></li>
-                                <li><a id="home_idol_search_my_group_like_list" href="">세부3</a></li>
+                                <li><a id="home_idol_search_my_group_like_list" href="">내 그룹 좋아요 목록</a></li>
                                 <li><a id="home_idol_search_my_song_like_list" href="">내 앨범 좋아요 목록</a></li>
                             </ul>
                         </li>
@@ -171,6 +171,7 @@
 
         const index_my_information_href = document.querySelector(".index_my_information_href");
         const home_idol_search_my_song_like_list = document.querySelector("#home_idol_search_my_song_like_list")
+        const home_idol_search_my_group_like_list = document.querySelector("#home_idol_search_my_group_like_list")
         async function getUserInfo() {
             try {
                 const response = await fetch('/login/login-data');
@@ -200,6 +201,7 @@
                     document.querySelector(".home_signup").style.display = "none";
                     index_my_information_href.href = `/login/details/${data.userId}`;
                     home_idol_search_my_song_like_list.href = `/like-link/song-list/${data.userId}`
+                    home_idol_search_my_group_like_list.href = `/like-link/group-list/${data.userId}`
                 }
             } catch (error) {
                 console.error('에러 발생:', error);
