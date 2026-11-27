@@ -158,6 +158,37 @@
         const straykids_e_value3_box = document.querySelector(".staykids_e_value3");
         const tri_e_last_win_part = document.querySelector(".tri_e_last_win_part");
 
+
+        //로그인 유저 받아오기########################################
+        let login_user = "";
+        async function getUserInfo() {
+            try {
+                const response = await fetch('/login/login-data');
+
+                // 💡 401 권한 없음(로그아웃 상태)일 때는 에러를 터뜨리지 않고
+                // "로그인 해주세요" 상태를 부드럽게 유지하도록 턴을 넘겨줍니다.
+                if (response.status === 401) {
+                    console.log("현재 비로그인 상태입니다.");
+                    return;
+                }
+
+                if (!response.ok) {
+                    throw new Error('데이터를 가져오는데 실패했습니다.');
+                }
+
+                const data = await response.json(); // JSON으로 읽기
+
+                if (data.isLoggedIn) {
+                    console.log("로그인된 사용자 ID:", data.userId);
+                    login_user = data.userId;
+                }
+            } catch (error) {
+                console.error('에러 발생:', error);
+            }
+        }
+
+        getUserInfo();
+
         // 2. 각 입력창의 상태를 체크하는 하나의 함수 만들기
         function checkValues() {
             // 첫 번째 조건 확인
